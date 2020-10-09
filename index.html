@@ -14,11 +14,35 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="header"></header>
+	<header class="page-header">
+		<nav class="main-nav">
+			<ul class="menu main-menu">
+				<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Компания</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Карьера</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Документы</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+			</ul>
+			<ul class="menu user-menu">
+				<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
+			</ul>
+			<!-- bootstrap components dropdowns -->
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ru</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<li><a class="dropdown-item" href="#">ch</a></li>
+				    <li><a class="dropdown-item" href="#">en</a></li>
+				    <li><a class="dropdown-item" href="#">de</a></li>
+				    <li><a class="dropdown-item" href="#">pt</a></li>
+				</ul>
+			</div>
+			<!-- END OF bootstrap components dropdowns -->
+		</nav>
+	</header>
 
 	<main class="main-content"></main>
 
-	<footer class="footer"></footer>
+	<footer class="page-footer"></footer>
 
 	<!-- <section class="modal"></section> -->
 
