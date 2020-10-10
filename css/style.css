@@ -51,3 +51,19 @@ body {
 	width: 1px !important; 
 	overflow: hidden;
 }
+
+.main-link {
+	display: inline-block;
+	padding: 25px 45px;
+	border: 3px solid #BC0000;
+	border-radius: 28px;
+}
+
+.main-link:hover {
+    box-shadow: 0px 0px 5px 5px rgba(188, 0, 0, 0.7),
+    			inset 0px 0px 5px 5px rgba(188, 0, 0, 0.7);
+}
+
+.main-link:focus {}
+
+.main-link:active {}
