@@ -41,6 +41,15 @@ body {
 	color: rgba(255, 255, 255, 0.7);
 }
 
+.main-heading {
+	font-family: "Bebas Neue", "Arial Narrow", "Century Gothic", Helvetica, Tahoma, sans-serif;
+	font-weight: 700;
+	font-size: 3.63rem;
+	line-height: 4.58rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */

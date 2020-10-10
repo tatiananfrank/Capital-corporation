@@ -6,14 +6,7 @@
 
 .feature {}
 
-.feature__title {
-	font-family: "Bebas Neue", "Arial Narrow", "Century Gothic", Helvetica, Tahoma, sans-serif;
-	font-weight: 700;
-	font-size: 3.63rem;
-	line-height: 4.58rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-}
+.feature__title {}
 
 .feature__desc {
 	text-transform: uppercase;
