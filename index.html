@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/features.css">
 	<link rel="stylesheet" type="text/css" href="css/profit.css">
+	<link rel="stylesheet" type="text/css" href="css/traders.css">
 	<!-- END OF ПОТОМ УДАЛИТЬ -->
 </head>
 <body>
@@ -110,10 +111,10 @@
 		<section class="traders">
 			<h2 class="main-heading">Кейсы наших трейдеров</h2>
 
-			<ul>
-				<li>
-					<a href="#">IPO</a>
-					<ul class="cases-list">
+			<ul class="cases">
+				<li class="cases__group">
+					<a class="cases__group-title cases__group-title_active" href="#">IPO</a>
+					<ul class="cases__group-details">
 						<li class="case">
 							<h3 class="visually-hidden">CargoX</h3>
 							<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип компании «CargoX»" width="" heiht="">
@@ -170,9 +171,9 @@
 						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="#">ICO</a>
-					<ul class="cases-list">
+				<li class="cases__group">
+					<a class="cases__group-title" href="#">ICO</a>
+					<ul class="cases__group-details">
 						<li class="case">
 							<h3 class="visually-hidden">zscaler</h3>
 							<img class="case__logo" src="img/zscaler_1x.png" alt="Логотип компании «zscaler»" width="" heiht="">
@@ -231,7 +232,7 @@
 				</li>
 			</ul>
 
-			<a href="#">Посмотреть все планы</a>
+			<a class="main-link" href="#">Посмотреть все планы</a>
 		</section>
 
 		<section class="about">
