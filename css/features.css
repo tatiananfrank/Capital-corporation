@@ -13,17 +13,9 @@
 	letter-spacing: 0.1rem;
 }
 
-.feature__link {
-	color: inherit;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-}
+.feature__link {}
 
-.feature__link:hover {
-	/* Не доделано! */
-	text-decoration: none;
-	color: inherit;
-}
+.feature__link:hover {}
 
 .feature__link:focus {}
 

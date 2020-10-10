@@ -32,17 +32,9 @@
 	letter-spacing: 0.05rem;
 }
 
-.source__link {
-	color: inherit;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-}
+.source__link {}
 
-.source__link:hover {
-	/* Не доделано! */
-	text-decoration: none;
-	color: inherit;
-}
+.source__link:hover {}
 
 .source__link:focus {}
 
