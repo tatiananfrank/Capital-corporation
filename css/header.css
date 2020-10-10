@@ -35,7 +35,7 @@
 
 .main-menu {
 	flex-wrap: wrap;
-	max-width: 760px;
+	max-width: 760px; /* Задать в процентах от контейнера и указать min-width */
 }
 
 .main-menu .menu__item {
@@ -51,8 +51,6 @@
 }*/
 
 .user-menu .menu__link {
-	position: relative;
-
 	padding: 16px 29px;
 	background-color: rgba(224, 43, 43, 0.3);
 	border-radius: 28.5px;
