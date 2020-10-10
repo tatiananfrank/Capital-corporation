@@ -1,0 +1,49 @@
+.profit-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.source {}
+
+.source__field,
+.source__desc {
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.58rem;
+	letter-spacing: 0.05rem;
+}
+
+.source__perc {
+	background: -webkit-linear-gradient(90deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+
+	font-family: "Bebas Neue", "Arial Narrow", "Century Gothic", Helvetica, Tahoma, sans-serif;
+	font-weight: 700;
+	font-size: 13.12rem;
+	line-height: 16.57rem;
+	letter-spacing: 0.05rem;
+}
+
+.source__reason {
+	font-size: 2.25rem;
+	line-height: 2.84rem;
+	letter-spacing: 0.05rem;
+}
+
+.source__link {
+	color: inherit;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
+.source__link:hover {
+	/* Не доделано! */
+	text-decoration: none;
+	color: inherit;
+}
+
+.source__link:focus {}
+
+.source__link:active {}
