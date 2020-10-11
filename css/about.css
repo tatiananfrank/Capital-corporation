@@ -1,4 +1,30 @@
+.main-content__about {
+	margin-top: 375px;
+}
+
+.about__heading {
+	margin-bottom: 91px;
+}
+
+.company-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.company-info__column {
+	width: 55%;
+}
+
+.company-info__img {
+	width: 40%;
+    /*height: auto;*/
+}
+
 .company-info__text-imp {
+	width: 75%;
+	margin-bottom: 20px;
+
 	font-family: "Bebas Neue", "Arial Narrow", "Century Gothic", Helvetica, Tahoma, sans-serif;
 	font-weight: 700;
 	font-size: 2.25rem;
@@ -7,13 +33,35 @@
 }
 
 .company-info__text {
+	margin-bottom: 22px;
+
 	font-size: 1.125rem;
 	line-height: 1.44rem;
 	letter-spacing: 0.1rem;
+}
+
+.company-info__text:nth-of-type(3) {
+	margin-bottom: 30px;
+}
+
+.company-info__link {
+	margin-right: 25px;
+}
+
+.about__partners {
+	margin-top: -50px;
 }
 
 .partners__list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners__item {
+	width: 33%;
 }

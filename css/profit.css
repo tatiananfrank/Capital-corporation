@@ -1,10 +1,39 @@
+.profit__heading {
+	margin-bottom: 70px;
+}
+
 .profit-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.source {}
+.source {
+	width: 50%;
+}
+
+.source:nth-child(2) {
+	text-align: right;
+    margin-left: auto;
+    margin-top: -60px; /**/
+}
+
+.source:nth-child(3) {
+    margin-top: -225px; /**/
+}
+
+.source:nth-child(4) {
+	text-align: right;
+    margin-left: auto;
+    margin-top: -75px; /**/
+}
+
+.source__field {
+	display: flex;
+    flex-direction: column;
+
+    margin-bottom: 38px;
+}
 
 .source__field,
 .source__desc {
@@ -15,6 +44,9 @@
 }
 
 .source__perc {
+	margin-bottom: -70px;
+
+	background: #4f0c12; /* Фолбэк для градиента */
 	background: -webkit-linear-gradient(90deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);
 	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -26,10 +58,24 @@
 	letter-spacing: 0.05rem;
 }
 
+.source .main-heading {
+	text-align: left;
+}
+
+.source:nth-child(2n) .main-heading {
+	text-align: right;
+}
+
 .source__reason {
+	margin-bottom: 24px;
+
 	font-size: 2.25rem;
 	line-height: 2.84rem;
 	letter-spacing: 0.05rem;
+}
+
+.source__desc {
+	margin-bottom: 44px;
 }
 
 .source__link {}

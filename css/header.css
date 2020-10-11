@@ -6,9 +6,9 @@
 	display: flex;
 	align-items: center;
 	min-height: 85px;
+	min-height: 82px; /**/
+	justify-content: space-between;
 }
-
-.logo {}
 
 .menu {
 	display: flex;
@@ -34,24 +34,26 @@
 .menu__link:active {}
 
 .main-menu {
-	flex-wrap: wrap;
-	max-width: 760px; /* Задать в процентах от контейнера и указать min-width */
+	width: 63.5%;
+    justify-content: space-between;
+	/*flex-wrap: wrap;
+	max-width: 760px;*/ /* Задать в процентах от контейнера и указать min-width */
 }
 
-.main-menu .menu__item {
+/*.main-menu .menu__item {
 	margin-right: 74px;
 }
 
 .main-menu .menu__item:nth-child(5) {
 	margin-right: 0;
-}
+}*/
 
 /*.main-menu .menu__item:nth-child(5n + 1) {
 	margin-top: 10px;
 }*/
 
 .user-menu .menu__link {
-	padding: 16px 29px;
+	padding: 15px 29px;
 	background-color: rgba(224, 43, 43, 0.3);
 	border-radius: 28.5px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -69,3 +71,13 @@
 .menu__link:active {}
 
 .dropdown {}
+
+.logo {
+	display: block;
+	width: 181px;
+	height: 47px;
+}
+
+.main-content__logo {
+	margin-top: 30px;
+}

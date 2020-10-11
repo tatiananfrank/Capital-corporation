@@ -1,7 +1,14 @@
+.main-content__call-for-action {
+	margin: 309px auto 273px;
+    width: 40%;
+}
+
 .call-for-action {
 	text-align: center;
 }
 
 .call-for-action__text {
+	margin-bottom: 260px;
+
 	letter-spacing: 0.1rem;
 }
