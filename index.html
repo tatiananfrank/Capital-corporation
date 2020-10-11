@@ -52,6 +52,7 @@
 				</ul>
 			</div> -->
 			<!-- END OF bootstrap components dropdowns -->
+
 			<!-- Custom language picker -->
 			<div class="language-picker">
 				<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown">
@@ -62,7 +63,7 @@
 					<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
 					<span class="language-picker__lang-code">ru</span>
 				</a> -->
-				<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown" role="listbox">
+				<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown" role="listbox" style="display: none;">
 					<li class="lang-list__lang">
 						<a lang="zh" hreflang="zh" href="#" class="lang-list__link" role="option">
 							<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
@@ -96,6 +97,20 @@
 				</ul>
 			</div>
 			<!-- END OF Custom language picker -->
+
+			<!-- No-js language picker -->
+			<!-- Атрибут data-lang у селекта отвечает за смену флага, возможные значения: ru, en, de, pt, ch -->
+			<form action="" method="" class="language-picker-form" style="display: none;">
+				<label for="language-picker-select" class="visually-hidden">Выберите язык</label>
+				<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
+					<option value="english" class="" lang="en">en</option>
+					<option value="russian" class="" lang="ru" selected>ru</option>
+					<option value="german" class="" lang="de">de</option>
+					<option value="portuguese" class="" lang="pt">pt</option>
+					<option value="chinese" class="" lang="zh">ch</option>
+				</select>
+			</form>
+			<!-- END OF No-js language picker -->
 		</nav>
 	</header>
 
