@@ -42,7 +42,7 @@
 			</ul>
 			<!-- ЗАМЕНИТЬ ???? -->
 			<!-- bootstrap components dropdowns -->
-			<div class="dropdown">
+			<!-- <div class="dropdown">
 				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ru</button>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 					<li><a class="dropdown-item" href="#">ch</a></li>
@@ -50,37 +50,47 @@
 				    <li><a class="dropdown-item" href="#">de</a></li>
 				    <li><a class="dropdown-item" href="#">pt</a></li>
 				</ul>
-			</div>
+			</div> -->
 			<!-- END OF bootstrap components dropdowns -->
 			<!-- Custom language picker -->
 			<div class="language-picker">
-				<a class="language-picker__button">
+				<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown">
 					<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
 					<span class="language-picker__lang-code">ru</span>
-				</a>
-				<ul class="lang-list language-picker__lang-list">
+				</button>
+				<!-- <a class="language-picker__button" href>
+					<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+					<span class="language-picker__lang-code">ru</span>
+				</a> -->
+				<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown" role="listbox">
 					<li class="lang-list__lang">
-						<a href="#" class="lang-list__link">
+						<a lang="zh" hreflang="zh" href="#" class="lang-list__link" role="option">
 							<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
 							<span class="lang-list__lang-code">ch</span>
 						</a>
 					</li>
 					<li class="lang-list__lang">
-						<a href="#" class="lang-list__link">
+						<a lang="en" hreflang="en" href="#" class="lang-list__link" role="option">
 							<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
 							<span class="lang-list__lang-code">en</span>
 						</a>
 					</li>
 					<li class="lang-list__lang">
-						<a href="#" class="lang-list__link">
+						<a lang="de" hreflang="de" href="#" class="lang-list__link" role="option">
 							<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
 							<span class="lang-list__lang-code">de</span>
 						</a>
 					</li>
 					<li class="lang-list__lang">
-						<a href="#" class="lang-list__link">
+						<a lang="pt" hreflang="pt" href="#" class="lang-list__link" role="option">
 							<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
 							<span class="lang-list__lang-code">pt</span>
+						</a>
+					</li>
+					<li class="lang-list__lang">
+						<a lang="ru" hreflang="ru" href="#" class="lang-list__link" role="option" aria-selected="true">
+							<img class="lang-list__flag" src="img/ru.svg" alt="" width="25" height="16">
+							<span class="lang-list__lang-code">ru</span>
 						</a>
 					</li>
 				</ul>
