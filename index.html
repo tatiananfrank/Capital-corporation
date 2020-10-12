@@ -177,7 +177,7 @@
 				<h2 class="main-heading traders__heading">Кейсы наших трейдеров</h2>
 
 				<div class="traders__content">
-					<ul class="cases-switcher traders__cases-switcher">
+					<ul class="cases-switcher traders__cases-switcher" aria-controls="traders-cases-list">
 						<li class="cases-switcher__item">
 							<a href="#" class="cases-switcher__link cases-switcher__link_active">IPO</a>
 						</li>
@@ -186,7 +186,7 @@
 						</li>
 					</ul>
 
-					<ul class="cases traders__cases">
+					<ul class="cases traders__cases" id="traders-cases-list">
 						<li class="case">
 							<h3 class="visually-hidden">CargoX</h3>
 							<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип компании «CargoX»" width="" heiht="">
@@ -224,6 +224,16 @@
 							</table>
 						</li>
 					</ul>
+
+					<div class="cases-arrows" style="display: flex; justify-content: space-between;">
+						<span class="arrow" style="display: flex;">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="44" style="filter: drop-shadow(0px 0px 5px #3100BC); cursor: pointer;"><path xmlns="http://www.w3.org/2000/svg" fill="#3100BC" d="M492,236H68.442l70.164-69.824c7.829-7.792,7.859-20.455,0.067-28.284c-7.792-7.83-20.456-7.859-28.285-0.068l-104.504,104c-0.007,0.006-0.012,0.013-0.018,0.019c-7.809,7.792-7.834,20.496-.002,28.314c0.007,0.006,0.012,0.013,0.018,0.019l104.504,104c7.828,7.79,20.492,7.763,28.285-0.068c7.792-7.829,7.762-20.492-0.067-28.284L68.442,276H492c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"/></svg>
+						</span>
+						<span class="arrow" style="display: flex;">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="44" style="filter: drop-shadow(0px 0px 5px #3100BC); cursor: pointer; transform: scale(-1, 1);"><path xmlns="http://www.w3.org/2000/svg" fill="#3100BC" d="M492,236H68.442l70.164-69.824c7.829-7.792,7.859-20.455,0.067-28.284c-7.792-7.83-20.456-7.859-28.285-0.068l-104.504,104c-0.007,0.006-0.012,0.013-0.018,0.019c-7.809,7.792-7.834,20.496-.002,28.314c0.007,0.006,0.012,0.013,0.018,0.019l104.504,104c7.828,7.79,20.492,7.763,28.285-0.068c7.792-7.829,7.762-20.492-0.067-28.284L68.442,276H492c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"/></svg>
+						</span>
+					</div>
+					
 
 					<!-- <ul class="cases">
 						<li class="cases__group">
