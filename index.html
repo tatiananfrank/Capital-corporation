@@ -15,6 +15,7 @@
 
 	<!-- ПОТОМ УДАЛИТЬ -->
 	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/logo.css">
 	<link rel="stylesheet" type="text/css" href="css/features.css">
 	<link rel="stylesheet" type="text/css" href="css/profit.css">
 	<link rel="stylesheet" type="text/css" href="css/traders.css">
@@ -25,169 +26,157 @@
 </head>
 <body>
 	<header class="page-header">
-		<nav class="main-nav inner-container">
-			<!-- <a class="logo">
-				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании «Capital corporation»" width="" height="">
-			</a> -->
+		<div class="inner-container_large">
+			<nav class="main-nav">
 
-			<ul class="menu main-menu">
-				<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Компания</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Карьера</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Документы</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-			</ul>
-			<ul class="menu user-menu">
-				<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
-			</ul>
-			<!-- ЗАМЕНИТЬ ???? -->
-			<!-- bootstrap components dropdowns -->
-			<!-- <div class="dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ru</button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<li><a class="dropdown-item" href="#">ch</a></li>
-				    <li><a class="dropdown-item" href="#">en</a></li>
-				    <li><a class="dropdown-item" href="#">de</a></li>
-				    <li><a class="dropdown-item" href="#">pt</a></li>
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 				</ul>
-			</div> -->
-			<!-- END OF bootstrap components dropdowns -->
 
-			<!-- Custom language picker -->
-			<div class="language-picker">
-				<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown">
-					<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
-					<span class="language-picker__lang-code">ru</span>
-				</button>
-				<!-- <a class="language-picker__button" href>
-					<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
-					<span class="language-picker__lang-code">ru</span>
-				</a> -->
-				<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown" role="listbox" style="display: none;">
-					<li class="lang-list__lang">
-						<a lang="zh" hreflang="zh" href="#" class="lang-list__link" role="option">
-							<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
-							<span class="lang-list__lang-code">ch</span>
-						</a>
-					</li>
-					<li class="lang-list__lang">
-						<a lang="en" hreflang="en" href="#" class="lang-list__link" role="option">
-							<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
-							<span class="lang-list__lang-code">en</span>
-						</a>
-					</li>
-					<li class="lang-list__lang">
-						<a lang="de" hreflang="de" href="#" class="lang-list__link" role="option">
-							<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
-							<span class="lang-list__lang-code">de</span>
-						</a>
-					</li>
-					<li class="lang-list__lang">
-						<a lang="pt" hreflang="pt" href="#" class="lang-list__link" role="option">
-							<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
-							<span class="lang-list__lang-code">pt</span>
-						</a>
-					</li>
-					<li class="lang-list__lang">
-						<a lang="ru" hreflang="ru" href="#" class="lang-list__link" role="option" aria-selected="true">
-							<img class="lang-list__flag" src="img/ru.svg" alt="" width="25" height="16">
-							<span class="lang-list__lang-code">ru</span>
-						</a>
-					</li>
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
 				</ul>
-			</div>
-			<!-- END OF Custom language picker -->
 
-			<!-- No-js language picker -->
-			<!-- Атрибут data-lang у селекта отвечает за смену флага, возможные значения: ru, en, de, pt, ch -->
-			<form action="" method="" class="language-picker-form" style="display: none;">
-				<label for="language-picker-select" class="visually-hidden">Выберите язык</label>
-				<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
-					<option value="english" class="" lang="en">en</option>
-					<option value="russian" class="" lang="ru" selected>ru</option>
-					<option value="german" class="" lang="de">de</option>
-					<option value="portuguese" class="" lang="pt">pt</option>
-					<option value="chinese" class="" lang="zh">ch</option>
-				</select>
-			</form>
-			<!-- END OF No-js language picker -->
-		</nav>
+				<!-- Custom language picker -->
+				<div class="language-picker">
+					<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code">ru</span>
+					</button>
+					<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown" role="listbox" style="display: none;">
+						<li class="lang-list__lang">
+							<a lang="zh" hreflang="zh" href="#" class="lang-list__link" role="option">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a lang="en" hreflang="en" href="#" class="lang-list__link" role="option">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a lang="de" hreflang="de" href="#" class="lang-list__link" role="option">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a lang="pt" hreflang="pt" href="#" class="lang-list__link" role="option">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">pt</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a lang="ru" hreflang="ru" href="#" class="lang-list__link" role="option" aria-selected="true">
+								<img class="lang-list__flag" src="img/ru.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">ru</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- Атрибут data-lang у селекта отвечает за смену флага, возможные значения: ru, en, de, pt, ch -->
+				<form action="" method="" class="language-picker-form" style="display: none;">
+					<label for="language-picker-select" class="visually-hidden">Выберите язык</label>
+					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
+						<option value="english" class="" lang="en">en</option>
+						<option value="russian" class="" lang="ru" selected>ru</option>
+						<option value="german" class="" lang="de">de</option>
+						<option value="portuguese" class="" lang="pt">pt</option>
+						<option value="chinese" class="" lang="zh">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</nav>
+		</div>
 	</header>
 
 	<main class="main-content">
-		<div class="inner-container">
-			<h1 class="visually-hidden">Компания «Capital corporation»</h1>
-
-			<img class="logo main-content__logo" src="img/logo_1x.png" alt="Логотип компании «Capital corporation»" width="181" height="47">
 		
-			<section class="features main-content__features">
+		<section class="logo main-content__logo">
+			<div class="inner-container_large">
+				<h1 class="visually-hidden">Компания «Capital corporation»</h1>
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании «Capital corporation»" width="181" height="47">
+			</div>
+		</section>
+		
+		<section class="features main-content__features">
+			<div class="inner-container_large">
 				<h2 class="visually-hidden">Наши преимущества</h2>
 
 				<ul class="features-list">
 					<li class="feature features-list__feature">
-						<div class="feature__group">
+						<div class="feature__col">
 							<h3 class="main-heading feature__title">Инвестиции от 17% в месяц на трендовых направлениях</h3>
 							<p class="feature__desc">Сбалансированный портфель на 4 самых доходных сферах</p>
 						</div>
 						<a href="#" class="main-link feature__link">Открыть счет</a>
 					</li>
 					<li class="feature features-list__feature">
-						<div class="feature__group">
+						<div class="feature__col">
 							<h3 class="main-heading feature__title">Успешный карьерный рост с неограниченными возможностями</h3>
 							<p class="feature__desc">Постройте свою карьеру с международной компанией</p>
 						</div>
 						<a href="#" class="main-link feature__link">Открыть счет</a>
 					</li>
 					<li class="feature features-list__feature">
-						<div class="feature__group">
+						<div class="feature__col">
 							<h3 class="main-heading feature__title">Воплощайте заветные мечты в мире финансовой свободы</h3>
 							<p class="feature__desc">Бонусная программа для целеустремленных партнеров</p>
 						</div>
 						<a href="#" class="main-link feature__link">Открыть счет</a>
 					</li>
 				</ul>
-			</section>
-		</div>
-
-		<div class="inner-container_small">
-			<section class="profit">
+			</div>
+		</section>
+		
+		<section class="profit main-content__profit">
+			<div class="inner-container_small">
 				<h2 class="main-heading profit__heading">На чем мы зарабатываем?</h2>
 
 				<ul class="profit-list">
-					<li class="source">
+					<li class="source profit-list__source">
 						<h3 class="source__field"><span class="source__perc">35%</span> Блокчейн стартапы (ICO)</h3>
 						<p class="main-heading source__reason">Максимизация прибыли</p>
 						<p class="source__desc">Инвестиции в ведущие и новые ICO. Используется диверсификация, одновременно инвестируется более чем в 17 проверенных ICO</p>
 						<a href="#" class="main-link source__link">Подробнее</a>
 					</li>
-					<li class="source">
+					<li class="source profit-list__source">
 						<h3 class="source__field"><span class="source__perc">28%</span> IT компании</h3>
 						<p class="main-heading source__reason">Стабильный доход</p>
 						<p class="source__desc">Инвестиции в новые технологии. Обеспечивает стабильный доход и дает попасть в будущее технологического гиганта</p>
 						<a href="#" class="main-link source__link">Подробнее</a>
 					</li>
-					<li class="source">
+					<li class="source profit-list__source">
 						<h3 class="source__field"><span class="source__perc">20%</span> Инвестиции в IPO</h3>
 						<p class="main-heading source__reason">Максимизация прибыли и стабилизация дохода</p>
 						<p class="source__desc">Покупка акций перспективных компаний позволяет стабильно зарабатывать и совершить скачок в доходности</p>
 						<a href="#" class="main-link source__link">Подробнее</a>
 					</li>
-					<li class="source">
+					<li class="source profit-list__source">
 						<h3 class="source__field"><span class="source__perc">17%</span> Фьючерсная торговля</h3>
 						<p class="main-heading source__reason">Балансировка и сохранность инвестиций</p>
 						<p class="source__desc">Выкуп обязательств с гарантийной ценой реализации в будущем. Является гарантом сохранения инвестиций</p>
 						<a href="#" class="main-link source__link">Подробнее</a>
 					</li>
 				</ul>
-			</section>
-		</div>
-
-		<div class="inner-container_medium">
-			<section class="traders main-content__traders">
+			</div>
+		</section>
+		
+		<section class="traders main-content__traders">
+			<div class="inner-container_medium">
 				<h2 class="main-heading traders__heading">Кейсы наших трейдеров</h2>
 
 				<div class="traders__content">
-					<ul class="cases-switcher">
+					<ul class="cases-switcher traders__cases-switcher">
 						<li class="cases-switcher__item">
 							<a href="#" class="cases-switcher__link cases-switcher__link_active">IPO</a>
 						</li>
@@ -195,7 +184,8 @@
 							<a href="#" class="cases-switcher__link">ICO</a>
 						</li>
 					</ul>
-					<ul class="cases">
+
+					<ul class="cases traders__cases">
 						<li class="case">
 							<h3 class="visually-hidden">CargoX</h3>
 							<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип компании «CargoX»" width="" heiht="">
@@ -357,94 +347,139 @@
 
 					<a class="main-link traders__link" href="#">Посмотреть все планы</a>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 
 		<section class="about main-content__about">
-			<h2 class="main-heading about__heading">О компании</h2>
+			<div class="inner-container_large">
+				<h2 class="main-heading about__heading">О компании</h2>
 
-			<div class="inner-container_medium">
-				<section class="company-info">
+				<section class="company-info about__company-info">
 					<h3 class="visually-hidden">Информация</h3>
 
-					<div class="company-info__column">
-						<p class="company-info__text-imp">Компания берет свое начало с 2006 года. Зарегистрирована в Китае.</p>
+					<div class="company-info__col">
+						<p class="main-heading company-info__heading">Компания берет свое начало с 2006 года. Зарегистрирована в Китае.</p>
 						<p class="company-info__text">За 13 лет прошла путь от консалтинговой компании до крупнейшего игрока рынка инвестиций со штатом в 150 трейдеров и офисом в одном из крупнейших бизнес центров Гонконга - Three Garden Road. Офис расположен на 49 этаже, где открывается панорамный вид на деловой цент Гонконга.</p>
 						<p class="company-info__text">Получены все лицензии на инвестиционную деятельность, на представление компании в интернете и др. Заключены соглашения с тремя крупнейшими банками Китая.</p>
 						<a class="main-link company-info__link" href="#">Подробнее</a>
-						<a class="main-link" href="#">Документы</a>
+						<a class="main-link company-info__link" href="#">Документы</a>
 					</div>
 					<img class="company-info__img" src="img/certificates_1x.png" alt="Фотографии лицензий" width="" height="">
 				</section>
-			</div>
-
-			<div class="inner-container">
+			
 				<section class="partners about__partners">
 						<h3 class="visually-hidden">Партнеры</h3>
 
 						<ul class="partners__list">
 							<li class="partners__item">
 								<p class="visually-hidden">Industrial and commercial bank of China</p>
-								<img src="img/Industrial_and_commercial_bank_of_China_1x.png" alt="Логотип «Industrial and commercial bank of China»" width="" height="">
+								<img class="partners__img" src="img/Industrial_and_commercial_bank_of_China_1x.png" alt="Логотип «Industrial and commercial bank of China»" width="" height="">
 							</li>
 							<li class="partners__item">
 								<p class="visually-hidden">China minsheng bank</p>
-								<img src="img/China_minsheng_bank_1x.png" alt="Логотип «China minsheng bank»" width="" height="">
+								<img class="partners__img" src="img/China_minsheng_bank_1x.png" alt="Логотип «China minsheng bank»" width="" height="">
 							</li>
 							<li class="partners__item">
 								<p class="visually-hidden">China citic bank international</p>
-								<img src="img/China_citic_bank_international_1x.png" alt="Логотип «China citic bank international»" width="" height="">
+								<img class="partners__img" src="img/China_citic_bank_international_1x.png" alt="Логотип «China citic bank international»" width="" height="">
 							</li>
 						</ul>
 				</section>
 			</div>
 		</section>
 
-		<div class="inner-container">
-			<section class="call-for-action main-content__call-for-action">
-				<h2 class="main-heading">Начните зарабатывать уже сегодня</h2>
+		<section class="call-for-action main-content__call-for-action">
+			<div class="inner-container_large">
+				<h2 class="main-heading call-for-action__heading">Начните зарабатывать уже сегодня</h2>
 
 				<p class="call-for-action__text">Пройдите простую процедуру регистрации</p>
 
-				<a class="main-link" href="#">Зарегистрироваться</a>
-			</section>
-		</div>
+				<a class="main-link call-for-action__link" href="#">Зарегистрироваться</a>
+			</div>
+		</section>
 	</main>
 
 	<footer class="page-footer">
-		<div class="page-footer__row inner-container">
-			<ul class="menu main-menu">
-				<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Компания</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Карьера</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Документы</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-			</ul>
-			<ul class="menu user-menu">
-				<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
-			</ul>
-			<!-- ЗАМЕНИТЬ ???? -->
-			<!-- bootstrap components dropdowns -->
-			<div class="dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ru</button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<li><a class="dropdown-item" href="#">ch</a></li>
-				    <li><a class="dropdown-item" href="#">en</a></li>
-				    <li><a class="dropdown-item" href="#">de</a></li>
-				    <li><a class="dropdown-item" href="#">pt</a></li>
+		<div class="inner-container_large">
+			<div class="page-footer__row">
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
+				</ul>
+				
+				<!-- Custom language picker -->
+				<div class="language-picker">
+					<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code">ru</span>
+					</button>
+					<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown" role="listbox" style="display: none;">
+						<li class="lang-list__lang">
+							<a lang="zh" hreflang="zh" href="#" class="lang-list__link" role="option">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a lang="en" hreflang="en" href="#" class="lang-list__link" role="option">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a lang="de" hreflang="de" href="#" class="lang-list__link" role="option">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a lang="pt" hreflang="pt" href="#" class="lang-list__link" role="option">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">pt</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a lang="ru" hreflang="ru" href="#" class="lang-list__link" role="option" aria-selected="true">
+								<img class="lang-list__flag" src="img/ru.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code">ru</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- Атрибут data-lang у селекта отвечает за смену флага, возможные значения: ru, en, de, pt, ch -->
+				<form action="" method="" class="language-picker-form" style="display: none;">
+					<label for="language-picker-select" class="visually-hidden">Выберите язык</label>
+					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
+						<option value="english" class="" lang="en">en</option>
+						<option value="russian" class="" lang="ru" selected>ru</option>
+						<option value="german" class="" lang="de">de</option>
+						<option value="portuguese" class="" lang="pt">pt</option>
+						<option value="chinese" class="" lang="zh">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</div>
+
+			<div class="page-footer__row">
+				<p class="page-footer__copyright">© 2020</p>
+				
+				<ul class="menu">
+					<li class="menu__item"><a href="#" class="menu__link">Политика конфиденциальности</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Пользовательское соглашение</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Клиентский договор</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Агентский договор</a></li>
 				</ul>
 			</div>
-			<!-- END OF bootstrap components dropdowns -->
-		</div>
-
-		<div class="page-footer__row inner-container">
-			<p class="copyright">© 2020</p>
-			<ul class="menu">
-				<li class="menu__item"><a href="#" class="menu__link">Политика конфиденциальности</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Пользовательское соглашение</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Клиентский договор</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Агентский договор</a></li>
-			</ul>
 		</div>
 	</footer>
 

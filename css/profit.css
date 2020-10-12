@@ -1,3 +1,11 @@
+.profit {}
+
+.main-content__profit {
+	margin-bottom: 202px;
+}
+
+.profit .main-heading {}
+
 .profit__heading {
 	margin-bottom: 70px;
 }
@@ -5,6 +13,7 @@
 .profit-list {
 	margin: 0;
 	padding: 0;
+
 	list-style: none;
 }
 
@@ -12,21 +21,35 @@
 	width: 50%;
 }
 
-.source:nth-child(2) {
+.source:nth-child(2n) {
 	text-align: right;
-    margin-left: auto;
-    margin-top: -60px; /**/
 }
 
-.source:nth-child(3) {
-    margin-top: -225px; /**/
+.profit-list__source:nth-child(2n) {
+	margin-left: auto;
 }
 
-.source:nth-child(4) {
-	text-align: right;
-    margin-left: auto;
-    margin-top: -75px; /**/
+
+
+.profit-list__source {
+	/*margin-bottom: */
 }
+
+/**/
+.profit-list__source:nth-child(1) {
+	margin-bottom: -60px;
+}
+
+.profit-list__source:nth-child(2) {
+	margin-bottom: -225px;
+}
+
+.profit-list__source:nth-child(3) {
+	margin-bottom: -75px;
+}
+/**/
+
+
 
 .source__field {
 	display: flex;
@@ -60,6 +83,9 @@
 
 .source .main-heading {
 	text-align: left;
+	font-size: 2.25rem;
+	line-height: 2.84rem;
+	letter-spacing: 0.05rem;
 }
 
 .source:nth-child(2n) .main-heading {
@@ -68,20 +94,12 @@
 
 .source__reason {
 	margin-bottom: 24px;
-
-	font-size: 2.25rem;
-	line-height: 2.84rem;
-	letter-spacing: 0.05rem;
 }
 
 .source__desc {
 	margin-bottom: 44px;
 }
 
+.source .main-link {}
+
 .source__link {}
-
-.source__link:hover {}
-
-.source__link:focus {}
-
-.source__link:active {}
