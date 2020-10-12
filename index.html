@@ -22,6 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/call-for-action.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<!-- END OF ПОТОМ УДАЛИТЬ -->
 </head>
 <body>
@@ -483,7 +484,12 @@
 		</div>
 	</footer>
 
-	<!-- <section class="modal"></section> -->
+	<!-- Атрибут data-img у div отвечает за смену картинки, возможные значения: 1, 2, 3, 4 -->
+	<section class="round-modal modal" style="display: none;">
+		<div class="round-modal__content" data-img="1">
+			<p class="round-modal__text">Инвестиции в перспективные стартапы по разработке платформ для создания приложений на основе блокчейн относятся к самым рискованным видам вложений личного капитала. Однако это реальный шанс для каждого человека, чтобы заработать свой первый миллион за пару лет. Новейшая история знает немало примеров, когда инвесторы покупали токены по минимальной цене размещения в момент проведения ICO и впоследствии получали фантастические прибыли. Например, токен Wings за два года показал доходность 1488% или более 385% годовых. Абсолютный рекордсмен по общей доходности в блокчейн стартапах – это токен NXT. За шесть лет его стоимость выросла на 765 000%. Самые терпеливые ранние инвесторы с железными нервами увеличили свой капитал в 7 600 раз! Мы предлагаем инвестиционные портфели с разумной диверсификацией активов в инновационные блокчейн стартапы (ICO). Наши инвесторы получают прибыль, которая превышает отдачу от консервативных способов вложения капитала.</p>
+		</div>
+	</section>
 
 	<!-- <script type="text/javascript" src="js/script.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

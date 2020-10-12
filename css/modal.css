@@ -1,0 +1,67 @@
+.modal {} /* тянется из бутстрапа */
+
+.round-modal {
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    /* width: 80vh; 
+    height: 80vh; */
+    width: 770px; /**/
+    height: 770px; /**/
+    padding: 20px;
+    border-radius: 50%;
+
+	/*background: linear-gradient(0deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);*/
+	background: linear-gradient(0deg, #1e0f39 24%, #4e0c13 90%);
+	box-shadow: 0 0 80px 15px rgba(255, 255, 255, 0.5);
+}
+
+.round-modal__content {
+	position: relative;
+
+	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+	background-color: #151414;
+	background-repeat: no-repeat;
+}
+
+.round-modal__content[data-img="1"] {
+	background-image: url("../img/modal-picture_1.png");
+	background-position: top 50px center;
+}
+
+.round-modal__content[data-img="2"] {
+	background-image: url("../img/modal-picture_2.png");
+	background-position: top 40px center;
+}
+
+.round-modal__content[data-img="3"] {
+	background-image: url("../img/modal-picture_3.png");
+	background-position: top 55px center;
+}
+
+.round-modal__content[data-img="4"] {
+	background-image: url("../img/modal-picture_4.png");
+	background-position: top 55px center;
+}
+
+.round-modal__text {
+	position: absolute;
+    top: 38%;
+    left: 50%;
+
+    margin: 0;
+    width: 85%;
+    max-height: 45%;
+    overflow: hidden;
+
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+
+    transform: translateX(-50%);
+}
