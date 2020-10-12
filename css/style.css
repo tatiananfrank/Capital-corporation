@@ -58,6 +58,34 @@ body {
 	color: rgba(255, 255, 255, 0.8);
 }
 
+/* Фон с мужиком */
+/*.main-content {
+	background-image: url("../img/big_man.png");
+	background-repeat: no-repeat;
+	background-position: -10px top;
+}*/
+
+.features .inner-container_large {
+	position: relative;
+}
+
+.features .inner-container_large::before {
+	position: absolute;
+	z-index: -5;
+	top: -135px;
+	left: -100px;
+	width: 732px;
+	height: 2196px;
+
+	background-image: url("../img/big_man.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 732px 2196px;
+
+	content: "";
+}
+
+/* Контейнеры */
 .inner-container_large {
 	margin: 0 auto;
     width: 1200px;
@@ -76,6 +104,7 @@ body {
     padding: 0 15px;
 }
 
+/* Доступно прячет текст */
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
