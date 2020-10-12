@@ -21,14 +21,14 @@
 }
 
 .company-info__col {
-	width: 50%;
+	width: 45%; /*50*/
 }
 
 .company-info .main-heading {
 	width: 75%;
 	
-	font-size: 2.25rem;
-	line-height: 2.813rem;
+	font-size: 2.118rem; /*36px*/
+	line-height: 2.647rem; /*45px*/
 	text-align: left;
 }
 
@@ -39,9 +39,10 @@
 .company-info__text {
 	margin-bottom: 22px;
 
-	font-size: 1.125rem;
-	line-height: 1.44rem;
-	letter-spacing: 0.1rem;
+	font-size: 1.059rem; /*18px*/
+	line-height: 1.353rem; /*23px*/
+	letter-spacing: 0.03rem; /*0.03em=3%*/
+	color: rgba(255, 255, 255, 0.5);
 }
 
 

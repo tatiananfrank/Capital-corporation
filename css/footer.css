@@ -35,6 +35,8 @@
 
 .page-footer__copyright {
 	margin: 0;
+
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .page-footer__row:last-child .menu {
@@ -46,4 +48,5 @@
 
 .page-footer__row:last-child .menu__link {
 	text-transform: none;
+	color: rgba(255, 255, 255, 0.5);
 }

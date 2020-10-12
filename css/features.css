@@ -52,7 +52,8 @@
 	/*margin-bottom: */
 
 	text-transform: uppercase;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.07rem;
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .feature .main-link {}
