@@ -12,7 +12,7 @@
 
 .company-info {
 	display: flex;
-	justify-content: space-around;
+	/*justify-content: space-around;*/
 	align-items: center;
 }
 
@@ -21,15 +21,15 @@
 }
 
 .company-info__col {
-	width: 45%;
+	/*width: 45%;*/
 }
 
 .company-info .main-heading {
-	width: 75%;
+	/*width: 75%;*/
 	
 	font-size: 2.118rem; /*36px*/
 	line-height: 2.647rem; /*45px*/
-	text-align: left;
+	/*text-align: left;*/
 }
 
 .company-info__heading {
@@ -53,11 +53,11 @@
 .company-info .main-link {}
 
 .company-info__link:nth-of-type(1) {
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 }
 
 .company-info__img {
-	width: 35%;
+	/*width: 35%;*/
 }
 
 .partners {}
@@ -75,9 +75,137 @@
 }
 
 .partners__item {
-	width: 30%;
+	/*width: 30%;*/
 }
 
 .partners__img {
 	width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	.company-info {
+		position: relative;
+
+	    flex-direction: column;
+	}
+
+	.company-info__col {
+		max-width: 520px;
+	}
+
+	.company-info .main-heading {
+		width: 380px;
+
+		text-align: center;
+	}
+
+	.company-info__heading {
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.company-info__text {
+		text-align: center;
+	}
+
+	.company-info__link {
+		position: absolute;
+    	bottom: 0;
+	}
+
+	.company-info__link:nth-of-type(1) {
+		right: 50%;
+    	transform: translateX(-15px);
+	}
+
+	.company-info__link:nth-of-type(2) {
+		left: 50%;
+    	transform: translateX(15px);
+	}
+
+	.company-info__img {
+		margin-bottom: 85px;
+		width: 335px;
+	}
+
+	.partners {
+		max-width: 600px;
+	}
+
+	.about__partners {
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.partners__item {
+		width: 32%;
+	}
+}
+
+/* Desktop normal */
+@media (min-width: 992px) {
+	.company-info {
+		position: static;
+
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.company-info__col {
+		width: 45%;
+		max-width: none;
+	}
+
+	.company-info .main-heading {
+		width: 75%;
+
+		text-align: left;
+	}
+
+	.company-info__heading {
+		margin-left: 0;
+    	margin-right: 0;
+	}
+
+	.company-info__text {
+		text-align: left;
+	}
+
+	.company-info__link {
+		position: static;
+    	bottom: unset;
+	}
+
+	.company-info__link:nth-of-type(1) {
+		right: unset;
+
+		margin-right: 20px;
+
+		transform: none;
+	}
+
+	.company-info__link:nth-of-type(2) {
+		left: unset;
+
+    	transform: none;
+	}
+
+	.company-info__img {
+		margin-bottom: 0;
+		width: 35%;
+	}
+
+	.partners {
+		max-width: none;
+	}
+
+	.about__partners {
+		margin-left: 0;
+    	margin-right: 0;
+	}
+
+	.partners__item {
+		width: 30%;
+	}
 }

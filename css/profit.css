@@ -31,7 +31,7 @@
 }
 
 .profit-list__source {
-	margin-bottom: -75px;
+	/*margin-bottom: -75px;*/
 }
 
 .profit-list__source:last-child {
@@ -101,3 +101,17 @@
 .source .main-link {}
 
 .source__link {}
+
+/* Tablet */
+@media (min-width: 768px) {
+	.profit-list__source {
+		margin-bottom: -15px;
+	}
+}
+
+/* Desktop normal */
+@media (min-width: 992px) {
+	.profit-list__source {
+		margin-bottom: -75px;
+	}
+}

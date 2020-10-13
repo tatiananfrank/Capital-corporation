@@ -9,3 +9,22 @@
 	width: 181px; /**/
 	height: 47px; /**/
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+	.main-content .logo {
+		display: none;
+	}
+}
+
+/* Desktop normal */
+@media (min-width: 992px) {
+	.page-header .logo {
+		display: none;
+	}
+
+	.main-content .logo {
+		display: block;
+	}
+}
+

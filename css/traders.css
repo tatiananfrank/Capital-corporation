@@ -63,17 +63,17 @@
 
 .cases-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly; /**/
 	margin: 0;
 	padding: 0;
-	width: 55%;
+	width: 100%; /**/
 	
 	list-style: none;
 }
 
 .cases__cases-list {
-	margin-left: auto;
-	margin-right: auto;
+	/*margin-left: auto;
+	margin-right: auto;*/
 }
 
 .case {}
@@ -125,4 +125,20 @@
 	position: absolute;
     top: -12px;
     right: 0;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	/*.cases-list {
+	    justify-content: space-evenly;
+	    width: 100%;
+	}*/
+}
+
+/* Desktop normal */
+@media (min-width: 992px) {
+	/*.cases-list {
+		justify-content: space-between;
+		width: 55%;
+	}*/
 }

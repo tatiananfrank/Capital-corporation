@@ -1,11 +1,11 @@
 .page-header {
-	margin-bottom: 30px; /**/
+	/*margin-bottom: 30px;
 
-	border-bottom: 3px solid rgba(188, 0, 0, 0.2);
+	border-bottom: 3px solid rgba(188, 0, 0, 0.2);*/
 }
 
 .main-nav {
-	display: flex;
+	/*display: flex;*/
 	align-items: center;
 	justify-content: space-between;
 	min-height: 85px; 
@@ -39,8 +39,8 @@
 
 /* Основное меню */
 .main-menu {
-    justify-content: space-between;
-    width: 63%;
+    /*justify-content: space-between;
+    width: 63%;*/
 }
 
 .main-menu .menu__link:hover {}
@@ -217,7 +217,16 @@
 /* Tablet */
 @media (min-width: 768px) {
 	.page-header {
-		/*position: relative;*/
+		margin-bottom: 70px;
+		padding: 65px 60px; 
+
+		border: none;
+	}
+
+	.page-header .inner-container_large {
+		display: flex;
+    	justify-content: space-between;
+    	align-items: center;
 	}
 
 	.burger {
@@ -260,4 +269,48 @@
 		transform: translate(0, -2px) rotate(-45deg);
 	}
 	/* END OF Классы при открытии меню */
+
+	.main-nav {
+		display: none; /**/
+	}
+
+	.main-menu {
+		flex-wrap: wrap;
+	    justify-content: flex-start;
+
+	    margin-left: -50px;
+	    width: 80%;
+	}
+}
+
+/* Desktop normal */
+@media (min-width: 992px) {
+	.page-header {
+		margin-bottom: 30px;
+		padding: 0;
+
+		border-bottom: 3px solid rgba(188, 0, 0, 0.2);
+	}
+
+	.page-header .inner-container_large {
+		display: block;
+    	justify-content: unset;
+    	align-items: unset;
+	}
+
+	.burger {
+		display: none;
+	}
+
+	.main-nav {
+		display: flex; /**/
+	}
+
+	.main-menu {
+		flex-wrap: nowrap;
+	    justify-content: space-between;
+	    
+	    margin-left: 0;
+	    width: 63%;
+	}
 }
