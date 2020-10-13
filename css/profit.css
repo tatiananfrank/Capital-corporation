@@ -1,7 +1,7 @@
 .profit {}
 
 .main-content__profit {
-	margin-bottom: 202px;
+	margin-bottom: 200px;
 }
 
 .profit .main-heading {}
@@ -29,37 +29,18 @@
 	margin-left: auto;
 }
 
-
-
 .profit-list__source {
-	/*margin-bottom: */
-}
-
-/**/
-.profit-list__source:nth-child(1) {
-	margin-bottom: -60px;
-}
-
-.profit-list__source:nth-child(2) {
-	margin-bottom: -225px;
-}
-
-.profit-list__source:nth-child(3) {
 	margin-bottom: -75px;
 }
-/**/
 
-
-
-.source__field {
-	display: flex;
-    flex-direction: column;
-
-    margin-bottom: 38px;
+.profit-list__source:last-child {
+	margin-bottom: 0;
 }
 
 .source__field,
 .source__desc {
+	margin: 0;
+
 	font-size: 1.177rem; /*20px*/
 	font-weight: 400;
 	line-height: 1.486rem; /*25.26px*/
@@ -67,8 +48,16 @@
 	color: rgba(255, 255, 255, 0.5);
 }
 
+.source__field {
+	display: flex;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+}
+
 .source__perc {
-	margin-bottom: -70px;
+	margin-left: -10px;
+	margin-bottom: -65px;
 
 	background: #4f0c12; /* Фолбэк для градиента */
 	background: -webkit-linear-gradient(90deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);
@@ -79,7 +68,11 @@
 	font-weight: 700;
 	font-size: 12.353rem; /*210px*/
 	line-height: 15.588rem; /*265px*/
-	letter-spacing: 0.03rem;/*0.03em=3%*/
+	letter-spacing: 0.03rem; /*0.03em=3%*/
+}
+
+.source:nth-child(2n) .source__perc {
+	margin-right: -10px;
 }
 
 .source .main-heading {
@@ -94,11 +87,11 @@
 }
 
 .source__reason {
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 }
 
 .source__desc {
-	margin-bottom: 44px;
+	margin-bottom: 40px;
 }
 
 .source .main-link {}

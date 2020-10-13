@@ -8,7 +8,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	min-height: 82px; /**/
+	min-height: 85px; 
 }
 
 /* Наследуется для всех менюшек */
@@ -24,6 +24,7 @@
 
 .menu__link {
 	text-transform: uppercase;
+	text-decoration: none;
 	color: inherit;
 }
 
@@ -39,7 +40,7 @@
 /* Основное меню */
 .main-menu {
     justify-content: space-between;
-    width: 63.5%;
+    width: 63%;
 }
 
 .main-menu .menu__link:hover {}
@@ -78,7 +79,7 @@
 	position: relative;
     z-index: 10;
 
-	padding: 10px 18px; /*8px 19px;*/
+	padding: 10px 18px;
 	border: none; 
     border-radius: 28.5px;
 
@@ -155,7 +156,7 @@
 .language-picker-form {}
 
 .language-picker-form__select {
-	padding: 10px 12px 10px 45px; /*9px 14px 9px 51px*/
+	padding: 10px 12px 10px 45px;
     border: none;
     border-radius: 28.5px;
 

@@ -6,20 +6,21 @@
 	/*margin: 0 auto 273px;*/
     /*width: 40%;*/
     
-    margin-bottom: 276px;
+    margin-bottom: 275px;
 }
 
 .call-for-action .main-heading {}
 
 .call-for-action__heading {
-	margin-bottom: 4px;
+	margin-bottom: 5px;
 	margin-left: auto; /**/
     margin-right: auto; /**/
-	width: 40%; /**/
+	width: 35%; /**/
 }
 
 .call-for-action__text {
-	margin-bottom: 244px;
+	margin: 0;
+	margin-bottom: 245px;
 	margin-left: auto; /**/
     margin-right: auto; /**/
 	width: 30%; /**/

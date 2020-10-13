@@ -13,13 +13,14 @@
     padding: 20px;
     border-radius: 50%;
 
+    background: #4f0c12; /* Фолбэк для градиента */
 	/*background: linear-gradient(0deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);*/
 	background: linear-gradient(0deg, #1e0f39 24%, #4e0c13 90%);
 	box-shadow: 0 0 80px 15px rgba(255, 255, 255, 0.5);
 }
 
 .round-modal__content {
-	position: relative;
+	/*position: relative;*/ /*Более адаптивный вариант*/
 
 	width: 100%;
     height: 100%;
@@ -27,31 +28,29 @@
 
 	background-color: #151414;
 	background-repeat: no-repeat;
+	background-position: top 30px center;
 }
 
 .round-modal__content[data-img="1"] {
-	background-image: url("../img/modal-picture_1.png");
-	background-position: top 50px center;
+	background-image: url("../img/modal-picture_1_cropped.png");
 }
 
 .round-modal__content[data-img="2"] {
-	background-image: url("../img/modal-picture_2.png");
-	background-position: top 40px center;
+	background-image: url("../img/modal-picture_2_cropped.png");
 }
 
 .round-modal__content[data-img="3"] {
-	background-image: url("../img/modal-picture_3.png");
-	background-position: top 55px center;
+	background-image: url("../img/modal-picture_3_cropped.png");
 }
 
 .round-modal__content[data-img="4"] {
-	background-image: url("../img/modal-picture_4.png");
-	background-position: top 55px center;
+	background-image: url("../img/modal-picture_4_cropped.png");
 }
 
-.round-modal__text {
+/* Более адаптивный вариант */
+/*.round-modal__text {
 	position: absolute;
-    top: 38%;
+    top: 34%;
     left: 50%;
 
     margin: 0;
@@ -64,4 +63,15 @@
     letter-spacing: 0.03rem;
 
     transform: translateX(-50%);
+}*/
+
+.round-modal__text {
+	margin: 0;
+	padding: 250px 80px 0;
+	max-height: 620px;
+    overflow-y: hidden;
+
+	text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
 }

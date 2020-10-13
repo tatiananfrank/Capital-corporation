@@ -43,40 +43,42 @@
 				</ul>
 
 				<!-- Custom language picker -->
+				<!-- 
+					- Атрибут aria-expanded у тега button указывает на то, показывается (развернут) ли сейчас список с языками для выбора
+					- Атрибут aria-label у тега button говорит скрин-ридерам о текущем языке страницы, у ссылок говорит, на какую версию сайта они ведут
+					- Атрибут aria-hidden="true" у картинок с флагами стран и тегов span с сокращениями языков указывает на то, что элемент не несет никакой информации, поэтому не должен бьть прочитан скрин-ридерами
+					- Атрибут hreflang="код_языка" указывает поисковым системам на наличие ссылки на версию сайта на другом языке -->
 				<div class="language-picker">
-					<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown">
-						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
-						<span class="language-picker__lang-code">ru</span>
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown" aria-label="Текущий язык сайта - русский">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16" aria-hidden="true">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
 					</button>
+
 					<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown" role="listbox" style="display: none;">
 						<li class="lang-list__lang">
-							<a lang="zh" hreflang="zh" href="#" class="lang-list__link" role="option">
-								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">ch</span>
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16" aria-hidden="true">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
 							</a>
 						</li>
 						<li class="lang-list__lang">
-							<a lang="en" hreflang="en" href="#" class="lang-list__link" role="option">
-								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">en</span>
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16" aria-hidden="true">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
 							</a>
 						</li>
 						<li class="lang-list__lang">
-							<a lang="de" hreflang="de" href="#" class="lang-list__link" role="option">
-								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">de</span>
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16" aria-hidden="true">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
 							</a>
 						</li>
 						<li class="lang-list__lang">
-							<a lang="pt" hreflang="pt" href="#" class="lang-list__link" role="option">
-								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">pt</span>
-							</a>
-						</li>
-						<li class="lang-list__lang">
-							<a lang="ru" hreflang="ru" href="#" class="lang-list__link" role="option" aria-selected="true">
-								<img class="lang-list__flag" src="img/ru.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">ru</span>
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16" aria-hidden="true">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
 							</a>
 						</li>
 					</ul>
@@ -84,15 +86,18 @@
 				<!-- END OF Custom language picker -->
 
 				<!-- No-js language picker -->
-				<!-- Атрибут data-lang у селекта отвечает за смену флага, возможные значения: ru, en, de, pt, ch -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага, возможные значения: ru, en, de, pt, ch
+					- Атрибут aria-hidden="true" у тегов option с сокращениями языков указывает на то, что элемент не несет никакой информации, поэтому не должен бьть прочитан скрин-ридерами
+					- Атрибут aria-label у тегов option говорит скрин-ридерам о том, на какую версию сайта они ведут -->
 				<form action="" method="" class="language-picker-form" style="display: none;">
-					<label for="language-picker-select" class="visually-hidden">Выберите язык</label>
+					<label for="language-picker-select" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
 					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
-						<option value="english" class="" lang="en">en</option>
-						<option value="russian" class="" lang="ru" selected>ru</option>
-						<option value="german" class="" lang="de">de</option>
-						<option value="portuguese" class="" lang="pt">pt</option>
-						<option value="chinese" class="" lang="zh">ch</option>
+						<option value="english" class="" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" class="" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" class="" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" class="" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" class="" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
 					</select>
 				</form>
 				<!-- END OF No-js language picker -->
@@ -104,8 +109,9 @@
 		
 		<section class="logo main-content__logo">
 			<div class="inner-container_large">
+				<!-- ???? название компании ????? -->
 				<h1 class="visually-hidden">Компания «Capital corporation»</h1>
-				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании «Capital corporation»" width="181" height="47">
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип «Capital corporation»" width="181" height="47">
 			</div>
 		</section>
 		
@@ -177,63 +183,70 @@
 				<h2 class="main-heading traders__heading">Кейсы наших трейдеров</h2>
 
 				<div class="traders__content">
-					<ul class="cases-switcher traders__cases-switcher" aria-controls="traders-cases-list">
+					<!-- 
+					- Атрибут aria-label - содержимое произносится скрин-ридерами
+					- Атрибут lang говорит скрин ридерам, на каком языке произносить текст из тега
+					- Атрибут aria-hidden="true" у картинок с логотипами указывает на то, что элемент не несет никакой информации, поэтому не должен бьть прочитан скрин-ридерами -->
+					<ul class="cases-switcher traders__cases-switcher" aria-controls="traders-cases-list" aria-label="Выберите модель">
 						<li class="cases-switcher__item">
-							<a href="#" class="cases-switcher__link cases-switcher__link_active">IPO</a>
+							<a href="#" class="cases-switcher__link cases-switcher__link_active" lang="en" aria-label="Выбрана" >IPO</a>
 						</li>
 						<li class="cases-switcher__item">
-							<a href="#" class="cases-switcher__link">ICO</a>
+							<a href="#" class="cases-switcher__link" lang="en">ICO</a>
 						</li>
 					</ul>
 
-					<ul class="cases traders__cases" id="traders-cases-list">
-						<li class="case">
-							<h3 class="visually-hidden">CargoX</h3>
-							<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип компании «CargoX»" width="" heiht="">
-							<table class="case__info">
-								<tr>
-									<td>Вход</td>
-									<td>$0,03</td>
-								</tr>
-								<tr>
-									<td>Выход</td>
-									<td>$0,11</td>
-								</tr>
-								<tr>
-									<td>Прибыль</td>
-									<td>366%</td>
-								</tr>
-							</table>
-						</li>
-						<li class="case">
-							<h3 class="visually-hidden">ethereum</h3>
-							<img class="case__logo" src="img/ethereum_1x.png" alt="Логотип компании «ethereum»" width="" heiht="">
-							<table class="case__info">
-								<tr>
-									<td>Вход</td>
-									<td>$8,06</td>
-								</tr>
-								<tr>
-									<td>Выход</td>
-									<td>$978,42</td>
-								</tr>
-								<tr>
-									<td>Прибыль</td>
-									<td>12 139%</td>
-								</tr>
-							</table>
-						</li>
-					</ul>
+					<div class="cases">
+						<ul class="cases-list cases__cases-list" id="traders-cases-list" aria-label="Данные по кейсам">
+							<li class="case">
+								<h3 class="visually-hidden">CargoX</h3>
+								<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип «CargoX»" width="" heiht="" aria-hidden="true">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$0,11</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>366%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">ethereum</h3>
+								<img class="case__logo" src="img/ethereum_1x.png" alt="Логотип «ethereum»" width="" heiht="" aria-hidden="true">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$8,06</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$978,42</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>12 139%</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
 
-					<div class="cases-arrows" style="display: flex; justify-content: space-between;">
-						<span class="arrow" style="display: flex;">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="44" style="filter: drop-shadow(0px 0px 5px #3100BC); cursor: pointer;"><path xmlns="http://www.w3.org/2000/svg" fill="#3100BC" d="M492,236H68.442l70.164-69.824c7.829-7.792,7.859-20.455,0.067-28.284c-7.792-7.83-20.456-7.859-28.285-0.068l-104.504,104c-0.007,0.006-0.012,0.013-0.018,0.019c-7.809,7.792-7.834,20.496-.002,28.314c0.007,0.006,0.012,0.013,0.018,0.019l104.504,104c7.828,7.79,20.492,7.763,28.285-0.068c7.792-7.829,7.762-20.492-0.067-28.284L68.442,276H492c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"/></svg>
-						</span>
-						<span class="arrow" style="display: flex;">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" width="44" style="filter: drop-shadow(0px 0px 5px #3100BC); cursor: pointer; transform: scale(-1, 1);"><path xmlns="http://www.w3.org/2000/svg" fill="#3100BC" d="M492,236H68.442l70.164-69.824c7.829-7.792,7.859-20.455,0.067-28.284c-7.792-7.83-20.456-7.859-28.285-0.068l-104.504,104c-0.007,0.006-0.012,0.013-0.018,0.019c-7.809,7.792-7.834,20.496-.002,28.314c0.007,0.006,0.012,0.013,0.018,0.019l104.504,104c7.828,7.79,20.492,7.763,28.285-0.068c7.792-7.829,7.762-20.492-0.067-28.284L68.442,276H492c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"/></svg>
-						</span>
+						<div class="cases-controls cases__cases-controls" aria-controls="traders-cases-list">
+							<span class="cases-controls__prev">
+								<span class="visually-hidden">Назад</span>
+								<svg class="cases-controls__arrow" width="44" viewBox="0 0 50 50"><polygon points="5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24"/></svg>
+							</span>
+							<span class="cases-controls__next">
+								<span class="visually-hidden">Вперед</span>
+								<svg class="cases-controls__arrow" width="44" viewBox="0 0 50 50"><polygon points="5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24"/></svg>
+							</span>
+						</div>
 					</div>
-					
 
 					<!-- <ul class="cases">
 						<li class="cases__group">
@@ -241,7 +254,7 @@
 							<ul class="cases__group-details">
 								<li class="case">
 									<h3 class="visually-hidden">CargoX</h3>
-									<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип компании «CargoX»" width="" heiht="">
+									<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип «CargoX»" width="" heiht="">
 									<table class="case__info">
 										<tr>
 											<td>Вход</td>
@@ -259,7 +272,7 @@
 								</li>
 								<li class="case">
 									<h3 class="visually-hidden">ethereum</h3>
-									<img class="case__logo" src="img/ethereum_1x.png" alt="Логотип компании «ethereum»" width="" heiht="">
+									<img class="case__logo" src="img/ethereum_1x.png" alt="Логотип «ethereum»" width="" heiht="">
 									<table class="case__info">
 										<tr>
 											<td>Вход</td>
@@ -277,7 +290,7 @@
 								</li>
 								<li class="case" style="display: none;">
 									<h3 class="visually-hidden">SPECTRE</h3>
-									<img class="case__logo" src="img/spectre_1x.png" alt="Логотип компании «SPECTRE»" width="" heiht="">
+									<img class="case__logo" src="img/spectre_1x.png" alt="Логотип «SPECTRE»" width="" heiht="">
 									<table class="case__info">
 										<tr>
 											<td>Вход</td>
@@ -300,7 +313,7 @@
 							<ul class="cases__group-details" style="display: none;">
 								<li class="case">
 									<h3 class="visually-hidden">zscaler</h3>
-									<img class="case__logo" src="img/zscaler_1x.png" alt="Логотип компании «zscaler»" width="" heiht="">
+									<img class="case__logo" src="img/zscaler_1x.png" alt="Логотип «zscaler»" width="" heiht="">
 									<table class="case__info">
 										<tr>
 											<td>В 1-й день</td>
@@ -318,7 +331,7 @@
 								</li>
 								<li class="case">
 									<h3 class="visually-hidden">Roku</h3>
-									<img class="case__logo" src="img/roku_1x.png" alt="Логотип компании «Roku»" width="" heiht="">
+									<img class="case__logo" src="img/roku_1x.png" alt="Логотип «Roku»" width="" heiht="">
 									<table class="case__info">
 										<tr>
 											<td>В 1-й день</td>
@@ -336,7 +349,7 @@
 								</li>
 								<li class="case">
 									<h3 class="visually-hidden">FORESCOUT</h3>
-									<img class="case__logo" src="img/forescout_1x.png" alt="Логотип компании «FORESCOUT»" width="" heiht="">
+									<img class="case__logo" src="img/forescout_1x.png" alt="Логотип «FORESCOUT»" width="" heiht="">
 									<table class="case__info">
 										<tr>
 											<td>В 1-й день</td>
@@ -375,7 +388,7 @@
 						<a class="main-link company-info__link" href="#">Подробнее</a>
 						<a class="main-link company-info__link" href="#">Документы</a>
 					</div>
-					<img class="company-info__img" src="img/certificates_1x.png" alt="Фотографии лицензий" width="" height="">
+					<img class="company-info__img" src="img/certificates_1x_cropped.png" alt="Фотографии лицензий" width="" height="">
 				</section>
 			
 				<section class="partners about__partners">
@@ -384,15 +397,15 @@
 						<ul class="partners__list">
 							<li class="partners__item">
 								<p class="visually-hidden">Industrial and commercial bank of China</p>
-								<img class="partners__img" src="img/Industrial_and_commercial_bank_of_China_1x.png" alt="Логотип «Industrial and commercial bank of China»" width="" height="">
+								<img class="partners__img" src="img/Industrial_and_commercial_bank_of_China_1x_cropped.png" alt="Логотип «Industrial and commercial bank of China»" width="" height="">
 							</li>
 							<li class="partners__item">
 								<p class="visually-hidden">China minsheng bank</p>
-								<img class="partners__img" src="img/China_minsheng_bank_1x.png" alt="Логотип «China minsheng bank»" width="" height="">
+								<img class="partners__img" src="img/China_minsheng_bank_1x_cropped.png" alt="Логотип «China minsheng bank»" width="" height="">
 							</li>
 							<li class="partners__item">
 								<p class="visually-hidden">China citic bank international</p>
-								<img class="partners__img" src="img/China_citic_bank_international_1x.png" alt="Логотип «China citic bank international»" width="" height="">
+								<img class="partners__img" src="img/China_citic_bank_international_1x_cropped.png" alt="Логотип «China citic bank international»" width="" height="">
 							</li>
 						</ul>
 				</section>
@@ -427,39 +440,36 @@
 				
 				<!-- Custom language picker -->
 				<div class="language-picker">
-					<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown">
-						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
-						<span class="language-picker__lang-code">ru</span>
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown" aria-label="Текущий язык сайта - русский">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16" aria-hidden="true">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
 					</button>
+
 					<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown" role="listbox" style="display: none;">
 						<li class="lang-list__lang">
-							<a lang="zh" hreflang="zh" href="#" class="lang-list__link" role="option">
-								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">ch</span>
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16" aria-hidden="true">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
 							</a>
 						</li>
 						<li class="lang-list__lang">
-							<a lang="en" hreflang="en" href="#" class="lang-list__link" role="option">
-								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">en</span>
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16" aria-hidden="true">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
 							</a>
 						</li>
 						<li class="lang-list__lang">
-							<a lang="de" hreflang="de" href="#" class="lang-list__link" role="option">
-								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">de</span>
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16" aria-hidden="true">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
 							</a>
 						</li>
 						<li class="lang-list__lang">
-							<a lang="pt" hreflang="pt" href="#" class="lang-list__link" role="option">
-								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">pt</span>
-							</a>
-						</li>
-						<li class="lang-list__lang">
-							<a lang="ru" hreflang="ru" href="#" class="lang-list__link" role="option" aria-selected="true">
-								<img class="lang-list__flag" src="img/ru.svg" alt="" width="25" height="16">
-								<span class="lang-list__lang-code">ru</span>
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16" aria-hidden="true">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
 							</a>
 						</li>
 					</ul>
@@ -467,15 +477,14 @@
 				<!-- END OF Custom language picker -->
 
 				<!-- No-js language picker -->
-				<!-- Атрибут data-lang у селекта отвечает за смену флага, возможные значения: ru, en, de, pt, ch -->
 				<form action="" method="" class="language-picker-form" style="display: none;">
-					<label for="language-picker-select" class="visually-hidden">Выберите язык</label>
+					<label for="language-picker-select" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
 					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
-						<option value="english" class="" lang="en">en</option>
-						<option value="russian" class="" lang="ru" selected>ru</option>
-						<option value="german" class="" lang="de">de</option>
-						<option value="portuguese" class="" lang="pt">pt</option>
-						<option value="chinese" class="" lang="zh">ch</option>
+						<option value="english" class="" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" class="" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" class="" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" class="" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" class="" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
 					</select>
 				</form>
 				<!-- END OF No-js language picker -->
@@ -498,6 +507,12 @@
 	<section class="round-modal modal" style="display: none;">
 		<div class="round-modal__content" data-img="1">
 			<p class="round-modal__text">Инвестиции в перспективные стартапы по разработке платформ для создания приложений на основе блокчейн относятся к самым рискованным видам вложений личного капитала. Однако это реальный шанс для каждого человека, чтобы заработать свой первый миллион за пару лет. Новейшая история знает немало примеров, когда инвесторы покупали токены по минимальной цене размещения в момент проведения ICO и впоследствии получали фантастические прибыли. Например, токен Wings за два года показал доходность 1488% или более 385% годовых. Абсолютный рекордсмен по общей доходности в блокчейн стартапах – это токен NXT. За шесть лет его стоимость выросла на 765 000%. Самые терпеливые ранние инвесторы с железными нервами увеличили свой капитал в 7 600 раз! Мы предлагаем инвестиционные портфели с разумной диверсификацией активов в инновационные блокчейн стартапы (ICO). Наши инвесторы получают прибыль, которая превышает отдачу от консервативных способов вложения капитала.</p>
+			<!-- 2
+			Современный технологичный сектор превратился в драйвер мировой экономики. Крупнейшие IT-корпорации генерируют глобальные изменения в различных сферах экономики, порождая сильнейшие импульсы для развития отдельных сегментов и отраслей. Они развиваются даже на стагнирующих или падающих рынках. Акции таких компаний обладают огромным потенциалом к долгосрочному росту; инвестиции приносят стабильную прибыль на протяжении многих лет. Например, Facebook, Google и Microsoft на практике реализовали эффект масштаба, когда компания вышла на мировой уровень, а капитализация стали исчисляться десятками миллиардов долларов. Сегодня перед инвесторами открываются захватывающие возможности для вложений в высокие технологии. Наши специалисты включили в инвестиционные портфели акции самых надёжных и быстрорастущих сегментов цифровой экономики. Инвестируйте вместе с нами в успешные IT-компании и делайте долгосрочные вложения в собственное будущее. -->
+			<!-- 3
+			Фьючерсная торговля открывает огромные возможности для продвинутых инвесторов. Мгновенное заключение сделок, упрощенная система расчетов, низкие транзакционные издержки привлекают инвесторов с небольшим капиталом. Огромное количество активных участников обеспечивает высокую ликвидность операций с фьючерсными контрактами. Безопасное хеджирование потенциальных рисков защищает позиции от убытков. Прибыль можно получить как при покупке, так и при продаже фьючерсов. Гарантированное исполнение обязательств по контракту делают фьючерсную торговлю одним из самых надежных финансовых инструментов. Наша компания предоставляет возможности для неограниченных заработков при операциях с индексными, товарными, сырьевыми, валютными фьючерсами. Выстраивая собственные торговые стратегии, хеджируя риски по базовым активам, мы извлекаем безрисковую арбитражную прибыль и максимизируем доход от операций с производными инструментами. -->
+			<!-- 4
+			Участие в IPO представляет собой быстрый и достаточно доходный способ для приумножения капитала. При умеренном уровне риска у инвесторов с небольшим капиталом появляется возможность принять участие в первичном публичном размещении акций, чтобы выгодно вложиться в перспективные компании. Средняя доходность инвестиций в IPO на порядок выше, чем рост курсовой стоимости акций и многократно превышает проценты по банковскому депозиту. В первые дни и недели после проведения IPO отмечается высокая волатильность акций. В это время инвесторы фиксируют солидную прибыль. По статистике, цена акций после IPO растет и порядка 70-80% инвестиций приносят ожидаемую прибыль. Доходность в одной сделке составляет от 30 до 100%, время сделки до одного месяца. Инвестируйте в IPO вместе с нашей компанией и наслаждайтесь высокой прибылью от краткосрочных вложений в акции с высоким потенциалом к росту. -->
 		</div>
 	</section>
 

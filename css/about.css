@@ -7,7 +7,7 @@
 .about .main-heading {}
 
 .about__heading {
-	margin-bottom: 79px;
+	margin-bottom: 70px;
 }
 
 .company-info {
@@ -17,11 +17,11 @@
 }
 
 .about__company-info {
-	margin-bottom: -10px;
+	margin-bottom: 45px;
 }
 
 .company-info__col {
-	width: 45%; /*50*/
+	width: 45%;
 }
 
 .company-info .main-heading {
@@ -37,7 +37,8 @@
 }
 
 .company-info__text {
-	margin-bottom: 22px;
+	margin: 0;
+	margin-bottom: 25px;
 
 	font-size: 1.059rem; /*18px*/
 	line-height: 1.353rem; /*23px*/
@@ -45,15 +46,9 @@
 	color: rgba(255, 255, 255, 0.5);
 }
 
-
-
-/**/
 .company-info__text:nth-of-type(3) {
-	margin-bottom: 30px; /**/
+	margin-bottom: 30px; 
 }
-/**/
-
-
 
 .company-info .main-link {}
 
@@ -62,7 +57,7 @@
 }
 
 .company-info__img {
-	width: 40%;
+	width: 35%;
 }
 
 .partners {}
@@ -80,7 +75,7 @@
 }
 
 .partners__item {
-	width: 33%;
+	width: 30%;
 }
 
 .partners__img {
