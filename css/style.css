@@ -68,28 +68,31 @@ body {
 	background-position: -10px top;
 }*/
 
-.features .inner-container_large {
-	position: relative;
-}
+/* Desktop normal */
+@media (min-width: 992px) {
+	.features .inner-container_large {
+		position: relative;
+	}
 
-.features .inner-container_large::before {
-	position: absolute;
-	z-index: -5;
-	top: -135px;
-	left: -100px;
-	width: 732px;
-	height: 2196px;
+	.features .inner-container_large::before {
+		position: absolute;
+		z-index: -5;
+		top: -135px;
+		left: -100px;
+		width: 732px;
+		height: 2196px;
 
-	background-image: url("../img/big_man_1x.png");
-	background-repeat: no-repeat;
-	background-position: left top;
-	background-size: 732px 2196px;
+		background-image: url("../img/big_man_1x.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 732px 2196px;
 
-	content: "";
+		content: "";
+	}
 }
 
 /* Контейнеры */
-.inner-container_large {
+/*.inner-container_large {
 	margin: 0 auto;
     width: 1200px;
     padding: 0 15px;
@@ -103,8 +106,71 @@ body {
 
 .inner-container_medium {
 	margin: 0 auto;
-    width: 1000px;
+	width: 1000px;
     padding: 0 15px;
+}*/
+
+/* Tablet */
+@media (min-width: 768px) {
+	.inner-container_large {
+		margin: 0 auto;
+
+	    width: 95%; /**/
+	    max-width: 890px; /**/
+
+	    padding: 0 15px;
+	}
+
+	.inner-container_small {
+		margin: 0 auto;
+
+	    width: 64%; /**/
+	    max-width: 600px;
+
+	    padding: 0 15px;
+	}
+
+	.inner-container_medium {
+		margin: 0 auto;
+
+	    width: 85%; /**/
+	    max-width: 800px;
+
+	    padding: 0 15px;
+	}
+}
+
+/* Desktop normal */
+@media (min-width: 992px) {
+	.inner-container_large {
+		margin: 0 auto;
+
+	    /*width: 1200px;*/
+	    width: 95%; /**/
+	    max-width: 1200px; /**/
+
+	    padding: 0 15px;
+	}
+
+	.inner-container_small {
+		margin: 0 auto;
+
+	    /*width: 800px;*/
+	    width: 63%; /*63.3%*/
+	    max-width: 800px;
+
+	    padding: 0 15px;
+	}
+
+	.inner-container_medium {
+		margin: 0 auto;
+
+	    /*width: 1000px;*/
+	    width: 80%; /*79.2%*/
+	    max-width: 1000px;
+
+	    padding: 0 15px;
+	}
 }
 
 /* Доступно прячет текст */
@@ -122,7 +188,8 @@ body {
 /* Кнопки-ссылки */
 .main-link {
 	display: inline-block;
-	padding: 20px 35px;
+	/*padding: 20px 35px;*/
+	padding: 20px 30px;
 	border: 3px solid #BC0000;
 	border-radius: 28px;
 

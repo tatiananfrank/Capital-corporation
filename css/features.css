@@ -23,12 +23,16 @@
 .feature {
 	display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 55%;
+
+    /*justify-content: space-between;
+    width: 55%;*/
+    justify-content: flex-end;
 }
 
 .feature__col {
-	width: 63%;
+	/*width: 63%;*/
+	margin-right: 20px;
+	max-width: 390px;
 }
 
 .feature .main-heading {

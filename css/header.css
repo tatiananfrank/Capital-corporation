@@ -58,6 +58,8 @@
 	border-radius: 28.5px;
 	background-color: rgba(224, 43, 43, 0.3);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	white-space: nowrap;
 }
 
 .user-menu .menu__link:hover,
@@ -88,6 +90,7 @@
 
 	color: inherit;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 .language-picker__button:hover {
@@ -209,4 +212,52 @@
 .language-picker-form__select option {
 	background-color: #fff;
     color: #000;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	.page-header {
+		/*position: relative;*/
+	}
+
+	.burger {
+		padding: 10px 5px;
+	    border: none;
+
+	    background-color: transparent;
+
+	    cursor: pointer;
+	}
+
+	.burger__icon {
+		display: block;
+		width: 30px;
+		height: 2px;
+		border-radius: 81.5px;
+
+		background-color: rgba(188, 0, 0, 0.7);
+		/*background-color: rgba(188, 0, 0, 1);*/
+	}
+
+	.burger__icon:first-child {
+		transform: translateY(-5px);
+	}
+
+	.burger__icon:last-child {
+		transform: translateY(5px);
+	}
+
+	/* Классы при открытии меню */
+	.burger_active .burger__icon:first-child {
+		transform: translate(0, 2px) rotate(45deg);
+	}
+
+	.burger_active .burger__icon:nth-child(2) {
+		opacity: 0;
+	}
+
+	.burger_active .burger__icon:last-child {
+		transform: translate(0, -2px) rotate(-45deg);
+	}
+	/* END OF Классы при открытии меню */
 }
