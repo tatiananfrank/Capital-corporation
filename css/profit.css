@@ -6,9 +6,7 @@
 
 .profit .main-heading {}
 
-.profit__heading {
-	margin-bottom: 70px;
-}
+.profit__heading {}
 
 .profit-list {
 	margin: 0;
@@ -22,21 +20,7 @@
 	max-width: 380px;
 }
 
-.source:nth-child(2n) {
-	text-align: right;
-}
-
-.profit-list__source:nth-child(2n) {
-	margin-left: auto;
-}
-
-.profit-list__source {
-	/*margin-bottom: -75px;*/
-}
-
-.profit-list__source:last-child {
-	margin-bottom: 0;
-}
+.profit-list__source {}
 
 .source__field,
 .source__desc {
@@ -57,9 +41,6 @@
 }
 
 .source__perc {
-	margin-left: -10px;
-	margin-bottom: -65px;
-
 	background: #4f0c12; /* Фолбэк для градиента */
 	background: -webkit-linear-gradient(90deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);
 	-webkit-background-clip: text;
@@ -75,19 +56,10 @@
 	/*filter: drop-shadow(50px -25px 0px #4f0c123b);*/
 }
 
-.source:nth-child(2n) .source__perc {
-	margin-right: -10px;
-}
-
 .source .main-heading {
-	text-align: left;
 	font-size: 2.118rem; /*36px*/
 	line-height: 2.675rem; /*45.47px*/
 	letter-spacing: 0.065rem; 
-}
-
-.source:nth-child(2n) .main-heading {
-	text-align: right;
 }
 
 .source__reason {
@@ -102,10 +74,70 @@
 
 .source__link {}
 
+/* Mobile */
+@media (min-width: 576px) {
+	.profit__heading {
+		margin-bottom: 50px;
+	}
+
+	.source {
+		text-align: center;
+	}
+
+	.profit-list__source {
+		margin-bottom: 65px;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.profit-list__source:last-child {
+		margin-bottom: 0;
+	}
+
+	.source__perc {
+		margin-bottom: -55px;
+	}
+}
+
 /* Tablet */
 @media (min-width: 768px) {
+	.profit__heading {
+		margin-bottom: 70px;
+	}
+
+	.source {
+		text-align: left;
+	}
+
+	.source:nth-child(2n) {
+		text-align: right;
+	}
+
 	.profit-list__source {
 		margin-bottom: -15px;
+		margin-left: 0;
+    	margin-right: 0;
+	}
+
+	.profit-list__source:nth-child(2n) {
+		margin-left: auto;
+	}
+
+	.source__perc {
+		margin-left: -10px;
+		margin-bottom: -65px;
+	}
+
+	.source:nth-child(2n) .source__perc {
+		margin-right: -10px;
+	}
+
+	.source .main-heading {
+		text-align: left;
+	}
+
+	.source:nth-child(2n) .main-heading {
+		text-align: right;
 	}
 }
 

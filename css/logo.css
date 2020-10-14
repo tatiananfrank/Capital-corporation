@@ -6,14 +6,25 @@
 
 .logo__img {
 	display: block;
-	width: 181px; /**/
-	height: 47px; /**/
+}
+
+/* Mobile */
+@media (min-width: 576px) {
+	.logo__img {
+		width: 128px; /**/
+		height: 33px; /**/
+	}
+
+	.main-content .logo {
+		display: none;
+	}
 }
 
 /* Tablet */
 @media (min-width: 768px) {
-	.main-content .logo {
-		display: none;
+	.logo__img {
+		width: 181px; /**/
+		height: 47px; /**/
 	}
 }
 

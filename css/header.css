@@ -214,11 +214,11 @@
     color: #000;
 }
 
-/* Tablet */
-@media (min-width: 768px) {
+/* Mobile */
+@media (min-width: 576px) {
 	.page-header {
 		margin-bottom: 70px;
-		padding: 65px 60px; 
+		padding: 65px 50px; 
 
 		border: none;
 	}
@@ -278,8 +278,19 @@
 		flex-wrap: wrap;
 	    justify-content: flex-start;
 
+		margin-left: -45px;
+		width: 80%;
+	}
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	.page-header {
+		padding: 65px 60px; 
+	}
+
+	.main-menu {
 	    margin-left: -50px;
-	    width: 80%;
 	}
 }
 

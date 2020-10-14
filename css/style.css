@@ -110,6 +110,41 @@ body {
     padding: 0 15px;
 }*/
 
+/* Mobile XS */
+@media (min-width: 576px) {
+
+}
+
+/* Mobile */
+@media (min-width: 576px) {
+	.inner-container_large {
+		margin: 0 auto;
+
+	    width: 100%; /**/
+	    max-width: 580px; /**/
+
+	    padding: 0 15px;
+	}
+
+	.inner-container_small {
+		margin: 0 auto;
+
+	    width: 100%; /**/
+	    max-width: 480px;
+
+	    padding: 0 15px;
+	}
+
+	.inner-container_medium {
+		margin: 0 auto;
+
+	    width: 100%; /**/
+	    max-width: 460px;
+
+	    padding: 0 15px;
+	}
+}
+
 /* Tablet */
 @media (min-width: 768px) {
 	.inner-container_large {

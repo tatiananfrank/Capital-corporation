@@ -6,7 +6,7 @@
 	/*margin: 0 auto 273px;*/
     /*width: 40%;*/
     
-    margin-bottom: 275px;
+    /*margin-bottom: 275px;*/
 }
 
 .call-for-action .main-heading {}
@@ -37,3 +37,16 @@
 
 .call-for-action__link {}
 
+/* Mobile */
+@media (min-width: 576px) {
+	.main-content__call-for-action {
+		margin-bottom: 200px;
+	}
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	.main-content__call-for-action {
+		margin-bottom: 275px;
+	}
+}

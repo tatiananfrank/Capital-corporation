@@ -51,14 +51,14 @@
 	color: rgba(255, 255, 255, 0.5);
 }
 
-/* Tablet */
-@media (min-width: 768px) {
+/* Mobile */
+@media (min-width: 576px) {
 	.page-footer {
-	    padding: 0 60px;
+	    padding: 0 10px;
 	}
 
 	.page-footer__row:first-child .menu__item {
-		margin-left: 50px;
+		margin-left: 45px;
     	margin-bottom: 30px;
 	}
 
@@ -91,6 +91,17 @@
 
 	.page-footer__row:last-child .menu__item:nth-child(2n) {
 		text-align: right;
+	}
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	.page-footer {
+	    padding: 0 60px;
+	}
+
+	.page-footer__row:first-child .menu__item {
+		margin-left: 50px;
 	}
 }
 

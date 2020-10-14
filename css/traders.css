@@ -1,8 +1,6 @@
 .traders {}
 
-.main-content__traders {
-	margin-bottom: 375px;
-}
+.main-content__traders {}
 
 .traders .main-heading {}
 
@@ -10,9 +8,7 @@
 	margin-bottom: 95px;
 }
 
-.traders__content {
-	position: relative;
-}
+.traders__content {}
 
 .cases-switcher {
 	display: flex;
@@ -107,6 +103,7 @@
 
 .cases-controls__prev,
 .cases-controls__next {
+	padding: 0;
 	border: none;
 
     background: transparent;
@@ -127,18 +124,52 @@
 
 .traders .main-link {}
 
-.traders__link {
-	position: absolute;
-    top: -12px;
-    right: 0;
+.traders__link {}
+
+/* Mobile */
+@media (min-width: 576px) {
+	.main-content__traders {
+		margin-bottom: 300px;
+	}
+
+	.cases-switcher {
+		justify-content: center;
+	}
+
+	.case:last-child {
+		display: none;
+	}
+
+	.traders__link {
+		display: none;
+	}
 }
 
 /* Tablet */
 @media (min-width: 768px) {
-	/*.cases-list {
-	    justify-content: space-evenly;
-	    width: 100%;
-	}*/
+	.main-content__traders {
+		margin-bottom: 375px;
+	}
+
+	.traders__content {
+		position: relative;
+	}
+
+	.cases-switcher {
+		justify-content: unset;
+	}
+
+	.case:last-child {
+		display: block;
+	}
+
+	.traders__link {
+		position: absolute;
+	    top: -12px;
+	    right: 0;
+
+	    display: inline-block;
+	}
 }
 
 /* Desktop normal */
