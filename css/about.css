@@ -12,7 +12,6 @@
 
 .company-info {
 	display: flex;
-	/*justify-content: space-around;*/
 	align-items: center;
 }
 
@@ -20,9 +19,7 @@
 	margin-bottom: 45px;
 }
 
-.company-info__col {
-	/*width: 45%;*/
-}
+.company-info__col {}
 
 .company-info .main-heading {
 	/*width: 75%;*/
@@ -50,14 +47,14 @@
 	margin-bottom: 30px; 
 }
 
+.company-info__img {}
+
+.company-info__links {}
+
 .company-info .main-link {}
 
-.company-info__link:nth-of-type(1) {
-	/*margin-right: 20px;*/
-}
-
-.company-info__img {
-	/*width: 35%;*/
+.company-info__link:first-child {
+	margin-right: 20px;
 }
 
 .partners {}
@@ -74,9 +71,7 @@
 	list-style: none;
 }
 
-.partners__item {
-	/*width: 30%;*/
-}
+.partners__item {}
 
 .partners__img {
 	width: 100%;
@@ -85,8 +80,6 @@
 /* Tablet */
 @media (min-width: 768px) {
 	.company-info {
-		position: relative;
-
 	    flex-direction: column;
 	}
 
@@ -109,28 +102,15 @@
 		text-align: center;
 	}
 
-	.company-info__link {
-		position: absolute;
-    	bottom: 0;
-	}
-
-	.company-info__link:nth-of-type(1) {
-		right: 50%;
-    	transform: translateX(-15px);
-	}
-
-	.company-info__link:nth-of-type(2) {
-		left: 50%;
-    	transform: translateX(15px);
-	}
-
 	.company-info__img {
-		margin-bottom: 85px;
+		margin-bottom: 20px;
 		width: 335px;
 	}
 
+	.company-info__link {}
+
 	.partners {
-		max-width: 600px;
+		max-width: 620px;
 	}
 
 	.about__partners {
@@ -146,14 +126,15 @@
 /* Desktop normal */
 @media (min-width: 992px) {
 	.company-info {
-		position: static;
-
 		flex-direction: row;
-		justify-content: space-around;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: center;
+		padding: 0 80px;
 	}
 
 	.company-info__col {
-		width: 45%;
+		width: 50%;
 		max-width: none;
 	}
 
@@ -172,29 +153,13 @@
 		text-align: left;
 	}
 
-	.company-info__link {
-		position: static;
-    	bottom: unset;
-	}
-
-	.company-info__link:nth-of-type(1) {
-		right: unset;
-
-		margin-right: 20px;
-
-		transform: none;
-	}
-
-	.company-info__link:nth-of-type(2) {
-		left: unset;
-
-    	transform: none;
-	}
-
 	.company-info__img {
 		margin-bottom: 0;
-		width: 35%;
+		width: 40%;
+    	max-width: 360px;
 	}
+
+	.company-info__link {}
 
 	.partners {
 		max-width: none;

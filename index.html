@@ -32,13 +32,17 @@
 				<img class="logo__img" src="img/logo_1x.png" alt="Логотип «Capital corporation»" width="181" height="47">
 			</div>
 
-			<button class="burger">
+			<!-- Мобильное меню
+			- Атрибут aria-expanded у тега button указывает на то, показывается (развернуто) ли сейчас меню
+			- Атрибут aria-label у тега button говорит скрин-ридерам о том, что это меню -->
+			<button class="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню">
 				<span class="burger__icon"></span>
 				<span class="burger__icon"></span>
 				<span class="burger__icon"></span>
 			</button>
+			<!-- END OF Мобильное меню -->
 
-			<nav class="main-nav">
+			<nav class="main-nav" id="main-nav">
 
 				<ul class="menu main-menu">
 					<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
@@ -247,14 +251,14 @@
 						</ul>
 
 						<div class="cases-controls cases__cases-controls" aria-controls="traders-cases-list">
-							<span class="cases-controls__prev">
+							<button class="cases-controls__prev">
 								<span class="visually-hidden">Назад</span>
 								<svg class="cases-controls__arrow" width="44" viewBox="0 0 50 50"><polygon points="5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24"/></svg>
-							</span>
-							<span class="cases-controls__next">
+							</button>
+							<button class="cases-controls__next">
 								<span class="visually-hidden">Вперед</span>
 								<svg class="cases-controls__arrow" width="44" viewBox="0 0 50 50"><polygon points="5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24"/></svg>
-							</span>
+							</button>
 						</div>
 					</div>
 
@@ -388,7 +392,7 @@
 			<div class="inner-container_large">
 				<h2 class="main-heading about__heading">О компании</h2>
 
-				<section class="company-info about__company-info">
+				<!-- <section class="company-info about__company-info">
 					<h3 class="visually-hidden">Информация</h3>
 
 					<div class="company-info__col">
@@ -399,6 +403,23 @@
 						<a class="main-link company-info__link" href="#">Документы</a>
 					</div>
 					<img class="company-info__img" src="img/certificates_1x_cropped.png" alt="Фотографии лицензий" width="" height="">
+				</section> -->
+
+				<section class="company-info about__company-info">
+					<h3 class="visually-hidden">Информация</h3>
+
+					<div class="company-info__col">
+						<p class="main-heading company-info__heading">Компания берет свое начало с 2006 года. Зарегистрирована в Китае.</p>
+						<p class="company-info__text">За 13 лет прошла путь от консалтинговой компании до крупнейшего игрока рынка инвестиций со штатом в 150 трейдеров и офисом в одном из крупнейших бизнес центров Гонконга - Three Garden Road. Офис расположен на 49 этаже, где открывается панорамный вид на деловой цент Гонконга.</p>
+						<p class="company-info__text">Получены все лицензии на инвестиционную деятельность, на представление компании в интернете и др. Заключены соглашения с тремя крупнейшими банками Китая.</p>
+					</div>
+
+					<img class="company-info__img" src="img/certificates_1x_cropped.png" alt="Фотографии лицензий" width="" height="">
+
+					<div class="company-info__links">
+						<a class="main-link company-info__link" href="#">Подробнее</a>
+						<a class="main-link company-info__link" href="#">Документы</a>
+					</div>
 				</section>
 			
 				<section class="partners about__partners">

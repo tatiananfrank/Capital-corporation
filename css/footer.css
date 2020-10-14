@@ -62,7 +62,8 @@
     	margin-bottom: 30px;
 	}
 
-	.page-footer .language-picker {
+	.page-footer .language-picker,
+	.page-footer .language-picker-form {
 	    position: absolute;
 	    top: 85px;
 	    right: 0;
@@ -104,7 +105,8 @@
     	margin-bottom: 0;
 	}
 
-	.page-footer .language-picker {
+	.page-footer .language-picker,
+	.page-footer .language-picker-form {
 	    position: relative;
 	    top: unset;
 	    right: unset;

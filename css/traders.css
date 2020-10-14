@@ -106,13 +106,19 @@
 }
 
 .cases-controls__prev,
-.cases-controls__next {}
+.cases-controls__next {
+	border: none;
+
+    background: transparent;
+    
+    cursor: pointer;
+}
 
 .cases-controls__arrow {
 	fill: #3100BC;
 	filter: drop-shadow(0px 0px 5px #3100BC);
 
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
 .cases-controls__next .cases-controls__arrow {
