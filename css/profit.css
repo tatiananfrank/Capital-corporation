@@ -1,97 +1,101 @@
-.profit {}
+	.profit {}
 
-.main-content__profit {
-	margin-bottom: 200px;
-}
+	.main-content__profit {
+		margin-bottom: 70px;
+	}
 
-.profit .main-heading {}
+	.profit .main-heading {}
 
-.profit__heading {}
-
-.profit-list {
-	margin: 0;
-	padding: 0;
-
-	list-style: none;
-}
-
-.source {
-	/*width: 50%;*/
-	max-width: 380px;
-}
-
-.profit-list__source {}
-
-.source__field,
-.source__desc {
-	margin: 0;
-
-	font-size: 1.177rem; /*20px*/
-	font-weight: 400;
-	line-height: 1.486rem; /*25.26px*/
-	letter-spacing: 0.03rem; /*0.03em=3%*/
-	color: rgba(255, 255, 255, 0.5);
-}
-
-.source__field {
-	display: flex;
-    flex-direction: column;
-
-    margin-bottom: 40px;
-}
-
-.source__perc {
-	background: #4f0c12; /* Фолбэк для градиента */
-	background: -webkit-linear-gradient(90deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);
-	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-
-	font-family: "Bebas Neue", "Arial Narrow", "Century Gothic", Helvetica, Tahoma, sans-serif;
-	font-weight: 700;
-	font-size: 12.353rem; /*210px*/
-	line-height: 15.588rem; /*265px*/
-	letter-spacing: 0.03rem; /*0.03em=3%*/
-
-	/*text-shadow: 50px -25px 15px #4f0c1230;*/
-	/*filter: drop-shadow(50px -25px 0px #4f0c123b);*/
-}
-
-.source .main-heading {
-	font-size: 2.118rem; /*36px*/
-	line-height: 2.675rem; /*45.47px*/
-	letter-spacing: 0.065rem; 
-}
-
-.source__reason {
-	margin-bottom: 25px;
-}
-
-.source__desc {
-	margin-bottom: 40px;
-}
-
-.source .main-link {}
-
-.source__link {}
-
-/* Mobile */
-@media (min-width: 576px) {
 	.profit__heading {
-		margin-bottom: 50px;
+		margin-bottom: 40px;
+	}
+
+	.profit-list {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
 	}
 
 	.source {
 		text-align: center;
+		max-width: 380px;
 	}
 
 	.profit-list__source {
-		margin-bottom: 65px;
+		margin-bottom: 60px;
 		margin-left: auto;
     	margin-right: auto;
 	}
 
 	.profit-list__source:last-child {
 		margin-bottom: 0;
+	}
+
+	.source__field,
+	.source__desc {
+		margin: 0;
+
+		font-size: inherit; /*12px*/
+		font-weight: 400;
+		line-height: inherit; /*15px*/
+		letter-spacing: 0.03rem; /*0.03em=3%*/
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	.source__field {
+		display: flex;
+	    flex-direction: column;
+
+	    margin-bottom: 30px;
+	}
+
+	.source__perc {
+		margin-bottom: -20px;
+
+		background: #4f0c12; /* Фолбэк для градиента */
+		background: -webkit-linear-gradient(90deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);
+		-webkit-background-clip: text;
+	  	-webkit-text-fill-color: transparent;
+
+		font-family: "Bebas Neue", "Arial Narrow", "Century Gothic", Helvetica, Tahoma, sans-serif;
+		font-weight: 700;
+		font-size: 5.882rem; /*100px*/
+		line-height: 7.412rem; /*126px*/
+		letter-spacing: 0.03rem; /*0.03em=3%*/
+
+		/*text-shadow: 50px -25px 15px #4f0c1230;*/
+		/*filter: drop-shadow(50px -25px 0px #4f0c123b);*/
+	}
+
+	.source .main-heading {}
+
+	.source__reason {
+		margin-bottom: 15px;
+	}
+
+	.source__desc {
+		margin-bottom: 30px;
+	}
+
+	.source .main-link {}
+
+	.source__link {}
+
+
+
+
+/* Mobile */
+@media (min-width: 576px) {
+	.source__field,
+	.source__desc {
+		font-size: 1.176rem; /*20px*/
+		line-height: 1.471rem; /*25px*/
+	}
+
+	.source__perc {
+		font-size: 10rem; /*170px*/
+		line-height: 12.647rem; /*215px*/
 	}
 
 	.source__perc {
@@ -128,12 +132,22 @@
 		margin-bottom: -65px;
 	}
 
+	.source__perc {
+		font-size: 12.353rem; /*210px*/
+		line-height: 15.588rem; /*265px*/
+	}
+
 	.source:nth-child(2n) .source__perc {
 		margin-right: -10px;
 	}
 
 	.source .main-heading {
 		text-align: left;
+	}
+
+	.source .main-heading {
+		font-size: 2.118rem; /*36px*/
+		line-height: 2.675rem; /*45.47px*/
 	}
 
 	.source:nth-child(2n) .main-heading {
