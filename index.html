@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,14 @@
 
 	<title>Capital Corporation</title>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- Проверка на выолнение js кода -->
+	<script type="text/javascript" src="js/js_test.js"></script>
+
+	<!-- Вытащить _reboot.scss -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css">
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -29,13 +36,13 @@
 	<header class="page-header">
 		<div class="inner-container_large">
 			<div class="logo page-header__logo">
-				<img class="logo__img" src="img/logo_1x.png" alt="Логотип «Capital corporation»" width="181" height="47">
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании" width="181" height="47">
 			</div>
 
 			<!-- Мобильное меню
 			- Атрибут aria-expanded у тега button указывает на то, показывается (развернуто) ли сейчас меню
 			- Атрибут aria-label у тега button говорит скрин-ридерам о том, что это меню -->
-			<button class="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню">
+			<button class="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть / закрыть меню">
 				<span class="burger__icon"></span>
 				<span class="burger__icon"></span>
 				<span class="burger__icon"></span>
@@ -62,15 +69,15 @@
 					- Атрибут aria-label у тега button говорит скрин-ридерам о текущем языке страницы, у ссылок говорит, на какую версию сайта они ведут
 					- Атрибут aria-hidden="true" у картинок с флагами стран и тегов span с сокращениями языков указывает на то, что элемент не несет никакой информации, поэтому не должен бьть прочитан скрин-ридерами
 					- Атрибут hreflang="код_языка" указывает поисковым системам на наличие ссылки на версию сайта на другом языке -->
-				<div class="language-picker">
+				<div class="language-picker dropdown">
 					<p class="visually-hidden">Выберите язык</p>
 
-					<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown-2" aria-label="Текущий язык сайта - русский">
+					<button class="language-picker__button dropdown-toggle" aria-expanded="false" aria-controls="language-picker-dropdown-2" aria-label="Текущий язык сайта - русский" data-toggle="dropdown" data-display="static">
 						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16" aria-hidden="true">
 						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
 					</button>
 
-					<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown-2" role="listbox" style="display: none;">
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown-2" role="listbox">
 						<li class="lang-list__lang">
 							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
 								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16" aria-hidden="true">
@@ -104,7 +111,7 @@
 					Атрибут data-lang у селекта отвечает за смену флага, возможные значения: ru, en, de, pt, ch
 					- Атрибут aria-hidden="true" у тегов option с сокращениями языков указывает на то, что элемент не несет никакой информации, поэтому не должен бьть прочитан скрин-ридерами
 					- Атрибут aria-label у тегов option говорит скрин-ридерам о том, на какую версию сайта они ведут -->
-				<form action="" method="" class="language-picker-form" style="display: none;">
+				<form action="" method="" class="language-picker-form">
 					<label for="language-picker-select" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
 					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
 						<option value="english" class="" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
@@ -125,7 +132,8 @@
 		
 		<section class="logo main-content__logo">
 			<div class="inner-container_large">
-				<img class="logo__img" src="img/logo_1x.png" alt="Логотип «Capital corporation»" width="181" height="47">
+				<h2 class="visually-hidden">Наш логотип</h2>
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании" width="181" height="47">
 			</div>
 		</section>
 		
@@ -457,15 +465,15 @@
 				</ul>
 				
 				<!-- Custom language picker -->
-				<div class="language-picker">
+				<div class="language-picker dropdown">
 					<p class="visually-hidden">Выберите язык</p>
 
-					<button class="language-picker__button" aria-expanded="false" aria-controls="language-picker-dropdown" aria-label="Текущий язык сайта - русский">
+					<button class="language-picker__button dropdown-toggle" aria-expanded="false" aria-controls="language-picker-dropdown" aria-label="Текущий язык сайта - русский" data-toggle="dropdown" data-display="static">
 						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16" aria-hidden="true">
 						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
 					</button>
 
-					<ul class="lang-list language-picker__lang-list" id="language-picker-dropdown" role="listbox" style="display: none;">
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown" role="listbox">
 						<li class="lang-list__lang">
 							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
 								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16" aria-hidden="true">
@@ -536,10 +544,12 @@
 		</div>
 	</section>
 
-	<!-- <script type="text/javascript" src="js/script.js"></script> -->
+	<script type="text/javascript" src="js/script.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<!-- <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script> -->
 	
 </body>
 </html>

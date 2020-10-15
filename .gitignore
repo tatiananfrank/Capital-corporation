@@ -7,7 +7,12 @@ left-arrow.svg
 
 tasks.txt
 css/variables.scss
+css/normalize.css
 preview/
 
 img/
 fonts/
+js/bootstrap.js
+
+bootstrap/css/nope/
+bootstrap/js/
