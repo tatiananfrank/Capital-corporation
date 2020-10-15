@@ -165,6 +165,14 @@
 
 /* Tablet */
 @media (min-width: 768px) {
+	.main-content__about {
+		margin-bottom: 335px;
+	}
+
+	.about__heading {
+		margin-bottom: 95px;
+	}
+
 	.about__company-info {
 		margin-bottom: 45px;
 	}
@@ -174,8 +182,19 @@
 		line-height: 2.647rem; /*45px*/
 	}
 
+	.company-info__heading {
+		margin-bottom: 20px;
+	}
+
+	.company-info__text {
+		margin-bottom: 25px;
+
+		font-size: 1.059rem; /*18px*/
+    	line-height: 1.353rem; /*23px*/
+	}
+
 	.partners {
-		max-width: 620px;
+		max-width: 650px;
 	}
 
 	.about__partners {
@@ -186,12 +205,20 @@
 
 /* Desktop normal */
 @media (min-width: 992px) {
+	.main-content__about {
+		margin-bottom: 420px;
+	}
+
+	.about__company-info {
+		margin-bottom: 65px;
+	}
+
 	.company-info {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: center;
-		padding: 0 80px;
+		padding: 0 80px; /**/
 	}
 
 	.company-info__col {
@@ -200,7 +227,7 @@
 	}
 
 	.company-info .main-heading {
-		width: 75%;
+		/*width: 75%;*/
 
 		text-align: left;
 	}

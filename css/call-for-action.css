@@ -57,4 +57,8 @@
 	.main-content__call-for-action {
 		margin-bottom: 275px;
 	}
+
+	.call-for-action__heading {
+		width: 390px;
+	}
 }

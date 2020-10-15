@@ -81,7 +81,7 @@ body {
 @media (min-width: 768px) {
 	body {
 		font-size: 1rem; /*17px*/
-		line-height: 1.177rem; /*20px*/
+		line-height: 1.176rem; /*20px*/
 	}
 
 	.main-heading {
@@ -92,7 +92,7 @@ body {
 
 /* Desktop normal */
 @media (min-width: 992px) {
-	/* Наследует от tablet*/
+	/* Наследует шрифтовые свойства от tablet*/
 }
 
 
@@ -202,7 +202,7 @@ body {
 	.inner-container_small {
 		margin: 0 auto;
 
-	    width: 64%; /**/
+	    width: 65%; /**/
 	    max-width: 600px;
 
 	    padding: 0 15px;
@@ -234,7 +234,7 @@ body {
 		margin: 0 auto;
 
 	    /*width: 800px;*/
-	    width: 63%; /*63.3%*/
+	    width: 65%;
 	    max-width: 800px;
 
 	    padding: 0 15px;

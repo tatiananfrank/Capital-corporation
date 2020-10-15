@@ -125,7 +125,7 @@
 /* Tablet */
 @media (min-width: 768px) {
 	.profit__heading {
-		margin-bottom: 70px;
+		margin-bottom: 65px;
 	}
 
 	.source {
@@ -146,25 +146,25 @@
 		margin-left: auto;
 	}
 
-	.source__perc {
-		margin-left: -10px;
-		margin-bottom: -65px;
+	.source__field {
+		margin-bottom: 35px;
 	}
 
 	.source__perc {
+		margin-left: -10px;
+		margin-bottom: -65px;
+
 		font-size: 12.353rem; /*210px*/
 		line-height: 15.588rem; /*265px*/
 	}
 
 	.source:nth-child(2n) .source__perc {
+		margin-left: 0;
 		margin-right: -10px;
 	}
 
 	.source .main-heading {
 		text-align: left;
-	}
-
-	.source .main-heading {
 		font-size: 2.118rem; /*36px*/
 		line-height: 2.675rem; /*45.47px*/
 	}
@@ -172,11 +172,23 @@
 	.source:nth-child(2n) .main-heading {
 		text-align: right;
 	}
+
+	.source__reason {
+		margin-bottom: 25px;
+	}
+
+	.source__desc {
+		margin-bottom: 35px;
+	}
 }
 
 /* Desktop normal */
 @media (min-width: 992px) {
+	.profit__heading {
+		margin-bottom: 75px;
+	}
+
 	.profit-list__source {
-		margin-bottom: -75px;
+		margin-bottom: -35px;
 	}
 }

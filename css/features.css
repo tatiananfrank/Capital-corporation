@@ -92,18 +92,24 @@
 	}
 
 	.feature {
-		flex-wrap: nowrap;
+		flex-direction: row;
+		/*flex-wrap: nowrap;*/
 		justify-content: flex-end;
 	}
 
 	.features-list__feature {
-		margin-bottom: 545px;
+		margin-bottom: 515px;
 	}
 
 	.feature__col {
 		margin-left: 0;
 		margin-right: 20px;
 		margin-bottom: 0;
+		max-width: 380px;
+	}
+
+	.feature__title {
+		margin-bottom: 10px;
 	}
 }
 

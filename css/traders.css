@@ -188,7 +188,11 @@
 /* Tablet */
 @media (min-width: 768px) {
 	.main-content__traders {
-		margin-bottom: 375px;
+		margin-bottom: 410px;
+	}
+
+	.traders__heading {
+		margin-bottom: 95px;
 	}
 
 	.traders__content {
@@ -196,7 +200,11 @@
 	}
 
 	.cases-switcher {
-		justify-content: unset;
+		justify-content: flex-start;
+	}
+
+	.traders__cases-switcher {
+		margin-bottom: 190px;
 	}
 
 	.case:last-child {
@@ -214,8 +222,7 @@
 
 /* Desktop normal */
 @media (min-width: 992px) {
-	/*.cases-list {
-		justify-content: space-between;
-		width: 55%;
-	}*/
+	.traders__heading {
+		margin-bottom: 105px;
+	}
 }
