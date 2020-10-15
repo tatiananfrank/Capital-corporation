@@ -1,15 +1,18 @@
 .modal {} /* тянется из бутстрапа */
 
 .round-modal {
+    /*position: fixed;
 	top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
 
-    display: block;
+   /* display: none; *//**/
     /* width: 80vh; 
     height: 80vh; */
-    width: 770px; /**/
-    height: 770px; /**/
+    /*width: 770px; 
+    height: 770px; */
+    width: 550px; 
+    height: 550px; 
     padding: 20px;
     border-radius: 50%;
 

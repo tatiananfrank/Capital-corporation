@@ -107,6 +107,8 @@
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 		white-space: nowrap;
+
+		/*transition: all 0.3s ease-in-out;*/
 	}
 
 	.user-menu .menu__link:hover,
@@ -175,7 +177,7 @@
 	    z-index: 5;
 	    top: 0;
 
-	    display: none; /**/
+	    /*display: none;*/ /**/
 
 		margin: 0;
 		padding: 50px 17px 28px;
@@ -185,12 +187,25 @@
 		/*background-color: rgba(224, 43, 43, 0.3);*/
 		background-color: #491111;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
+		/* Анимация открытия меню */
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(-10px);
+		transition: all 0.3s ease-in-out;
 	}
 
 	.language-picker__button[aria-expanded="true"] + .language-picker__lang-list { 
 		/* Показывает список с языками, когда aria-expanded атрибут кнопки равен true */
-		display: block;
+		/*display: block;*/
+
+		/* Анимация открытия меню */
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0px);
 	}
+
 
 
 
