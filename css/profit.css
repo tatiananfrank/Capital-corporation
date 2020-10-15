@@ -85,8 +85,20 @@
 
 
 
-/* Mobile */
+/* Tablet S */
 @media (min-width: 576px) {
+	.main-content__profit {
+		margin-bottom: 235px;
+	}
+
+	.profit-list__source {
+		margin-bottom: 65px;
+	}
+
+	.profit__heading {
+		margin-bottom: 50px;
+	}
+
 	.source__field,
 	.source__desc {
 		font-size: 1.176rem; /*20px*/
@@ -94,12 +106,19 @@
 	}
 
 	.source__perc {
+		margin-bottom: -45px;
+
 		font-size: 10rem; /*170px*/
 		line-height: 12.647rem; /*215px*/
 	}
 
-	.source__perc {
-		margin-bottom: -55px;
+	.source .main-heading {
+		font-size: 2.118rem; /*36px*/
+    	line-height: 2.647rem; /*45px*/
+	}
+
+	.source__reason {
+		margin-bottom: 20px;
 	}
 }
 

@@ -33,17 +33,21 @@
 
 
 
-/* Mobile */
+/* Tablet S */
 @media (min-width: 576px) {
 	.main-content__call-for-action {
-		margin-bottom: 200px;
+		margin-bottom: 160px;
 	}
 
 	.call-for-action__heading {
-		width: 406px;
+		margin-bottom: 7px;
+
+		width: 380px;
 	}
 
 	.call-for-action__text {
+		margin-bottom: 255px;
+
 		width: 267px;
 	}
 }

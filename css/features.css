@@ -54,28 +54,30 @@
 
 
 
-/* Mobile */
+/* Tablet S */
 @media (min-width: 576px) {
 	.main-content__features {
 		margin-bottom: 315px;
 	}
 
 	.features-list__feature {
-		margin-bottom: 200px;
+		margin-bottom: 215px;
 	}
 
 	.feature {
-		flex-direction: row; /**/
-		flex-wrap: wrap;
-		justify-content: center;
+		/*flex-direction: row; 
+		flex-wrap: wrap;*/
+		/*justify-content: center;*/
 
 		text-align: left;
 	}
 
 	.feature__col {
 		margin-left: 25px;
-		margin-bottom: 235px;
-		max-width: 390px; 
+		/*margin-bottom: 235px;*/
+		margin-bottom: 205px;
+		/*max-width: 390px; */
+		max-width: 320px; 
 	}
 
 	.feature .main-heading {
