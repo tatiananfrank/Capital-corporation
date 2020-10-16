@@ -105,84 +105,147 @@
 
 
 
-.round-modal {
-    width: 85vh;
-    height: 85vh;
-    max-width: 770px;
-    max-height: 770px;
-    /*width: 550px; 
-    height: 550px; */
-    padding: 20px;
-    border-radius: 50%;
 
-    background: #4f0c12; /* Фолбэк для градиента */
-	/*background: linear-gradient(0deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);*/
-	background: linear-gradient(0deg, #1e0f39 24%, #4e0c13 90%);
-	box-shadow: 0 0 80px 15px rgba(255, 255, 255, 0.5);
-}
-
-.round-modal_centered {
+.modal_centered {
     margin-top: 7.5vh; /*calc((100vh - 85vh) / 2);*/
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 7.5vh;
 }
 
-.round-modal__content {
-	width: 100%;
+.modal_squared {
+    width: 90vw;
+    /*height: 85vh;*/
+    max-width: 541px;
+    /*max-height: 770px;*/
+
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    background: #432324; /* Фолбэк для градиента */
+   /*background: linear-gradient(180deg, rgba(188, 0, 0, 0.17) 0%, rgba(49, 0, 188, 0.26) 100%)*/
+    background: linear-gradient(180deg, #442424 0%, #2d1f4f 100%);
+}
+
+.modal__content {
+    width: 100%;
     height: 100%;
-    border-radius: 50%;
-
-	background-color: #151414;
-	/*background-repeat: no-repeat;
-	background-position: top 30px center;*/
+    
+    /*background-repeat: no-repeat;
+    background-position: top 30px center;*/
 }
 
-/*.round-modal__content[data-img="1"] {
+/*.modal__content[data-img="1"] {
 	background-image: url("../img/modal-picture_1_cropped.png");
 }
 
-.round-modal__content[data-img="2"] {
+.modal__content[data-img="2"] {
 	background-image: url("../img/modal-picture_2_cropped.png");
 }
 
-.round-modal__content[data-img="3"] {
+.modal__content[data-img="3"] {
 	background-image: url("../img/modal-picture_3_cropped.png");
 }
 
-.round-modal__content[data-img="4"] {
+.modal__content[data-img="4"] {
 	background-image: url("../img/modal-picture_4_cropped.png");
 }*/
 
-.magic-wrapper {
-    overflow-x: hidden;
-}
+.magic-wrapper {}
 
 .magic {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    padding-right: 30px; /*Прячет скроллбар*/
-    width: 110%;
-    height: 100%;
-    overflow-y: auto;
 }
 
-.round-modal__img {
-    margin-top: 50px;
-    max-width: 220px;
+.modal__img {
+    width: 171px;
 }
 
-.round-modal__text {
-	margin: 0;
-	/*padding: 0 40px 25%;*/
-    padding: 0 10% 25%;
+.modal__text {
+    margin: 0;
 
-	text-align: center;
+    text-align: center;
     font-weight: 700;
-    line-height: 1.235rem; /*21px*/
+    /*font-size: 0.824rem;*/ /*14px*/
+    /*line-height: 1.059rem; *//*18px;*/
+
     letter-spacing: 0.03rem;
 }
 
+@media (min-width: 576px) {
+    .modal__img {
+        width: 220px;
+        /*max-width: 220px*/;
+    }
+}
 
+@media (min-width: 768px) {
+    /*round*/
 
+    .modal_centered {
+        margin-bottom: auto;
+    }
+
+    .modal_round {
+        width: 60vh;
+        height: 60vh;
+        max-width: 770px;
+        max-height: 770px;
+        /*width: 550px; 
+        height: 550px; */
+        padding: 20px;
+        border: none;
+        border-radius: 50%;
+
+        background: #4f0c12; /* Фолбэк для градиента */
+        /*background: linear-gradient(0deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);*/
+        background: linear-gradient(0deg, #1e0f39 24%, #4e0c13 90%);
+        box-shadow: 0 0 80px 15px rgba(255, 255, 255, 0.5);
+    }
+
+    .modal__content {
+        border-radius: 50%;
+
+        background-color: #151414;
+    }
+
+    .magic-wrapper {
+        overflow-x: hidden;
+    }
+
+    .magic {
+        padding-right: 30px; /*Прячет скроллбар*/
+        width: 110%;
+        height: 100%;
+        overflow-y: auto;
+
+        padding-left: 30px; /*Выравнивает контент, отцентрованный с использованием флекс*/
+        margin-left: -30px;
+    }
+
+    .modal__img {
+        margin-top: 50px;
+    }
+
+    .modal__text {
+        /*padding: 0 40px 25%;*/
+        padding: 0 10% 25%;
+
+        font-size: 0.882rem; /*15px*/
+        line-height: 1.118rem; /*19px;*/
+    }
+}
+
+@media (min-width: 992px) {
+    .modal_round {
+        width: 85vh;
+        height: 85vh;
+    }
+
+    .modal__text {
+        font-size: inherit; /*17px*/
+        line-height: 1.235rem; /*21px;*/
+    }
+}
