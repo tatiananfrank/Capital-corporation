@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 versions,>1%
+*/
+
 /* тянется из бутстрапа */
 
 .modal-scrollbar-measure {
@@ -13,6 +20,8 @@
 }
 
 .fade {
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
     transition: opacity .15s linear;
 }
 
@@ -53,15 +62,20 @@
 
 .modal.fade .modal-dialog {
     transition: -webkit-transform .3s ease-out;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: transform .3s ease-out;
     transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     transition: transform .3s ease-out,-webkit-transform .3s ease-out;
     -webkit-transform: translate(0,-50px);
-    transform: translate(0,-50px);
+    -ms-transform: translate(0,-50px);
+        transform: translate(0,-50px);
 }
 
 .modal.show .modal-dialog {
     -webkit-transform: none;
-    transform: none;
+    -ms-transform: none;
+        transform: none;
 }
 
 /*.modal-content {
@@ -124,6 +138,8 @@
 
     background: #432324; /* Фолбэк для градиента */
    /*background: linear-gradient(180deg, rgba(188, 0, 0, 0.17) 0%, rgba(49, 0, 188, 0.26) 100%)*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#442424), to(#2d1f4f));
+    background: -o-linear-gradient(top, #442424 0%, #2d1f4f 100%);
     background: linear-gradient(180deg, #442424 0%, #2d1f4f 100%);
 }
 
@@ -136,31 +152,39 @@
 }
 
 /*.modal__content[data-img="1"] {
-	background-image: url("../img/modal-picture_1_cropped.png");
+    background-image: url("../img/modal-picture_1_cropped.png");
 }
 
 .modal__content[data-img="2"] {
-	background-image: url("../img/modal-picture_2_cropped.png");
+    background-image: url("../img/modal-picture_2_cropped.png");
 }
 
 .modal__content[data-img="3"] {
-	background-image: url("../img/modal-picture_3_cropped.png");
+    background-image: url("../img/modal-picture_3_cropped.png");
 }
 
 .modal__content[data-img="4"] {
-	background-image: url("../img/modal-picture_4_cropped.png");
+    background-image: url("../img/modal-picture_4_cropped.png");
 }*/
 
 .magic-wrapper {}
 
 .magic {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .modal__img {
     width: 171px;
+    height: auto;
 }
 
 .modal__text {
@@ -201,8 +225,11 @@
 
         background: #4f0c12; /* Фолбэк для градиента */
         /*background: linear-gradient(0deg, rgba(49,0,188,0.24) 24%, rgba(188,0,0,0.4) 90%);*/
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(24%, #1e0f39), color-stop(90%, #4e0c13));
+        background: -o-linear-gradient(bottom, #1e0f39 24%, #4e0c13 90%);
         background: linear-gradient(0deg, #1e0f39 24%, #4e0c13 90%);
-        box-shadow: 0 0 80px 15px rgba(255, 255, 255, 0.5);
+        -webkit-box-shadow: 0 0 80px 15px rgba(255, 255, 255, 0.5);
+                box-shadow: 0 0 80px 15px rgba(255, 255, 255, 0.5);
     }
 
     .modal__content {
@@ -221,17 +248,19 @@
         height: 100%;
         overflow-y: auto;
 
-        padding-left: 30px; /*Выравнивает контент, отцентрованный с использованием флекс*/
-        margin-left: -30px;
+        /*Выравнивает контент, отцентрованный с использованием флекс*/
+        /*padding-left: 30px; 
+        margin-left: -30px;*/
     }
 
     .modal__img {
         margin-top: 50px;
+       /* margin-right: 30px;*/ /*Выравнивает контент, отцентрованный с использованием флекс*/
     }
 
     .modal__text {
-        /*padding: 0 40px 25%;*/
         padding: 0 10% 25%;
+        /*padding: 0 60px 25% 30px;*/ /*Выравнивает контент, отцентрованный с использованием флекс*/
 
         font-size: 0.882rem; /*15px*/
         line-height: 1.118rem; /*19px;*/

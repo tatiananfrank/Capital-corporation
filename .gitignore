@@ -1,18 +1,18 @@
-DESIGN.txt
 DESIGN_1.png
-bootstrap.css
 Screenshot_1.png
 Screenshot_2.png
-left-arrow.svg
+Screenshot_3.png
 
 tasks.txt
+
 css/variables.scss
 css/normalize.css
-preview/
+bootstrap.css
 
+preview/
 img/
 fonts/
-js/bootstrap.js
 
 bootstrap/css/nope/
 bootstrap/js/
+bootstrap/

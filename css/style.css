@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 versions,>1%
+*/
+
 @font-face {
 	font-family: Roboto;
 	src: url("../fonts/RobotoRegular.woff") format("woff"),
@@ -292,7 +299,9 @@ body {
 
 .main-link:hover,
 .main-link:focus {
-		box-shadow: 0px 0px 5px 5px rgba(188, 0, 0, 0.7),
+		-webkit-box-shadow: 0px 0px 5px 5px rgba(188, 0, 0, 0.7),
+	    			inset 0px 0px 5px 5px rgba(188, 0, 0, 0.7);
+		        box-shadow: 0px 0px 5px 5px rgba(188, 0, 0, 0.7),
 	    			inset 0px 0px 5px 5px rgba(188, 0, 0, 0.7);
 }
 

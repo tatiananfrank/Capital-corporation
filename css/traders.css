@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 versions,>1%
+*/
+
 	.traders {}
 
 	.main-content__traders {
@@ -13,8 +20,12 @@
 	.traders__content {}
 
 	.cases-switcher {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		margin: 0;
 		padding: 0;
 
@@ -59,7 +70,10 @@
 
 		/*box-shadow: 0px 0px 10px 1px rgba(188, 0, 0, 0.7), 
 					inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);*/
-		box-shadow: 0 0 0 3px #BC0000, 
+		-webkit-box-shadow: 0 0 0 3px #BC0000, 
+					0px 0px 10px 6px rgba(188, 0, 0, 0.7), 
+					inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);
+		        box-shadow: 0 0 0 3px #BC0000, 
 					0px 0px 10px 6px rgba(188, 0, 0, 0.7), 
 					inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);
 
@@ -69,8 +83,12 @@
 	.cases {}
 
 	.cases-list {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-evenly; /**/
+		-webkit-box-pack: space-evenly;
+		    -ms-flex-pack: space-evenly;
+		        justify-content: space-evenly; /**/
 		margin: 0;
 		padding: 0;
 		width: 100%; /**/
@@ -81,9 +99,16 @@
 	.cases__cases-list {}
 
 	.case {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-    	flex-direction: column;
-    	align-items: center;
+    	-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+    	-webkit-box-align: center;
+    	    -ms-flex-align: center;
+    	        align-items: center;
 	}
 
 	.case:last-child {
@@ -93,6 +118,7 @@
 	.case__logo {
 		margin-bottom: 2px;
 		max-width: 110px;
+		height: auto;
 
 		vertical-align: middle; /* reboot bootstrap */
 	}
@@ -113,8 +139,12 @@
 	}
 
 	.cases-controls {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
 	.cases__cases-controls {
@@ -135,13 +165,16 @@
 		width: 35px;
 
 		fill: #3100BC;
-		filter: drop-shadow(0px 0px 5px #3100BC);
+		-webkit-filter: drop-shadow(0px 0px 5px #3100BC);
+		        filter: drop-shadow(0px 0px 5px #3100BC);
 
 		/*cursor: pointer;*/
 	}
 
 	.cases-controls__next .cases-controls__arrow {
-		transform: scale(-1, 1);
+		-webkit-transform: scale(-1, 1);
+		    -ms-transform: scale(-1, 1);
+		        transform: scale(-1, 1);
 	}
 
 	.traders .main-link {}
@@ -208,7 +241,9 @@
 	}
 
 	.cases-switcher {
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 
 	.traders__cases-switcher {
