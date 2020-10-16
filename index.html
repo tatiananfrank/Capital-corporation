@@ -13,10 +13,9 @@
 	<script type="text/javascript" src="js/js_test.js"></script>
 
 	<!-- Вытащить _reboot.scss -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css"> -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css"> 
 
-	<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -179,28 +178,28 @@
 						<p class="main-heading source__reason">Максимизация прибыли</p>
 						<p class="source__desc">Инвестиции в ведущие и новые ICO. Используется диверсификация, одновременно инвестируется более чем в 17 проверенных ICO</p>
 						<a href="#" class="main-link source__link"
-						   data-toggle="modal" data-target="#profit-modal" data-img="1">Подробнее</a>
+						   data-toggle="modal" data-target="#profit-modal" data-content="1">Подробнее</a>
 					</li>
 					<li class="source profit-list__source">
 						<h3 class="source__field"><span class="source__perc">28%</span> IT компании</h3>
 						<p class="main-heading source__reason">Стабильный доход</p>
 						<p class="source__desc">Инвестиции в новые технологии. Обеспечивает стабильный доход и дает попасть в будущее технологического гиганта</p>
 						<a href="#" class="main-link source__link"
-						   data-toggle="modal" data-target="#profit-modal" data-img="2">Подробнее</a>
+						   data-toggle="modal" data-target="#profit-modal" data-content="2">Подробнее</a>
 					</li>
 					<li class="source profit-list__source">
 						<h3 class="source__field"><span class="source__perc">20%</span> Инвестиции в IPO</h3>
 						<p class="main-heading source__reason">Максимизация прибыли и стабилизация дохода</p>
 						<p class="source__desc">Покупка акций перспективных компаний позволяет стабильно зарабатывать и совершить скачок в доходности</p>
 						<a href="#" class="main-link source__link"
-						   data-toggle="modal" data-target="#profit-modal" data-img="3">Подробнее</a>
+						   data-toggle="modal" data-target="#profit-modal" data-content="3">Подробнее</a>
 					</li>
 					<li class="source profit-list__source">
 						<h3 class="source__field"><span class="source__perc">17%</span> Фьючерсная торговля</h3>
 						<p class="main-heading source__reason">Балансировка и сохранность инвестиций</p>
 						<p class="source__desc">Выкуп обязательств с гарантийной ценой реализации в будущем. Является гарантом сохранения инвестиций</p>
 						<a href="#" class="main-link source__link"
-						   data-toggle="modal" data-target="#profit-modal" data-img="4">Подробнее</a>
+						   data-toggle="modal" data-target="#profit-modal" data-content="4">Подробнее</a>
 					</li>
 				</ul>
 			</div>
@@ -537,19 +536,18 @@
 		</div>
 	</footer>
 
-	<!-- Атрибут data-img у div отвечает за смену картинки, возможные значения: 1, 2, 3, 4 -->
+	<!-- Атрибут data-img у div отвечает за смену картинки, возможные значения: 1, 2, 3, 4 
+	-->
 	<div class="modal fade" id="profit-modal" tabindex="-1" aria-hidden="true">
-		<section class="round-modal modal-dialog">
-			<div class="round-modal__content modal-content" data-img="2">
-				<h2 class="visually-hidden">Детальная информация</h2>
+		<section class="round-modal round-modal_centered modal-dialog">
+			<div class="round-modal__content magic-wrapper"> <!-- data-img="2" modal-content -->
+				<div class="magic">
+					<h2 class="visually-hidden">Детальная информация</h2>
 
-				<p class="round-modal__text">Инвестиции в перспективные стартапы по разработке платформ для создания приложений на основе блокчейн относятся к самым рискованным видам вложений личного капитала. Однако это реальный шанс для каждого человека, чтобы заработать свой первый миллион за пару лет. Новейшая история знает немало примеров, когда инвесторы покупали токены по минимальной цене размещения в момент проведения ICO и впоследствии получали фантастические прибыли. Например, токен Wings за два года показал доходность 1488% или более 385% годовых. Абсолютный рекордсмен по общей доходности в блокчейн стартапах – это токен NXT. За шесть лет его стоимость выросла на 765 000%. Самые терпеливые ранние инвесторы с железными нервами увеличили свой капитал в 7 600 раз! Мы предлагаем инвестиционные портфели с разумной диверсификацией активов в инновационные блокчейн стартапы (ICO). Наши инвесторы получают прибыль, которая превышает отдачу от консервативных способов вложения капитала.</p>
-				<!-- 2
-				Современный технологичный сектор превратился в драйвер мировой экономики. Крупнейшие IT-корпорации генерируют глобальные изменения в различных сферах экономики, порождая сильнейшие импульсы для развития отдельных сегментов и отраслей. Они развиваются даже на стагнирующих или падающих рынках. Акции таких компаний обладают огромным потенциалом к долгосрочному росту; инвестиции приносят стабильную прибыль на протяжении многих лет. Например, Facebook, Google и Microsoft на практике реализовали эффект масштаба, когда компания вышла на мировой уровень, а капитализация стали исчисляться десятками миллиардов долларов. Сегодня перед инвесторами открываются захватывающие возможности для вложений в высокие технологии. Наши специалисты включили в инвестиционные портфели акции самых надёжных и быстрорастущих сегментов цифровой экономики. Инвестируйте вместе с нами в успешные IT-компании и делайте долгосрочные вложения в собственное будущее. -->
-				<!-- 3
-				Фьючерсная торговля открывает огромные возможности для продвинутых инвесторов. Мгновенное заключение сделок, упрощенная система расчетов, низкие транзакционные издержки привлекают инвесторов с небольшим капиталом. Огромное количество активных участников обеспечивает высокую ликвидность операций с фьючерсными контрактами. Безопасное хеджирование потенциальных рисков защищает позиции от убытков. Прибыль можно получить как при покупке, так и при продаже фьючерсов. Гарантированное исполнение обязательств по контракту делают фьючерсную торговлю одним из самых надежных финансовых инструментов. Наша компания предоставляет возможности для неограниченных заработков при операциях с индексными, товарными, сырьевыми, валютными фьючерсами. Выстраивая собственные торговые стратегии, хеджируя риски по базовым активам, мы извлекаем безрисковую арбитражную прибыль и максимизируем доход от операций с производными инструментами. -->
-				<!-- 4
-				Участие в IPO представляет собой быстрый и достаточно доходный способ для приумножения капитала. При умеренном уровне риска у инвесторов с небольшим капиталом появляется возможность принять участие в первичном публичном размещении акций, чтобы выгодно вложиться в перспективные компании. Средняя доходность инвестиций в IPO на порядок выше, чем рост курсовой стоимости акций и многократно превышает проценты по банковскому депозиту. В первые дни и недели после проведения IPO отмечается высокая волатильность акций. В это время инвесторы фиксируют солидную прибыль. По статистике, цена акций после IPO растет и порядка 70-80% инвестиций приносят ожидаемую прибыль. Доходность в одной сделке составляет от 30 до 100%, время сделки до одного месяца. Инвестируйте в IPO вместе с нашей компанией и наслаждайтесь высокой прибылью от краткосрочных вложений в акции с высоким потенциалом к росту. -->
+					<img class="round-modal__img" src="img/modal-picture_1_cropped.png" alt="" width="" height="">
+					
+					<p class="round-modal__text">Инвестиции в перспективные стартапы по разработке платформ для создания приложений на основе блокчейн относятся к самым рискованным видам вложений личного капитала. Однако это реальный шанс для каждого человека, чтобы заработать свой первый миллион за пару лет. Новейшая история знает немало примеров, когда инвесторы покупали токены по минимальной цене размещения в момент проведения ICO и впоследствии получали фантастические прибыли. Например, токен Wings за два года показал доходность 1488% или более 385% годовых. Абсолютный рекордсмен по общей доходности в блокчейн стартапах – это токен NXT. За шесть лет его стоимость выросла на 765 000%. Самые терпеливые ранние инвесторы с железными нервами увеличили свой капитал в 7 600 раз! Мы предлагаем инвестиционные портфели с разумной диверсификацией активов в инновационные блокчейн стартапы (ICO). Наши инвесторы получают прибыль, которая превышает отдачу от консервативных способов вложения капитала.</p>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -561,7 +559,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<!-- <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script> -->
+	
 	
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
