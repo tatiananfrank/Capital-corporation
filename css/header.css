@@ -72,7 +72,7 @@
 	}
 	/* END OF Меняет бургер на крестик при открытии меню */
 
-	.main-nav {
+	.js .main-nav {
 		position: absolute;
 	    top: 0;
 	    left: 0;
@@ -100,7 +100,7 @@
 			        transform .3s ease-out;
 	}
 
-	.burger[aria-expanded="true"] + .main-nav { 
+	.js .burger[aria-expanded="true"] + .main-nav { 
 		/* Показывает меню, когда aria-expanded атрибут кнопки равен true */
 
 		/* Анимация открытия меню */
@@ -109,6 +109,53 @@
     	-webkit-transform: none;
     	    -ms-transform: none;
     	        transform: none;
+	}
+
+	.no-js .page-header .inner-container_large {
+		flex-wrap: wrap;
+	}
+
+	.no-js .main-nav {
+		position: relative;
+
+		display: flex;
+		order: -4;
+	    align-items: baseline;
+	    justify-content: space-between;;
+	    flex-wrap: nowrap;
+	    padding: 0;
+	}
+
+	.no-js .page-header .main-menu {
+		flex-direction: row;
+		/*margin-bottom: 30px;*/
+		margin-bottom: 15px;
+		/*margin-left: -50px;*/
+		margin-left: -40px;
+	}
+
+	.no-js .page-header .main-menu .menu__item {
+		/*margin-left: 50px;*/
+		margin-left: 40px;
+		/*margin-bottom: 30px;*/
+		margin-bottom: 15px;
+	}
+
+	.no-js .page-header .language-picker,
+	.no-js .page-header .language-picker-form {
+		position: absolute;
+		top: 30px;
+	    /*top: 50px;*/
+	    right: 0;
+	}
+
+	.no-js .page-header__logo {
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.no-js .burger {
+		display: none;
 	}
 
 	/* Наследуется для всех менюшек */
@@ -362,7 +409,8 @@
 	.no-js .language-picker-form {}
 
 	.no-js .language-picker-form__select {
-		padding: 10px 12px 10px 45px;
+		/*padding: 10px 12px 10px 45px;*/
+		padding: 7px 16px 7px 35px;
 	    border: none;
 	    border-radius: 28.5px;
 
@@ -375,7 +423,8 @@
 	            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	    background-repeat: no-repeat;
 	    background-position: 15px center; /*18px center*/
-	    background-size: 25px 16px;
+	    /*background-size: 25px 16px;*/
+	    background-size: 16px 11px;
 
 	    -moz-appearance: none;
 	    -webkit-appearance: none;
@@ -469,6 +518,28 @@
 		width: 25px;
     	height: 16px;
 	}
+
+	.no-js .page-header .main-menu {
+		margin-left: -45px;
+		margin-bottom: 35px;
+	}
+
+	.no-js .page-header .main-menu .menu__item {
+		margin-left: 45px;
+    	margin-bottom: 30px;
+	}
+
+	.no-js .language-picker-form__select {
+		padding: 11px 18px 11px 53px;
+
+		background-size: 25px 16px;
+		background-position: 22px center;
+	}
+
+	.no-js .page-header .language-picker,
+	.no-js .page-header .language-picker-form {
+		top: 50px;
+	}
 }
 
 /* Tablet */
@@ -496,6 +567,14 @@
 	.page-footer .main-menu {
 		margin-left: -50px;
 	}
+
+	.no-js .page-header .main-menu {
+		margin-left: -50px;
+	}
+
+	.no-js .page-header .main-menu .menu__item {
+		margin-left: 50px;
+	}
 }
 
 /* Desktop normal */
@@ -521,7 +600,8 @@
 		display: none;
 	}
 
-	.main-nav {
+	.js .main-nav,
+	.no-js .main-nav {
 		position: static;
 		top: unset;
 	    left: unset;
@@ -549,7 +629,8 @@
 	    transition: unset;
 	}
 
-	.main-menu {
+	.main-menu,
+	.no-js .main-menu {
 		-ms-flex-wrap: nowrap;
 		    flex-wrap: nowrap;
 	    -webkit-box-pack: justify;
@@ -557,15 +638,29 @@
 	            justify-content: space-between;
 	}
 
-	.page-header .main-menu {
+	.page-header .main-menu,
+	.no-js .page-header .main-menu {
 		flex-direction: row;
 
 		margin-bottom: 0;
 	    width: 63%;
 	}
 
-	.page-header .main-menu .menu__item {
+	.no-js .page-header .main-menu {
+		margin-left: 0;
+	}
+
+	.page-header .main-menu .menu__item,
+	.no-js .page-header .main-menu .menu__item {
 		margin-bottom: 0;
+	}
+
+	.no-js .page-header .main-menu .menu__item {
+		margin-left: 0;
+	}
+
+	.no-js .page-header .language-picker-form {
+		position: static;
 	}
 
 	.page-footer .main-menu {
