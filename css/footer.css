@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 versions,>1%
-*/
+
 
 	.page-footer {
 		background: rgba(0, 0, 0, 0.68);
@@ -57,6 +52,27 @@
 	}
 
 	.page-footer__row:first-child .menu__link {}
+
+
+
+
+	.page-footer__row:first-child .main-menu {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+    	margin-left: -50px;
+	}
+
+	.page-footer__row:first-child .main-menu .menu__item {
+		margin-left: 50px;
+    	margin-bottom: 30px;
+	}
+
+	.page-footer__row:first-child .main-menu .menu__item:last-child {
+		margin-bottom: 65px;
+	}
+
+
+
 
 	.page-footer .language-picker,
 	.page-footer .language-picker-form {
@@ -215,14 +231,19 @@
 
 	.page-footer__row:last-child .menu {
 		/*flex-wrap: nowrap;*/
+		justify-content: flex-start;
+		margin-left: -40px;
 		width: 85%;
 	}
 
 	.page-footer__row:last-child .menu__item {
+		margin-left: 40px;
 		width: auto;
 	}
 
 	.page-footer__row:last-child .menu__item:nth-child(2n) {
 		text-align: left;
 	}
+
+
 }
