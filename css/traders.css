@@ -1,9 +1,49 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 versions,>1%
-*/
+/* owl-carousel */
+
+.cases-list.owl-carousel {
+	display: none;
+}
+
+.cases-list.owl-carousel:first-child {
+	display: block;
+}
+
+.owl-carousel .owl-item img {
+	width: auto; /* Перевешивает стили, навязанные каруселью */
+}
+
+.owl-nav {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    margin-top: -65px;
+}
+
+@media (min-width: 576px) {
+	.owl-nav {
+	    margin-top: -70px;
+	}
+}
+
+.owl-prev,
+.owl-next {
+	padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.owl-next .cases-controls__arrow {
+	-webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+/* END OF owl-carousel */
 
 	.traders {}
 
@@ -86,9 +126,9 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: space-evenly;
+		/*-webkit-box-pack: space-evenly;
 		    -ms-flex-pack: space-evenly;
-		        justify-content: space-evenly; /**/
+		        justify-content: space-evenly;*/
 		margin: 0;
 		padding: 0;
 		width: 100%; /**/
@@ -111,17 +151,22 @@
     	        align-items: center;
 	}
 
-	.case:last-child {
+	/*.case:last-child {
 		display: none;
-	}
+	}*/
 
 	.case__logo {
 		margin-bottom: 2px;
-		max-width: 110px;
-		height: auto;
+		/*max-width: 110px;
+		height: auto;*/
+		max-height: 30px;
+    	width: auto;
+    	/*max-width: none;*/
 
 		vertical-align: middle; /* reboot bootstrap */
 	}
+
+	
 
 	.case__info {
 		border-collapse: collapse; /* reboot bootstrap */
@@ -209,7 +254,10 @@
 
 	.case__logo {
 		margin-bottom: 5px;
-		max-width: 132px;
+		/*max-width: 132px;*/
+		max-height: 38px;
+    	/*width: auto;
+    	max-width: none;*/
 	}
 
 	.case__info {
@@ -250,9 +298,9 @@
 		margin-bottom: 190px;
 	}
 
-	.case:last-child {
+	/*.case:last-child {
 		display: block;
-	}
+	}*/
 
 	.traders__link {
 		position: absolute;

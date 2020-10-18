@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 versions,>1%
-*/
+
 
 @font-face {
 	font-family: Roboto;
@@ -107,11 +102,17 @@ body {
 
 /* Фон с мужиком
 решила привязать к контейнеру, чтоб он не разъезжался от центра на широких экранах */
-/*.main-content {
-	background-image: url("../img/big_man.png");
-	background-repeat: no-repeat;
-	background-position: -10px top;
-}*/
+/* А также денюшки */
+
+/* Таблет */
+@media (min-width: 768px) {
+	.about {
+		background-image: url("../img/money_3_1x.png");
+		background-repeat: no-repeat;
+		background-position: right -100px bottom 230px;
+		background-size: 206px 201px;
+	}
+}
 
 /* Desktop normal */
 @media (min-width: 992px) {
@@ -133,6 +134,68 @@ body {
 		background-size: 732px 2196px;
 
 		content: "";
+	}
+
+	/* Денюшки */
+
+	/*.features .inner-container_large::after {
+		position: absolute;
+		z-index: -5;
+		bottom: 0;
+		right: 0;
+		width: 238px;
+		height: 137px;
+
+		background-image: url("../img/money_1_1x.png");
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: 238px 137px;
+
+		content: "";
+	}*/
+
+	.traders .inner-container_medium {
+		position: relative;
+	}
+
+	.traders .inner-container_medium::before {
+		position: absolute;
+		z-index: -5;
+		top: 60px;
+    	left: -130px;
+		width: 145px;
+		height: 117px;
+
+		background-image: url("../img/money_2_1x.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 145px 117px;
+
+		content: "";
+	}
+
+	.about .inner-container_large {
+		position: relative;
+	}
+
+	.about .inner-container_large::before {
+		position: absolute;
+		z-index: -5;
+		right: 45px;
+	    bottom: -180px;
+		width: 206px;
+		height: 201px;
+
+		background-image: url("../img/money_3_1x.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 206px 201px;
+
+		content: "";
+	}
+
+	.about {
+		background-image: none;
 	}
 }
 

@@ -15,6 +15,9 @@
 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css"> 
+
+	<link rel="stylesheet" href="owl_carousel/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="owl_carousel/owl.theme.default.min.css"> -->
 	
 	<!-- ПОТОМ УДАЛИТЬ -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -208,17 +211,18 @@
 
 				<div class="traders__content">
 
-					<ul class="cases-switcher traders__cases-switcher" aria-controls="traders-cases-list" aria-label="Выберите модель">
+					<ul class="cases-switcher traders__cases-switcher" aria-controls="cases" aria-label="Выберите модель">
 						<li class="cases-switcher__item">
-							<a href="#" class="cases-switcher__link cases-switcher__link_active" lang="en" aria-label="Cейчас выбрана">IPO</a>
+							<a href="ipo" class="cases-switcher__link cases-switcher__link_active" lang="en" aria-label="Cейчас выбрана">IPO</a>
 						</li>
 						<li class="cases-switcher__item">
-							<a href="#" class="cases-switcher__link" lang="en">ICO</a>
+							<a href="ico" class="cases-switcher__link" lang="en">ICO</a>
 						</li>
 					</ul>
-
-					<div class="cases">
-						<ul class="cases-list cases__cases-list" id="traders-cases-list" aria-label="Данные по кейсам">
+					
+					<div class="cases" id="cases">
+					
+						<ul class="cases-list cases__cases-list owl-carousel owl-theme" id="ipo" aria-label="Данные по кейсам">
 							<li class="case">
 								<h3 class="visually-hidden">CargoX</h3>
 								<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип «CargoX»" width="132" height="38">
@@ -255,9 +259,120 @@
 									</tr>
 								</table>
 							</li>
+							<li class="case">
+								<h3 class="visually-hidden">neo</h3>
+								<img class="case__logo" src="img/neo_1x.png" alt="Логотип «neo»" width="111" height="47">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$7,82</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$131,27</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>1 678%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">spectre</h3>
+								<img class="case__logo" src="img/spectre_1x.png" alt="Логотип «spectre»" width="139" height="40">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$3,24</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>10 800%</td>
+									</tr>
+								</table>
+							</li>
 						</ul>
 
-						<div class="cases-controls cases__cases-controls" aria-controls="traders-cases-list">
+						<ul class="cases-list cases__cases-list owl-carousel owl-theme" id="ico" aria-label="Данные по кейсам">
+							<li class="case">
+								<h3 class="visually-hidden">CarGurus</h3>
+								<img class="case__logo" src="img/car_gurus_1x.png" alt="Логотип «CarGurus»" width="155" height="29">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>2%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>94%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>87%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">FORESCOUT</h3>
+								<img class="case__logo" src="img/forescout_1x.png" alt="Логотип «FORESCOUT»" width="164" height="27">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>4%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>50%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>47%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">zscaler</h3>
+								<img class="case__logo" src="img/zscaler_1x.png" alt="Логотип «zscaler»" width="162" height="54">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>11%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>155%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>124%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">Roku</h3>
+								<img class="case__logo" src="img/roku_1x.png" alt="Логотип «Roku»" width="113" height="34">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>9%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>281%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>275%</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+
+						<!-- <div class="cases-controls cases__cases-controls" aria-controls="traders-cases-list">
 							<button class="cases-controls__prev">
 								<span class="visually-hidden">Назад</span>
 								<svg class="cases-controls__arrow" width="44" viewBox="0 0 50 50"><polygon points="5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24"/></svg>
@@ -266,7 +381,7 @@
 								<span class="visually-hidden">Вперед</span>
 								<svg class="cases-controls__arrow" width="44" viewBox="0 0 50 50"><polygon points="5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24"/></svg>
 							</button>
-						</div>
+						</div> -->
 					</div>
 
 					<a class="main-link traders__link" href="#">Посмотреть все планы</a>
@@ -433,6 +548,8 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<script src="owl_carousel/owl.carousel.min.js"></script>
 	
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

@@ -1,58 +1,86 @@
-/* Custom language-picker */
+/* Бургер меню */
 
-/*var languagePicker = document.querySelector(".language-picker");
+/*$('#burger').on('touchstart click', function (event) {*/
+$('#burger').on('click', function (event) {
+	/*if (event.type == "touchstart") { 
+    	$(this).off('click'); 
+        //alert("Only touch event is fired"); 
+    } else if (event.type == "click") { 
+        $(this).off('touchstart'); 
+        //alert("Only click event is fired"); 
+    } */
 
-languagePicker.addEventListener("click", function(evt) {
-	let btn = languagePicker.querySelector(".language-picker__button");
+	/*var button = $(event.target); // Button that triggered event
+	button.attr('aria-expanded') === 'true' ? button.attr('aria-expanded', 'false') : button.attr('aria-expanded', 'true');*/
 
-	// Показать/скрыть дропдаун 
-	let ariaExpanded = btn.getAttribute("aria-expanded") == "true" ? btn.setAttribute("aria-expanded", "false") : btn.setAttribute("aria-expanded", "true");
-});
+	$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
+})
 
-document.addEventListener("click", function(evt) {
-	// Скрыть дропдаун по клику вне него 
-	if(languagePicker !== evt.target && !languagePicker.contains(evt.target) && languagePicker.querySelector(".language-picker__button").getAttribute("aria-expanded") == "true") {
-
-		languagePicker.querySelector(".language-picker__button").setAttribute("aria-expanded", "false");
-	}
-});
-
-document.addEventListener("keydown", function(evt) {
-	if(evt.keyCode === 27) {
-		// Скрыть дропдаун по нажатию клавиши ESC 
-		if(evt.target === languagePicker || languagePicker.contains(evt.target) && languagePicker.querySelector(".language-picker__button").getAttribute("aria-expanded") == "true") {
-			languagePicker.querySelector(".language-picker__button").setAttribute("aria-expanded", "false");
-		}
-	}
-});*/
-
-/* END OF Custom language-picker */
-
-
-
+/* END OF Бургер меню */
 
 
 
 /* Секция traders, подсвечивание активных ссылок в блоке cases-switcher */
 
-var casesSwitcherLinks = document.querySelectorAll(".cases-switcher__link");
+$('.cases-switcher__link').on('click', function (event) {
+	event.preventDefault();
 
-for (var link of casesSwitcherLinks) {
-	link.addEventListener("click", function(evt) { /* TOUCHSTART */
-		evt.preventDefault();
+	var activeClass = 'cases-switcher__link_active';
 
-		var activeClass = "cases-switcher__link_active";
+	var link = $(event.target); // Link that triggered event
 
-		if(!evt.target.classList.contains(activeClass)) {
-			for(let i = 0; i < casesSwitcherLinks.length; i++) {
-				casesSwitcherLinks[i].classList.contains(activeClass) ? casesSwitcherLinks[i].classList.remove(activeClass) : false;
-			}
-			evt.target.classList.add(activeClass);
-		}
-	})
-}
+	if(!link.hasClass(activeClass)) {
+		console.log("yes");
+
+		$('.cases-switcher__link').each(function() {
+			$(this).hasClass(activeClass) ? $(this).removeClass(activeClass) : false;
+		});
+
+		var href = link.attr('href');
+
+		$('ul.cases-list').each(function() {
+			$(this).css('display', 'none');
+
+			/*if($(this).attr('id') !== href)
+				$(this).css('display', 'none');
+			else
+				$(this).css('display', 'block');*/
+		});
+
+		$('#' + href).css('display', 'block');
+
+		link.addClass(activeClass);
+	}
+});
 
 /* END OF Секция traders, подсвечивание активных ссылок в блоке cases-switcher */
+
+
+
+/* Карусель */
+
+$(document).ready(function(){
+	$(".owl-carousel").owlCarousel({
+  		loop:true,
+  		/*center:true,*/
+  		nav:true,
+  		navText: [
+  					"<span class='visually-hidden'>Назад</span><svg class='cases-controls__arrow' width='44' viewBox='0 0 50 50'><polygon points='5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24'/></svg>",
+  					"<span class='visually-hidden'>Назад</span><svg class='cases-controls__arrow' width='44' viewBox='0 0 50 50'><polygon points='5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24'/></svg>"],
+  		dots:false,
+  		responsiveClass:true,
+  		responsive:{
+        	0:{
+            	items:1
+        	},
+        	768:{
+            	items:2
+        	}
+    	}
+	});
+});
+
+/* END OF Карусель */
 
 
 
@@ -97,20 +125,3 @@ $('#profit-modal').on('show.bs.modal', function (event) {
 })
 
 /* END OF Модалка по нажатию на кнопку "подробнее" внутри секции profit */
-
-
-/* Бургер меню */
-
-$('#burger').on('touchstart click', function (event) {
-	if (event.type == "touchstart") { 
-    	$(this).off('click'); 
-        //alert("Only touch event is fired"); 
-    } else if (event.type == "click") { 
-        $(this).off('touchstart'); 
-        //alert("Only click event is fired"); 
-    } 
-
-	var button = $(event.target); // Button that triggered event
-	button.attr('aria-expanded') === 'true' ? button.attr('aria-expanded', 'false') : button.attr('aria-expanded', 'true');
-})
-/* END OF Бургер меню */
