@@ -138,6 +138,28 @@ body {
 
 	/* Денюшки */
 
+	/*.features {
+		position: relative;
+	}
+
+	.features::after {
+		position: absolute;
+		z-index: -5;
+		bottom: 450px;
+    	right: 0;
+		width: 206px;
+		height: 201px;
+
+		background-image: url("../img/money_3_1x.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 206px 201px;
+
+		transform: rotate(45deg);
+
+		content: "";
+	}*/
+
 	/*.features .inner-container_large::after {
 		position: absolute;
 		z-index: -5;
