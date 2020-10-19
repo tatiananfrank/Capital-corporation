@@ -236,7 +236,8 @@
     font: inherit;
     text-transform: uppercase;
     color: inherit;
-    background-color: rgba(224, 43, 43, 0.3);
+    /*background-color: rgba(224, 43, 43, 0.3);*/
+    background-color: #531b1b;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-repeat: no-repeat;
@@ -257,6 +258,8 @@
 	}
 }
 
+/* Смена картинок в No-js language picker в зависимости от значения атрибута data-lang */
+
 .no-js .language-picker-form__select[data-lang="ru"] {
 	background-image: url(../img/ru.svg);
 }
@@ -276,6 +279,8 @@
 .no-js .language-picker-form__select[data-lang="ch"] {
 	background-image: url(../img/cn.svg);
 }
+
+/* END OF Смена картинок в No-js language picker в зависимости от значения атрибута data-lang */
 
 .no-js .language-picker-form__select:hover,
 .no-js .language-picker-form__select:focus {

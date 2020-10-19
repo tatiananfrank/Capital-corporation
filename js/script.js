@@ -1,32 +1,21 @@
+$(document).ready(function() {
+
+
 /* Бургер меню */
 
-/*$('#burger').on('touchstart click', function (event) {*/
-$('#burger').on('click', function (event) {
-	/*if (event.type == "touchstart") { 
-    	$(this).off('click'); 
-        //alert("Only touch event is fired"); 
-    } else if (event.type == "click") { 
-        $(this).off('touchstart'); 
-        //alert("Only click event is fired"); 
-    } */
-
-	/*var button = $(event.target); // Button that triggered event
-	button.attr('aria-expanded') === 'true' ? button.attr('aria-expanded', 'false') : button.attr('aria-expanded', 'true');*/
-
-	$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
-});
+	$('#burger').on('click', function (event) {
+		$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
+	});
 
 /* END OF Бургер меню */
 
 
+/* Карусель */
 
-$(document).ready(function(){
-
-	/* Карусель */
-
+	// Параметры для инициализации карусели
 	var carouselParams = {
 		loop:true,
-  		/*center:true,*/
+  		// center:true,
   		nav:true,
   		navText: [
   					"<span class='visually-hidden'>Назад</span><svg class='cases-controls__arrow' width='44' viewBox='0 0 50 50'><polygon points='5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24'/></svg>",
@@ -43,105 +32,104 @@ $(document).ready(function(){
     	}
 	};
 	
+	// Инициализация карусели
 	$(".owl-carousel").owlCarousel(carouselParams);
 
-	/* Переинициализирует карусель после клика на ссылки IPO ICO */
-
+	// Переинициализирует карусель после клика на ссылки IPO, ICO
 	$('.cases-switcher__link').on('click', function (event) {
 		event.preventDefault();
 
 		var activeClass = 'cases-switcher__link_active';
 
-		var link = $(event.target); // Link that triggered event
+		var link = $(event.target);
 
-		if(!link.hasClass(activeClass)) { // Checks that link is not active
+		if(!link.hasClass(activeClass)) { // Если произошел клик на неактивную ссылку
 
 			$('.cases-switcher__link').each(function() {
 				$(this).hasClass(activeClass) ? $(this).removeClass(activeClass) : false;
 			});
 
-			var model = link.attr('data-model'); // Определяем модель
+			var model = link.attr('data-model'); // Определяет модель (IPO, ICO)
 			var html = '';
 
-			// Находим лист с нужной моделью и копируем его элементы в переменную html
+			// Находит список с нужной моделью и копирует его элементы в переменную html
 			$('.cases-list').each(function() {
 				if($(this).attr('data-model') === model) {
 					html = $(this).prop('innerHTML');
 				}
 			});
-
 		}
 
-		// Обновляем карусель
+		// Обновляет карусель
 		$(".owl-carousel").trigger('replace.owl.carousel', html, carouselParams).trigger('refresh.owl.carousel');
 
+		// Подсвечивает активную ссылку
 		link.addClass(activeClass);
 	});
 
-	/* END OF Переинициализирует карусель после клика на ссылки IPO ICO */
+/* END OF Карусель */
 
-	/* END OF Карусель */
+
+/* Модалка по нажатию на кнопку "подробнее" внутри секции profit */
+
+	$('#profit-modal').on('show.bs.modal', function (event) {
+		// Узнает ширину скроллбара
+		if(!scrollWidth)
+			scrollWidth = ScroolbarWidth();
+
+		var button = $(event.relatedTarget);
+		var value = button.attr('data-content'); // Извлекает значение атрибута data-content у кнопки, которая была нажата, чтоб открыть модалку
+
+		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+
+		var modal = $(this);
+
+		// Отображает ту картинку и текст, значение атрибута data-content которых совпадает со значением этого атрибута у кнопки, нажатой для открытия модалки
+		modal.find('.modal__img').each(function() {
+			ShowModalContent($(this), value)
+		});
+
+		modal.find('.modal__text').each(function() {
+			ShowModalContent($(this), value);
+		});
+	});
+
+	$('#profit-modal').on('hide.bs.modal', function (event) {
+		// Возвращает прокрутку в начало модалки при ее закрытии
+		$(this).find('.magic').scrollTop(0);
+	});
+
+/* END OF Модалка по нажатию на кнопку "подробнее" внутри секции profit */
+
 });
 
 
-/* Узнаем ширину скроллбара */
-
+// Узнает ширину скроллбара
+var scrollWidth;
 function ScroolbarWidth() {
-	// создадим элемент с прокруткой
 	let div = document.createElement('div');
-
 	div.style.overflowY = 'scroll';
 	div.style.width = '50px';
 	div.style.height = '50px';
-
-	// мы должны вставить элемент в документ, иначе размеры будут равны 0
 	document.body.append(div);
+
 	let scrollWidth = div.offsetWidth - div.clientWidth;
 
 	div.remove();
-
 	
 	return scrollWidth;
 }
 
-/* END OF Узнаем ширину скроллбара */
+
+// Показывает содержимое модалки
+function ShowModalContent(element, content) {
+	if(element.attr('data-content') === content) {
+	  	element.css('display', 'flex');
+	  	element.css('margin-left', scrollWidth);
+	} else {
+	  	element.css('display', 'none');
+	}
+}
 
 
 
-var scrollWidth;
-
-/* Модалка по нажатию на кнопку "подробнее" внутри секции profit */
-
-$('#profit-modal').on('show.bs.modal', function (event) {
-
-	/* Узнаем ширину скроллбара */
-	if(!scrollWidth)
-		scrollWidth = ScroolbarWidth();
-
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var value = button.attr('data-content') // Extract info from data-* attributes
-
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-
-  var modal = $(this)
-
-  modal.find('.modal__img').each(function() {
-  	if($(this).attr('data-content') === value) {
-  		$(this).css('display', 'flex');
-  		$(this).css('margin-left', scrollWidth);
-  	} else {
-  		$(this).css('display', 'none');
-  	}
-  });
-
-  modal.find('.modal__text').each(function() {
-  	if($(this).attr('data-content') === value) {
-  		$(this).css('display', 'flex');
-  		$(this).css('margin-left', scrollWidth);
-  	} else {
-  		$(this).css('display', 'none');
-  	}
-  });
-});
-
-/* END OF Модалка по нажатию на кнопку "подробнее" внутри секции profit */

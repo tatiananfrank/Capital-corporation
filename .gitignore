@@ -2,22 +2,20 @@ DESIGN_1.png
 Screenshot_1.png
 Screenshot_2.png
 Screenshot_3.png
-
 tasks.txt
 
 css/variables.scss
-css/normalize.css
-bootstrap.css
+css/header_old.css
+css/footer_old.css
+css/bootstrap.css
 
 preview/
-img/
-fonts/
 
 bootstrap/css/nope/
+bootstrap/css/bootstrap-reboot.css.map
+bootstrap/css/bootstrap-reboot.min.css
+bootstrap/css/bootstrap-reboot.min.css.map
 bootstrap/js/
-bootstrap/
-
-owl_carousel/
 
 
 header_footer.html
