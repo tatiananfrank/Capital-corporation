@@ -348,11 +348,10 @@
     -webkit-transform: translate(0, -100vh) scale(1, 0.4);
         -ms-transform: translate(0, -100vh) scale(1, 0.4);
             transform: translate(0, -100vh) scale(1, 0.4);
-    -webkit-transition: visibility .3s linear, opacity .3s linear, -webkit-transform .3s ease-out;
-    transition: visibility .3s linear, opacity .3s linear, -webkit-transform .3s ease-out;
-    -o-transition: visibility .3s linear, opacity .3s linear, transform .3s ease-out;
-    transition: visibility .3s linear, opacity .3s linear, transform .3s ease-out;
-    transition: visibility .3s linear, opacity .3s linear, transform .3s ease-out, -webkit-transform .3s ease-out;
+
+
+    transition: visibility .35s linear, opacity .35s linear, transform .45s ease-out;
+
 }
 
 .js .burger[aria-expanded="true"] + .main-nav {
