@@ -14,54 +14,18 @@ $('#burger').on('click', function (event) {
 	button.attr('aria-expanded') === 'true' ? button.attr('aria-expanded', 'false') : button.attr('aria-expanded', 'true');*/
 
 	$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
-})
+});
 
 /* END OF Бургер меню */
 
-
-
-/* Секция traders, подсвечивание активных ссылок в блоке cases-switcher */
-
-$('.cases-switcher__link').on('click', function (event) {
-	event.preventDefault();
-
-	var activeClass = 'cases-switcher__link_active';
-
-	var link = $(event.target); // Link that triggered event
-
-	if(!link.hasClass(activeClass)) {
-		console.log("yes");
-
-		$('.cases-switcher__link').each(function() {
-			$(this).hasClass(activeClass) ? $(this).removeClass(activeClass) : false;
-		});
-
-		var href = link.attr('href');
-
-		$('ul.cases-list').each(function() {
-			$(this).css('display', 'none');
-
-			/*if($(this).attr('id') !== href)
-				$(this).css('display', 'none');
-			else
-				$(this).css('display', 'block');*/
-		});
-
-		$('#' + href).css('display', 'block');
-
-		link.addClass(activeClass);
-	}
-});
-
-/* END OF Секция traders, подсвечивание активных ссылок в блоке cases-switcher */
 
 
 
 /* Карусель */
 
 $(document).ready(function(){
-	$(".owl-carousel").owlCarousel({
-  		loop:true,
+	var carouselParams = {
+		loop:true,
   		/*center:true,*/
   		nav:true,
   		navText: [
@@ -77,10 +41,49 @@ $(document).ready(function(){
             	items:2
         	}
     	}
+	};
+	
+	$(".owl-carousel").owlCarousel(carouselParams);
+
+	/* Переинициализирует карусель после клика на ссылки IPO ICO */
+
+	$('.cases-switcher__link').on('click', function (event) {
+		event.preventDefault();
+
+		var activeClass = 'cases-switcher__link_active';
+
+		var link = $(event.target); // Link that triggered event
+
+		if(!link.hasClass(activeClass)) { // Checks that link is not active
+
+			$('.cases-switcher__link').each(function() {
+				$(this).hasClass(activeClass) ? $(this).removeClass(activeClass) : false;
+			});
+
+			var model = link.attr('data-model'); // Определяем модель
+			var html = '';
+
+			// Находим лист с нужной моделью и копируем его элементы в переменную html
+			$('.cases-list').each(function() {
+				if($(this).attr('data-model') === model) {
+					html = $(this).prop('innerHTML');
+				}
+			});
+
+		}
+
+		// Обновляем карусель
+		$(".owl-carousel").trigger('replace.owl.carousel', html, carouselParams).trigger('refresh.owl.carousel');
+
+		link.addClass(activeClass);
 	});
+
+	/* END OF Переинициализирует карусель после клика на ссылки IPO ICO */
 });
 
 /* END OF Карусель */
+
+
 
 
 
@@ -93,10 +96,8 @@ $('#profit-modal').on('show.bs.modal', function (event) {
 
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
 
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
 
-  /*modal.find('.modal__img').attr('src', 'C:/Users/ученик/Desktop/Таня/Capital corporation/img/modal-picture_' + value + '_cropped.png');*/
   modal.find('.modal__img').attr('src', '../img/modal-picture_' + value + '_cropped.png');
 
   var text_1 = 'Инвестиции в перспективные стартапы по разработке платформ для создания приложений на основе блокчейн относятся к самым рискованным видам вложений личного капитала. Однако это реальный шанс для каждого человека, чтобы заработать свой первый миллион за пару лет. Новейшая история знает немало примеров, когда инвесторы покупали токены по минимальной цене размещения в момент проведения ICO и впоследствии получали фантастические прибыли. Например, токен Wings за два года показал доходность 1488% или более 385% годовых. Абсолютный рекордсмен по общей доходности в блокчейн стартапах – это токен NXT. За шесть лет его стоимость выросла на 765 000%. Самые терпеливые ранние инвесторы с железными нервами увеличили свой капитал в 7 600 раз! Мы предлагаем инвестиционные портфели с разумной диверсификацией активов в инновационные блокчейн стартапы (ICO). Наши инвесторы получают прибыль, которая превышает отдачу от консервативных способов вложения капитала.';
@@ -122,6 +123,6 @@ $('#profit-modal').on('show.bs.modal', function (event) {
 			break;
    }
    modal.find('.modal__text').text(value);
-})
+});
 
 /* END OF Модалка по нажатию на кнопку "подробнее" внутри секции profit */

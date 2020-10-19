@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 versions,>1%
+*/
+
 /* owl-carousel */
 
 .cases-list.owl-carousel {
@@ -156,10 +163,6 @@
     	        align-items: center;
 	}
 
-	/*.case:last-child {
-		display: none;
-	}*/
-
 	.case__logo {
 		margin-bottom: 2px;
 		/*max-width: 110px;
@@ -170,8 +173,6 @@
 
 		vertical-align: middle; /* reboot bootstrap */
 	}
-
-	
 
 	.case__info {
 		border-collapse: collapse; /* reboot bootstrap */

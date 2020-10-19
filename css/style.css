@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 versions,>1%
+*/
+
 
 
 @font-face {
@@ -138,43 +145,12 @@ body {
 
 	/* Денюшки */
 
-	/*.features {
-		position: relative;
-	}
-
-	.features::after {
-		position: absolute;
-		z-index: -5;
-		bottom: 450px;
-    	right: 0;
-		width: 206px;
-		height: 201px;
-
-		background-image: url("../img/money_3_1x.png");
+	.features .inner-container_large {
+		background-image: url("../img/money_1_1x_rotated.png");
 		background-repeat: no-repeat;
-		background-position: left top;
+		background-position: right 0 bottom 410px;
 		background-size: 206px 201px;
-
-		transform: rotate(45deg);
-
-		content: "";
-	}*/
-
-	/*.features .inner-container_large::after {
-		position: absolute;
-		z-index: -5;
-		bottom: 0;
-		right: 0;
-		width: 238px;
-		height: 137px;
-
-		background-image: url("../img/money_1_1x.png");
-		background-repeat: no-repeat;
-		background-position: right bottom;
-		background-size: 238px 137px;
-
-		content: "";
-	}*/
+	}
 
 	.traders .inner-container_medium {
 		position: relative;

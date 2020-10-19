@@ -21,7 +21,6 @@
 	<!-- ПОТОМ УДАЛИТЬ -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<!-- <link rel="stylesheet" type="text/css" href="css/header_old.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/logo.css">
 	<link rel="stylesheet" type="text/css" href="css/features.css">
@@ -29,7 +28,6 @@
 	<link rel="stylesheet" type="text/css" href="css/traders.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/call-for-action.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/footer_old.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/modal.css"> 
 	<!-- END OF ПОТОМ УДАЛИТЬ -->
@@ -213,16 +211,98 @@
 
 					<ul class="cases-switcher traders__cases-switcher" aria-controls="cases" aria-label="Выберите модель">
 						<li class="cases-switcher__item">
-							<a href="ipo" class="cases-switcher__link cases-switcher__link_active" lang="en" aria-label="Cейчас выбрана">IPO</a>
+							<!-- 
+								Атрибут data-model используется для наполнения карусели через js 
+							-->
+							<a href="#" class="cases-switcher__link cases-switcher__link_active" data-model="ipo" lang="en" aria-label="Cейчас выбрана">IPO</a>
 						</li>
 						<li class="cases-switcher__item">
-							<a href="ico" class="cases-switcher__link" lang="en">ICO</a>
+							<a href="#" class="cases-switcher__link" data-model="ico" lang="en">ICO</a>
 						</li>
 					</ul>
 					
 					<div class="cases" id="cases">
-					
-						<ul class="cases-list cases__cases-list owl-carousel owl-theme" id="ipo" aria-label="Данные по кейсам">
+						<!-- Карусель -->
+						<ul class="cases-list cases__cases-list owl-carousel" aria-label="Данные по кейсам">
+							<li class="case">
+								<h3 class="visually-hidden">CargoX</h3>
+								<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип «CargoX»" width="132" height="38">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$0,11</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>366%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">ethereum</h3>
+								<img class="case__logo" src="img/ethereum_1x.png" alt="Логотип «ethereum»" width="132" height="37">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$8,06</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$978,42</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>12 139%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">neo</h3>
+								<img class="case__logo" src="img/neo_1x.png" alt="Логотип «neo»" width="111" height="47">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$7,82</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$131,27</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>1 678%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">spectre</h3>
+								<img class="case__logo" src="img/spectre_1x.png" alt="Логотип «spectre»" width="139" height="40">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$3,24</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>10 800%</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+						
+						<!-- 
+							Атрибут data-model используется для наполнения карусели через js 
+						-->
+						<!-- Листы с кейсами, которыми бедт заполняться карусель по клику на соответствующие ссылки -->
+						<ul class="cases-list cases__cases-list" data-model="ipo" style="display: none;">
 							<li class="case">
 								<h3 class="visually-hidden">CargoX</h3>
 								<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип «CargoX»" width="132" height="38">
@@ -297,7 +377,7 @@
 							</li>
 						</ul>
 
-						<ul class="cases-list cases__cases-list owl-carousel owl-theme" id="ico" aria-label="Данные по кейсам">
+						<ul class="cases-list cases__cases-list" data-model="ico" style="display: none;">
 							<li class="case">
 								<h3 class="visually-hidden">CarGurus</h3>
 								<img class="case__logo" src="img/car_gurus_1x.png" alt="Логотип «CarGurus»" width="155" height="29">
