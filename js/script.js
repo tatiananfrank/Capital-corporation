@@ -20,10 +20,10 @@ $('#burger').on('click', function (event) {
 
 
 
-
-/* Карусель */
-
 $(document).ready(function(){
+
+	/* Карусель */
+
 	var carouselParams = {
 		loop:true,
   		/*center:true,*/
@@ -79,18 +79,45 @@ $(document).ready(function(){
 	});
 
 	/* END OF Переинициализирует карусель после клика на ссылки IPO ICO */
+
+	/* END OF Карусель */
 });
 
-/* END OF Карусель */
+
+/* Узнаем ширину скроллбара */
+
+function ScroolbarWidth() {
+	// создадим элемент с прокруткой
+	let div = document.createElement('div');
+
+	div.style.overflowY = 'scroll';
+	div.style.width = '50px';
+	div.style.height = '50px';
+
+	// мы должны вставить элемент в документ, иначе размеры будут равны 0
+	document.body.append(div);
+	let scrollWidth = div.offsetWidth - div.clientWidth;
+
+	div.remove();
+
+	
+	return scrollWidth;
+}
+
+/* END OF Узнаем ширину скроллбара */
 
 
 
-
-
+var scrollWidth;
 
 /* Модалка по нажатию на кнопку "подробнее" внутри секции profit */
 
 $('#profit-modal').on('show.bs.modal', function (event) {
+
+	/* Узнаем ширину скроллбара */
+	if(!scrollWidth)
+		scrollWidth = ScroolbarWidth();
+
   var button = $(event.relatedTarget) // Button that triggered the modal
   var value = button.attr('data-content') // Extract info from data-* attributes
 
@@ -99,11 +126,21 @@ $('#profit-modal').on('show.bs.modal', function (event) {
   var modal = $(this)
 
   modal.find('.modal__img').each(function() {
-  	$(this).attr('data-content') === value ? $(this).css('display', 'flex') : $(this).css('display', 'none');
+  	if($(this).attr('data-content') === value) {
+  		$(this).css('display', 'flex');
+  		$(this).css('margin-left', scrollWidth);
+  	} else {
+  		$(this).css('display', 'none');
+  	}
   });
 
   modal.find('.modal__text').each(function() {
-  	$(this).attr('data-content') === value ? $(this).css('display', 'flex') : $(this).css('display', 'none');
+  	if($(this).attr('data-content') === value) {
+  		$(this).css('display', 'flex');
+  		$(this).css('margin-left', scrollWidth);
+  	} else {
+  		$(this).css('display', 'none');
+  	}
   });
 });
 
