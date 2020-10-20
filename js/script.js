@@ -32,8 +32,9 @@ $(document).ready(function() {
     	}
 	};
 	
-	// Инициализация карусели
-	$(".owl-carousel").owlCarousel(carouselParams);
+	// Инициализация карусели, если она существует на странице
+	if($(document).find('.owl-carousel').length !== 0)
+		$(".owl-carousel").owlCarousel(carouselParams);
 
 	// Переинициализирует карусель после клика на ссылки IPO, ICO
 	$('.cases-switcher__link').on('click', function (event) {
