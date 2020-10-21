@@ -223,5 +223,96 @@
 
 
 @media (min-width: 768px) {
+	.ladder,
+	.bonuses,
+	.office {
+		padding: 0 60px;
+	}
+
+	.career-content__ladder {
+		margin-bottom: 200px;
+	}
+
+	.career-content__bonuses {
+		margin-bottom: 90px;
+	}
+
+	.career-content__office {
+		padding-top: 60px;
+    	padding-bottom: 150px;
+	}
+
+	.ladder .inner-container_medium,
+	.bonuses .inner-container_medium,
+	.office .inner-container_medium {
+		max-width: 890px;
+    	padding: 0 15px;
+    	width: 95%;
+	}
+
+	.ladder .inner-container_medium,
+	.bonuses .inner-container_medium {
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.ladder__col,
+	.bonuses__col {
+		width: 41%; /**/
+	}
+
+	.ladder-table,
+	.bonuses-table {
+		width: 55%; /**/
+	}
+
+	.ladder__col,
+	.career-content__office {
+		text-align: left;
+	}
+
+	.bonuses__col {
+		order: 4;
+
+		text-align: right;
+	}
+
+	.ladder__title,
+	.office__title {
+		text-align: left;
+	}
+
+	.bonuses__title {
+		text-align: right;
+	}
+
+	.bonuses__table,
+	.ladder__table {
+		margin-top: 35px;
+	}
+
+	.ladder-table img,
+	.bonuses-table img {
+		max-width: 125px;
+	}
+
+	.ladder-table td,
+	.bonuses-table td {
+		padding: 0px 7px;
+	}
+
+	.ladder-table__block td,
+	.bonuses-table__block td {
+		padding-bottom: 10px;
+	}
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
 
 }
