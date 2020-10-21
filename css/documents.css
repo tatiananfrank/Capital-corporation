@@ -262,5 +262,50 @@
 
 
 @media (min-width: 992px) {
+	.document {
+		padding: 0;
+	}
 
+	.documents-content__document {
+		margin-bottom: 150px;
+	}
+
+	.document .inner-container_medium {
+		width: 74%;
+    	max-width: 980px;
+	}
+
+	.document__figure {
+		margin-bottom: 40px;
+		width: 450px;
+	}
+
+	.document__link {
+		width: 50px;
+		height: 41px;
+	}
+
+	.document:nth-of-type(1) .document__link {
+		right: 37px;
+    	bottom: 256px;
+	}
+
+	.document:nth-of-type(2) .document__link {
+		right: 36px;
+    	bottom: 261px;
+	}
+
+	.document:nth-of-type(3) .document__link {
+		left: 10px;
+    	bottom: 182px;
+	}
+
+	.document:nth-of-type(4) .document__link {
+		right: 23px;
+	    bottom: 144px;
+	}
+
+	.document__link img {
+		width: 29px;
+	}
 }
