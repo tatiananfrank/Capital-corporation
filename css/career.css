@@ -1,0 +1,165 @@
+.career-content {} 
+
+.career-content .main-heading {
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+
+.ladder {}
+
+.bonuses {}
+
+.office {
+	background-image: url("../img/career_background.png");
+	background-repeat: repeat-y;
+	background-position: top center;
+}
+
+.career-content__ladder,
+.career-content__bonuses {
+	margin-bottom: 60px;
+}
+
+.ladder .inner-container_medium,
+.bonuses .inner-container_medium {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ladder__col,
+.bonuses__col,
+.career-content__office {
+	margin-bottom: 30px;
+
+	text-align: center;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.career-content__bonuses {
+	margin-bottom: 50px; /* компенсируем пэддингом */
+}
+
+.career-content__office {
+	margin-bottom: 0;
+	padding-bottom: 150px;
+	padding-top: 10px; /**/
+}
+
+.ladder .main-heading {}
+
+.bonuses .main-heading {}
+
+.office .main-heading {}
+
+.ladder__title,
+.bonuses__title,
+.office__title {
+	margin-bottom: 20px;
+}
+
+.ladder__text,
+.bonuses__text,
+.office__text,
+.office-list__item {
+	margin-bottom: 17px;
+}
+
+.ladder__text:last-child,
+.bonuses__text:last-child {
+	margin-bottom: 0;
+}
+
+.ladder-table,
+.bonuses-table {
+	width: 100%;
+	border-collapse: collapse;
+
+	font-size: 0.588rem; /*10px;*/
+	line-height: 0.706rem; /*12px;*/
+	text-align: center;
+}
+
+.ladder-table td,
+.bonuses-table td {
+	padding: 3px 7px;
+}
+
+.ladder-table__block td,
+.bonuses-table__block td {
+	padding-bottom: 10px;
+}
+
+.ladder-table__block + tr td,
+.bonuses-table__block + tr td {
+	padding-top: 15px;
+}
+
+.ladder-table__rank,
+.bonuses-table__rank {
+	font-weight: 500;
+}
+
+.ladder-table__level,
+.bonuses-table__bonus {
+	margin: 0;
+
+	font-weight: 400;
+	color: #a11f1f;
+}
+
+.ladder-table img,
+.bonuses-table img {
+	max-width: 90px;
+	height: auto;
+}
+
+.ladder-table__perc,
+.bonuses-table__profit {
+	font-size: 0.647rem; /*11px;*/
+	line-height: 0.765rem; /*13px;*/
+}
+
+.ladder-table__block {
+	border-bottom: 1px solid #BC0000;
+	box-shadow: inset 0 -5px 3px -4px rgba(188, 0, 0, 0.7);
+}
+
+.ladder-table__block + tr {
+    box-shadow: inset 0 5px 3px -4px rgba(188, 0, 0, 0.7);
+}
+
+.bonuses-table__block {
+	border-bottom: 1px solid #3100BC;
+	box-shadow: inset 0 -5px 3px -4px rgba(49, 0, 188, 0.8);
+}
+
+.bonuses-table__block + tr {
+	box-shadow: inset 0 5px 3px -4px rgba(49, 0, 188, 0.8);
+}
+
+.office-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.office-list__item {}
+
+.office-list__marker {
+	display: inline-block;
+
+	margin-right: 5px;
+	width: 18px;
+	height: 5px;
+	border-radius: 28.5px;
+
+	background-color: #BC0000;
+	box-shadow: 0 0 4px 1px rgba(188, 0, 0, 0.7);
+
+	vertical-align: middle;
+}
