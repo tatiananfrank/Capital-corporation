@@ -126,9 +126,68 @@
 
 
 
-@media (min-width: 576px) {
 
+
+
+@media (min-width: 576px) {
+	.document {
+		padding: 0 50px;
+	}
+
+	.documents-content__document {
+		margin-bottom: 125px;
+	}
+
+	.documents-content__document:last-child {
+		margin-bottom: 160px;
+	}
+
+	.document .inner-container_medium {
+		display: block;
+		max-width: 580px;
+    	padding: 0 25px;
+	}
+
+	.documents-content .main-heading {
+		max-width: 260px;
+
+		font-size: 1.412rem; /*24px;*/
+		line-height: 1.706rem; /*29px;*/
+		text-align: left;
+	}
+
+	.document_content_right .main-heading {
+		text-align: right;
+	}
+
+	.document_content_right .document__title {
+		margin-left: auto;
+	}
+
+	.document__figure {
+		float: right;
+		margin-bottom: 50px;
+	}
+
+	.document_content_right .document__figure {
+		float: left;
+	}
+
+	.document__text {
+		font-size: 0.824rem; /*14px;*/
+		line-height: 0.941rem; /*16px;*/
+		text-align: left;
+	}
+
+	.document_content_right .document__text {
+		text-align: right;
+	}
 }
+
+
+
+
+
 
 @media (min-width: 768px) {
 
