@@ -163,3 +163,65 @@
 
 	vertical-align: middle;
 }
+
+
+
+
+
+@media (min-width: 576px) {
+	.career-content {
+		margin-top: -60px;
+	}
+
+	.ladder,
+	.bonuses,
+	.office {
+		padding: 0 50px;
+	}
+
+	.career-content__ladder,
+	.career-content__bonuses {
+		margin-bottom: 70px;
+	}
+
+	.career-content__office {
+		padding-top: 60px;
+		padding-bottom: 150px;
+	}
+
+	.ladder .inner-container_medium,
+	.bonuses .inner-container_medium,
+	.office .inner-container_medium {
+		max-width: 580px;
+    	padding: 0 25px;
+	}
+
+	.ladder-table,
+	.bonuses-table {
+		width: 90%;
+
+		font-size: 0.765rem; /*13px;*/
+		line-height: 0.882rem; /*15px;*/
+	}
+
+	.ladder-table img,
+	.bonuses-table img {
+		max-width: 155px;
+	}
+
+	.ladder-table__perc,
+	.bonuses-table__profit {
+		font-size: 0.824rem; /*14px;*/
+		line-height: 0.941rem; /*16px;*/
+	}
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+}

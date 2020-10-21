@@ -43,3 +43,34 @@
 	color: inherit;
 	text-decoration: none;
 }
+
+
+
+
+
+
+@media (min-width: 576px) {
+	.breadcrumbs {
+		padding: 0 50px;
+	}
+
+	.career-content__breadcrumbs {
+		margin-bottom: 40px;
+	}
+
+	.breadcrumbs__item {
+		padding-right: 14.5px;
+
+		font-size: 0.706rem; /*12px;*/
+		line-height: 0.824rem; /*14px;*/
+	}
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+}
