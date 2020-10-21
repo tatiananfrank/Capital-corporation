@@ -4,7 +4,8 @@
 	margin-bottom: 30px;
 }*/
 
-.career-content__breadcrumbs {
+.career-content__breadcrumbs,
+.documents-content__breadcrumbs {
 	margin-top: -75px;
     margin-bottom: 45px;
 }
@@ -63,7 +64,8 @@
 		margin-bottom: 40px;
 	}
 */
-	.career-content__breadcrumbs {
+	.career-content__breadcrumbs,
+	.documents-content__breadcrumbs {
 		margin-top: -157px;
     	margin-bottom: 60px;
 	}
@@ -86,7 +88,8 @@
 		padding: 0 60px; 
 	}
 
-	.career-content__breadcrumbs {
+	.career-content__breadcrumbs,
+	.documents-content__breadcrumbs {
 		margin-top: -166px;
     	margin-bottom: 65px;
 	}
@@ -113,7 +116,8 @@
 	    max-width: 1050px;
 	}
 
-	.career-content__breadcrumbs {
+	.career-content__breadcrumbs,
+	.documents-content__breadcrumbs {
 		margin-bottom: 50px;
 		margin-top: 0;
 	}
