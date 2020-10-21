@@ -89,5 +89,16 @@
 
 
 @media (min-width: 992px) {
+	.breadcrumbs {
+		padding: 0;
+	}
 
+	.breadcrumbs .inner-container_large {
+		width: 80%;
+	    max-width: 1050px;
+	}
+
+	.career-content__breadcrumbs {
+		margin-bottom: 50px;
+	}
 }
