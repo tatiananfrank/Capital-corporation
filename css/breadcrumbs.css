@@ -6,7 +6,8 @@
 
 .career-content__breadcrumbs,
 .documents-content__breadcrumbs,
-.contacts-content__breadcrumbs {
+.contacts-content__breadcrumbs,
+.company-content__breadcrumbs {
 	margin-top: -75px;
     margin-bottom: 45px;
 }
@@ -67,7 +68,8 @@
 */
 	.career-content__breadcrumbs,
 	.documents-content__breadcrumbs,
-	.contacts-content__breadcrumbs {
+	.contacts-content__breadcrumbs,
+	.company-content__breadcrumbs {
 		margin-top: -157px;
     	margin-bottom: 60px;
 	}
@@ -92,7 +94,8 @@
 
 	.career-content__breadcrumbs,
 	.documents-content__breadcrumbs,
-	.contacts-content__breadcrumbs {
+	.contacts-content__breadcrumbs,
+	.company-content__breadcrumbs {
 		margin-top: -166px;
     	margin-bottom: 65px;
 	}
@@ -121,7 +124,8 @@
 
 	.career-content__breadcrumbs,
 	.documents-content__breadcrumbs,
-	.contacts-content__breadcrumbs {
+	.contacts-content__breadcrumbs,
+	.company-content__breadcrumbs {
 		margin-bottom: 50px;
 		margin-top: 0;
 	}
