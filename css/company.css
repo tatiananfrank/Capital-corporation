@@ -1,3 +1,57 @@
 .company-header .logo {
 	visibility: hidden;
 }
+
+.history {}
+
+.company-content__history,
+.company-content__divider {
+	margin-bottom: 55px;
+}
+
+.company-content__history:last-child {
+	margin-bottom: 230px;
+}
+
+.history .inner-container_medium,
+.divider .inner-container_medium {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history .main-heading {
+	font-weight: 400;
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.824rem; /*14px*/
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.history__title {
+	margin-bottom: 17px;
+}
+
+.history__date {
+	color: #A70808;
+}
+
+.history__text {
+	margin: 0;
+    margin-bottom: 17px;
+	text-align: center;
+	line-height: 0.824rem; /*14px;*/
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.history__text:last-child {
+	margin-bottom: 0;
+}
+
+.history__img-container {
+	display: none;
+}
+
+.divider__arrow {
+	fill: rgba(188, 0, 0, 0.7);
+	transform: rotate(-90deg);
+}
