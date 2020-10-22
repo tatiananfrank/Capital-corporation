@@ -364,4 +364,49 @@
 
 
 
- @media (min-width: 992px) {}
+ @media (min-width: 992px) {
+ 	.adress {
+ 		padding: 0;
+ 	}
+
+ 	.adress .inner-container_medium {
+ 		width: 74%;
+    	max-width: 980px;
+ 	}
+
+ 	.adress .inner-container_medium::after {
+ 		width: 115%;
+ 	}
+
+ 	.adress__map {
+ 		width: 65%;
+    	height: 420px;
+ 	}
+
+ 	.write-us {
+ 		padding: 0;
+ 	}
+
+ 	.contacts-content__write-us {
+ 		margin-bottom: 155px;
+ 	}
+
+ 	.write-us .main-heading {
+ 		width: 100%;
+    	max-width: 980px;
+    	padding: 0 15px;
+ 	}
+
+ 	.write-us__title {
+ 		margin: 0 auto;
+ 		margin-bottom: 50px;
+ 	}
+
+ 	.write-us__list-item {
+ 		box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.7);
+ 	}
+
+ 	.write-us__list-item:last-child {
+ 		margin-bottom: 65px;
+ 	}
+ }
