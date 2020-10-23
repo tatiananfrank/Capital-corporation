@@ -214,9 +214,25 @@ body {
     height: 20px;
 }
 
-
-
 /* END OF Картинки для моб устройств */
+
+/* Blur */
+
+@supports (filter: blur(200px)) {
+  /* Браузер поддерживает свойство filter с функцией blur() */
+  .blur1 {
+  	position: absolute;
+	bottom: -200px;
+    left: -50px;
+	width: 252.92px;
+	height: 353.68px;
+	background: rgba(49, 0, 188, 0.19);
+	filter: blur(200px);
+	transform: rotate(1.98deg);
+  }
+}
+
+/* END OF Blur */
 
 
 
