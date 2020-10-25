@@ -169,6 +169,113 @@
 
 
 
+body {
+	overflow-x: hidden;
+}
+
+.adress {
+	position: relative;
+}
+
+.contacts-blur-1 img:first-child {
+	position: absolute;
+	top: -90px;
+	left: 0;
+	width: 300px;
+}
+
+.contacts-blur-1 img:nth-child(2) {
+	position: absolute;
+    top: -40px;
+    left: 0;
+    width: 200px;
+    transform: scale(-1, 1);
+    opacity: 0.5;
+}
+
+.contacts-blur-1 img:nth-child(3) {
+	position: absolute;
+    bottom: -290px;
+    right: 0;
+    width: 250px;
+    opacity: 0.5;
+}
+
+.adress__map {
+	position: relative;
+}
+
+.anim-circle {
+	position: absolute;
+	top: -20px;
+    right: -10px;
+	width: 91px;
+	height: 91px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	
+	animation-name: resize;
+	animation-duration: 1.8s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes resize {
+	0% {
+		transform: scale(1);
+	}
+	
+	100% {
+		transform: scale(1.3);
+	}
+}
+
+.write-us__list-item {
+	position: relative;
+}
+
+.write-us__list-item:nth-child(1) .anim-circle {
+	width: 70px;
+	height: 70px;
+	top: -25px;
+    right: 0;
+}
+
+.write-us__list-item:nth-child(2) .anim-circle {
+	display: none;
+}
+
+.write-us__list-item:nth-child(3) .anim-circle {
+	top: 220px;
+    left: 20px;
+}
+
+.write-us {
+	position: relative;
+}
+
+.contacts-blur-2 img:first-child {
+	position: absolute;
+    top: 110px;
+    left: 0;
+    width: 230px;
+    transform: scale(-1, 1);
+    opacity: 0.6;
+}
+
+.contacts-round {
+	position: absolute;
+    right: 0;
+    bottom: -240px;
+    width: 205px;
+    height: auto;
+}
+
+
+
+
 
  @media (min-width: 576px) {
  	.adress {
@@ -266,6 +373,50 @@
  		font-size: 1.765rem; /*30px;*/
 		line-height: 2.059rem; /*35px;*/
  	}
+
+
+ 	.contacts-blur-1 img:nth-child(1),
+ 	.contacts-blur-1 img:nth-child(2) {
+ 		display: none;
+ 	}
+
+ 	.contacts-blur-1 img:nth-child(3) {
+ 		width: 400px;
+    	bottom: -470px;
+ 	}
+
+ 	.adress__map .anim-circle {
+ 		display: none;
+ 	}
+
+ 	.write-us__list-item:nth-child(1) .anim-circle {
+ 		width: 120px;
+	    height: 120px;
+	    top: -145px;
+	    right: -80px;
+ 	}
+
+ 	.contacts-blur-2 img:first-child {
+ 		top: 100px;
+ 	}
+
+ 	.write-us__list-item:nth-child(2) .anim-circle {
+		display: block;
+		width: 160px;
+	    height: 160px;
+	    right: 320px;
+	    top: 10px;
+	}
+
+	.write-us__list-item:nth-child(3) .anim-circle {
+		top: 310px;
+    	left: -50px;
+	}
+
+	.contacts-round {
+		width: 280px;
+    	bottom: -240px;
+	}
  }
 
 
@@ -357,6 +508,37 @@
  	.write-us__list-item:last-child {
  		margin-right: 0;
  	}*/
+
+ 	.contacts-blur-1 img:nth-child(3) {
+ 		bottom: 470px;
+	    width: 600px;
+	    opacity: 0.7;
+ 	}
+
+ 	.contacts-blur-2 img:first-child {
+ 		top: -310px;
+ 	}
+
+ 	.write-us__list-item:nth-child(1) .anim-circle {
+ 		display: none;
+ 	}
+
+ 	.write-us__list-item:nth-child(2) .anim-circle {
+ 		right: -20px;
+    	top: -190px;
+ 	}
+
+ 	.write-us__list-item:nth-child(3) .anim-circle {
+ 		width: 250px;
+	    height: 250px;
+	    top: 200px;
+	    left: -190px;
+ 	}
+
+ 	.contacts-round {
+ 		width: 380px;
+    	bottom: -330px;
+ 	}
  }
 
 
@@ -408,5 +590,57 @@
 
  	.write-us__list-item:last-child {
  		margin-bottom: 65px;
+ 	}
+
+
+ 	.contacts-blur-1 img:first-child {
+ 		display: block;
+ 		top: 280px;
+ 	}
+
+ 	.contacts-blur-1 img:nth-child(3) {
+ 		bottom: -300px;
+    	opacity: 0.4;
+ 	}
+
+ 	.adress__map .anim-circle {
+ 		display: block;
+ 		width: 120px;
+	    height: 120px;
+	    right: -150px;
+	    top: 40px;
+ 	}
+
+ 	.contacts-blur-2 img:first-child {
+ 		width: 400px;
+    	top: -730px;
+ 	}
+
+ 	.write-us__list-item:nth-child(1) .anim-circle {
+ 		display: block;
+ 		width: 220px;
+	    height: 220px;
+	    right: 140px;
+	    top: -100px;
+	    z-index: -20;
+ 	}
+
+ 	.write-us__list-item:nth-child(2) .anim-circle {
+ 		top: -750px;
+	    width: 450px;
+	    height: 450px;
+	    right: 740px;
+ 	}
+
+ 	.write-us__list-item:nth-child(3) .anim-circle {
+ 		width: 220px;
+	    height: 220px;
+	    top: -190px;
+	    left: 170px;
+	    z-index: -20;
+ 	}
+
+ 	.contacts-round {
+ 		width: 320px;
  	}
  }
