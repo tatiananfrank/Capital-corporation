@@ -126,6 +126,34 @@
 
 
 
+.documents-back {
+	position: relative;
+	overflow-x: hidden;
+
+	background-image: url("../img/documents_blur_1_1.png"), url("../img/documents_blur_2.png");
+	/*background-repeat: repeat, repeat;
+	background-size: contain, contain;
+	background-position: top -300px center, top center;*/
+}
+
+.triangle {
+	position: absolute;
+    left: 203px;
+    top: 1400px;
+    width: 1000px;
+    height: 1000px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    transform: rotate(137.59deg);
+    opacity: 0.2;
+}
+
+.document-anim-circle-1,
+.document-anim-circle-2 {
+	display: none;
+}
+
+
+
 
 
 
@@ -181,6 +209,12 @@
 
 	.document_content_right .document__text {
 		text-align: right;
+	}
+
+
+	.triangle {
+		opacity: 1;
+    	top: 1500px;
 	}
 }
 
@@ -253,6 +287,14 @@
 		font-size: 1rem; /*17px;*/
 		line-height: 1.176rem; /*20px;*/
 	}
+
+
+	.triangle {
+		width: 2000px;
+	    height: 2000px;
+	    left: 412px;
+	    top: 1040px;
+	}
 }
 
 
@@ -307,5 +349,46 @@
 
 	.document__link img {
 		width: 29px;
+	}
+
+
+	.triangle {
+		top: 760px;
+    	left: 960px;
+	    
+	    background: rgba(21, 20, 21, 0.33);
+    	z-index: -50;
+	}
+
+	.document {
+		position: relative;
+	}
+
+	.document-anim-circle-1,
+	.document-anim-circle-2 {
+		position: absolute;
+		
+	    display: block;
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		border: 2px solid rgba(255, 255, 255, 0.08);
+		
+		animation-name: resize;
+		animation-duration: 1.8s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+	.document-anim-circle-1 {
+		left: 60px;
+    	bottom: 40px;
+	}
+
+	.document-anim-circle-2 {
+		right: 100px;
+    	bottom: -130px;
 	}
 }

@@ -383,3 +383,19 @@ body {
 		padding: 17px 30px;
 	}
 }
+
+
+
+
+
+
+
+@keyframes resize {
+	0% {
+		transform: scale(1);
+	}
+	
+	100% {
+		transform: scale(1.3);
+	}
+}
