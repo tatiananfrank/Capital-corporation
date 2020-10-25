@@ -172,6 +172,92 @@
 
 
 
+.career-body {
+	overflow-x: hidden;
+}
+
+.ladder {
+	position: relative;
+}
+
+.career-blur-1 img:nth-child(1) {
+	position: absolute;
+	top: 260px;
+}
+
+.career-blur-1 img:nth-child(2) {
+	position: absolute;
+	top: -30px;
+    width: 300px;
+    right: 0;
+}
+
+.career-blur-1 img:nth-child(3) {
+	position: absolute;
+    top: 370px;
+    width: 150px;
+    right: 0;
+    opacity: 0.5;
+}
+
+.bonuses {
+	position: relative;
+}
+
+.career-blur-2 img:nth-child(1) {
+	position: absolute;
+    top: 70px;
+    transform: scale(-1, 1);
+    width: 300px;
+}
+
+.career-blur-2 img:nth-child(2) {
+	position: absolute;
+    top: -70px;
+    opacity: 0.6;
+    width: 300px;
+    right: 0;
+}
+
+.office {
+	position: relative;
+}
+
+.career-blur-3 img:nth-child(1) {
+	position: absolute;
+    top: -160px;
+    transform: scale(-1, 1);
+    left: 0;
+    width: 200px;
+    opacity: 0.5;
+}
+
+.career-blur-3 img:nth-child(2) {
+	display: none;
+}
+
+.career-round {
+	position: absolute;
+	left: 0;
+    width: 200px;
+    transform: scale(-1, 1);
+    bottom: -90px;
+}
+.bonuses .anim-circle {
+	display: none;		
+}
+
+.career-circle-img,
+.career-circle-img-2 {
+	display: none;
+}
+
+.career-round-2 {
+	display: none;
+}
+
+
+
 
 @media (min-width: 576px) {
 	.career-content {
@@ -218,6 +304,65 @@
 	.bonuses-table__profit {
 		font-size: 0.824rem; /*14px;*/
 		line-height: 0.941rem; /*16px;*/
+	}
+
+	.career-blur-1 img:nth-child(1) {
+		display: none;
+	}
+
+	.career-blur-1 img:nth-child(2) {
+		left: 0;
+	    transform: scale(-1, 1);
+	    width: 450px;
+	    top: -300px;
+	}
+
+	.career-blur-1 img:nth-child(3) {
+		display: none;
+	}
+
+	.career-blur-2 img:nth-child(1) {
+		transform: none;
+	    right: 0;
+	    width: 400px;
+	    top: -500px;
+	}
+
+	.career-blur-3 img:nth-child(1) {
+		width: 300px;
+    	top: -180px;
+	}
+
+	.career-blur-3 img:nth-child(2) {
+		position: absolute;
+		top: -550px;
+		left: 0;
+		display: block;
+		transform: scale(-1, 1);
+    	width: 300px;
+	}
+
+	.career-round {
+		width: 250px;
+    	bottom: -160px;
+	}
+
+	.bonuses .anim-circle {
+		position: absolute;
+		top: -170px;
+    	left: -70px;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		
+		animation-name: resize;
+		animation-duration: 1.8s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		display: block;
 	}
 }
 
@@ -311,6 +456,83 @@
 	.bonuses-table__block td {
 		padding-bottom: 10px;
 	}
+
+	.career-blur-1 img:nth-child(1) {
+		display: block;
+		left: 0;
+	    top: 1100px;
+	    width: 400px;
+	}
+
+	.career-blur-1 img:nth-child(2) {
+		top: 500px;
+		width: 400px;
+	}
+
+	.career-blur-1 img:nth-child(3) {
+		display: block;
+		transform: scale(-1, 1);
+	    left: 0;
+	    width: 400px;
+	    opacity: 0.7;
+	    top: -300px;
+	}
+
+	.career-blur-2 img:nth-child(1) {
+		top: 950px;
+	    width: 280px;
+	    z-index: 20;
+	}
+
+	.career-blur-2 img:nth-child(2) {
+		top: 600px;
+	    opacity: 0.7;
+	    width: 350px;
+	    z-index: 20;
+	}
+
+	.career-blur-3 img:nth-child(1) {
+		top: 200px;
+    	opacity: 0.6;
+	}
+
+	.career-blur-3 img:nth-child(2) {
+		top: 60px;
+    	width: 250px;
+	}
+
+	.career-round {
+		width: 300px;
+	}
+
+	.bonuses .anim-circle {
+		left: auto;
+	    right: -110px;
+	    top: -100px;
+	}
+
+	.career-circle-img {
+		position: absolute;
+		display: block;
+		top: -200px;
+    	left: 0;
+	}
+
+	.career-circle-img-2 {
+		position: absolute;
+	    display: block;
+	    top: -220px;
+	    left: -190px;
+	    transform: rotate(165deg);
+	}
+
+	.career-round-2 {
+		position: absolute;
+		display: block;
+		top: -530px;
+	    right: 0;
+	    width: 400px;
+	}
 }
 
 
@@ -363,5 +585,62 @@
 	.bonuses-table {
 		width: 45%;
 		margin-top: 0;
+	}
+
+
+	.career-blur-1 img:nth-child(1) {
+		display: none;
+	}
+
+	.career-blur-1 img:nth-child(2) {
+		top: -100px;
+	    width: 250px;
+	    opacity: 0.7;
+	}
+
+	.career-blur-1 img:nth-child(3) {
+		width: 500px;
+    	top: -700px;
+	}
+
+	.career-blur-2 img:nth-child(1) {
+		display: none;
+	}
+
+	.career-blur-2 img:nth-child(2) {
+		display: none;
+	}
+
+	.career-blur-3 img:nth-child(1) {
+		top: -250px;
+	    width: 350px;
+	    opacity: 1;
+	}
+
+	.career-blur-3 img:nth-child(2) {
+		top: -600px;
+    	width: 400px;
+	}
+
+	.career-circle-img {
+		top: 10px;
+	    left: 30px;
+	    transform: rotate(-55deg);
+	}
+
+	.career-round-2 {
+		width: 550px;
+    	top: -650px;
+	}
+
+	.bonuses .anim-circle {
+		width: 400px;
+	    height: 400px;
+	    top: -80px;
+	    right: -270px;
+	}
+
+	.career-circle-img-2 {
+		display: none;
 	}
 }
