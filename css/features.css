@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 versions,>1%
-*/
+
 
 	.features {}
 
@@ -66,6 +61,43 @@
 
 
 
+	.index-body {
+		overflow-x: hidden;
+	}
+
+	.feature__col {
+		position: relative;
+	}
+
+	.index-circle-1 {
+		position: absolute;
+	    top: -114px;
+	    left: -115px;
+	    width: 430px;
+    	height: auto;
+    	z-index: -20;
+	}
+
+	.index-circle-2 {
+		position: absolute;
+	    width: 523px;
+	    top: -172px;
+	    left: -167px;
+	    z-index: -20;
+    	height: auto;
+	}
+
+	.index-circle-3 {
+		position: absolute;
+	    top: -114px;
+	    left: -115px;
+	    width: 430px;
+    	height: auto;
+    	z-index: -20;
+	}
+
+
+
 
 
 /* Tablet S */
@@ -96,6 +128,25 @@
 
 	.feature .main-heading {
 		text-align: left;
+	}
+
+
+	.index-circle-1 {
+	    top: -200px;
+	    left: -298px;
+	    width: 850px;
+	}
+
+	.index-circle-2 {
+	    width: 1046px;
+	    top: -391px;
+	    left: -404px;
+	}
+
+	.index-circle-3 {
+	    top: -200px;
+	    left: -298px;
+	    width: 850px;
 	}
 }
 
@@ -130,9 +181,38 @@
 	.feature__title {
 		margin-bottom: 10px;
 	}
+
+
+	.index-circle-1 {
+	    top: -279px;
+	    left: -377px;
+	    width: 1127px;
+	}
+
+	.index-circle-2 {
+	    width: 1397px;
+	    top: -535px;
+	    left: -522px;
+	}
+
+	.index-circle-3 {
+	    top: -279px;
+	    left: -377px;
+	    width: 1127px;
+	}
 }
 
 /* Desktop normal */
 @media (min-width: 992px) {
-	
+	.index-circle-1 {
+	    left: -420px;
+	}
+
+	.index-circle-2 {
+	    left: -565px;
+	}
+
+	.index-circle-3 {
+	    left: -420px;
+	}
 }
