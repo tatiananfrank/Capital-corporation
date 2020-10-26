@@ -119,6 +119,11 @@
 		display: none;
 	}
 
+	.source__link {
+		position: relative;
+		z-index: 20;
+	}
+
 
 
 

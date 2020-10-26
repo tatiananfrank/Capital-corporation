@@ -183,6 +183,7 @@
 .career-blur-1 img:nth-child(1) {
 	position: absolute;
 	top: 260px;
+	z-index: -20;
 }
 
 .career-blur-1 img:nth-child(2) {
@@ -190,6 +191,7 @@
 	top: -30px;
     width: 300px;
     right: 0;
+    z-index: -20;
 }
 
 .career-blur-1 img:nth-child(3) {
@@ -198,6 +200,7 @@
     width: 150px;
     right: 0;
     opacity: 0.5;
+    z-index: -20;
 }
 
 .bonuses {
@@ -209,6 +212,7 @@
     top: 70px;
     transform: scale(-1, 1);
     width: 300px;
+    z-index: -20;
 }
 
 .career-blur-2 img:nth-child(2) {
@@ -217,6 +221,7 @@
     opacity: 0.6;
     width: 300px;
     right: 0;
+    z-index: -20;
 }
 
 .office {
@@ -230,10 +235,12 @@
     left: 0;
     width: 200px;
     opacity: 0.5;
+    z-index: -20;
 }
 
 .career-blur-3 img:nth-child(2) {
 	display: none;
+	z-index: -20;
 }
 
 .career-round {
@@ -250,6 +257,7 @@
 .career-circle-img,
 .career-circle-img-2 {
 	display: none;
+	z-index: -20;
 }
 
 .career-round-2 {

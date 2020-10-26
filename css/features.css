@@ -3,7 +3,10 @@
 	.features {}
 
 	.main-content__features {
-		margin-bottom: 100px;
+		/*margin-bottom: 100px;*/
+
+		padding-bottom: 20px;
+    	margin-bottom: 80px;
 	}
 
 	.features-list {
@@ -142,6 +145,10 @@
 		display: none;
 	}
 
+	.feature__link {
+		position: relative;
+		z-index: 10;
+	}
 
 
 	
@@ -370,11 +377,6 @@
 	    width: 400px;
 	    height: 1500px;
 	    z-index: 5;
-	}
-
-	.feature__link {
-		position: relative;
-		z-index: 10;
 	}
 
 	.features .anim-circle:nth-of-type(1) {
