@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 versions,>1%
-*/
+
 
 	.profit {}
 
@@ -96,6 +91,36 @@
 
 
 
+	.profit {
+		position: relative;
+	}
+
+	.index-blur-2 img:nth-child(1), 
+	.index-blur-2 img:nth-child(2),
+	.index-blur-2 img:nth-child(3),
+	.index-blur-2 img:nth-child(4) {
+		display: none;
+	}
+
+	.profit .inner-container_small {
+		position: relative;
+	}
+
+	.profit .anim-circle {
+		display: none;
+	}
+
+	.source {
+		position: relative;
+	}
+
+	.profit-round-1,
+	.profit-round-2 {
+		display: none;
+	}
+
+
+
 
 /* Tablet S */
 @media (min-width: 576px) {
@@ -131,6 +156,48 @@
 
 	.source__reason {
 		margin-bottom: 20px;
+	}
+
+
+	.profit .anim-circle {
+		display: block;
+		position: absolute;
+		top: -80px;
+    	right: 40px;
+
+		width: 200px;
+		height: 200px;
+		
+		border-radius: 50%;
+		border: 2px solid rgba(255, 255, 255, 0.15);
+		
+		animation-name: resize;
+		animation-duration: 1.8s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+	.profit-round-1,
+	.profit-round-2 {
+		display: block;
+		position: absolute;
+		z-index: -20;
+	}
+
+	.profit-round-1 {
+		width: 432px;
+	    height: auto;
+	    top: -80px;
+	    left: -27px;
+	}
+
+	.profit-round-2 {
+		bottom: -160px;
+	    left: -210px;
+	    width: 780px;
+	    height: auto;
 	}
 }
 
@@ -192,6 +259,27 @@
 	.source__desc {
 		margin-bottom: 35px;
 	}
+
+
+	.profit .anim-circle {
+		right: -20px;
+	    width: 240px;
+	    height: 240px;
+	}
+
+	.profit-round-1 {
+		width: 532px;
+	    height: auto;
+	    top: -121px;
+	    left: -17px;
+	}
+
+	.profit-round-2 {
+		bottom: -50px;
+	    left: -380px;
+	    width: 880px;
+	    height: auto;
+	}
 }
 
 /* Desktop normal */
@@ -202,5 +290,67 @@
 
 	.profit-list__source {
 		margin-bottom: -35px;
+	}
+
+
+
+	.index-blur-2 img:nth-child(1), 
+	.index-blur-2 img:nth-child(2),
+	.index-blur-2 img:nth-child(3),
+	.index-blur-2 img:nth-child(4) {
+		display: block;
+		position: absolute;
+	}
+
+	.index-blur-2 img:nth-child(1) {
+		top: 100px;
+	    right: 0;
+	    width: 300px;
+	    height: 300px;
+	    opacity: 0.7;
+	}
+
+	.index-blur-2 img:nth-child(2) {
+		top: 130px;
+	    right: 0;
+	    width: 270px;
+	    height: 300px;
+	    opacity: 0.6;
+	}
+
+	.index-blur-2 img:nth-child(3) {
+		top: 800px;
+	    left: 0;
+	    transform: scale(-1, 1);
+	    width: 300px;
+	    height: 1600px;
+	    opacity: 0.7;
+	}
+
+	.index-blur-2 img:nth-child(4) {
+		top: 170px;
+	    left: 0;
+	    transform: scale(-1, 1);
+	    width: 400px;
+	    height: 1500px;
+	    opacity: 0.7;
+	}
+
+	.profit .anim-circle {
+		right: 70px;
+	}
+
+	.profit-round-1 {
+		width: 562px;
+	    height: auto;
+	    top: -161px;
+	    left: -17px;
+	}
+
+	.profit-round-2 {
+		bottom: -220px;
+	    left: -280px;
+	    width: 880px;
+	    height: auto;
 	}
 }
