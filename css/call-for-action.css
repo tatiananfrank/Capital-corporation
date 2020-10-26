@@ -48,6 +48,7 @@
 	    background-repeat: no-repeat;
 	    background-size: 390px auto;
 	    content: "";
+	    z-index: -20;
 	}
 
 	.call-for-action__link {
@@ -97,13 +98,13 @@
 		width: 390px;
 	}
 
-
-
 	.call-for-action .inner-container_large::before {
-		top: -312px;
+		top: -297px;
+	    left: -27%;
 	    height: 880px;
+	    width: 150%;
 	    background-image: url(../img/call_for_action_circle_2.png);
-	    background-size: 710px auto;
+	    background-size: 890px auto;
 	}
 }
 
@@ -111,5 +112,12 @@
 
 
 @media (min-width: 992px) {
-
+	.call-for-action .inner-container_large::before {
+		top: -312px;
+	    left: -25.8%;
+	    height: 880px;
+	    width: 150%;
+	    background-image: url(../img/call_for_action_circle_3.png);
+	    background-size: 1470px auto;
+	}
 }
