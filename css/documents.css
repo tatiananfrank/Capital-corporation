@@ -86,7 +86,7 @@
 
 .document:nth-of-type(1) .document__link {
 	right: 25px;
-	bottom: 169px;
+	bottom: 165px;
 }
 
 .document:nth-of-type(2) .document__link {
@@ -261,7 +261,7 @@
 
 	.document:nth-of-type(1) .document__link {
 		right: 34px;
-    	bottom: 213px;
+    	bottom: 209px;
 	}
 
 	.document:nth-of-type(2) .document__link {
@@ -329,7 +329,7 @@
 
 	.document:nth-of-type(1) .document__link {
 		right: 37px;
-    	bottom: 256px;
+    	bottom: 250px;
 	}
 
 	.document:nth-of-type(2) .document__link {
