@@ -36,7 +36,7 @@ $(document).ready(function() {
 	if($(document).find('.owl-carousel').length !== 0)
 		$(".owl-carousel").owlCarousel(carouselParams);
 
-	// Переинициализирует карусель после клика на ссылки IPO, ICO
+	// Переинициализирует карусель после клика на ссылки IPO, ICO, Посмотреть все планы
 	$('.cases-switcher__link').on('click', function (event) {
 		event.preventDefault();
 
