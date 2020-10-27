@@ -138,8 +138,17 @@
 
 .triangle {
 	position: absolute;
-    left: 203px;
-    top: 1400px;
+    left: 0;
+    top: 1190px;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+}
+
+.triangle div {
+    position: absolute;
+    left: 210px;
+    top: -120px;
     width: 1000px;
     height: 1000px;
     border: 3px solid rgba(255, 255, 255, 0.1);
@@ -214,7 +223,12 @@
 
 	.triangle {
 		opacity: 1;
-    	top: 1500px;
+    	height: 1450px;
+    	top: 1290px;
+	}
+
+	.triangle div {
+    	top: 210px;
 	}
 }
 
@@ -290,10 +304,14 @@
 
 
 	.triangle {
+		height: 2500px;
+    	top: 800px;
+	}
+
+	.triangle div {
 		width: 2000px;
 	    height: 2000px;
-	    left: 412px;
-	    top: 1040px;
+	    left: 411px;
 	}
 }
 
@@ -353,11 +371,14 @@
 
 
 	.triangle {
-		top: 760px;
-    	left: 960px;
+		left: 35%;
+    	top: 560px;
 	    
-	    background: rgba(21, 20, 21, 0.33);
     	z-index: -50;
+	}
+
+	.triangle div {
+		background: rgba(21, 20, 21, 0.33);
 	}
 
 	.document {
