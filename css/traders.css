@@ -287,7 +287,14 @@
 		display: none;
 	}
 
+	.traders {
+		position: relative;
+	}
 
+/*	.index-blur-3 img:nth-child(1),
+	.index-blur-3 img:nth-child(2) {
+		display: none;
+	}*/
 
 
 /* Tablet S */
@@ -491,4 +498,19 @@
 		width: 125px;
     	height: 125px;
 	}
+
+
+/*	.index-blur-3 img:nth-child(1) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.index-blur-3 img:nth-child(2) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}*/
 }
