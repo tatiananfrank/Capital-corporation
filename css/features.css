@@ -74,8 +74,8 @@
 
 	.main-content__features {
 		overflow: hidden;
-	    padding-top: 120px;
-	    margin-top: -120px;
+	    padding-top: 150px;
+	    margin-top: -150px;
 	}
 
 	.feature__col {
@@ -87,15 +87,15 @@
 	.feature:nth-child(1) .feature__col::before {
 		position: absolute;
 		top: -100px;
-		left: -99px;
+		left: -133px;
 
-		width: 360px;
+		width: 430px;
 		height: 390px;
 
 		background-image: url("../img/index_circle_red.png");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 416px auto;
+		background-size: 446px auto;
 
 		content: "";
 	}
@@ -103,28 +103,28 @@
 	.feature:nth-child(2) .feature__col::before {
 		position: absolute;
     	top: -119px;
-	    left: -103px;
-	    width: 360px;
+	    left: -127px;
+	    width: 410px;
 	    height: 390px;
 	    background-image: url(../img/index_circle_blue.png);
 	    background-position: center;
 	    background-repeat: no-repeat;
-	    background-size: 514px auto;
+	    background-size: 544px auto;
 	    content: "";
 	}
 
 	.feature:nth-child(3) .feature__col::before {
 		position: absolute;
 		top: -100px;
-		left: -99px;
+		left: -133px;
 
-		width: 360px;
+		width: 430px;
 		height: 390px;
 
 		background-image: url("../img/index_circle_red.png");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 416px auto;
+		background-size: 446px auto;
 
 		content: "";
 	}
@@ -161,7 +161,8 @@
 /* Tablet S */
 @media (min-width: 576px) {
 	.main-content__features {
-		margin-bottom: 315px;
+		/*margin-bottom: 315px;*/
+		margin-bottom: 165px;
 	}
 
 	.features-list__feature {
@@ -205,7 +206,7 @@
     	left: -237px;
 		width: 750px;
 	    height: 880px;
-	    background-size: 830px auto;
+	    background-size: 930px auto;
 	}
 
 	.feature:nth-child(2) .feature__col::before {
@@ -213,7 +214,7 @@
     	left: -245px;
 		width: 750px;
 	    height: 880px;
-	    background-size: 1020px auto;
+	    background-size: 1120px auto;
 	}
 
 	.feature:nth-child(3) .feature__col::before {
@@ -221,7 +222,7 @@
     	left: -237px;
 		width: 750px;
 	    height: 880px;
-	    background-size: 830px auto;
+	    background-size: 930px auto;
 	}
 
 	.features .anim-circle {
@@ -305,28 +306,28 @@
 
 	.feature:nth-child(1) .feature__col::before {
 		top: -285px;
-    	left: -270px;
-		width: 880px;
+    	left: -320px;
+		width: 980px;
 	    height: 1000px;
-	    background-size: 1030px auto;
+	    background-size: 1130px auto;
 	    z-index: -20;
 	}
 
 	.feature:nth-child(2) .feature__col::before {
 		top: -336px;
-    	left: -280px;
-	    width: 880px;
+    	left: -330px;
+	    width: 980px;
 	    height: 1000px;
-	    background-size: 1267px auto;
+	    background-size: 1367px auto;
 	    z-index: -20;
 	}
 
 	.feature:nth-child(3) .feature__col::before {
 		top: -285px;
-    	left: -270px;
-		width: 880px;
+    	left: -320px;
+		width: 980px;
 	    height: 1000px;
-	    background-size: 1030px auto;
+	    background-size: 1130px auto;
 	    z-index: -20;
 	}
 

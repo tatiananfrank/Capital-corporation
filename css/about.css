@@ -123,14 +123,13 @@
 
 	.about .index-about-circle {
 		position: absolute;
-	    top: -125px;
-	    left: 10px;
-	    width: 230px;
+	    top: -95px;
+	    left: 60px;
+	    width: 200px;
 	    height: auto;
 	    transform: rotate(55deg);
 	    z-index: -20;
 	}
-
 
 
 

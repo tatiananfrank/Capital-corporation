@@ -140,13 +140,13 @@ body {
 		z-index: -5;
 		top: -135px;
 		left: -100px;
-		width: 732px;
+		width: 932px;
 		height: 2196px;
 
-		background-image: url("../img/big_man_1x.png");
+		background-image: url("../img/big_man_new.png");
 		background-repeat: no-repeat;
 		background-position: left top;
-		background-size: 732px 2196px;
+		background-size: auto 2196px;
 
 		content: "";
 	}
