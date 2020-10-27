@@ -27,7 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<!-- END OF ПОТОМ УДАЛИТЬ -->
 </head>
-<body>
+<body class="sign-in-body">
 	<header class="page-header">
 		<div class="inner-container_large">
 			<div class="logo page-header__logo">
@@ -115,75 +115,106 @@
 		</div>
 	</header>
 
-	<main class="main-content">
+	<main class="sign-in-content">
 		<h1 class="visually-hidden">Компания «Capital corporation» - раздел «Личный кабинет»</h1>
 		
-		<section class="welcome">
-			<h2 class="visually-hidden">Добро пожаловать в линчый кабинет. Пожалуйста, зайдите или зарегистрируйтесь.</h2>
+		<section class="welcome sign-in-content__welcome">
+			<h2 class="visually-hidden">Добро пожаловать в личный кабинет. Пожалуйста, зайдите или зарегистрируйтесь.</h2>
 
-			<form action="" method="" id="" class="sign-in-form">
-				<!-- вход -->
-				<img class="" src="" alt="" scr="" width="" height="">
+			<!-- Вход -->
+			<form action="" method="" class="sign-in-form welcome__sign-in-form welcome_form" data-form="sign-in">
 
-				<ul class="">
-					<li class=""><a href="" class="">Вход</a></li>
-					<li class=""><a href="" class="">Регистрация</a></li>
+				<img class="sign-in-form__logo" src="img/login_logo.png" alt="Логотип компании" width="172" height="46">
+
+				<ul class="sign-in-form__list">
+					<li class="sign-in-form__list-item">
+						<a href="#" class="sign-in-form__list-link welcome__active-form sign_link" data-form="sign-in">Вход</a>
+					</li>
+					<li class="sign-in-form__list-item">
+						<a href="#" class="sign-in-form__list-link sign_link" data-form="sign-up">Регистрация</a>
+					</li>
 				</ul>
 
 				<label class="visually-hidden" for="email_field_sign-in">Укажите <span lang="en">email</span></label>
 				<input type="text" name="email" id="email_field_sign-in" placeholder="Email" required="" value="">
 
 				<label class="visually-hidden" for="password_field_sign-in">Укажите пароль</label>
-				<input type="password" name="password" id="password_field_sign-in" placeholder="Пароль" required="" value="">
-				<!-- https://www.w3schools.com/howto/howto_js_toggle_password.asp -->
+				<div class="sign-in-form__pass-group">
+					<input type="password" name="password" id="password_field_sign-in" placeholder="Пароль" required="" value="">
+					<button class="sign-in-form__pass-show" type="button" data-show="false" aria-hidden="true">
+						<img src="img/eye_password.png" alt="" width="21" height="21">
+					</button>
+				</div>
 
-				<a class="" href="">Восстановить пароль</a>
+				<a class="sign-in-form__restore-password-link" href="#">Восстановить пароль</a>
 
-				<button class="" type="submit">Войти</button>
+				<button class="sign-in-form__btn" type="submit">Войти</button>
 			</form>
 
-			<form action="" method="" id="" class="sign-up-form">
-				<!-- регистрация -->
-				<img class="" src="" alt="" scr="" width="" height="">
+			<!-- Регистрация -->
+			<form action="" method=""  data-form="sign-up" class="sign-up-form welcome__sign-up-form welcome_form" style="display: none;">
+				
+				<img class="sign-up-form__logo" src="img/login_logo.png" alt="Логотип компании" width="172" height="46">
 
-				<ul class="">
-					<li class=""><a href="" class="">Вход</a></li>
-					<li class=""><a href="" class="">Регистрация</a></li>
+				<ul class="sign-up-form__list">
+					<li class="sign-up-form__list-item">
+						<a href="#" class="sign-up-form__list-link sign_link" data-form="sign-in">Вход</a>
+					</li>
+					<li class="sign-up-form__list-item">
+						<a href="#" class="sign-up-form__list-link welcome__active-form sign_link" data-form="sign-up">Регистрация</a>
+					</li>
 				</ul>
 
-				<label class="visually-hidden" for="login_field_sign-up">Укажите логин партнера</label>
-				<input type="text" name="partner_login" id="login_field_sign-up" placeholder="Логин парнера" required="" value="">
+				<div class="sign-up-form__step-one">
 
-				<label class="visually-hidden" for="email_field_sign-up">Укажите <span lang="en">email</span></label>
-				<input type="text" name="email" id="email_field_sign-up" placeholder="Email" required="" value="">
+					<label class="visually-hidden" for="login_field_sign-up">Укажите логин партнера</label>
+					<input type="text" name="partner_login" id="login_field_sign-up" placeholder="Логин парнера" required="" value="">
 
-				<label class="visually-hidden" for="password_field_sign-up">Придумайте пароль</label>
-				<input type="password" name="password" id="password_field_sign-up" placeholder="Придумайте пароль" required="" value="">
+					<label class="visually-hidden" for="email_field_sign-up">Укажите <span lang="en">email</span></label>
+					<input type="text" name="email" id="email_field_sign-up" placeholder="Email" required="" value="">
 
-				<label class="visually-hidden" for="password_conf_field_sign-up">Подтвердите пароль</label>
-				<input type="password" name="password_conf" id="password_conf_field_sign-up" placeholder="Подтвердите пароль" required="" value="">
+					<label class="visually-hidden" for="password_field_sign-up">Придумайте пароль</label>
+					<div class="sign-up-form__pass-group">
+						<input type="password" name="password" id="password_field_sign-up" placeholder="Придумайте пароль" required="" value="">
+						<button class="sign-up-form__pass-show" type="button" data-show="false" aria-hidden="true">
+							<img src="img/eye_password.png" alt="" width="21" height="21">
+						</button>
+					</div>
 
-				<button class="" type="button">Далее</button>
+					<label class="visually-hidden" for="password_conf_field_sign-up">Подтвердите пароль</label>
+					<div class="sign-up-form__pass-group-2">
+						<input type="password" name="password_conf" id="password_conf_field_sign-up" placeholder="Подтвердите пароль" required="" value="">
+						<button class="sign-up-form__pass-show-2" type="button" data-show="false" aria-hidden="true">
+							<img src="img/eye_password.png" alt="" width="21" height="21">
+						</button>
+					</div>
 
+					<button class="sign-up-form__btn sign-up-form__btn-next" type="button">Далее</button>
 
-				<label class="visually-hidden" for="name_field_sign-up">Укажите Ваше имя</label>
-				<input type="text" name="name" id="name_field_sign-up" placeholder="Введите имя" required="" value="">
+				</div>
 
-				<label class="visually-hidden" for="surname_field_sign-up">Укажите Вашу фамилию</label>
-				<input type="text" name="surname" id="surname_field_sign-up" placeholder="Введите фамилию" required="" value="">
+				<div class="sign-up-form__step-two" style="display: none;">
+					
+					<label class="visually-hidden" for="name_field_sign-up">Укажите Ваше имя</label>
+					<input type="text" name="name" id="name_field_sign-up" placeholder="Введите имя" required="" value="">
 
-				<label class="visually-hidden" for="country_field_sign-up">Выберите Вашу страну</label>
-				<select name="country" id="country_field_sign-up">
-					<option value="" selected="true">Выберите страну</option>
-					<option value="">Россия</option>
-				</select>
+					<label class="visually-hidden" for="surname_field_sign-up">Укажите Вашу фамилию</label>
+					<input type="text" name="surname" id="surname_field_sign-up" placeholder="Введите фамилию" required="" value="">
 
-				<label class="visually-hidden" for="phone_field_sign-up">Укажите Ваш номер телефона</label>
-				<input type="text" name="phone" id="phone_field_sign-up" placeholder="Введите номер" required="" value="">
+					<label class="visually-hidden" for="country_field_sign-up">Выберите Вашу страну</label>
+					<select class="" name="country" id="country_field_sign-up">
+						<option value="" selected="true">Выберите страну</option>
+						<option value="">Россия</option>
+					</select>
 
-				<a class="" href="">Предыдущий шаг</a>
+					<label class="visually-hidden" for="phone_field_sign-up">Укажите Ваш номер телефона</label>
+					<input type="text" name="phone" id="phone_field_sign-up" placeholder="Введите номер" required="" value="">
 
-				<button class="" type="submit">Зарегистрироваться</button>
+					<a class="sign-up-form__prev-step" href="#">Предыдущий шаг</a>
+
+					<button class="sign-up-form__btn" type="submit">Зарегистрироваться</button>
+					
+				</div>
 			</form>
 		</section>
 	</main>

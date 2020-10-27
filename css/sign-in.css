@@ -1,0 +1,280 @@
+.sign-in-body .page-header {
+	margin-bottom: -110px;
+}
+
+.sign-in-content {
+	overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.welcome {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	/*min-height: 770px;*/
+}
+
+.sign-in-form,
+.sign-up-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 390px;
+	padding: 65px 95px;
+	border-radius: 105px;
+	background: rgba(21, 20, 20, 0.95);
+	box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.7),
+				0 0 85px 7px rgba(50, 0, 192, 0.7),
+				0 0 100px 40px rgba(188, 0, 0, 0.44);
+}
+
+.sign-in-form__logo,
+.sign-up-form__logo {
+	margin-bottom: 40px;
+
+	width: 112px;
+	height: auto;
+}
+
+.sign-in-form__list,
+.sign-up-form__list {
+	display: flex;
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	list-style: none;
+}
+
+.sign-in-form__list-link,
+.sign-up-form__list-link {
+	padding: 9.5px 26.5px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	text-decoration: none;
+}
+
+.welcome__active-form {
+	padding: 8px 25px;
+	border: 1.5px solid #BC0000;
+	border-radius: 28px;
+}
+
+.sign-in-form__list-link:hover,
+.sign-up-form__list-link:hover {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+.sign-in-form input,
+.sign-up-form input {
+	margin-bottom: 35px;
+	padding: 15px 0;
+	width: 200px;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	background-color: transparent;
+
+	font: inherit;
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.sign-in-form input::placeholder,
+.sign-up-form input::placeholder {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.sign-in-form__pass-group,
+.sign-up-form__pass-group,
+.sign-up-form__pass-group-2 {
+	position: relative;
+}
+
+.sign-in-form__pass-group input,
+.sign-up-form__pass-group input,
+.sign-up-form__pass-group-2 input {
+	padding-right: 25px;
+}
+
+.sign-in-form__pass-show,
+.sign-up-form__pass-show,
+.sign-up-form__pass-show-2 {
+	position: absolute;
+	top: 15px;
+	right: 0;
+	display: flex;
+	padding: 0;
+	width: 14px;
+	height: 14px;
+	border: none;
+	background: transparent;
+}
+
+.sign-in-form__pass-group img,
+.sign-up-form__pass-group img,
+.sign-up-form__pass-group-2 img {
+	width: 100%;
+	height: auto;
+}
+
+.sign-in-form__restore-password-link {
+	margin-bottom: 23px;
+
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+.sign-in-form__restore-password-link:hover {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+.sign-in-form__btn,
+.sign-up-form__btn {
+	padding: 11px 37px;
+
+	border: 1.5px solid #BC0000;
+	border-radius: 28px;
+	background-color: transparent;
+
+	font: inherit;
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	text-align: center;
+	letter-spacing: 0.07em;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.sign-up-form select {
+	padding: 15px 0;
+	margin-bottom: 35px;
+	width: 200px;
+	
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+
+    font: inherit;
+    font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.sign-up-form select option {
+	background-color: #fff;
+	color: #141313;
+}
+
+.sign-up-form__prev-step {
+	margin-bottom: 23px;
+
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	text-decoration: none;
+}
+
+.sign-up-form__prev-step:hover {
+	color: rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+}
+
+.sign-up-form__step-one,
+.sign-up-form__step-two {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+
+@media (min-width: 576px) {
+	.sign-in-content {
+		padding-bottom: 150px;
+	}
+
+	.sign-in-form,
+	.sign-up-form {
+		/*width: 475px;
+		padding: 50px 88.5px;*/
+		width: 490px;
+	}
+
+	.sign-in-form__logo,
+	.sign-up-form__logo {
+		width: 139px;
+	}
+
+	.sign-in-form__list-link,
+	.sign-up-form__list-link {
+		padding: 12px 29.5px;
+
+		font-size: 0.941rem; /*16px;*/
+		line-height: 1.118rem; /*19px;*/
+	}
+
+	.welcome__active-form {
+		padding: 10px 27.5px;
+		border: 2px solid #BC0000;
+	}
+
+	.sign-in-form input,
+	.sign-up-form input {
+		width: 300px;
+
+		font-size: 0.941rem; /*16px;*/
+		line-height: 1.118rem; /*19px;*/
+	}
+
+	.sign-in-form__pass-show,
+	.sign-up-form__pass-show,
+	.sign-up-form__pass-show-2 {
+		top: 16px;
+		width: 17px;
+    	height: 17px;
+	}
+
+	.sign-in-form__restore-password-link {
+		font-size: 0.941rem; /*16px;*/
+		line-height: 1.118rem; /*19px;*/
+	}
+
+	.sign-in-form__btn,
+	.sign-up-form__btn {
+		padding: 12px 43px;
+		border: 2px solid #BC0000;
+
+		font-size: 0.941rem; /*16px;*/
+		line-height: 1.118rem; /*19px;*/
+	}
+
+	.sign-up-form select {
+		width: 300px;
+
+		font-size: 0.941rem; /*16px;*/
+		line-height: 1.118rem; /*19px;*/
+	}
+
+	.sign-up-form__prev-step {
+		font-size: 0.941rem; /*16px;*/
+		line-height: 1.118rem; /*19px;*/
+	}
+}
+
+
+
+
+@media (min-width: 768px) {
+
+}
+
+
+
+
+@media (min-width: 992px) {}

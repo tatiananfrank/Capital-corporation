@@ -102,6 +102,90 @@ $(document).ready(function() {
 
 /* END OF Модалка по нажатию на кнопку "подробнее" внутри секции profit */
 
+
+/* Страница регистрации/входа в личный кабинет */
+
+	// Подмена форм входа/регистрации после клика на соответствующие ссылки
+	$('.sign_link').on('click', function (event) {
+		event.preventDefault();
+
+		var activeClass = 'welcome__active-form';
+
+		var link = $(event.target);
+
+		if(!link.hasClass(activeClass)) { // Если произошел клик на неактивную ссылку
+
+			var form = link.attr('data-form'); // Определяет нужную форму
+
+			// Находит нужную форму и показывает ее, а остальные скрывает
+			$('.welcome_form').each(function() {
+				if($(this).attr('data-form') === form) {
+					$(this).css("display", "flex");
+				} else {
+					$(this).css("display", "none");
+				}
+			});
+		}
+	});
+
+	// Переход на второй шаг по нажатию кнопки "Далее" в форме регистрации
+	$('.sign-up-form__btn-next').on('click', function (event) {
+		event.preventDefault();
+
+		$('.sign-up-form__step-one').css('display', 'none');
+		$('.sign-up-form__step-two').css('display', 'flex');
+	});
+
+	// Переход на первый шаг по нажатию кнопки "Предыдущий шаг" в форме регистрации
+	$('.sign-up-form__prev-step').on('click', function (event) {
+		event.preventDefault();
+		
+		$('.sign-up-form__step-two').css('display', 'none');
+		$('.sign-up-form__step-one').css('display', 'flex');
+	});
+
+	// Показ/сокрытие пароля по нажатию на иконку глаза
+	$('.sign-in-form__pass-show').on('click', function (event) {
+		event.preventDefault();
+
+		if($(this).attr('data-show') === 'false') {
+			$(this).attr('data-show', 'true');
+			$('#password_field_sign-in').prop('type', 'text');
+
+		} else {
+			$(this).attr('data-show', 'false');
+			$('#password_field_sign-in').prop('type', 'password');
+		}
+	});
+
+	$('.sign-up-form__pass-show').on('click', function (event) {
+		event.preventDefault();
+
+		if($(this).attr('data-show') === 'false') {
+			$(this).attr('data-show', 'true');
+			$('#password_field_sign-up').prop('type', 'text');
+
+		} else {
+			$(this).attr('data-show', 'false');
+			$('#password_field_sign-up').prop('type', 'password');
+		}
+	});
+
+	$('.sign-up-form__pass-show-2').on('click', function (event) {
+		event.preventDefault();
+
+		if($(this).attr('data-show') === 'false') {
+			$(this).attr('data-show', 'true');
+			$('#password_conf_field_sign-up').prop('type', 'text');
+
+		} else {
+			$(this).attr('data-show', 'false');
+			$('#password_conf_field_sign-up').prop('type', 'password');
+		}
+	});
+
+/* END OF Страница регистрации/входа в личный кабинет */
+
 });
 
 
