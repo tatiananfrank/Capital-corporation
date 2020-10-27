@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 versions,>1%
-*/
 
 /* Неизменные свойства */
 
@@ -87,7 +81,8 @@
 .user-menu {}
 
 .user-menu .menu__link {
-	padding: 7px 18px;
+	/*padding: 7px 18px;*/
+	padding: 14px 28px;
     border-radius: 28.5px;
     /* background-color: rgba(224, 43, 43, 0.3); */
     background-color: #531b1b;
@@ -96,10 +91,39 @@
     white-space: nowrap;
 }
 
+.page-footer .user-menu .menu__link {
+	padding: 7px 18px;
+}
+
 @media (min-width: 576px) {
-	.user-menu .menu__link {
+	/*.user-menu .menu__link {
+		padding: 15px 29px;
+	}*/
+
+	.page-footer .user-menu .menu__link {
 		padding: 15px 29px;
 	}
+}
+
+.js .page-footer .language-picker__button {
+	padding: 6px 18px; 
+	font-size: inherit;
+    line-height: inherit;
+}
+
+.js .page-footer .language-picker__flag,
+.js .page-footer .lang-list__flag {
+	width: 16px;
+    height: 11px;
+}
+
+.js .page-footer .lang-list {
+	padding: 35px 16.5px 15px; 
+}
+
+.js .page-footer .lang-list__link {
+	font-size: inherit;
+	line-height: inherit;
 }
 
 .user-menu .menu__link:hover,
@@ -116,7 +140,8 @@
 .js .language-picker__button {
 	position: relative;
     z-index: 10;
-    padding: 6px 18px;
+   /* padding: 6px 18px;*/
+    padding: 8px 27px;
     border: none;
     border-radius: 28.5px;
     /* background-color: rgba(224, 43, 43, 0.3); */
@@ -126,9 +151,21 @@
     color: inherit;
     text-transform: uppercase;
     white-space: nowrap;
+    font-size: 1.059rem;
+    line-height: 1.235rem;
 }
 
 @media (min-width: 576px) {
+	/*.js .language-picker__button {
+		padding: 12px 25px;
+	}*/
+
+	.js .page-footer .language-picker__button {
+		padding: 12px 25px;
+	}
+}
+
+@media (min-width: 992px) {
 	.js .language-picker__button {
 		padding: 12px 25px;
 	}
@@ -144,16 +181,32 @@
 
 .js .language-picker__flag,
 .js .lang-list__flag {
-	width: 16px;
-    height: 11px;
+	/*width: 16px;
+    height: 11px;*/
+    width: 37px;
+    height: 33px;
     vertical-align: middle;
 }
 
 @media (min-width: 576px) {
 	.js .language-picker__flag,
 	.js .lang-list__flag {
-		width: 25px;
-    	height: 16px;
+		/*width: 25px;
+    	height: 16px;*/
+    	width: 37px;
+    	height: 33px;
+	}
+
+	.js .page-footer .language-picker__flag, .js .page-footer .lang-list__flag {
+		width: 28px;
+    	height: 22px;
+	}
+}
+
+@media (min-width: 992px) {
+	.js .language-picker__flag, .js .lang-list__flag {
+		width: 28px;
+    	height: 22px;
 	}
 }
 
@@ -169,7 +222,8 @@
     left: 0.5px;
 
     margin: 0;
-    padding: 35px 16.5px 15px;
+    /*padding: 35px 16.5px 15px;*/
+    padding: 61px 25.5px 19px;
     border-radius: 20px 20px 28.5px 28.5px;
 
     list-style: none;
@@ -194,8 +248,18 @@
     transition-delay: 0s, 0s, 0s;
 }
 
-@media (min-width: 576px) {
+@media(min-width: 992px) {
 	.js .lang-list {
+		padding: 54px 23.5px 23px;
+	}
+}
+
+@media (min-width: 576px) {
+	/*.js .lang-list {
+		padding: 54px 23.5px 23px;
+	}*/
+
+	.js .page-footer .lang-list {
 		padding: 54px 23.5px 23px;
 	}
 }
@@ -216,6 +280,8 @@
 	color: inherit;
 	text-decoration: none;
     text-transform: uppercase;
+    font-size: 1.059rem;
+    line-height: 1.235rem;
 }
 
 .no-js .language-picker {
@@ -373,19 +439,24 @@
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 
 .js .page-header .main-menu .menu__item {
-	margin-bottom: 15px;
+	margin-bottom: 40px;
 }
 
 .js .page-header .main-menu .menu__item:last-child {
 	margin-bottom: 0;
 }
 
+.js .page-header .menu__link {
+	font-size: 1.059rem; /*18px*/
+	line-height: 1.235rem; /*21px*/
+}
+
 .js .page-header .user-menu {
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 
 @media (min-width: 576px) {
@@ -430,6 +501,13 @@
 
 	.js .page-header .user-menu {
 		margin-bottom: 60px;
+	}
+}
+
+@media (min-width: 992px) {
+	.js .page-header .menu__link {
+		font-size: inherit;
+		line-height: inherit;
 	}
 }
 
@@ -502,6 +580,10 @@
 .no-js .page-header .main-menu .menu__item {
 	margin-left: 40px;
 	margin-bottom: 15px;
+}
+
+.no-js .user-menu .menu__link {
+	padding: 7px 18px;
 }
 
 .no-js .page-header .language-picker-form {
