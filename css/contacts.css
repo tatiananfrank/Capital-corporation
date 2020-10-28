@@ -208,7 +208,7 @@ body {
 	position: relative;
 }
 
-.anim-circle {
+.contacts-content .anim-circle {
 	position: absolute;
 	top: -20px;
     right: -10px;
