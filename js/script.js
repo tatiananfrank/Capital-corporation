@@ -211,6 +211,17 @@ $(document).ready(function() {
 
 /* END OF Инвестиционные портфели */
 
+
+/* Личный кабинет */
+
+	// Изменение ширины полосы, отражающей уровень пользователя
+	$('.user-data__level-progress-value').each(function() {
+		var n = $(this).attr('data-perc');
+		$(this).css('width', $(this).attr('data-perc'));
+	});
+
+/* END OF Личный кабинет */
+
 });
 
 

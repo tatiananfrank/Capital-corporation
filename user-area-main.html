@@ -31,7 +31,7 @@
 	<!-- END OF ПОТОМ УДАЛИТЬ -->
 </head>
 <body>
-	<header class="page-header contacts-header">
+	<header class="page-header user-area-header">
 		<div class="inner-container_large">
 			<div class="logo page-header__logo">
 				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании" width="181" height="47">
@@ -118,7 +118,8 @@
 		</div>
 	</header>
 
-	<main class="contacts-content">
+	<main class="user-area-content">
+		
 		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя</h1>
 
 		<div class="breadcrumbs contacts-content__breadcrumbs">
@@ -132,74 +133,75 @@
 			</div>
 		</div>
 
-		<section class="user-data">
+		<div class="inner-container_large">
+		<section class="user-data user-area-content__user-data">
 			<h2 class="visually-hidden">Данные пользователя</h2>
 
-			<p class="">Имя Фамилия</p>
+			<p class="user-data__name">Имя Фамилия</p>
 
-			<p class="">
+			<p class="user-data__level">
 				Уровень
-				<span class="" aria-hidden="true">
-					<span class=""></span>
+				<span class="user-data__level-progress-line" aria-hidden="true">
+					<span class="user-data__level-progress-value" data-perc="58%"></span>
 				</span>
 				$25 000
 			</p>
 
-			<div class="">
-				<p class="">
-					<span class="">Баланс</span>
-					$200
-				</p>
+			<p class="user-data__balance">
+				<span class="user-data__balance-title">Баланс</span>
+				$200
+			</p>
 
-				<a href="" class="">Пополнить</a>
-				<a href="" class="">Вывести</a>
-			</div>
+			<a href="#" class="user-data__btn">Пополнить</a>
+			<a href="#" class="user-data__btn">Вывести</a>
 		</section>
 
-		<section class="user-stats">
+		<section class="user-stats user-area-content__user-stats">
 			<h2 class="visually-hidden">Статистика пользователя</h2>
 
-			<ul class="">
-				<li class="">Пополнено <span class="">$0</span></li>
-				<li class="">Инвестировано <span class="">$0</span></li>
-				<li class="">Заработано <span class="">$0</span></li>
-				<li class="">Выведено <span class="">$0</span></li>
+			<ul class="user-stats__list">
+				<li class="user-stats__item">Пополнено <span class="user-stats__price">$0</span></li>
+				<li class="user-stats__item">Инвестировано <span class="user-stats__price">$0</span></li>
+				<li class="user-stats__item">Заработано <span class="user-stats__price">$0</span></li>
+				<li class="user-stats__item">Выведено <span class="user-stats__price">$0</span></li>
 			</ul>
 		</section>
 
 		<section class="user-nav">
 			<h2 class="visually-hidden">Навигация по личному кабинету</h2>
 
-			<div class="dropdown">
-				<button class="dropdown-toggle" 
-						aria-expanded="false" aria-controls="" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" 
-						data-toggle="dropdown" data-display="static">
+			<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
+				<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static">
+					<span class="user-nav__dropdown-btn">
 						Кабинет
-					<span class="" aria-hidden="true"><</span>
+						<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
+					</span>
 				</button>
 
-				<ul class="dropdown-menu" id="" role="listbox">
-					<li class="">
-						<a href="#" class="" role="option">Кабинет</a>
-					</li>
-					<li class="">
-						<a href="#" class="" role="option">Карьера</a>
-					</li>
-					<li class="">
-						<a href="#" class="" role="option">История</a>
-					</li>
-					<li class="">
-						<a href="#" class="" role="option">Профиль</a>
-					</li>
-					<li class="">
-						<a href="#" class="" role="option">Выход</a>
-					</li>
-				</ul>
+				<div class="dropdown-menu user-nav__dropdown-menu-border" id="user-nav-dropdown-menu">
+					<ul class="user-nav__dropdown-menu" role="listbox">
+						<li class="user-nav__dropdown-menu-item">
+							<a href="#" class="user-nav__dropdown-menu-link" role="option">Кабинет</a>
+						</li>
+						<li class="user-nav__dropdown-menu-item">
+							<a href="#" class="user-nav__dropdown-menu-link" role="option">Карьера</a>
+						</li>
+						<li class="user-nav__dropdown-menu-item">
+							<a href="#" class="user-nav__dropdown-menu-link" role="option">История</a>
+						</li>
+						<li class="user-nav__dropdown-menu-item">
+							<a href="#" class="user-nav__dropdown-menu-link" role="option">Профиль</a>
+						</li>
+						<li class="user-nav__dropdown-menu-item">
+							<a href="#" class="user-nav__dropdown-menu-link" role="option">Выход</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
-		<section class="user-investment">
-			<h2 class="">Инвестиционные портфели</h2>
+		<section class="user-investment user-area-content__user-investment">
+			<h2 class="user-investment__title">Инвестиционные портфели</h2>
 
 			<div class="investment-block investment-block_start" aria-label="Портфель старт">
 					<table class="investment-block__table">
@@ -472,8 +474,8 @@
 				</div>
 		</section>
 
-		<section class="user-my-investment">
-			<h2 class="">Мои портфели</h2>
+		<section class="user-my-investment user-area-content__user-my-investment">
+			<h2 class="user-my-investment__title">Мои портфели</h2>
 
 			<div class="my-investment-block investment-block investment-block_trade" aria-label="Портфель трэйд">
 					<table class="investment-block__table">
@@ -516,6 +518,7 @@
 					</table>
 				</div>
 		</section>
+		</div>
 	</main>
 
 	<footer class="page-footer">
