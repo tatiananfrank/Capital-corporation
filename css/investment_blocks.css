@@ -316,8 +316,8 @@
 
 .my-investment-block__profit-progress-value {
 	display: block;
-	/*width: 2%;*/
-	width: 30px;
+	/*width: 30px;*/
+	/*width: attr(data-perc %);*/
 	height: 5px;
 	background: #BC0000;
 	border-radius: 53.5px;
@@ -335,6 +335,8 @@
 	line-height: 0.824rem; /*14px;*/
 	letter-spacing: 0.07rem;
 	color: rgba(255, 255, 255, 0.5);
+	display: flex;
+    align-items: center;
 }
 
 .my-investment-block__insurance-btn,

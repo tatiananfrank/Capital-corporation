@@ -186,6 +186,31 @@ $(document).ready(function() {
 
 /* END OF Страница регистрации/входа в личный кабинет */
 
+
+/* Инвестиционные портфели */
+
+	// Клик на переключатель "страховка"
+	$('.my-investment-block__insurance-btn').on('click', function (event) {
+		event.preventDefault();
+
+		$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
+	});
+
+	// Клик на переключатель "апгрейд"
+	$('.upgrade-investment-block__upgrade-btn').on('click', function (event) {
+		event.preventDefault();
+
+		$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
+	});
+
+	// Изменение ширины полосы, отражающей чистую прибыль
+	$('.my-investment-block__profit-progress-value').each(function() {
+		var n = $(this).attr('data-perc');
+		$(this).css('width', $(this).attr('data-perc'));
+	});
+
+/* END OF Инвестиционные портфели */
+
 });
 
 
