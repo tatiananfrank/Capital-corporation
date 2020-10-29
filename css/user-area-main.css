@@ -345,6 +345,14 @@
 	display: none;
 }
 
+.my-investment-block {
+	margin-bottom: 47.5px;
+}
+
+.my-investment-block:last-child {
+	margin-bottom: 0;
+}
+
 
 
 
@@ -520,6 +528,10 @@
 		padding-bottom: 128px;
 		margin-bottom: 72px;
 	}
+
+	.my-investment-block {
+		margin-bottom: 55px;
+	}
 }
 
 
@@ -561,7 +573,7 @@
 
 	.user-area-content__user-investment {
 		margin-top: -575px;
-		padding-bottom: 105px;
+		padding-bottom: 50px;
 	}
 
 	.user-investment__title {
@@ -589,11 +601,19 @@
 	}
 
 	.user-area-content__user-my-investment {
-		margin-bottom: 112px;
+		margin-bottom: 57px;
 	}
 
 	.user-my-investment__title {
 		width: 100%;
+	}
+
+	.user-investment .investment-block:last-child {
+		margin-bottom: 55px;
+	}
+
+	.my-investment-block:last-child {
+		margin-bottom: 55px;
 	}
 }
 
@@ -607,5 +627,122 @@
 
 	.user-area-content__user-investment {
 		margin-top: 110px;
+	}
+}
+
+
+
+
+
+@media (min-width: 992px) {
+	.user-area-content .breadcrumbs {
+		margin-bottom: 57.5px;
+	}
+
+	.user-area-content .breadcrumbs + .inner-container_large {
+		justify-content: space-between;
+	}
+
+	.user-area-content__user-data {
+		margin-bottom: 92.5px;
+	}
+
+	.user-area-content__user-stats {
+		margin-bottom: 69.5px;
+	}
+
+	.user-area-content__user-investment {
+		margin-top: 0;
+	}
+
+	.user-stats__list {
+		width: 802px;
+	}
+
+	.user-area-content__user-nav {
+		margin-left: auto;
+    	width: 98%;
+	}
+
+	.user-investment {
+		/*width: 802px;*/
+		justify-content: space-between;
+    	width: 798px;
+	}
+
+	.user-area-content__user-investment {
+		margin-left: auto;
+		margin-top: -700px;
+	}
+
+	.user-investment__wrap-block {
+		display: none;
+	}
+
+	.user-investment__title {
+		width: 100%;
+	}
+
+	.user-my-investment {
+		/*width: 802px;*/
+		width: 798px;
+	}
+
+	.user-area-content__user-my-investment {
+		margin-left: auto;
+	}
+
+	.user-investment .investment-block {
+		margin-bottom: 97.5px;
+	}
+
+	.user-investment .investment-block:last-child {
+		margin-bottom: 97.5px;
+	}
+
+	.user-area-content__user-investment {
+		padding-bottom: 5.5px;
+	}
+
+	.my-investment-block {
+		margin-bottom: 97.5px;
+	}
+
+	.my-investment-block:last-child {
+		margin-bottom: 97.5px;
+	}
+
+	.user-area-content__user-my-investment {
+		margin-bottom: 68.5px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1225px) {
+	.user-stats__list {
+		width: 500px;
+		justify-content: space-evenly;
+	}
+
+	.user-investment__wrap-block {
+		display: flex;
+	}
+
+	.user-investment__title {
+		width: 373px;
+	}
+
+	.user-area-content__user-investment {
+		margin-top: -550px;
+		width: 100%;
+    	justify-content: space-around;
+	}
+
+	.user-area-content__user-my-investment {
+		width: 100%;
+    	justify-content: space-around;
+	}
+
+	.user-my-investment__title {
+		width: 92%;
 	}
 }
