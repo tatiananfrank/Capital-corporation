@@ -276,6 +276,12 @@
 	border-radius: 45px;
 }
 
+@media (max-width: 575px) {
+	.js .user-nav__dropdown-menu-item_active {
+		display: none;
+	}
+}
+
 .user-nav__dropdown-menu-item {
 	margin-bottom: 30px;
 }
