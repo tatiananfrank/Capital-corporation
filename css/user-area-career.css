@@ -97,9 +97,19 @@
 	padding: 8px 21px 8px;
 }
 
+.user-careeer-stats-block_big-padding .user-careeer-stats-block__info {
+	padding: 17.5px 21px 17.5px;
+}
+
+
 .user-careeer-stats-block__table tr:last-child .user-careeer-stats-block__info {
 	padding-bottom: 12px;
 }
+
+/*.user-careeer-stats-block_big-padding tr:last-child .user-careeer-stats-block__info {
+	padding-bottom: 20px;
+}
+*/
 
 .user-careeer-block__info:nth-child(2),
 .user-careeer-stats-block__info:nth-child(2) {
@@ -242,6 +252,10 @@
 		padding: 10px 17px 10px;
 	}
 
+	.user-careeer-stats-block_big-padding .user-careeer-stats-block__info {
+		padding: 20px 17px 20px;
+	}
+
 	.user-careeer-block__info-perc {
 		font-size: 1.059rem; /*18px;*/
 		line-height: 1.235rem; /*21px;*/
@@ -263,6 +277,10 @@
 	}
 
 	.user-careeer-stats-block__table tr:last-child .user-careeer-stats-block__info {
+		padding-bottom: 20px;
+	}
+
+	.user-careeer-stats-block_big-padding tr:last-child .user-careeer-stats-block__info {
 		padding-bottom: 20px;
 	}
 }
