@@ -155,7 +155,7 @@
 					$200
 				</p>
 
-				<a href="#" class="user-data__btn" data-toggle="modal" data-target="#user-deposit-success-modal">Пополнить</a>
+				<a href="#" class="user-data__btn">Пополнить</a>
 				<a href="#" class="user-data__btn">Вывести</a>
 			</section>
 
@@ -518,7 +518,7 @@
 										<a class="investment-block__header-buy-link investment-block__upgrade-link" href="#">Апгрейд</a>
 
 										<div class="my-investment-block__insurance">
-											<button class="my-investment-block__insurance-btn" type="button" aria-label="Включить или отключить страховку" aria-expanded="false">
+											<button class="my-investment-block__insurance-btn" type="button" aria-label="Включить или отключить страховку" aria-expanded="false" data-toggle="modal" data-target="#user-confirm-insurance-modal" id="insurance-btn-5">
 												<span class="my-investment-block__insurance-btn-switch" aria-hidden="true"></span>
 											</button>
 											<span class="" aria-hidden="true">Страховка</span>
@@ -635,7 +635,7 @@
 	</footer>
 
 	<!-- Модалка "купить инвестиционный портфель" -->
-	<div class="modal fade" id="user-buy-modal" tabindex="-1" aria-hidden="true">
+	<div class="modal fade" id="user-buy-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
 		<section class="modal-buy-investment modal-buy-investment_centered modal-dialog">
 			<h2 class="modal-buy-investment__title">Покупка</h2>
 			<p class="modal-buy-investment__text">Портфель <span class="modal-buy-investment__text-accent" id="investment-block-title">Start</span><br>Выберите кошелек для покупки</p>
@@ -660,7 +660,7 @@
 	</div>
 
 	<!-- Модалка-уведомление "депозит создан успешно" -->
-	<div class="modal fade" id="user-deposit-success-modal" tabindex="-1" aria-hidden="true">
+	<div class="modal fade" id="user-deposit-success-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
 		<section class="modal-buy-investment user-deposit-success-modal modal-buy-investment_centered modal-dialog">
 			<h2 class="modal-buy-investment__title">Уведомление</h2>
 			<p class="modal-buy-investment__text">Депозит создан успешно</p>
@@ -669,9 +669,14 @@
 	</div>
 
 	<!-- Модалка "подтвердите активацию услуги страхование" -->
-	<div class="modal fade" id="user-deposit-success-modal" tabindex="-1" aria-hidden="true">
-		<section class="modal-buy-investment user-deposit-success-modal modal_centered modal-dialog">
-		
+	<div class="modal fade" id="user-confirm-insurance-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-confirm-insurance modal-confirm-insurance_centered modal-dialog">
+			<h2 class="modal-confirm-insurance__title">Предупреждение</h2>
+			<p class="modal-confirm-insurance__text">Подтвердите активацию услуги «страхование»</p>
+			<div class="modal-confirm-insurance__btn-wrapper">
+				<button class="modal-confirm-insurance__btn" type="button">Да</button>
+				<button class="modal-confirm-insurance__btn" id="confirm-insurance-no" type="button" data-target-id="" data-dismiss="modal">Нет</button>
+			</div>
 		</section>
 	</div>
 

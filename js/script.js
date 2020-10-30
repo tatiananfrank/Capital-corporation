@@ -187,31 +187,6 @@ $(document).ready(function() {
 /* END OF Страница регистрации/входа в личный кабинет */
 
 
-/* Инвестиционные портфели */
-
-	// Клик на переключатель "страховка"
-	$('.my-investment-block__insurance-btn').on('click', function (event) {
-		event.preventDefault();
-
-		$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
-	});
-
-	// Клик на переключатель "апгрейд"
-	$('.upgrade-investment-block__upgrade-btn').on('click', function (event) {
-		event.preventDefault();
-
-		$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
-	});
-
-	// Изменение ширины полосы, отражающей чистую прибыль
-	$('.my-investment-block__profit-progress-value').each(function() {
-		var n = $(this).attr('data-perc');
-		$(this).css('width', $(this).attr('data-perc'));
-	});
-
-/* END OF Инвестиционные портфели */
-
-
 /* Личный кабинет */
 
 	// Изменение ширины полосы, отражающей уровень пользователя
@@ -230,6 +205,47 @@ $(document).ready(function() {
 
 		modal.find('#investment-block-title').text(value);
 		modal.find('#investment-block-price').text(price);
+	});
+
+	// Изменение ширины полосы, отражающей чистую прибыль
+	$('.my-investment-block__profit-progress-value').each(function() {
+		var n = $(this).attr('data-perc');
+		$(this).css('width', $(this).attr('data-perc'));
+	});
+
+	// Клик на переключатель "страховка"
+	$('.my-investment-block__insurance-btn').on('click', function (event) {
+		event.preventDefault();
+
+		$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
+	});
+
+	// Модалка по нажатию на переключатель "страховка" внутри инвестиционного портфеля
+	$('#user-confirm-insurance-modal').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget);
+		var target_id = button.attr('id'); // Извлекает значение атрибута id у кнопки, которая была нажата, чтоб открыть модалку
+
+		var modal = $(this);
+
+		modal.find('#confirm-insurance-no').attr('data-target-id', target_id);
+	});
+
+	// Клик на кнопку "нет" внутри модалки "подтвердите активацию услуги страхование"
+	$('#confirm-insurance-no').on('click', function (event) {
+		event.preventDefault();
+
+		var target_id = '#' + $(this).attr('data-target-id');
+		$(target_id).attr('aria-expanded', 'false');
+	});
+
+
+
+
+	// Клик на переключатель "апгрейд"
+	$('.upgrade-investment-block__upgrade-btn').on('click', function (event) {
+		event.preventDefault();
+
+		$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
 	});
 
 /* END OF Личный кабинет */
