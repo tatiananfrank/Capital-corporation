@@ -685,6 +685,13 @@
 		margin-bottom: 72px;
 	}
 
+	.user-my-investment {
+		width: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+
 	.my-investment-block {
 		margin-bottom: 55px;
 	}
@@ -1017,6 +1024,7 @@
 	.user-my-investment {
 		/*width: 802px;*/
 		width: 798px;
+		justify-content: space-between;
 	}
 
 	.user-area-content__user-my-investment {
