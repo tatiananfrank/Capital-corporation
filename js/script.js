@@ -220,6 +220,18 @@ $(document).ready(function() {
 		$(this).css('width', $(this).attr('data-perc'));
 	});
 
+	// Модалка по нажатию на кнопку "купить" внутри инвестиционного портфеля
+	$('#user-buy-modal').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget);
+		var value = button.attr('data-investment_block'); // Извлекает значение атрибута data-investment_block у кнопки, которая была нажата, чтоб открыть модалку
+		var price = button.attr('data-investment-price');
+
+		var modal = $(this);
+
+		modal.find('#investment-block-title').text(value);
+		modal.find('#investment-block-price').text(price);
+	});
+
 /* END OF Личный кабинет */
 
 });

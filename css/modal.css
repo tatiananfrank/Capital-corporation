@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 versions,>1%
-*/
 
 /* тянется из бутстрапа */
 
@@ -198,11 +192,148 @@
     letter-spacing: 0.03rem;
 }
 
+
+.modal-buy-investment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 13px;
+    width: 286px;
+    background: rgba(30, 27, 27, 0.95);
+    border-radius: 62px;
+    box-shadow: 0 0 120px 0 rgba(136, 17, 255, 0.4),
+                0 0 120px 0 rgba(49, 0, 188, 0.4);
+}
+
+.modal-buy-investment_centered {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+}
+
+.modal-buy-investment__title {
+    margin: 0;
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 1.412rem; /*24px;*/
+    line-height: 1.647rem; /*28px;*/
+    text-align: center;
+    letter-spacing: 0.07rem;
+}
+
+.modal-buy-investment__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1rem; /*17px;*/
+    line-height: 1.176rem; /*20px;*/
+    text-align: center;
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-buy-investment__text-accent {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+}
+
+.modal-buy-investment__form {
+    width: 100%;
+}
+
+.modal-buy-investment__select {
+    margin-bottom: 26px;
+    padding: 14px 16px;
+    width: 100%;
+    /*background-color: rgba(30, 27, 27, 0.95);*/
+    background-color: transparent;
+    border: 2px solid rgba(188, 0, 0, 0.5);
+    border-radius: 28px;
+    font: inherit;
+    font-size: 1rem; /*17px;*/
+    line-height: 1.176rem; /*20px;*/
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-buy-investment__select option {
+    color: rgba(30, 27, 27, 0.95);
+    background-color: #fff;
+}
+
+.modal-buy-investment__btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal-buy-investment__btn {
+    padding: 12.5px 33px;
+    margin-right: 22px;
+    border: 2px solid rgba(188, 0, 0, 0.5);
+    border-radius: 28px;
+    background: transparent;
+
+    font: inherit;
+    font-size: 1rem; /*17px;*/
+    line-height: 1.176rem; /*20px;*/
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-buy-investment__btn:last-child {
+    margin-right: 0;
+}
+
+.user-deposit-success-modal .modal-buy-investment__title {
+    margin-bottom: 20px;
+}
+
+.user-deposit-success-modal .modal-buy-investment__text {
+    margin-bottom: 28px;
+}
+
+
 @media (min-width: 576px) {
     .modal__img {
         width: 220px;
         /*max-width: 220px*/;
     }
+
+
+
+    .modal-buy-investment {
+        padding: 30px 47px 60px;
+        width: 418px;
+        border-radius: 83px;
+    }
+
+    .modal-buy-investment_centered {
+        margin-top: 18vh;
+        margin-bottom: 18vh;
+    }
+
+    .modal-buy-investment__text {
+        font-size: 1.059rem; /*18px;*/
+        line-height: 1.235rem; /*21px;*/
+    }
+
+    .modal-buy-investment__select {
+        font-size: 1.059rem; /*18px;*/
+        line-height: 1.235rem; /*21px;*/
+    }
+
+    .modal-buy-investment__btn {
+        font-size: 1.059rem; /*18px;*/
+        line-height: 1.235rem; /*21px;*/
+    }
+
+    .user-deposit-success-modal {
+        padding: 64px 47px 57px;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -279,6 +410,52 @@
         font-size: 0.882rem; /*15px*/
         line-height: 1.118rem; /*19px;*/
     }
+
+
+    .modal-buy-investment {
+        width: 581px;
+        padding: 47px 86px 71px;
+    }
+
+    .modal-buy-investment__title {
+        font-size: 2.118rem; /*36px;*/
+        line-height: 2.471rem; /*42px;*/
+    }
+
+    .modal-buy-investment__text {
+        font-size: 1.412rem; /*24px;*/
+        line-height: 1.647rem; /*28px;*/
+    }
+
+    .modal-buy-investment__text:nth-of-type(2) {
+        margin-bottom: 73px;
+    }
+
+    .modal-buy-investment__select {
+        font-size: 1.412rem; /*24px;*/
+        line-height: 1.647rem; /*28px;*/
+        margin-bottom: 60px;
+    }
+
+    .modal-buy-investment__btn {
+        padding: 12.5px 47px;
+        font-size: 1.412rem; /*24px;*/
+        line-height: 1.647rem; /*28px;*/
+    }
+
+    .user-deposit-success-modal {
+        padding: 63px 47px 59px;
+    }
+
+    .user-deposit-success-modal .modal-buy-investment__text {
+        margin-bottom: 43px;
+    }
+
+    .user-deposit-success-modal .modal-buy-investment__btn {
+        padding: 12.5px 98px;
+    }
+
+
 }
 
 @media (min-width: 992px) {
