@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Capital Corporation - Личный кабинет</title>
+
+	<!-- Проверка на выолнение js кода -->
+	<script type="text/javascript" src="js/js_test.js"></script>
+
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css"> 
+
+	<!-- ПОТОМ УДАЛИТЬ -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+
+	<link rel="stylesheet" type="text/css" href="css/logo.css">
+
+	<link rel="stylesheet" type="text/css" href="css/breadcrumbs.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/user-area-main.css">
+	<link rel="stylesheet" type="text/css" href="css/user-area-career.css">
+
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<!-- END OF ПОТОМ УДАЛИТЬ -->
+</head>
+<body>
+	<header class="page-header user-area-header">
+		<div class="inner-container_large">
+			<div class="logo page-header__logo">
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании" width="181" height="47">
+			</div>
+			
+			<!-- Мобильное меню -->
+			<button class="burger" id="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Нажмите, чтобы открыть или закрыть меню">
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+			</button>
+			<!-- END OF Мобильное меню -->
+
+			<nav class="main-nav" id="main-nav">
+
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a class="menu__link">Личный кабинет</a></li>
+				</ul>
+
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown-2" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown-2" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</nav>
+		</div>
+	</header>
+
+	<main class="user-area-content user-area-career-content">
+		
+		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Карьера»</h1>
+
+		<div class="breadcrumbs contacts-content__breadcrumbs">
+			<div class="inner-container_large">
+				<p class="visually-hidden">Цепочка навигации</p>
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link" aria-label="Вернуться на главную">Главная</a></li>
+					<li class="breadcrumbs__item"><a href="user-area-main.html" class="breadcrumbs__link">Личный кабинет</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link" aria-label="Вы находитесь здесь">Карьера</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="inner-container_large">
+			<section class="user-data user-area-content__user-data">
+				<h2 class="visually-hidden">Данные пользователя</h2>
+
+				<p class="user-data__name">Имя Фамилия</p>
+
+				<!-- Атрибут data-perc="58%" служит для заполнения полосы прогресса на указанный процент -->
+				<p class="user-data__level">
+					Уровень
+					<span class="user-data__level-progress-line" aria-hidden="true">
+						<span class="user-data__level-progress-value" data-perc="58%"></span>
+					</span>
+					$25 000
+				</p>
+
+				<p class="user-data__balance">
+					<span class="user-data__balance-title">Баланс</span>
+					$200
+				</p>
+
+				<a href="#" class="user-data__btn">Пополнить</a>
+				<a href="#" class="user-data__btn">Вывести</a>
+			</section>
+
+			<section class="user-stats user-area-content__user-stats">
+				<h2 class="visually-hidden">Статистика пользователя</h2>
+
+				<ul class="user-stats__list">
+					<li class="user-stats__item">Пополнено <span class="user-stats__price">$0</span></li>
+					<li class="user-stats__item">Инвестировано <span class="user-stats__price">$0</span></li>
+					<li class="user-stats__item">Заработано <span class="user-stats__price">$0</span></li>
+					<li class="user-stats__item">Выведено <span class="user-stats__price">$0</span></li>
+				</ul>
+			</section>
+
+			<section class="user-nav user-area-content__user-nav">
+				<h2 class="visually-hidden">Навигация по личному кабинету</h2>
+
+				<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
+					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static">
+						<span class="user-nav__dropdown-btn">
+							Карьера
+							<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
+						</span>
+					</button>
+
+					<div class="dropdown-menu user-nav__dropdown-menu-border" id="user-nav-dropdown-menu">
+						<ul class="user-nav__dropdown-menu" role="listbox">
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-main.html" class="user-nav__dropdown-menu-link" role="option">Кабинет</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
+								<a class="user-nav__dropdown-menu-link" role="option">Карьера</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="#" class="user-nav__dropdown-menu-link" role="option">История</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="#" class="user-nav__dropdown-menu-link" role="option">Профиль</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="#" class="user-nav__dropdown-menu-link" role="option">Выход</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="user-careeer-levels user-area-career-content__levels">
+				<h2 class="visually-hidden">Карьерный и бонусный уровни пользователя</h2>
+
+				<div class="user-careeer-levels__wrap-block"></div>
+
+				<div class="user-careeer-block user-careeer-levels__user-careeer-block">
+					<table class="user-careeer-block__table">
+						<tr>
+							<th class="user-careeer-block__header" colspan="2">
+								<a class="user-careeer-block__badge">Карьерный уровень</a>
+								<p class="user-careeer-block__number">1</p>
+							</th>
+						</tr>
+						<tr class="user-careeer-block__row">
+							<td class="user-careeer-block__info">
+								учитываемый оборот
+								<p class="user-careeer-block__info-perc">100%</p>
+							</td>
+							<td class="user-careeer-block__info">
+								комиссионный доход
+								<p class="user-careeer-block__info-perc">5%</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-block__info2" colspan="2">
+								<p class="user-careeer-block__money">$20 250/$40 000</p>
+								<span class="user-careeer-block__progress-line" aria-hidden="true">
+									<span class="user-careeer-block__progress-value" data-perc="52%"></span>
+								</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="user-careeer-levels__wrap-block"></div>
+
+				<div class="user-careeer-block user-careeer-levels__user-careeer-block">
+					<table class="user-careeer-block__table">
+						<tr>
+							<th class="user-careeer-block__header" colspan="2">
+								<a class="user-careeer-block__badge">Бонусный уровень</a>
+								<p class="user-careeer-block__number">0</p>
+							</th>
+						</tr>
+						<tr class="user-careeer-block__row">
+							<td class="user-careeer-block__info">
+								личные инвестиции
+								<p class="user-careeer-block__info-perc">$300/$1 000</p>
+							</td>
+							<td class="user-careeer-block__info">
+								бонус за новый уровень
+								<p class="user-careeer-block__info-perc">$250</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-block__info2" colspan="2">
+								<p class="user-careeer-block__money">$7 500/$15 000</p>
+								<span class="user-careeer-block__progress-line" aria-hidden="true">
+									<span class="user-careeer-block__progress-value" data-perc="63%"></span>
+								</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+			<section class="user-careeer-stats user-area-career-content__stats">
+				<h2 class="user-careeer-stats__title">Cтатистика</h2>
+
+				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
+					<table class="user-careeer-stats-block__table">
+						<tr>
+							<th class="user-careeer-stats-block__header" colspan="2">
+								<a class="user-careeer-stats-block__badge">Общая</a>
+							</th>
+						</tr>
+						<tr class="user-careeer-stats-block__row">
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">3</p>
+								зарегистр. партнеров
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">1</p>
+								активных партнеров
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$20 250</p>
+								объем продаж
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$608</p>
+								прибыль парнеров
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="user-careeer-stats-block user-careeer-stats__user-careeer-stats-block">
+					<table class="user-careeer-stats-block__table">
+						<tr>
+							<th class="user-careeer-stats-block__header" colspan="2">
+								<a class="user-careeer-stats-block__badge">Офисный счёт</a>
+							</th>
+						</tr>
+						<tr class="user-careeer-stats-block__row">
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								прибыль
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0/$0</p>
+								начислено
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">0%</p>
+								начисления
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">2020.10.13</p>
+								дата расчета
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
+					<table class="user-careeer-stats-block__table">
+						<tr>
+							<th class="user-careeer-stats-block__header" colspan="2">
+								<a class="user-careeer-stats-block__badge">за текущую неделю</a>
+							</th>
+						</tr>
+						<tr class="user-careeer-stats-block__row">
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">0</p>
+								зарегистр. партнеров
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">0</p>
+								активных партнеров
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								объем продаж
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								прибыль парнеров
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
+					<table class="user-careeer-stats-block__table">
+						<tr>
+							<th class="user-careeer-stats-block__header" colspan="2">
+								<a class="user-careeer-stats-block__badge">за прошлую неделю</a>
+							</th>
+						</tr>
+						<tr class="user-careeer-stats-block__row">
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">2</p>
+								зарегистр. партнеров
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">0</p>
+								активных партнеров
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								объем продаж
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								прибыль парнеров
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="inner-container_large">
+			<div class="page-footer__row">
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Реклама</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a class="menu__link">Личный кабинет</a></li>
+				</ul>
+				
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select-2" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select-2" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</div>
+
+			<div class="page-footer__row">
+				<p class="page-footer__copyright">© 2020</p>
+				
+				<ul class="menu">
+					<li class="menu__item"><a href="#" class="menu__link">Политика конфиденциальности</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Пользовательское соглашение</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Клиентский договор</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Агентский договор</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

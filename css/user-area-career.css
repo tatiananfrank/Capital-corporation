@@ -1,0 +1,363 @@
+.user-area-career-content .user-stats {
+	margin-bottom: 50px;
+}
+
+.user-careeer-levels {
+	order: 4;
+}
+
+.user-area-career-content__levels {
+	margin-bottom: 22.5px;
+}
+
+.user-careeer-block,
+.user-careeer-stats-block {
+	width: 281.69px;
+	padding: 5px;
+	border-radius: 64px;
+	background: linear-gradient(180deg, #BA0101 0%, #210d0d 60%, rgba(0, 0, 0, 0) 100%);
+	box-shadow: 0 0 70px 0 rgba(10, 9, 9, 0.7);
+}
+
+.user-careeer-stats-block {
+	background: linear-gradient(180deg, #616060 0%, #1b1b1b 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+.user-careeer-levels__user-careeer-block,
+.user-careeer-stats__user-careeer-stats-block {
+	margin-bottom: 47.5px;
+}
+
+.user-careeer-block__table,
+.user-careeer-stats-block__table {
+	width: 100%;
+    background-color: #151414;
+    border-radius: 64px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.user-careeer-block__header,
+.user-careeer-stats-block__header {
+	padding: 20px 25px 22px;
+	border-bottom: 2px solid rgba(98, 97, 97, 0.15);
+}
+
+.user-careeer-stats-block__header {
+	padding: 29px 25px 29px;
+}	
+
+.user-careeer-block__badge,
+.user-careeer-stats-block__badge {
+	padding: 9px 19px 10px;
+	border: 1.5px solid #BC0000;
+	border-radius: 28px;
+	font-weight: 400;
+	font-size: 0.706rem; /*12px;*/
+	line-height: 0.824rem; /*14px;*/
+	letter-spacing: 0.07rem;
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+.user-careeer-stats-block__badge {
+	border: 1.5px solid #626161;
+}
+
+.user-careeer-block__badge:hover,
+.user-careeer-stats-block__badge:hover {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+.user-careeer-block__number {
+	margin: 25px 0 0;
+	font-weight: 400;
+	font-size: 1.412rem; /*24px;*/
+	line-height: 1.647rem; /*28px;*/
+	letter-spacing: 0.07rem;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.user-careeer-block__row,
+.user-careeer-stats-block__row {
+	border-bottom: 2px solid rgba(98, 97, 97, 0.15);
+}
+
+.user-careeer-block__info,
+.user-careeer-stats-block__info {
+	padding: 8px 4px 8px;
+	font-size: 0.706rem; /*12px;*/
+	line-height: 0.824rem; /*14px;*/
+	letter-spacing: 0.07rem;
+	color: rgba(153, 153, 154, 0.7);
+}
+
+.user-careeer-stats-block__info {
+	padding: 8px 21px 8px;
+}
+
+.user-careeer-stats-block__table tr:last-child .user-careeer-stats-block__info {
+	padding-bottom: 12px;
+}
+
+.user-careeer-block__info:nth-child(2),
+.user-careeer-stats-block__info:nth-child(2) {
+	border-left: 2px solid rgba(98, 97, 97, 0.15);
+}
+
+.user-careeer-block__info-perc,
+.user-careeer-stats-block__info-number {
+	margin: 0;
+	margin-top: 4px;
+	font-size: 0.941rem; /*16px;*/
+	line-height: 1.118rem; /*19px;*/
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.user-careeer-stats-block__info-number {
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+
+.user-careeer-block__info2 {
+	padding: 14.6px 21.3px 35.36px;
+}
+
+.user-careeer-block__money {
+	margin: 0;
+	margin-bottom: 7px;
+	font-size: 0.941rem; /*16px;*/
+	line-height: 1.118rem; /*19px;*/
+	color: rgba(255, 255, 255, 0.7);
+	text-align: right;
+}
+
+.user-careeer-block__progress-line {
+	display: block;
+	width: 100%;
+    height: 3px;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 53.5px;
+}
+
+.user-careeer-block__progress-value {
+	display: block;
+	/*width: 100%;*/
+    height: 3px;
+	background: #BC0000;
+	border-radius: 53.5px;
+}
+
+.user-careeer-stats-block_active .user-careeer-stats-block__info-number {
+	color: #BC0000;
+}
+
+.user-careeer-stats {
+	order: 5;
+}
+
+.user-careeer-stats__title {
+	margin-bottom: 69px;
+    font-family: "Bebas Neue", "Arial Narrow", "Century Gothic", Helvetica, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.059rem;
+    line-height: 1.294rem;
+    text-align: center;
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+.user-careeer-levels__wrap-block {
+	display: none;
+}
+
+
+
+
+@media (min-width: 576px) {
+	.user-careeer-levels,
+	.user-careeer-stats {
+		width: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+
+	.user-area-career-content__levels {
+		margin-bottom: 12px;
+	}
+
+	.user-careeer-stats__title {
+		margin-bottom: 50px;
+	    font-size: 1.412rem;
+	    line-height: 1.706rem;
+	}
+
+	.user-careeer-block,
+	.user-careeer-stats-block {
+		width: 372.97px;
+		border-radius: 88px;
+	}
+
+	.user-careeer-levels__user-careeer-block,
+	.user-careeer-stats__user-careeer-stats-block {
+		margin-bottom: 55px;
+	}
+
+	.user-careeer-block__table,
+	.user-careeer-stats-block__table {
+		border-radius: 88px;
+	}
+
+	.user-careeer-block__header {
+		padding: 25px 25px 35px;
+	}
+
+	.user-careeer-block__badge,
+	.user-careeer-stats-block__badge {
+		border: 2px solid #BC0000;
+		font-size: 0.824rem; /*14px;*/
+		line-height: 0.941rem; /*16px;*/
+	}
+
+	.user-careeer-stats-block__badge {
+		border: 2px solid #626161;
+	}
+
+	.user-careeer-block__number {
+		font-size: 2.118rem; /*36px;*/
+		line-height: 2.471rem; /*42px;*/
+	}
+
+	.user-careeer-block__info,
+	.user-careeer-stats-block__info {
+		padding: 10px 15px 10px;
+		font-size: 0.824rem; /*14px;*/
+		line-height: 0.941rem; /*16px;*/
+	}
+
+	.user-careeer-stats-block__info {
+		padding: 10px 17px 10px;
+	}
+
+	.user-careeer-block__info-perc {
+		font-size: 1.059rem; /*18px;*/
+		line-height: 1.235rem; /*21px;*/
+	}
+
+	.user-careeer-stats-block__info-number {
+		font-size: 1.412rem; /*24px;*/
+		line-height: 1.647rem; /*28px;*/
+	}
+
+	.user-careeer-block__money {
+		margin-bottom: 12px;
+		font-size: 1.059rem; /*18px;*/
+		line-height: 1.235rem; /*21px;*/
+	}
+
+	.user-careeer-block__info2 {
+		padding: 14.6px 40px 32px;
+	}
+
+	.user-careeer-stats-block__table tr:last-child .user-careeer-stats-block__info {
+		padding-bottom: 20px;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+	.user-careeer-levels,
+	.user-careeer-stats {
+		flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	}
+
+	.user-area-career-content__levels {
+		margin-top: -575px;
+		margin-bottom: 0;
+	}
+
+	.user-careeer-levels__wrap-block {
+		display: flex;
+    	width: 372.97px;
+	}
+
+	.user-careeer-stats__title {
+		text-align: left;
+    	padding-left: 35px;
+    	width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 835px) {
+	.user-area-career-content__levels {
+		margin-top: 110px;
+	}
+
+	.user-careeer-stats__title {
+		width: 372.97px;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.user-careeer-levels {
+		justify-content: space-between;
+    	width: 798px;
+	}
+
+	.user-area-career-content__levels {
+		margin-left: auto;
+    	margin-top: -760px;
+	}
+
+	.user-careeer-levels__wrap-block {
+		display: none;
+	}
+
+	.user-careeer-levels__user-careeer-block,
+	.user-careeer-stats__user-careeer-stats-block {
+		margin-bottom: 97.5px;
+	}
+
+	.user-careeer-stats {
+		width: 798px;
+    	justify-content: space-between;
+    	margin-left: auto;
+	}
+
+	.user-area-career-content__stats {
+		margin-top: -360px;
+	}
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1225px) {
+	.user-area-career-content__levels {
+		margin-top: -550px;
+	}
+
+	.user-careeer-levels,
+	.user-careeer-stats {
+		width: 100%;
+    	justify-content: space-around;
+	}
+
+	.user-careeer-levels__wrap-block {
+		display: flex;
+	}
+
+	.user-careeer-stats__title {
+		width: 92%;
+	}
+
+	.user-area-career-content__stats {
+		margin-top: 0;
+	}
+}

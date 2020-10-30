@@ -238,7 +238,15 @@ $(document).ready(function() {
 		$(target_id).attr('aria-expanded', 'false');
 	});
 
+	// Изменение ширины полосы, отражающей карьерный уровень пользователя
+	$('.user-careeer-block__progress-value').each(function() {
+		var n = $(this).attr('data-perc');
+		$(this).css('width', $(this).attr('data-perc'));
+	});
 
+
+
+	
 
 
 	// Клик на переключатель "апгрейд"
