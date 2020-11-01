@@ -221,6 +221,15 @@
 
 
 
+.user-area-career-content {
+	overflow: hidden;
+    padding-top: 200px;
+    margin-top: -200px;
+}
+
+
+
+
 @media (min-width: 576px) {
 	.user-careeer-levels,
 	.user-careeer-stats {
