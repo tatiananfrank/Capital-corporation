@@ -973,6 +973,13 @@
 
 
 @media (min-width: 992px) {
+	.user-area-main-content {
+		background-image: url("../img/user-area-main-blur.png");
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+	}
+
 	.user-area-content .breadcrumbs {
 		margin-bottom: 57.5px;
 	}
@@ -1169,5 +1176,62 @@
 
 	.user-my-investment__title {
 		width: 92%;
+	}
+}
+
+
+
+/*.slow-anim {
+	animation-duration: 1.8s;
+	animation-delay: 0s;
+}*/
+
+.user-area-content .anim-circle-3,
+.user-area-content .anim-circle-7,
+.user-area-content .anim-circle-11 {
+	animation-duration: 2.2s;
+	animation-delay: 0.9s;
+}
+
+@media (min-width: 576px) {
+	.user-area-content .anim-circle-3,
+	.user-area-content .anim-circle-7,
+	.user-area-content .anim-circle-11 {
+		animation-duration: 1.8s;
+		animation-delay: 0s;
+	}
+
+	.user-area-content .anim-circle-5,
+	.user-area-content .anim-circle-8 {
+		animation-duration: 2.2s;
+		animation-delay: 0.9s;
+	}
+}
+
+@media (min-width: 768px) {
+	.user-area-content .anim-circle-5,
+	.user-area-content .anim-circle-8 {
+		animation-duration: 1.8s;
+		animation-delay: 0s;
+	}
+
+	.user-area-content .anim-circle-1,
+	.user-area-content .anim-circle-6 {
+		animation-duration: 2.2s;
+		animation-delay: 0.9s;
+	}
+}
+
+@media (min-width: 992px) {
+	.user-area-content .anim-circle-6 {
+		animation-duration: 1.8s;
+		animation-delay: 0s;
+	}
+
+	.user-area-content .anim-circle-1,
+	.user-area-content .anim-circle-7,
+	.user-area-content .anim-circle-8 {
+		animation-duration: 2.2s;
+		animation-delay: 0.9s;
 	}
 }
