@@ -114,6 +114,93 @@
 
 
 
+.user-area-replenish-content,
+.user-area-withdraw-content {
+	position: relative;
+	overflow: hidden;
+    padding-top: 200px;
+    margin-top: -200px;
+}
+
+.user-area-replenish-content .anim-circle,
+.user-area-withdraw-content .anim-circle {
+	position: absolute;
+
+	border-radius: 50%;
+	border: 2px solid rgba(210, 207, 221, 0.3);
+		
+	animation-name: resize;
+	animation-duration: 1.8s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/*.user-area-main-content .anim-circle-11 {
+	animation-duration: 2.2s;
+	animation-delay: 0.9s;
+}
+*/
+
+.user-area-replenish-content .anim-circle-1,
+.user-area-withdraw-content .anim-circle-1 {
+	z-index: -20;
+	width: 105px;
+    height: 105px;
+	border: 2px solid rgba(250, 150, 1, 0.5);
+	top: 430px;
+    left: 40px;
+	box-shadow: 0 0 15px 0 rgba(250, 150, 1, 0.5),
+				inset 0 0 15px 0 rgba(250, 150, 1, 0.5);
+}
+
+.user-area-replenish-content .anim-circle-2,
+.user-area-withdraw-content .anim-circle-2 {
+	z-index: -20;
+	width: 145px;
+    height: 145px;
+	border: 2px solid #732BBB;
+	top: 690px;
+    left: 260px;
+	box-shadow: 0 0 15px 0 #732BBB,
+				inset 0 0 15px 0 #732BBB;
+}
+
+.user-area-replenish-content .anim-circle-3,
+.user-area-withdraw-content .anim-circle-3 {
+	z-index: -20;
+	width: 150px;
+    height: 150px;
+	border: 2px solid rgba(210, 207, 221, 0.3);
+	top: 1090px;
+    left: 230px;
+	box-shadow: 0 0 15px 0 rgba(210, 207, 221, 0.3),
+				inset 0 0 15px 0 rgba(210, 207, 221, 0.3);
+}
+
+.user-area-replenish-content .anim-circle-4,
+.user-area-withdraw-content .anim-circle-4 {
+	z-index: -20;
+	width: 100px;
+    height: 100px;
+	border: 2px solid rgba(255, 255, 255, 0.07);
+	top: 1090px;
+    left: 160px;
+    animation-duration: 2.2s;
+	animation-delay: 0.9s;
+}
+
+.user-area-replenish-content .anim-circle-5,
+.user-area-withdraw-content .anim-circle-5,
+.user-area-replenish-content .anim-circle-6,
+.user-area-withdraw-content .anim-circle-6 {
+	display: none;
+}
+
+
+
+
 @media (min-width: 576px) {
 	.replenish,
 	.withdraw {
@@ -160,6 +247,32 @@
 	    font-size: 1rem;
 	    line-height: 1.176rem;
 	}
+
+
+	.user-area-replenish-content .anim-circle-1,
+	.user-area-withdraw-content .anim-circle-1 {
+		display: none;
+	}
+
+	.user-area-replenish-content .anim-circle-2,
+	.user-area-withdraw-content .anim-circle-2 {
+		top: 630px;
+    	left: 410px;
+	}
+
+	.user-area-replenish-content .anim-circle-3,
+	.user-area-withdraw-content .anim-circle-3 {
+		top: 1030px;
+    	left: 50px;
+	}
+
+	.user-area-replenish-content .anim-circle-4,
+	.user-area-withdraw-content .anim-circle-4 {
+		width: 300px;
+	    height: 300px;
+	    top: 1030px;
+	    left: 110px;
+	}
 }
 
 
@@ -170,6 +283,19 @@
 	    margin-left: auto;
 	    margin-top: -390px;
 	    margin-right: 80px;
+	}
+
+
+	.user-area-replenish-content .anim-circle-1, 
+	.user-area-withdraw-content .anim-circle-1 {
+		display: block;
+		top: 1630px;
+    	left: 540px;
+	}
+
+	.user-area-replenish-content .anim-circle-2,
+	.user-area-withdraw-content .anim-circle-2 {
+		left: 610px;
 	}
 } 
 
@@ -195,6 +321,63 @@
 	.withdraw {
 	    margin-top: -720px;
     	margin-bottom: 300px;
+	}
+
+
+	.user-area-replenish-content .anim-circle-1, 
+	.user-area-withdraw-content .anim-circle-1 {
+		width: 145px;
+	    height: 145px;
+	    top: 670px;
+	    left: 40px;
+	}
+
+	.user-area-replenish-content .anim-circle-2, 
+	.user-area-withdraw-content .anim-circle-2 {
+		width: 235px;
+		height: 235px;
+		top: 770px;
+    	left: 1120px;
+	}
+
+	.user-area-replenish-content .anim-circle-3, 
+	.user-area-withdraw-content .anim-circle-3 {
+		width: 235px;
+		height: 235px;
+		top: 1030px;
+    	left: 430px;
+	}
+
+	.user-area-replenish-content .anim-circle-4, 
+	.user-area-withdraw-content .anim-circle-4 {
+		animation-duration: 2.2s;
+		animation-delay: 0.9s;
+		width: 145px;
+		height: 145px;
+		top: 910px;
+    	left: 1270px;
+	}
+
+	.user-area-replenish-content .anim-circle-5, 
+	.user-area-withdraw-content .anim-circle-5 {
+		display: block;
+		width: 470px;
+		height: 470px;
+		z-index: -20;
+		top: 900px;
+    	left: 900px;
+    	animation-delay: 0.4s;
+	}
+
+	.user-area-replenish-content .anim-circle-6, 
+	.user-area-withdraw-content .anim-circle-6 {
+		animation-duration: 2.2s;
+		animation-delay: 0.9s;
+		display: block;
+		width: 145px;
+		height: 145px;
+		top: 1100px;
+    	left: 600px;
 	}
 }
 
