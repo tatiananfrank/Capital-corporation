@@ -244,6 +244,22 @@ $(document).ready(function() {
 		$(this).css('width', $(this).attr('data-perc'));
 	});
 
+	// Пополнить/вывести средства - клик на картинку
+	$('.replenish__pay-img').on('click', function (event) {
+		event.preventDefault();
+		var payId = $(this).attr('data-pay-id');
+
+		var input = '#pay' + payId;
+		$(input).prop('checked', true).trigger('click');
+	});
+	$('.withdraw__pay-img').on('click', function (event) {
+		event.preventDefault();
+		var payId = $(this).attr('data-pay-id');
+
+		var input = '#with_pay' + payId;
+		$(input).prop('checked', true).trigger('click');
+	});
+
 
 
 	

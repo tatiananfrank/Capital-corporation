@@ -193,42 +193,44 @@
 				</div>
 			</section>
 
-			<section class="">
+			<section class="withdraw">
 				<h2 class="visually-hidden">Вывести средства</h2>
 
-				<form class="" action="" method="">
-					<p class="">Вывести средства</p>
+				<form class="withdraw__form" action="" method="">
+					<p class="withdraw__title">Вывести средства</p>
 
-					<div class="">
-						<label for="amount">Укажите сумму</label>
-						<input type="text" name="" id="amount" placeholder="$1 000" required="true">
+					<div class="withdraw__main-group">
+						<label class="withdraw__text withdraw__text-first" for="amount">Укажите сумму</label>
+						<input class="withdraw__input" type="text" name="" id="withdraw_amount" placeholder="$1 000" required="true">
 
-						<div class="">
-							<label for="pay1">Dollar</label>
-							<input class="visually-hidden" type="radio" name="pay" id="pay1">
-							<img src="img/dollar.png" alt="" width="33" height="33">
+						<div class="withdraw__group">
+							<div class="withdraw__pay-var">
+								<label class="withdraw__text" for="pay1">Dollar</label>
+								<input class="visually-hidden" type="radio" name="with_pay" id="with_pay1">
+								<img class="withdraw__pay-img" src="img/dollar.png" alt="" width="33" height="33" data-pay-id="1">
+							</div>
+
+							<div class="withdraw__pay-var">
+								<label class="withdraw__text" for="pay2">Perfect</label>
+								<input class="visually-hidden" type="radio" name="with_pay" id="with_pay2">
+								<img class="withdraw__pay-img" src="img/Perfect.png" alt="" width="33" height="33" data-pay-id="2">
+							</div>
+
+							<div class="withdraw__pay-var">
+								<label class="withdraw__text" for="pay3">Bitcoin</label>
+								<input class="visually-hidden" type="radio" name="with_pay" id="with_pay3">
+								<img class="withdraw__pay-img" src="img/Bitcoin.png" alt="" width="33" height="33" data-pay-id="3">
+							</div>
+
+							<div class="withdraw__pay-var">
+								<label class="withdraw__text" for="pay4">Ethereum</label>
+								<input class="visually-hidden" type="radio" name="with_pay" id="with_pay4">
+								<img class="withdraw__pay-img" src="img/Ethereum.png" alt="" width="33" height="33"data-pay-id="4">
+							</div>
 						</div>
 
-						<div class="">
-							<label for="pay2">Perfect</label>
-							<input class="visually-hidden" type="radio" name="pay" id="pay2">
-							<img src="img/Perfect.png" alt="" width="33" height="33">
-						</div>
-
-						<div class="">
-							<label for="pay3">Bitcoin</label>
-							<input class="visually-hidden" type="radio" name="pay" id="pay3">
-							<img src="img/Bitcoin.png" alt="" width="33" height="33">
-						</div>
-
-						<div class="">
-							<label for="pay4">Ethereum</label>
-							<input class="visually-hidden" type="radio" name="pay" id="pay4">
-							<img src="img/Ethereum.png" alt="" width="33" height="33">
-						</div>
+						<button class="withdraw__btn" type="submit">Вывести</button>
 					</div>
-
-					<button type="submit">Вывести</button>
 				</form>
 			</section>
 		</div>
