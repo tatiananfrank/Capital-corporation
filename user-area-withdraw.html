@@ -24,9 +24,9 @@
 	<link rel="stylesheet" type="text/css" href="css/logo.css">
 
 	<link rel="stylesheet" type="text/css" href="css/breadcrumbs.css">
-	
+
 	<link rel="stylesheet" type="text/css" href="css/user-area-main.css">
-	<link rel="stylesheet" type="text/css" href="css/user-area-career.css">
+	<link rel="stylesheet" type="text/css" href="css/user-area-replenish.css">
 
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 
@@ -121,9 +121,9 @@
 		</div>
 	</header>
 
-	<main class="user-area-content user-area-career-content">
+	<main class="user-area-content user-area-withdraw-content">
 		
-		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Карьера»</h1>
+		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Вывести средства»</h1>
 
 		<div class="breadcrumbs contacts-content__breadcrumbs">
 			<div class="inner-container_large">
@@ -131,7 +131,7 @@
 				<ul class="breadcrumbs__list">
 					<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link" aria-label="Вернуться на главную">Главная</a></li>
 					<li class="breadcrumbs__item"><a href="user-area-main.html" class="breadcrumbs__link">Личный кабинет</a></li>
-					<li class="breadcrumbs__item"><a class="breadcrumbs__link" aria-label="Вы находитесь здесь">Карьера</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link" aria-label="Вы находитесь здесь">Вывести</a></li>
 				</ul>
 			</div>
 		</div>
@@ -157,18 +157,7 @@
 				</p>
 
 				<a href="user-area-replenish.html" class="user-data__btn">Пополнить</a>
-				<a href="user-area-withdraw.html" class="user-data__btn">Вывести</a>
-			</section>
-
-			<section class="user-stats user-area-content__user-stats">
-				<h2 class="visually-hidden">Статистика пользователя</h2>
-
-				<ul class="user-stats__list">
-					<li class="user-stats__item">Пополнено <span class="user-stats__price">$0</span></li>
-					<li class="user-stats__item">Инвестировано <span class="user-stats__price">$0</span></li>
-					<li class="user-stats__item">Заработано <span class="user-stats__price">$0</span></li>
-					<li class="user-stats__item">Выведено <span class="user-stats__price">$0</span></li>
-				</ul>
+				<a class="user-data__btn">Вывести</a>
 			</section>
 
 			<section class="user-nav user-area-content__user-nav">
@@ -177,18 +166,18 @@
 				<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
 					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static">
 						<span class="user-nav__dropdown-btn">
-							Карьера
+							Кабинет
 							<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
 						</span>
 					</button>
 
 					<div class="dropdown-menu user-nav__dropdown-menu-border" id="user-nav-dropdown-menu">
 						<ul class="user-nav__dropdown-menu" role="listbox">
-							<li class="user-nav__dropdown-menu-item">
+							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
 								<a href="user-area-main.html" class="user-nav__dropdown-menu-link" role="option">Кабинет</a>
 							</li>
-							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
-								<a class="user-nav__dropdown-menu-link" role="option">Карьера</a>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-career.html" class="user-nav__dropdown-menu-link" role="option">Карьера</a>
 							</li>
 							<li class="user-nav__dropdown-menu-item">
 								<a href="#" class="user-nav__dropdown-menu-link" role="option">История</a>
@@ -204,194 +193,43 @@
 				</div>
 			</section>
 
-			<section class="user-careeer-levels user-area-career-content__levels">
-				<h2 class="visually-hidden">Карьерный и бонусный уровни пользователя</h2>
+			<section class="">
+				<h2 class="visually-hidden">Вывести средства</h2>
 
-				<div class="user-careeer-levels__wrap-block"></div>
+				<form class="" action="" method="">
+					<p class="">Вывести средства</p>
 
-				<div class="user-careeer-block user-careeer-levels__user-careeer-block">
-					<table class="user-careeer-block__table">
-						<tr>
-							<th class="user-careeer-block__header" colspan="2">
-								<a class="user-careeer-block__badge">Карьерный уровень</a>
-								<p class="user-careeer-block__number">1</p>
-							</th>
-						</tr>
-						<tr class="user-careeer-block__row">
-							<td class="user-careeer-block__info">
-								учитываемый оборот
-								<p class="user-careeer-block__info-perc">100%</p>
-							</td>
-							<td class="user-careeer-block__info">
-								комиссионный доход
-								<p class="user-careeer-block__info-perc">5%</p>
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-block__info2" colspan="2">
-								<p class="user-careeer-block__money">$20 250/$40 000</p>
-								<span class="user-careeer-block__progress-line" aria-hidden="true">
-									<span class="user-careeer-block__progress-value" data-perc="52%"></span>
-								</span>
-							</td>
-						</tr>
-					</table>
-				</div>
+					<div class="">
+						<label for="amount">Укажите сумму</label>
+						<input type="text" name="" id="amount" placeholder="$1 000" required="true">
 
-				<div class="user-careeer-levels__wrap-block"></div>
+						<div class="">
+							<label for="pay1">Dollar</label>
+							<input class="visually-hidden" type="radio" name="pay" id="pay1">
+							<img src="img/dollar.png" alt="" width="33" height="33">
+						</div>
 
-				<div class="user-careeer-block user-careeer-levels__user-careeer-block">
-					<table class="user-careeer-block__table">
-						<tr>
-							<th class="user-careeer-block__header" colspan="2">
-								<a class="user-careeer-block__badge">Бонусный уровень</a>
-								<p class="user-careeer-block__number">0</p>
-							</th>
-						</tr>
-						<tr class="user-careeer-block__row">
-							<td class="user-careeer-block__info">
-								личные инвестиции
-								<p class="user-careeer-block__info-perc">$300/$1 000</p>
-							</td>
-							<td class="user-careeer-block__info">
-								бонус за новый уровень
-								<p class="user-careeer-block__info-perc">$250</p>
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-block__info2" colspan="2">
-								<p class="user-careeer-block__money">$7 500/$15 000</p>
-								<span class="user-careeer-block__progress-line" aria-hidden="true">
-									<span class="user-careeer-block__progress-value" data-perc="63%"></span>
-								</span>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</section>
+						<div class="">
+							<label for="pay2">Perfect</label>
+							<input class="visually-hidden" type="radio" name="pay" id="pay2">
+							<img src="img/Perfect.png" alt="" width="33" height="33">
+						</div>
 
-			<section class="user-careeer-stats user-area-career-content__stats">
-				<h2 class="user-careeer-stats__title">Cтатистика</h2>
+						<div class="">
+							<label for="pay3">Bitcoin</label>
+							<input class="visually-hidden" type="radio" name="pay" id="pay3">
+							<img src="img/Bitcoin.png" alt="" width="33" height="33">
+						</div>
 
-				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
-					<table class="user-careeer-stats-block__table">
-						<tr>
-							<th class="user-careeer-stats-block__header" colspan="2">
-								<a class="user-careeer-stats-block__badge">Общая</a>
-							</th>
-						</tr>
-						<tr class="user-careeer-stats-block__row">
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">3</p>
-								зарегистр. партнеров
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">1</p>
-								активных партнеров
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$20 250</p>
-								объем продаж
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$608</p>
-								прибыль парнеров
-							</td>
-						</tr>
-					</table>
-				</div>
+						<div class="">
+							<label for="pay4">Ethereum</label>
+							<input class="visually-hidden" type="radio" name="pay" id="pay4">
+							<img src="img/Ethereum.png" alt="" width="33" height="33">
+						</div>
+					</div>
 
-				<div class="user-careeer-stats-block user-careeer-stats__user-careeer-stats-block user-careeer-stats-block_big-padding">
-					<table class="user-careeer-stats-block__table">
-						<tr>
-							<th class="user-careeer-stats-block__header" colspan="2">
-								<a class="user-careeer-stats-block__badge">Офисный счёт</a>
-							</th>
-						</tr>
-						<tr class="user-careeer-stats-block__row">
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								прибыль
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0/$0</p>
-								начислено
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">0%</p>
-								начисления
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">2020.10.13</p>
-								дата расчета
-							</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
-					<table class="user-careeer-stats-block__table">
-						<tr>
-							<th class="user-careeer-stats-block__header" colspan="2">
-								<a class="user-careeer-stats-block__badge">за текущую неделю</a>
-							</th>
-						</tr>
-						<tr class="user-careeer-stats-block__row">
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">0</p>
-								зарегистр. партнеров
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">0</p>
-								активных партнеров
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								объем продаж
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								прибыль парнеров
-							</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
-					<table class="user-careeer-stats-block__table">
-						<tr>
-							<th class="user-careeer-stats-block__header" colspan="2">
-								<a class="user-careeer-stats-block__badge">за прошлую неделю</a>
-							</th>
-						</tr>
-						<tr class="user-careeer-stats-block__row">
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">2</p>
-								зарегистр. партнеров
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">0</p>
-								активных партнеров
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								объем продаж
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								прибыль парнеров
-							</td>
-						</tr>
-					</table>
-				</div>
+					<button type="submit">Вывести</button>
+				</form>
 			</section>
 		</div>
 	</main>
