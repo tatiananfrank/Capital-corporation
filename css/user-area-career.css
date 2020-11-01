@@ -359,6 +359,13 @@
 
 
 @media (min-width: 992px) {
+	.user-area-career-content {
+		background-image: url("../img/user-area-career-blur.png");
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+	}
+
 	.user-careeer-levels {
 		justify-content: space-between;
     	width: 798px;
