@@ -196,7 +196,7 @@
 								<a href="#" class="user-nav__dropdown-menu-link" role="option">Профиль</a>
 							</li>
 							<li class="user-nav__dropdown-menu-item">
-								<a href="#" class="user-nav__dropdown-menu-link" role="option">Выход</a>
+								<a href="#" data-toggle="modal" data-target="#user-exit-modal" class="user-nav__dropdown-menu-link" role="option">Выход</a>
 							</li>
 						</ul>
 					</div>
@@ -648,14 +648,21 @@
 					<option value="bitcoin">Bitcoin</option>
 					<option value="ethereum">Ethereum</option>
 				</select>
+
+				<p class="modal-buy-investment__text">К оплате <span class="modal-buy-investment__text-accent" id="investment-block-price">50,00 USD</span><br>Пожалуйста подтвердите</p>
+
+				<div class="modal-buy-investment__btn-wrapper">
+					<button class="modal-buy-investment__btn" type="submit">Да</button>
+					<button class="modal-buy-investment__btn" type="button" data-dismiss="modal">Нет</button>
+				</div>
 			</form>
 
-			<p class="modal-buy-investment__text">К оплате <span class="modal-buy-investment__text-accent" id="investment-block-price">50,00 USD</span><br>Пожалуйста подтвердите</p>
+			<!-- <p class="modal-buy-investment__text">К оплате <span class="modal-buy-investment__text-accent" id="investment-block-price">50,00 USD</span><br>Пожалуйста подтвердите</p>
 
 			<div class="modal-buy-investment__btn-wrapper">
 				<button class="modal-buy-investment__btn" type="submit">Да</button>
 				<button class="modal-buy-investment__btn" type="button" data-dismiss="modal">Нет</button>
-			</div>
+			</div> -->
 		</section>
 	</div>
 
@@ -677,6 +684,18 @@
 				<button class="modal-confirm-insurance__btn" type="button">Да</button>
 				<button class="modal-confirm-insurance__btn" id="confirm-insurance-no" type="button" data-target-id="" data-dismiss="modal">Нет</button>
 			</div>
+		</section>
+	</div>
+
+	<!-- Модалка "выход" -->
+	<div class="modal fade" id="user-exit-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-exit modal-exit_centered modal-dialog">
+			<h2 class="modal-exit__title">Выход</h2>
+			<p class="modal-exit__text">Вы действительно собираетесь выйти?</p>
+			<form class="modal-exit__btn-wrapper" action="" method="">
+				<button class="modal-exit__btn" type="submit">Да</button>
+				<button class="modal-exit__btn" type="button" data-dismiss="modal">Нет</button>
+			</form>
 		</section>
 	</div>
 

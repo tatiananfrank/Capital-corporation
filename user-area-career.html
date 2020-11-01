@@ -29,6 +29,8 @@
 	<link rel="stylesheet" type="text/css" href="css/user-area-career.css">
 
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<!-- END OF ПОТОМ УДАЛИТЬ -->
 </head>
 <body>
@@ -195,7 +197,7 @@
 								<a href="#" class="user-nav__dropdown-menu-link" role="option">Профиль</a>
 							</li>
 							<li class="user-nav__dropdown-menu-item">
-								<a href="#" class="user-nav__dropdown-menu-link" role="option">Выход</a>
+								<a href="#" data-toggle="modal" data-target="#user-exit-modal" class="user-nav__dropdown-menu-link" role="option">Выход</a>
 							</li>
 						</ul>
 					</div>
@@ -480,6 +482,18 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Модалка "выход" -->
+	<div class="modal fade" id="user-exit-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-exit modal-exit_centered modal-dialog">
+			<h2 class="modal-exit__title">Выход</h2>
+			<p class="modal-exit__text">Вы действительно собираетесь выйти?</p>
+			<form class="modal-exit__btn-wrapper" action="" method="">
+				<button class="modal-exit__btn" type="submit">Да</button>
+				<button class="modal-exit__btn" type="button" data-dismiss="modal">Нет</button>
+			</form>
+		</section>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

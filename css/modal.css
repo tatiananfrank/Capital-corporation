@@ -297,7 +297,8 @@
 
 
 
-.modal-confirm-insurance {
+.modal-confirm-insurance,
+.modal-exit {
     padding: 50px 36px;
     width: 314px;
     background: rgba(30, 27, 27, 0.95);
@@ -308,14 +309,16 @@
     box-shadow: 0 0 40px 0 #000000;
 }
 
-.modal-confirm-insurance_centered {
+.modal-confirm-insurance_centered,
+.modal-exit_centered {
     margin-top: 15vh;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15vh;
 }
 
-.modal-confirm-insurance__title {
+.modal-confirm-insurance__title,
+.modal-exit__title {
     margin: 0;
     margin-bottom: 16px;
     font-weight: 400;
@@ -326,7 +329,8 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.modal-confirm-insurance__text {
+.modal-confirm-insurance__text,
+.modal-exit__text {
     margin: 0;
     margin-bottom: 20px;
     font-size: 1rem; /*17px;*/
@@ -336,13 +340,15 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
-.modal-confirm-insurance__btn-wrapper {
+.modal-confirm-insurance__btn-wrapper,
+.modal-exit__btn-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.modal-confirm-insurance__btn {
+.modal-confirm-insurance__btn,
+.modal-exit__btn {
     margin-right: 22px;
     padding: 10px 30px;
     border: 2px solid rgba(188, 0, 0, 0.5);
@@ -354,7 +360,8 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.modal-confirm-insurance__btn:last-child {
+.modal-confirm-insurance__btn:last-child,
+.modal-exit__btn:last-child {
     margin-right: 0;
 }
 
@@ -402,28 +409,33 @@
 
 
 
-    .modal-confirm-insurance {
+    .modal-confirm-insurance,
+    .modal-exit {
         padding: 54px 50px;
         width: 431px;
         border-radius: 83px;
     }
 
-    .modal-confirm-insurance_centered {
+    .modal-confirm-insurance_centered,
+    .modal-exit_centered {
         margin-top: 18vh;
         margin-bottom: 18vh;
     }
 
-    .modal-confirm-insurance__title {
+    .modal-confirm-insurance__title,
+    .modal-exit__title {
         margin-bottom: 21px;
     }
 
-    .modal-confirm-insurance__text {
+    .modal-confirm-insurance__text,
+    .modal-exit__text {
         margin-bottom: 27px;
         font-size: 1.059rem; /*18px;*/
         line-height: 1.235rem; /*21px;*/
     }
 
-    .modal-confirm-insurance__btn {
+    .modal-confirm-insurance__btn,
+    .modal-exit__btn {
         font-size: 1.059rem; /*18px;*/
         line-height: 1.235rem; /*21px;*/
     }
@@ -550,24 +562,28 @@
     }
 
 
-    .modal-confirm-insurance {
+    .modal-confirm-insurance,
+    .modal-exit {
         width: 581.51px;
         padding: 54px 67.5px 60px;
     }
 
-    .modal-confirm-insurance__title {
+    .modal-confirm-insurance__title,
+    .modal-exit__title {
         margin-bottom: 26px;
         font-size: 2.118rem; /*36px;*/
         line-height: 2.471rem; /*42px;*/
     }
 
-    .modal-confirm-insurance__text {
+    .modal-confirm-insurance__text,
+    .modal-exit__text {
         margin-bottom: 40px;
         font-size: 1.412rem; /*24px;*/
         line-height: 1.647rem; /*28px;*/
     }
 
-    .modal-confirm-insurance__btn {
+    .modal-confirm-insurance__btn,
+    .modal-exit__btn {
         padding: 12px 47.5px;
         font-size: 1.412rem; /*24px;*/
         line-height: 1.647rem; /*28px;*/
