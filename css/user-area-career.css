@@ -652,6 +652,13 @@
 	.user-careeer-partners__break-block {
 		display: none;
 	}
+
+
+	.user-area-career-content__charts,
+	.user-area-career-content__partners {
+		width: 96%;
+    	margin-left: auto;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1225px) {
