@@ -31,15 +31,15 @@
 .user-history-trans__wrapper::before {
 	position: absolute;
     z-index: -20;
-    width: 150%;
-    height: 150%;
-    top: -25%;
-    left: -25%;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
     background-image: url(../img/user-careeer-partners-blur.png);
     background-repeat: no-repeat;
     background-position: center;
     /* background-size: contain; */
-    background-size: 100% 90%;
+    background-size: 100% 100%;
     content: "";
 }
 
@@ -185,7 +185,8 @@
 	}
 
 	.user-history-trans__wrapper::before {
-		background-size: 85% 85%;
+		/*background-size: 85% 85%;*/
+		background-size: 100% 100%;
 	}
 
 	.user-history-trans__content {
