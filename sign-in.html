@@ -146,7 +146,7 @@
 					</button>
 				</div>
 
-				<a class="sign-in-form__restore-password-link" href="#">Восстановить пароль</a>
+				<a class="sign-in-form__restore-password-link sign_link" href="#" data-form="restore-pass">Восстановить пароль</a>
 
 				<button class="sign-in-form__btn" type="submit">Войти</button>
 			</form>
@@ -215,6 +215,20 @@
 					<button class="sign-up-form__btn" type="submit">Зарегистрироваться</button>
 					
 				</div>
+			</form>
+
+			<!-- Восстановление пароля -->
+			<form action="" method="" class="restore-pass-form welcome_form" data-form="restore-pass" style="display: none;">
+				<img class="restore-pass-form__logo" src="img/login_logo.png" alt="Логотип компании" width="172" height="46">
+
+				<p class="restore-pass-form__title">Восстановление пароля</p>
+
+				<label class="visually-hidden" for="email_field_restore-pass">Укажите <span lang="en">email</span></label>
+				<input type="text" name="email" id="email_field_restore-pass" placeholder="Введите email" required="" value="">
+
+				<a href="#" class="restore-pass-form__link sign_link" data-form="sign-up">Еще нет аккаунта</a>
+
+				<button class="restore-pass-form__btn" type="submit">Восстановить пароль</button>
 			</form>
 		</section>
 

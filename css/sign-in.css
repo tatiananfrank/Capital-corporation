@@ -15,7 +15,8 @@
 }
 
 .sign-in-form,
-.sign-up-form {
+.sign-up-form,
+.restore-pass-form {
 	box-sizing: content-box;
     width: 200px;
 
@@ -32,7 +33,8 @@
 }
 
 .sign-in-form__logo,
-.sign-up-form__logo {
+.sign-up-form__logo,
+.restore-pass-form__logo {
 	margin-bottom: 40px;
 
 	width: 112px;
@@ -69,8 +71,17 @@
 	text-decoration: none;
 }
 
+.restore-pass-form__title {
+	margin: 0;
+	margin-bottom: 35px;
+	color: rgba(255, 255, 255, 0.5);
+    font-size: 0.824rem;
+    line-height: 0.941rem;
+}
+
 .sign-in-form input,
-.sign-up-form input {
+.sign-up-form input,
+.restore-pass-form input {
 	margin-bottom: 35px;
 	padding: 15px 0;
 	width: 200px;
@@ -86,7 +97,8 @@
 }
 
 .sign-in-form input::placeholder,
-.sign-up-form input::placeholder {
+.sign-up-form input::placeholder,
+.restore-pass-form input::placeholder {
 	color: rgba(255, 255, 255, 0.3);
 }
 
@@ -124,7 +136,8 @@
 	height: auto;
 }
 
-.sign-in-form__restore-password-link {
+.sign-in-form__restore-password-link,
+.restore-pass-form__link {
 	margin-bottom: 23px;
 
 	font-size: 0.824rem; /*14px;*/
@@ -133,13 +146,15 @@
 	text-decoration: none;
 }
 
-.sign-in-form__restore-password-link:hover {
+.sign-in-form__restore-password-link:hover,
+.restore-pass-form__link:hover {
 	color: rgba(255, 255, 255, 0.5);
 	text-decoration: none;
 }
 
 .sign-in-form__btn,
-.sign-up-form__btn {
+.sign-up-form__btn,
+.restore-pass-form__btn {
 	padding: 11px 37px;
 
 	border: 1.5px solid #BC0000;
@@ -252,14 +267,16 @@
 	}
 
 	.sign-in-form,
-	.sign-up-form {
+	.sign-up-form,
+	.restore-pass-form {
 		/*width: 475px;
 		padding: 50px 88.5px;*/
 		width: 300px;
 	}
 
 	.sign-in-form__logo,
-	.sign-up-form__logo {
+	.sign-up-form__logo,
+	.restore-pass-form__logo {
 		width: 139px;
 	}
 
@@ -271,13 +288,19 @@
 		line-height: 1.118rem; /*19px;*/
 	}
 
+	.restore-pass-form__title {
+		font-size: 0.941rem;
+	    line-height: 1.118rem;
+	}
+
 	.welcome__active-form {
 		padding: 10px 27.5px;
 		border: 2px solid #BC0000;
 	}
 
 	.sign-in-form input,
-	.sign-up-form input {
+	.sign-up-form input,
+	.restore-pass-form input {
 		width: 300px;
 
 		font-size: 0.941rem; /*16px;*/
@@ -292,13 +315,15 @@
     	height: 17px;
 	}
 
-	.sign-in-form__restore-password-link {
+	.sign-in-form__restore-password-link,
+	.restore-pass-form__link {
 		font-size: 0.941rem; /*16px;*/
 		line-height: 1.118rem; /*19px;*/
 	}
 
 	.sign-in-form__btn,
-	.sign-up-form__btn {
+	.sign-up-form__btn,
+	.restore-pass-form__btn {
 		padding: 12px 43px;
 		border: 2px solid #BC0000;
 
@@ -360,22 +385,27 @@
 
 @media (min-width: 768px) {
 	.sign-in-form,
-	.sign-up-form {
+	.sign-up-form,
+	.restore-pass-form {
 		padding: 65px 127px;
 	}
 
 	.sign-in-form__logo,
-	.sign-up-form__logo {
+	.sign-up-form__logo,
+	.restore-pass-form__logo {
 		width: 170px;
 	}
 
 	.sign-in-form__list-link,
-	.sign-up-form__list-link {
+	.sign-up-form__list-link,
+	.restore-pass-form__title {
 		font-size: 1.059rem; /*18px;*/
 		line-height: 1.235rem; /*21px;*/
 	}
 
-	.sign-in-form input, .sign-up-form input {
+	.sign-in-form input,
+	.sign-up-form input,
+	.restore-pass-form input {
 		font-size: 1.059rem; /*18px;*/
 		line-height: 1.235rem; /*21px;*/
 	}
@@ -394,13 +424,15 @@
 		padding-right: 30px;
 	}
 
-	.sign-in-form__restore-password-link {
+	.sign-in-form__restore-password-link,
+	.restore-pass-form__link {
 		font-size: 1.059rem; /*18px;*/
 		line-height: 1.235rem; /*21px;*/
 	}
 
 	.sign-in-form__btn,
-	.sign-up-form__btn {
+	.sign-up-form__btn,
+	.restore-pass-form__btn {
 		font-size: 1.059rem; /*18px;*/
 		line-height: 1.235rem; /*21px;*/
 	}
