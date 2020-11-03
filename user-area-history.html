@@ -24,9 +24,9 @@
 	<link rel="stylesheet" type="text/css" href="css/logo.css">
 
 	<link rel="stylesheet" type="text/css" href="css/breadcrumbs.css">
-
+	
 	<link rel="stylesheet" type="text/css" href="css/user-area-main.css">
-	<link rel="stylesheet" type="text/css" href="css/user-area-replenish.css">
+	<link rel="stylesheet" type="text/css" href="css/user-area-history.css">
 
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 
@@ -121,9 +121,9 @@
 		</div>
 	</header>
 
-	<main class="user-area-content user-area-withdraw-content">
+	<main class="user-area-content user-area-history-content">
 		
-		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Вывести средства»</h1>
+		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «История»</h1>
 
 		<div class="breadcrumbs contacts-content__breadcrumbs">
 			<div class="inner-container_large">
@@ -131,56 +131,33 @@
 				<ul class="breadcrumbs__list">
 					<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link" aria-label="Вернуться на главную">Главная</a></li>
 					<li class="breadcrumbs__item"><a href="user-area-main.html" class="breadcrumbs__link">Личный кабинет</a></li>
-					<li class="breadcrumbs__item"><a class="breadcrumbs__link" aria-label="Вы находитесь здесь">Вывести</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link" aria-label="Вы находитесь здесь">История</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="inner-container_large">
-			<section class="user-data user-area-content__user-data">
-				<h2 class="visually-hidden">Данные пользователя</h2>
-
-				<p class="user-data__name">Имя Фамилия</p>
-
-				<!-- Атрибут data-perc="58%" служит для заполнения полосы прогресса на указанный процент -->
-				<p class="user-data__level">
-					Уровень
-					<span class="user-data__level-progress-line" aria-hidden="true">
-						<span class="user-data__level-progress-value" data-perc="58%"></span>
-					</span>
-					$25 000
-				</p>
-
-				<p class="user-data__balance">
-					<span class="user-data__balance-title">Баланс</span>
-					$200
-				</p>
-
-				<a href="user-area-replenish.html" class="user-data__btn">Пополнить</a>
-				<a class="user-data__btn">Вывести</a>
-			</section>
-
 			<section class="user-nav user-area-content__user-nav">
 				<h2 class="visually-hidden">Навигация по личному кабинету</h2>
 
 				<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
 					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static">
 						<span class="user-nav__dropdown-btn">
-							Кабинет
+							История
 							<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
 						</span>
 					</button>
 
 					<div class="dropdown-menu user-nav__dropdown-menu-border" id="user-nav-dropdown-menu">
 						<ul class="user-nav__dropdown-menu" role="listbox">
-							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
+							<li class="user-nav__dropdown-menu-item">
 								<a href="user-area-main.html" class="user-nav__dropdown-menu-link" role="option">Кабинет</a>
 							</li>
 							<li class="user-nav__dropdown-menu-item">
 								<a href="user-area-career.html" class="user-nav__dropdown-menu-link" role="option">Карьера</a>
 							</li>
-							<li class="user-nav__dropdown-menu-item">
-								<a href="user-area-history.html" class="user-nav__dropdown-menu-link" role="option">История</a>
+							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
+								<a class="user-nav__dropdown-menu-link" role="option">История</a>
 							</li>
 							<li class="user-nav__dropdown-menu-item">
 								<a href="#" class="user-nav__dropdown-menu-link" role="option">Профиль</a>
@@ -192,54 +169,6 @@
 					</div>
 				</div>
 			</section>
-
-			<section class="withdraw">
-				<h2 class="visually-hidden">Вывести средства</h2>
-
-				<form class="withdraw__form" action="" method="">
-					<p class="withdraw__title">Вывести средства</p>
-
-					<div class="withdraw__main-group">
-						<label class="withdraw__text withdraw__text-first" for="amount">Укажите сумму</label>
-						<input class="withdraw__input" type="text" name="" id="withdraw_amount" placeholder="$1 000" required="true">
-
-						<div class="withdraw__group" aria-label="Выберите способ вывода средств">
-							<div class="withdraw__pay-var">
-								<label class="withdraw__text" for="pay1">Payeer</label>
-								<input class="visually-hidden" type="radio" name="with_pay" id="with_pay1" value="payeer">
-								<img class="withdraw__pay-img" src="img/payeer.png" alt="" width="34" height="34" aria-hidden="true" data-pay-id="1">
-							</div>
-
-							<div class="withdraw__pay-var">
-								<label class="withdraw__text" for="pay2">Perfect</label>
-								<input class="visually-hidden" type="radio" name="with_pay" id="with_pay2" value="perfect">
-								<img class="withdraw__pay-img" src="img/Perfect.png" alt="" width="36" height="36" aria-hidden="true" data-pay-id="2">
-							</div>
-
-							<div class="withdraw__pay-var">
-								<label class="withdraw__text" for="pay3">Bitcoin</label>
-								<input class="visually-hidden" type="radio" name="with_pay" id="with_pay3" value="bitcoin">
-								<img class="withdraw__pay-img" src="img/Bitcoin.png" alt="" width="35" height="35" aria-hidden="true" data-pay-id="3">
-							</div>
-
-							<div class="withdraw__pay-var">
-								<label class="withdraw__text" for="pay4">Ethereum</label>
-								<input class="visually-hidden" type="radio" name="with_pay" id="with_pay4" value="ethereum">
-								<img class="withdraw__pay-img" src="img/Ethereum.png" alt="" width="33" height="33" aria-hidden="true" data-pay-id="4">
-							</div>
-						</div>
-
-						<button class="withdraw__btn" type="submit">Вывести</button>
-					</div>
-				</form>
-			</section>
-
-			<div class="anim-circle anim-circle-1" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-2" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-3" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-4" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-5" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-6" aria-hidden="true"></div>
 		</div>
 	</main>
 
