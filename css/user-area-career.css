@@ -121,6 +121,7 @@
 
 .user-careeer-block__info,
 .user-careeer-stats-block__info {
+	width: 50%;
 	padding: 8px 4px 8px;
 	font-size: 0.706rem; /*12px;*/
 	line-height: 0.824rem; /*14px;*/
@@ -138,7 +139,8 @@
 
 
 .user-careeer-stats-block__table tr:last-child .user-careeer-stats-block__info {
-	padding-bottom: 12px;
+	/*padding-bottom: 12px;*/
+	padding-bottom: 20px;
 }
 
 /*.user-careeer-stats-block_big-padding tr:last-child .user-careeer-stats-block__info {
@@ -518,7 +520,9 @@
 	}
 
 	.user-careeer-stats-block__info {
-		padding: 10px 17px 10px;
+		/*padding: 10px 17px 10px;*/
+
+		padding: 10px 19px 10px;
 	}
 
 	.user-careeer-stats-block_big-padding .user-careeer-stats-block__info {
@@ -546,11 +550,13 @@
 	}
 
 	.user-careeer-stats-block__table tr:last-child .user-careeer-stats-block__info {
-		padding-bottom: 20px;
+		/*padding-bottom: 20px;*/
+		padding-bottom: 30px;
 	}
 
 	.user-careeer-stats-block_big-padding tr:last-child .user-careeer-stats-block__info {
-		padding-bottom: 20px;
+		/*padding-bottom: 20px;*/
+		padding-bottom: 30px;
 	}
 
 
