@@ -251,6 +251,10 @@
 	border-left: 2px solid rgba(98, 97, 97, 0.15);
 }
 
+.investment-block tr:last-child .investment-block__info {
+	padding-bottom: 15px;
+}
+
 .investment-block__info-number {
 	margin: 0;
 	font-size: 1.059rem; /*18px;*/
@@ -505,6 +509,10 @@
 		padding: 7px 34.5px 4px;
 		font-size: 0.824rem; /*14px;*/
 		line-height: 0.971rem; /*16.5px;*/
+	}
+
+	.investment-block tr:last-child .investment-block__info {
+		padding-bottom: 25px;
 	}
 
 	.investment-block__info-number {
