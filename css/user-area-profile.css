@@ -432,3 +432,73 @@
 		padding: 42px 145px 73px;
 	}
 }
+
+
+
+
+
+@media (min-width: 992px) {
+	.user-area-profile-content .user-nav {
+		width: 98%;
+	}
+
+	.user-profile-personal-data,
+	.user-profile-change-password,
+	.user-profile-pay-systems {
+		width: 75%;
+	}
+
+	.user-area-profile-content__personal-data,
+	.user-area-profile-content__change-password,
+	.user-area-profile-content__pay-systems {
+		margin-left: auto;
+	}
+
+	.user-profile-personal-data__title,
+	.user-profile-change-password__title {
+		width: 50%;
+	}
+
+	.user-profile-pay-systems__pay-var:nth-of-type(4) {
+		margin-top: 40px;
+	}
+
+	.user-area-profile-content__personal-data {
+		margin-top: -370px;
+	}
+
+	.user-area-profile-content__personal-data, .user-area-profile-content__change-password {
+		margin-bottom: 72px;
+	}
+
+	.user-area-profile-content__pay-systems {
+		margin-bottom: 188px;
+	}
+
+	.user-profile-personal-data::before {
+		width: 118%;
+		left: -9%;
+	}
+
+	.user-profile-change-password::before {
+		width: 116%;
+    	left: -8%;
+	}
+
+	.user-profile-pay-systems::before {
+		width: 116%;
+    	left: -8%;
+	}
+
+}
+
+@media (min-width: 1116px) {
+	.user-profile-personal-data__title,
+	.user-profile-change-password__title {
+		width: auto;
+	}
+
+	.user-profile-pay-systems__pay-var:nth-of-type(4) {
+		margin-top: 0;
+	}
+}
