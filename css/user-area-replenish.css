@@ -95,6 +95,12 @@
 	box-shadow: 0 0 25px 5px rgba(188, 0, 0, 0.83);
 }
 
+.replenish__pay-var input[type="radio"]:focus + .replenish__pay-img,
+.withdraw__pay-var input[type="radio"]:focus + .withdraw__pay-img {
+	border-radius: 50%;
+	box-shadow: 0 0 25px 5px rgba(188, 0, 0, 0.83);
+}
+
 .replenish__btn,
 .withdraw__btn {
 	margin: 0;
