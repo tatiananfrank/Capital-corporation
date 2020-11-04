@@ -126,8 +126,8 @@
 	position: absolute;
 	top: 8.5px;
     right: 10px;
-	font-size: 10px;
-	line-height: 11px;
+	font-size: 0.588rem; /*10px;*/
+	line-height: 0.647rem; /*11px;*/
 	color: rgba(255, 255, 255, 0.2);
 	text-decoration: none;
 }
@@ -178,6 +178,7 @@
 	width: 53px;
 	height: 53px;
 	border-radius: 50%;
+	border: none;
 	background: rgba(196, 196, 196, 0.3);
 	cursor: pointer;
 }
@@ -210,4 +211,162 @@
 
 .user-profile-pay-systems__pay-var_active .user-profile-pay-systems__pay-img img {
 	display: block;
+}
+
+
+
+
+
+
+@media (min-width: 576px) {
+	.user-area-profile-content .user-nav {
+		margin-top: 0;
+	}
+
+	.user-area-profile-content__personal-data {
+		margin-top: 40px;
+	}
+
+	.user-area-profile-content__personal-data, .user-area-profile-content__change-password {
+		margin-bottom: 65px;
+	}
+
+	.user-area-profile-content__pay-systems {
+		margin-bottom: 126px;
+	}
+
+	.user-profile-personal-data,
+	.user-profile-change-password,
+	.user-profile-pay-systems {
+		padding: 42px 40px 65px;
+	}
+
+	.user-profile-personal-data__form,
+	.user-profile-change-password__form,
+	.user-profile-pay-systems__form {
+		width: 100%;
+		max-width: none;
+	}
+
+	.user-profile-personal-data__title,
+	.user-profile-change-password__title,
+	.user-profile-pay-systems__title {
+		margin-top: 7px;
+		margin-bottom: 53px;
+		font-size: 1.412rem; /*24px;*/
+		line-height: 1.647rem; /*28px;*/
+		text-align: left;
+	}
+
+	.user-profile-personal-data__form label,
+	.user-profile-change-password__form label,
+	.user-profile-pay-systems__form label {
+		margin-bottom: 19px;
+		font-size: 1.059rem; /*18px;*/
+		line-height: 1.235rem; /*21px;*/
+	}
+
+	.user-profile-personal-data__form input,
+	.user-profile-change-password__form input,
+	.user-profile-pay-systems__form input {
+		margin-bottom: 40px;
+		padding: 9.5px 15px;
+		border-radius: 11px;
+		font-size: 1.059rem; /*18px;*/
+		line-height: 1.235rem; /*21px;*/
+	}
+
+	.user-profile-personal-data__copy-ref-link {
+		top: 13.5px;
+    	right: 20px;
+
+		font-size: 0.824rem; /*14px;*/
+		line-height: 0.941rem; /*16px;*/
+	}
+
+	.user-profile-personal-data__ref-link-block input {
+		padding-right: 125px;
+		margin: 0;
+	}
+
+	.user-profile-personal-data__form button,
+	.user-profile-change-password__form button {
+		align-self: flex-start;
+		margin: 0;
+		border: 2px solid rgba(188, 0, 0, 0.5);
+		padding: 10.5px 33px 11.5px;
+		font-size: 1rem; /*17px;*/
+		line-height: 1.176rem; /*20px;*/
+	}
+
+	.user-profile-pay-systems__pay-title {
+		font-size: 1rem; /*17px;*/
+		line-height: 1.176rem; /*20px;*/
+	}
+
+	.user-profile-pay-systems__pay-var {
+		width: auto;
+		margin-bottom: 0;
+	}
+
+	.user-profile-pay-systems__pay-var:nth-of-type(4) {
+		margin-top: 40px;
+	}
+
+	.user-profile-change-password__form,
+	.user-profile-personal-data__form {
+		flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	}
+
+	.user-profile-change-password__col,
+	.user-profile-personal-data__col {
+		width: 47%;
+	}
+
+	.user-profile-change-password__col:nth-of-type(1),
+	.user-profile-personal-data__col:nth-of-type(1) {
+		order: 1;
+	}
+
+	.user-profile-change-password__col:nth-of-type(2),
+	.user-profile-personal-data__col:nth-of-type(2) {
+		order: 2;
+	}
+
+	.user-profile-personal-data__ref-link-label {
+		order: 3;
+	}
+
+	.user-profile-personal-data__ref-link-block {
+		order: 4;
+		width: 100%;
+	}
+
+	.user-profile-change-password__col input {
+		margin: 0;
+	}
+
+	.user-profile-personal-data::before {
+		height: 120%;
+    	top: -10%;
+	}
+
+	.user-profile-change-password::before {
+		height: 130%;
+    	top: -15%;
+	}
+
+	.user-profile-pay-systems::before {
+		height: 128%;
+    	top: -14%;
+	}
+}
+
+
+
+
+@media (min-width: 768px) {
+	
 }

@@ -178,7 +178,7 @@
 				<form class="user-profile-personal-data__form" action="" method="">
 					<p class="user-profile-personal-data__title">Персональные данные</p>
 
-					<div class="">
+					<div class="user-profile-personal-data__col">
 						<label for="partner" class="">Логин парнера</label>
 						<input type="text" id="partner" name="partner">
 
@@ -189,7 +189,7 @@
 						<input type="text" id="name" name="name">
 					</div>
 
-					<div class="">
+					<div class="user-profile-personal-data__col">
 						<label for="login" class="">Логин</label>
 						<input type="text" id="login" name="login">
 
@@ -200,7 +200,7 @@
 						<input type="text" id="last_name" name="last_name">
 					</div>
 
-					<label for="ref_link" class="">Реферальная ссылка</label>
+					<label for="ref_link" class="user-profile-personal-data__ref-link-label">Реферальная ссылка</label>
 					<div class="user-profile-personal-data__ref-link-block">
 						<input type="text" id="ref_link" name="ref_link">
 						<a class="user-profile-personal-data__copy-ref-link" href="#" aria-label="Нажмите, чтобы скопировать реферальную ссылку">Скопировать</a>
@@ -216,12 +216,12 @@
 				<form class="user-profile-change-password__form" action="" method="">
 					<p class="user-profile-change-password__title">Смена пароля</p>
 
-					<div class="">
+					<div class="user-profile-change-password__col">
 						<label for="new_pass" class="">Новый пароль</label>
 						<input type="password" id="new_pass" name="new_pass">
 					</div>
 
-					<div class="">
+					<div class="user-profile-change-password__col">
 						<label for="confirm_pass" class="">Повторите пароль</label>
 						<input type="password" id="confirm_pass" name="confirm_pass">
 					</div>
@@ -237,34 +237,34 @@
 					<p class="user-profile-pay-systems__title">Платежные системы</p>
 
 					<div class="user-profile-pay-systems__pay-var user-profile-pay-systems__pay-var_active" data-number="U23107775">
-						<div class="user-profile-pay-systems__pay-img" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
+						<button class="user-profile-pay-systems__pay-img" type="button" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
 							<span>+</span>
 							<img src="img/payeer.png" alt="" width="34" height="34">
-						</div>
+						</button>
 						<p class="user-profile-pay-systems__pay-title">Payeer</p>
 					</div>
 
 					<div class="user-profile-pay-systems__pay-var" data-number="">
-						<div class="user-profile-pay-systems__pay-img" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
+						<button class="user-profile-pay-systems__pay-img" type="button" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
 							<span>+</span>
 							<img src="img/Perfect.png" alt="" width="36" height="36">
-						</div>
+						</button>
 						<p class="user-profile-pay-systems__pay-title">Perfect</p>
 					</div>
 
 					<div class="user-profile-pay-systems__pay-var" data-number="">
-						<div class="user-profile-pay-systems__pay-img" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
+						<button class="user-profile-pay-systems__pay-img" type="button" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
 							<span>+</span>
 							<img src="img/Bitcoin.png" alt="" width="35" height="35">
-						</div>
+						</button>
 						<p class="user-profile-pay-systems__pay-title">Bitcoin</p>
 					</div>
 
 					<div class="user-profile-pay-systems__pay-var" data-number="">
-						<div class="user-profile-pay-systems__pay-img" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
+						<button class="user-profile-pay-systems__pay-img" type="button" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
 							<span>+</span>
 							<img src="img/Ethereum.png" alt="" width="33" height="33">
-						</div>
+						</button>
 						<p class="user-profile-pay-systems__pay-title">Ethereum</p>
 					</div>
 				</form>
