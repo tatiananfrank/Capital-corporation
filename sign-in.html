@@ -25,6 +25,7 @@
 	<link rel="stylesheet" type="text/css" href="css/logo.css">
 	<link rel="stylesheet" type="text/css" href="css/sign-in.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<!-- END OF ПОТОМ УДАЛИТЬ -->
 </head>
 <body class="sign-in-body">
@@ -228,7 +229,7 @@
 
 				<a href="#" class="restore-pass-form__link sign_link" data-form="sign-up">Еще нет аккаунта</a>
 
-				<button class="restore-pass-form__btn" type="submit">Восстановить пароль</button>
+				<button class="restore-pass-form__btn" type="submit" data-toggle="modal" data-target="#user-restore-pass-modal">Восстановить пароль</button>
 			</form>
 		</section>
 
@@ -329,6 +330,15 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Модалка-уведомление "Данные отправлены на почту" -->
+	<div class="modal fade" id="user-restore-pass-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-exit modal-exit_centered modal-dialog">
+			<h2 class="modal-exit__title">Уведомление</h2>
+			<p class="modal-exit__text">Данные отправлены на почту</p>
+			<button class="modal-exit__btn" type="button" data-dismiss="modal">ОК</button>
+		</section>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

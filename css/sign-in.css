@@ -73,7 +73,13 @@
 
 .restore-pass-form__title {
 	margin: 0;
-	margin-bottom: 35px;
+	margin-bottom: 27px;
+	padding: 11px 10px;
+    border: 1.5px solid #BC0000;
+    border-radius: 28px;
+    text-align: center;
+    width: 100%;
+	/*margin-bottom: 35px;*/
 	color: rgba(255, 255, 255, 0.5);
     font-size: 0.824rem;
     line-height: 0.941rem;
@@ -167,6 +173,11 @@
 	text-align: center;
 	letter-spacing: 0.07em;
 	color: rgba(255, 255, 255, 0.5);
+}
+
+.restore-pass-form__btn {
+	padding: 11px 10px;
+    width: 100%;
 }
 
 .sign-up-form select {
@@ -289,6 +300,9 @@
 	}
 
 	.restore-pass-form__title {
+		width: auto;
+	    padding: 11px 27.5px;
+	    border: 2px solid #BC0000;
 		font-size: 0.941rem;
 	    line-height: 1.118rem;
 	}
@@ -329,6 +343,10 @@
 
 		font-size: 0.941rem; /*16px;*/
 		line-height: 1.118rem; /*19px;*/
+	}
+
+	.restore-pass-form__btn {
+		width: auto;
 	}
 
 	.sign-up-form select {
