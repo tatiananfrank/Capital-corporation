@@ -1,0 +1,212 @@
+.user-area-profile-content {
+	position: relative;
+    overflow: hidden;
+    padding-top: 200px;
+    margin-top: -200px;
+}
+
+.user-profile-personal-data {
+	order: 2;
+}
+
+.user-profile-change-password {
+	order: 3;
+}
+
+.user-area-profile-content__personal-data,
+.user-area-profile-content__change-password {
+	margin-bottom: 39px;
+}
+
+.user-profile-pay-systems {
+	order: 4;
+}
+
+.user-area-profile-content__pay-systems {
+	margin-bottom: 111px;
+}
+
+.user-profile-personal-data,
+.user-profile-change-password,
+.user-profile-pay-systems {
+	position: relative;
+	width: 200%;
+	padding: 36.6px 40px 35.5px;
+	background: rgba(21, 20, 20, 0.95);
+	border-radius: 83px;
+}
+
+.user-profile-personal-data::before,
+.user-profile-change-password::before,
+.user-profile-pay-systems::before {
+	position: absolute;
+    z-index: -20;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    background-image: url(../img/user-careeer-partners-blur.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+    background-size: 100% 100%;
+    content: "";
+}
+
+.user-profile-personal-data::before {
+	height: 135%;
+	top: -15%;
+}
+
+.user-profile-change-password::before {
+	height: 100%;
+    top: 0;
+}
+
+.user-profile-pay-systems::before {
+	height: 155%;
+    top: -30%;
+}
+
+.user-profile-personal-data__form,
+.user-profile-change-password__form,
+.user-profile-pay-systems__form {
+    margin: 0 auto;
+    width: 55%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile-personal-data__title,
+.user-profile-change-password__title,
+.user-profile-pay-systems__title {
+	margin: 0;
+	margin-bottom: 35px;
+	font-size: 1.059rem; /*18px;*/
+	line-height: 1.235rem; /*21px;*/
+	color: rgba(255, 255, 255, 0.7);
+	text-align: center;
+}
+
+.user-profile-personal-data__form label,
+.user-profile-change-password__form label,
+.user-profile-pay-systems__form label {
+	margin-bottom: 9px;
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.user-profile-personal-data__form input,
+.user-profile-change-password__form input,
+.user-profile-pay-systems__form input {
+	font: inherit;
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	color: rgba(255, 255, 255, 0.5);
+
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 5.5px 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 12px;
+	background: transparent;
+}
+
+.user-profile-personal-data__ref-link-block {
+	position: relative;
+}
+
+.user-profile-personal-data__ref-link-block input {
+	padding-right: 80px;
+}
+
+.user-profile-personal-data__copy-ref-link {
+	position: absolute;
+	top: 8.5px;
+    right: 10px;
+	font-size: 10px;
+	line-height: 11px;
+	color: rgba(255, 255, 255, 0.2);
+	text-decoration: none;
+}
+
+.user-profile-personal-data__copy-ref-link:hover {
+	color: rgba(255, 255, 255, 0.2);
+}
+
+.user-profile-personal-data__form button,
+.user-profile-change-password__form button {
+	font: inherit;
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	letter-spacing: 0.07rem;
+	color: rgba(255, 255, 255, 0.5);
+
+	background: transparent;
+	border: 1.5px solid rgba(188, 0, 0, 0.5);
+	border-radius: 28px;
+
+	padding: 10px 27px 11px;
+	margin-top: 14px;
+	align-self: center;
+}
+
+
+.user-profile-pay-systems__form {
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-profile-pay-systems__title {
+	width: 100%;
+}
+
+.user-profile-pay-systems__pay-var {
+	display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.user-profile-pay-systems__pay-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 53px;
+	height: 53px;
+	border-radius: 50%;
+	background: rgba(196, 196, 196, 0.3);
+}
+
+.user-profile-pay-systems__pay-img span {
+	font-size: 1.765rem; /*30px;*/
+	line-height: 2.059rem; /*35px;*/
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.user-profile-pay-systems__pay-img img {
+	display: none;
+}
+
+.user-profile-pay-systems__pay-title {
+	margin: 0;
+	margin-left: 10px;
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/*.user-profile-pay-systems__pay-var_active .user-profile-pay-systems__pay-img {
+	background: transparent;
+}*/
+
+.user-profile-pay-systems__pay-var_active .user-profile-pay-systems__pay-img span {
+	display: none;
+}
+
+.user-profile-pay-systems__pay-var_active .user-profile-pay-systems__pay-img img {
+	display: block;
+}
