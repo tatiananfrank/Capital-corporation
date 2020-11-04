@@ -271,6 +271,13 @@ $(document).ready(function() {
 		$(input).prop('checked', true).trigger('click');
 	});
 
+	// Копирование реферальной ссылки
+	$('#copy_ref_link').on('click', function (event) {
+		event.preventDefault();
+		$('#ref_link').select();
+		document.execCommand("copy");
+	});
+
 
 
 
