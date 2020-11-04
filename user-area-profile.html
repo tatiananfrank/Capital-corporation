@@ -26,7 +26,8 @@
 	<link rel="stylesheet" type="text/css" href="css/breadcrumbs.css">
 	
 	<link rel="stylesheet" type="text/css" href="css/user-area-main.css">
-	<link rel="stylesheet" type="text/css" href="css/user-area-history.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/user-area-profile.css">
 
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 
@@ -121,9 +122,9 @@
 		</div>
 	</header>
 
-	<main class="user-area-content user-area-history-content">
+	<main class="user-area-content user-area-profile-content">
 		
-		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «История»</h1>
+		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Профиль»</h1>
 
 		<div class="breadcrumbs contacts-content__breadcrumbs">
 			<div class="inner-container_large">
@@ -131,7 +132,7 @@
 				<ul class="breadcrumbs__list">
 					<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link" aria-label="Вернуться на главную">Главная</a></li>
 					<li class="breadcrumbs__item"><a href="user-area-main.html" class="breadcrumbs__link">Личный кабинет</a></li>
-					<li class="breadcrumbs__item"><a class="breadcrumbs__link" aria-label="Вы находитесь здесь">История</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link" aria-label="Вы находитесь здесь">Профиль</a></li>
 				</ul>
 			</div>
 		</div>
@@ -143,7 +144,7 @@
 				<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
 					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static">
 						<span class="user-nav__dropdown-btn">
-							История
+							Профиль
 							<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
 						</span>
 					</button>
@@ -156,11 +157,11 @@
 							<li class="user-nav__dropdown-menu-item">
 								<a href="user-area-career.html" class="user-nav__dropdown-menu-link" role="option">Карьера</a>
 							</li>
-							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
-								<a class="user-nav__dropdown-menu-link" role="option">История</a>
-							</li>
 							<li class="user-nav__dropdown-menu-item">
-								<a href="user-area-profile.html" class="user-nav__dropdown-menu-link" role="option">Профиль</a>
+								<a href="user-area-history.html" class="user-nav__dropdown-menu-link" role="option">История</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
+								<a class="user-nav__dropdown-menu-link" role="option">Профиль</a>
 							</li>
 							<li class="user-nav__dropdown-menu-item">
 								<a href="#" data-toggle="modal" data-target="#user-exit-modal" class="user-nav__dropdown-menu-link" role="option">Выход</a>
@@ -170,107 +171,100 @@
 				</div>
 			</section>
 
-			<section class="user-history-trans user-area-history-content__trans">
-				<h2 class="visually-hidden">История транзакций</h2>
+			<section class="user-profile-personal-data user-area-profile-content__personal-data">
 
-				<div class="user-history-trans__wrapper">
-					<div class="user-history-trans__content" aria-label="Информация по транзакциям" id="transactions-history">
-						<div class="user-history-trans__content-titles-block">
-							<span class="user-history-trans__content-titles-row">
-								<span class="user-history-trans__content-titles">Транзакция</span>
-								<span class="user-history-trans__content-titles">Дата</span>
-								<span class="user-history-trans__content-titles">Сумма</span>
-								<span class="user-history-trans__content-titles">Операция</span>
-								<span class="user-history-trans__content-titles">Статус</span>
-							</span>
-						</div>
+				<h2 class="visually-hidden">Изменить персональные данные</h2>
 
-						<div class="user-history-trans__content-block">
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Транзакция</span><span class="user-history-trans__content-info">000013697</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Дата</span><span class="user-history-trans__content-info">10/15/2020</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Сумма</span><span class="user-history-trans__content-info">$1</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Операция</span><span class="user-history-trans__content-info">Партнерская прибыль</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Статус</span><span class="user-history-trans__content-info user-history-trans__status_success">Успешно</span></span>
-						</div>
-						<div class="user-history-trans__content-block">
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Транзакция</span><span class="user-history-trans__content-info">000013697</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Дата</span><span class="user-history-trans__content-info">10/15/2020</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Сумма</span><span class="user-history-trans__content-info">$1</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Операция</span><span class="user-history-trans__content-info">Партнерская прибыль</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Статус</span><span class="user-history-trans__content-info user-history-trans__status_success">Успешно</span></span>
-						</div>
-						<div class="user-history-trans__content-block">
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Транзакция</span><span class="user-history-trans__content-info">000013697</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Дата</span><span class="user-history-trans__content-info">10/15/2020</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Сумма</span><span class="user-history-trans__content-info">$1</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Операция</span><span class="user-history-trans__content-info">Партнерская прибыль</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Статус</span><span class="user-history-trans__content-info user-history-trans__status_success">Успешно</span></span>
-						</div>
-						<div class="user-history-trans__content-block">
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Транзакция</span><span class="user-history-trans__content-info">000013697</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Дата</span><span class="user-history-trans__content-info">10/15/2020</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Сумма</span><span class="user-history-trans__content-info">$1</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Операция</span><span class="user-history-trans__content-info">Партнерская прибыль</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Статус</span><span class="user-history-trans__content-info user-history-trans__status_success">Успешно</span></span>
-						</div>
-						<div class="user-history-trans__content-block">
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Транзакция</span><span class="user-history-trans__content-info">000013697</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Дата</span><span class="user-history-trans__content-info">10/15/2020</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Сумма</span><span class="user-history-trans__content-info">$1</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Операция</span><span class="user-history-trans__content-info">Партнерская прибыль</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Статус</span><span class="user-history-trans__content-info user-history-trans__status_success">Успешно</span></span>
-						</div>
-						<div class="user-history-trans__content-block">
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Транзакция</span><span class="user-history-trans__content-info">000013697</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Дата</span><span class="user-history-trans__content-info">10/15/2020</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Сумма</span><span class="user-history-trans__content-info">$1</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Операция</span><span class="user-history-trans__content-info">Партнерская прибыль</span></span>
-							<span class="user-history-trans__content-row"><span class="user-history-trans__content-titles">Статус</span><span class="user-history-trans__content-info user-history-trans__status_success">Успешно</span></span>
-						</div>
+				<form class="user-profile-personal-data__form" action="" method="">
+					<p class="user-profile-personal-data__title">Персональные данные</p>
+
+					<div class="">
+						<label for="partner" class="">Логин парнера</label>
+						<input type="text" id="partner" name="partner">
+
+						<label for="email" class="">Email</label>
+						<input type="text" id="email" name="email">
+
+						<label for="name" class="">Имя</label>
+						<input type="text" id="name" name="name">
 					</div>
 
-					<ul class="user-history-trans__pagination" aria-label="Перейти на выбранную страницу" aria-controls="transactions-history">
-						<li class="user-history-trans__pagination-item_disabled">
-							<a class="user-history-trans__pagination-link">
-								<span class="visually-hidden">Назад</span>
-								<svg class="user-history-trans__arrow" width="44" viewBox="0 0 50 50"><polygon points="5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24"></polygon></svg>
-							</a>
-						</li>
-						<li class="user-history-trans__pagination-item user-history-trans__pagination-item_active">
-							<a class="user-history-trans__pagination-link" aria-label="Вы находитесь на этой странице">1</a>
-						</li>
-						<li class="user-history-trans__pagination-item">
-							<a href="#" class="user-history-trans__pagination-link">2</a>
-						</li>
-						<li class="user-history-trans__pagination-item">
-							<a href="#" class="user-history-trans__pagination-link">3</a>
-						</li>
-						<li class="user-history-trans__pagination-item">
-							<a href="#" class="user-history-trans__pagination-link">4</a>
-						</li>
-						<li class="user-history-trans__pagination-item">
-							<a href="#" class="user-history-trans__pagination-link">5</a>
-						</li>
-						<li class="user-history-trans__pagination-item user-history-trans__pagination-item_disabled">
-							<a class="user-history-trans__pagination-link">...</a>
-						</li>
-						<li class="user-history-trans__pagination-item">
-							<a href="#" class="user-history-trans__pagination-link">30</a>
-						</li>
-						<li class="">
-							<a href="#" class="user-history-trans__pagination-link">
-								<span class="visually-hidden">Вперед</span>
-								<svg class="user-history-trans__arrow user-history-trans__arrow_next" width="44" viewBox="0 0 50 50"><polygon points="5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24"></polygon></svg>
-							</a>
-						</li>
-					</ul>
-				</div>
+					<div class="">
+						<label for="login" class="">Логин</label>
+						<input type="text" id="login" name="login">
+
+						<label for="phone" class="">Номер</label>
+						<input type="text" id="phone" name="phone">
+						
+						<label for="last_name" class="">Фамилия</label>
+						<input type="text" id="last_name" name="last_name">
+					</div>
+
+					<label for="ref_link" class="">Реферальная ссылка</label>
+					<div class="">
+						<input type="text" id="ref_link" name="ref_link">
+						<a class="" href="#" aria-label="Нажмите, чтобы скопировать ссылку">Скопировать</a>
+					</div>
+
+					<button class="" type="submit">Сохранить</button>
+				</form>
 			</section>
 
-			<div class="anim-circle anim-circle-1" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-2" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-3" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-4" aria-hidden="true"></div>
+			<section class="user-profile-change-password user-area-profile-content__change-password">
+				<h2 class="visually-hidden">Изменить пароль</h2>
+
+				<form class="user-profile-change-password__form" action="" method="">
+					<p class="user-profile-change-password__title">Смена пароля</p>
+
+					<div class="">
+						<label for="new_pass" class="">Новый пароль</label>
+						<input type="password" id="new_pass" name="new_pass">
+					</div>
+
+					<div class="">
+						<label for="confirm_pass" class="">Повторите пароль</label>
+						<input type="password" id="confirm_pass" name="confirm_pass">
+					</div>
+
+					<button class="" type="submit">Сохранить</button>
+				</form>
+			</section>
+
+			<section class="user-profile-pay-systems user-area-profile-content__pay-systems">
+				<h2 class="visually-hidden">Изменить/добавить платежные системы</h2>
+
+				<form class="user-profile-pay-systems__form" action="" method="">
+					<p class="user-profile-pay-systems__title">Платежные системы</p>
+
+					<div class="" data-number="">
+						<div class="" aria-hidden="true">
+							<img src="img/payeer.png" alt="" width="34" height="34">
+						</div>
+						<p class="">Payeer</p>
+					</div>
+
+					<div class="" data-number="">
+						<div class="" aria-hidden="true">
+							<img src="img/Perfect.png" alt="" width="36" height="36">
+						</div>
+						<p class="">Perfect</p>
+					</div>
+
+					<div class="" data-number="">
+						<div class="" aria-hidden="true">
+							<img src="img/Bitcoin.png" alt="" width="35" height="35">
+						</div>
+						<p class="">Bitcoin</p>
+					</div>
+
+					<div class="" data-number="">
+						<div class="" aria-hidden="true">
+							<img src="img/Ethereum.png" alt="" width="33" height="33">
+						</div>
+						<p class="">Ethereum</p>
+					</div>
+				</form>
+			</section>
 		</div>
 	</main>
 
