@@ -151,10 +151,14 @@ $(document).ready(function() {
 		if($(this).attr('data-show') === 'false') {
 			$(this).attr('data-show', 'true');
 			$('#password_field_sign-in').prop('type', 'text');
+			$(this).find('#in-show').css('display', 'none');
+			$(this).find('#in-hide').css('display', 'block');
 
 		} else {
 			$(this).attr('data-show', 'false');
 			$('#password_field_sign-in').prop('type', 'password');
+			$(this).find('#in-hide').css('display', 'none');
+			$(this).find('#in-show').css('display', 'block');
 		}
 	});
 
@@ -164,10 +168,14 @@ $(document).ready(function() {
 		if($(this).attr('data-show') === 'false') {
 			$(this).attr('data-show', 'true');
 			$('#password_field_sign-up').prop('type', 'text');
+			$(this).find('#up-show').css('display', 'none');
+			$(this).find('#up-hide').css('display', 'block');
 
 		} else {
 			$(this).attr('data-show', 'false');
 			$('#password_field_sign-up').prop('type', 'password');
+			$(this).find('#up-hide').css('display', 'none');
+			$(this).find('#up-show').css('display', 'block');
 		}
 	});
 
@@ -177,10 +185,13 @@ $(document).ready(function() {
 		if($(this).attr('data-show') === 'false') {
 			$(this).attr('data-show', 'true');
 			$('#password_conf_field_sign-up').prop('type', 'text');
-
+			$(this).find('#up-show2').css('display', 'none');
+			$(this).find('#up-hide2').css('display', 'block');
 		} else {
 			$(this).attr('data-show', 'false');
 			$('#password_conf_field_sign-up').prop('type', 'password');
+			$(this).find('#up-hide2').css('display', 'none');
+			$(this).find('#up-show2').css('display', 'block');
 		}
 	});
 
