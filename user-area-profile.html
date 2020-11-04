@@ -237,7 +237,7 @@
 					<p class="user-profile-pay-systems__title">Платежные системы</p>
 
 					<div class="user-profile-pay-systems__pay-var user-profile-pay-systems__pay-var_active" data-number="U23107775">
-						<div class="user-profile-pay-systems__pay-img" aria-hidden="true">
+						<div class="user-profile-pay-systems__pay-img" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
 							<span>+</span>
 							<img src="img/payeer.png" alt="" width="34" height="34">
 						</div>
@@ -245,7 +245,7 @@
 					</div>
 
 					<div class="user-profile-pay-systems__pay-var" data-number="">
-						<div class="user-profile-pay-systems__pay-img" aria-hidden="true">
+						<div class="user-profile-pay-systems__pay-img" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
 							<span>+</span>
 							<img src="img/Perfect.png" alt="" width="36" height="36">
 						</div>
@@ -253,7 +253,7 @@
 					</div>
 
 					<div class="user-profile-pay-systems__pay-var" data-number="">
-						<div class="user-profile-pay-systems__pay-img" aria-hidden="true">
+						<div class="user-profile-pay-systems__pay-img" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
 							<span>+</span>
 							<img src="img/Bitcoin.png" alt="" width="35" height="35">
 						</div>
@@ -261,7 +261,7 @@
 					</div>
 
 					<div class="user-profile-pay-systems__pay-var" data-number="">
-						<div class="user-profile-pay-systems__pay-img" aria-hidden="true">
+						<div class="user-profile-pay-systems__pay-img" aria-hidden="true" tabindex="0" data-toggle="modal" data-target="#user-pay-sys-modal">
 							<span>+</span>
 							<img src="img/Ethereum.png" alt="" width="33" height="33">
 						</div>
@@ -368,6 +368,25 @@
 				<button class="modal-exit__btn" type="submit">Да</button>
 				<button class="modal-exit__btn" type="button" data-dismiss="modal">Нет</button>
 			</form>
+		</section>
+	</div>
+
+	<!-- Модалка "Заполните адрес вашего кошелька" -->
+	<!-- НЕ ДОДЕЛАНО -->
+	<!-- JS ТОЖЕ НЕ СДЕЛАН -->
+	<div class="modal fade" id="user-pay-sys-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-exit modal-exit_centered modal-dialog">
+			<h2 class="modal-exit__title">Здесь будет модалка</h2>
+			<button class="modal-exit__btn" type="button" data-dismiss="modal">ОК</button>
+		</section>
+	</div>
+
+	<!-- Модалка-уведомление "Настройки успешно сохранены" -->
+	<div class="modal fade" id="user-settings-saved-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-exit modal-exit_centered modal-dialog">
+			<h2 class="modal-exit__title">Уведомление</h2>
+			<p class="modal-exit__text">Настройки успешно сохранены</p>
+			<button class="modal-exit__btn" type="button" data-dismiss="modal">ОК</button>
 		</section>
 	</div>
 

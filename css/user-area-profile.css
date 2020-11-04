@@ -179,6 +179,7 @@
 	height: 53px;
 	border-radius: 50%;
 	background: rgba(196, 196, 196, 0.3);
+	cursor: pointer;
 }
 
 .user-profile-pay-systems__pay-img span {
