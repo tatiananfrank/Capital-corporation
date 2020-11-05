@@ -101,11 +101,14 @@
 	.index-blur-2 img:nth-child(1) {
 		display: block;
 	    position: absolute;
-	    top: -90px;
+	    /*top: -90px;*/
 	    left: 0;
 	    width: 270px;
-	    height: 740px;
+	    /*height: 740px;*/
 	    transform: scale(-1, 1);
+
+	    top: 0;
+    	height: 670px;
 	} 
 
 	.index-blur-2 img:nth-child(2) {
