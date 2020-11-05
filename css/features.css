@@ -86,45 +86,64 @@
 
 	.feature:nth-child(1) .feature__col::before {
 		position: absolute;
-		top: -100px;
+		/*top: -100px;
 		left: -133px;
 
 		width: 430px;
-		height: 390px;
+		height: 390px;*/
+
+		top: -108px;
+	    left: -133px;
+	    width: 430px;
+	    height: 440px;
 
 		background-image: url("../img/index_circle_red.png");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 446px auto;
+		/*background-size: 446px auto;*/
+		background-size: 486px auto;
 
 		content: "";
 	}
 
 	.feature:nth-child(2) .feature__col::before {
 		position: absolute;
-    	top: -119px;
+    	/*top: -119px;
+	    left: -127px;
+	    width: 410px;
+	    height: 390px;*/
+
+	    top: -106px;
 	    left: -127px;
 	    width: 410px;
 	    height: 390px;
+
 	    background-image: url(../img/index_circle_blue.png);
 	    background-position: center;
 	    background-repeat: no-repeat;
-	    background-size: 544px auto;
+	    /*background-size: 544px auto;*/
+	    background-size: 599px auto;
 	    content: "";
 	}
 
 	.feature:nth-child(3) .feature__col::before {
 		position: absolute;
-		top: -100px;
+		/*top: -100px;
 		left: -133px;
 
 		width: 430px;
-		height: 390px;
+		height: 390px;*/
+
+		top: -108px;
+	    left: -133px;
+	    width: 430px;
+	    height: 440px;
 
 		background-image: url("../img/index_circle_red.png");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 446px auto;
+		/*background-size: 446px auto;*/
+		background-size: 486px auto;
 
 		content: "";
 	}
@@ -158,8 +177,6 @@
 		position: relative;
 		z-index: 10;
 	}
-
-
 	
 
 
