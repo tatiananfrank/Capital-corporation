@@ -477,6 +477,41 @@
 
 
 
+
+
+
+.upgrade-investment-block_with_btn .my-investment-block__controls {
+	justify-content: center;
+}
+
+.upgrade-investment-block_with_btn .upgrade-investment-block__upgrade-btn {
+	padding: 4.5px 13px;
+    border: 1.5px solid rgba(188, 0, 0, 0.5);
+    border-radius: 28px;
+    font-weight: 400;
+    font-size: 0.824rem;
+    line-height: 0.941rem;
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 9px 0 rgba(188, 0, 0, 0.5),
+				inset 0 0 9px 0 rgba(188, 0, 0, 0.5);
+
+	width: auto;
+    height: auto;
+    margin: 0;
+    background: transparent;
+    transition: none;
+}
+
+.upgrade-investment-block_with_btn .upgrade-investment-block__upgrade-btn_disabled {
+	box-shadow: none;
+	border: 1.5px solid rgba(73, 73, 73, 0.5);
+	color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
 @media (min-width: 576px) {
 	.investment-block {
 		width: 373px;
@@ -625,6 +660,19 @@
 	.my-investment-block__profit-progress-line {
 		margin-top: 15px;
 		margin-bottom: 25px;
+	}
+
+
+
+	.upgrade-investment-block_with_btn .upgrade-investment-block__upgrade-btn {
+		padding: 7.5px 20.5px 10.5px;
+		border: 2px solid rgba(188, 0, 0, 0.5);
+	    font-size: 1rem;
+	    line-height: 1.176rem;
+	}
+
+	.upgrade-investment-block_with_btn .upgrade-investment-block__upgrade-btn_disabled {
+		border: 2px solid rgba(73, 73, 73, 0.5);
 	}
 }
 
