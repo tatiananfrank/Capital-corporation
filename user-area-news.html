@@ -122,7 +122,7 @@
 		</div>
 	</header>
 
-	<main class="user-area-content user-area-history-content">
+	<main class="user-area-content user-area-news-content">
 		
 		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Новости»</h1>
 
@@ -174,7 +174,7 @@
 			<section class="user-news">
 				<h2 class="visually-hidden">Список новостей</h2>
 				
-				<section class="user-news-item user-news-item_shadow_purple">
+				<section class="user-news-item" data-shadow="purple">
 					<h2 class="user-news-item__title"><span class="user-news-item__date" aria-label="Дата публикации">07.10.2020</span>Everyday's profit gaining!</h2>
 
 					<div class="user-news-item__img"><img class="" src="img/news_img1.png" alt="" width="330" height="157"></div>
@@ -182,9 +182,28 @@
 					<p class="user-news-item__text-prew">Dear Partners! Starting October 5th all portfolios profit is to be credited daily from Monday to Fr...</p>
 
 					<a class="user-news-item__btn" href="#" data-toggle="modal" data-target="#user-news-modal">Подробнее</a>
+
+
+					<div class="user-news-item__content">
+						<!-- Контент для модалки -->
+						<h2 class="modal-news__title">Everyday's profit gaining!</h2>
+
+						<div class="modal-news__img"><img class="" src="img/news_img1.png" alt="" width="330" height="157"></div>
+
+						<p class="modal-news__text">Dear Partners!
+						Starting October 5th all portfolios profit is to be credited daily from Monday to Friday, at 18:00 HKT (UTC +8).</p>
+
+						<p class="modal-news__text">Profit for upraged portfolios and portfolios purchased from 05:00 to 18:00 is to be credited the next day.</p>
+
+						<p class="modal-news__text">Portfolios profit is not to be credited on Saturdays and Sundays.</p>
+
+						<p class="modal-news__text">Capital Corporation's top management expresses it's gratitude to all Agents for their active development and promotion.</p>
+
+						<p class="modal-news__text">Many interesting updates to make investments even more attainable are soon to come, stay tuned.</p>
+					</div>
 				</section>
 
-				<section class="user-news-item user-news-item_shadow_red">
+				<section class="user-news-item" data-shadow="red">
 					<h2 class="user-news-item__title"><span class="user-news-item__date" aria-label="Дата публикации">08.09.2020</span>New goals - new opportunities!</h2>
 
 					<div class="user-news-item__img"><img class="" src="img/news_img2.png" alt="" width="330" height="157"></div>
@@ -192,6 +211,39 @@
 					<p class="user-news-item__text-prew">Based on the results of the Partners Program audit we reached a decision to radically change the con...</p>
 
 					<a class="user-news-item__btn" href="#" data-toggle="modal" data-target="#user-news-modal">Подробнее</a>
+
+					<div class="user-news-item__content">
+						<!-- Контент для модалки -->
+						<h2 class="modal-news__title">New goals - new opportunities!</h2>
+
+						<div class="modal-news__img"><img class="" src="img/news_img2.png" alt="" width="330" height="157"></div>
+
+						<p class="modal-news__text">Based on the results of the Partners Program audit we reached a decision to radically change the concept of calculating the comission income.</p>
+
+						<p class="modal-news__text">Starting September 8th the Agent's comission income is not to be charged from weekly portofolio income, but is to be charged from specially established Company's fund assigned to agents' payout.</p>
+
+						<p class="modal-news__text">Now, when an investment portfolio is bought in your stucture you'll get an instant comission payout depending on your career level:</p>
+
+						<p class="modal-news__text">
+							Corporate President 15%<br>
+							Platinum President 15%<br>
+							Golden President 15%<br>
+							Corporate Director 14.5%<br>
+							Platinum Director 14 %<br>
+							Gold Director 13.5%<br>
+							Silver Director 12%<br>
+							Bronze Director 11%<br>
+							Platinum agent 10%<br>
+							Gold agent 9%<br>
+							Silver agent 7%<br>
+							Bronze agent 5%<br>
+							Beginner 3%
+						</p>
+
+						<p class="modal-news__text">For our Partners and Investors we've prepared a step-by-step development plan including new marketing and investment vehicles.</p>
+
+						<p class="modal-news__text">We'll keep you updated in our News, stay tuned!</p>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -296,9 +348,10 @@
 		</section>
 	</div>
 
-	<div class="modal fade" id="user-news-modal" tabindex="-1" aria-hidden="true" data-backdrop="false">
-		<section class="modal-exit modal-exit_centered modal-dialog" data-dismiss="modal" aria-label="Вы можете закрыть это окно нажатием на экран или с помощью клавиши escape">
-			<h2 class="modal-exit__title">Выход</h2>
+	<!-- Модалка "новость" -->
+	<div class="modal fade" id="user-news-modal" tabindex="-1" aria-hidden="true">
+		<section class="modal-news modal-news_centered modal-dialog" data-dismiss="modal" aria-label="Вы можете закрыть это окно нажатием на экран или с помощью клавиши escape">
+			<!-- Добавление контента в модалку происходит с помощью скрипта -->
 		</section>
 	</div>
 

@@ -102,6 +102,9 @@ $(document).ready(function() {
 
 /* END OF Модалка по нажатию на кнопку "подробнее" внутри секции profit */
 
+
+/* Модалка по нажатию на логотип банка внутри секции about */
+
 	$('#bank-modal').on('show.bs.modal', function (event) {
 		// Узнает ширину скроллбара
 		if(!scrollWidth)
@@ -135,10 +138,23 @@ $(document).ready(function() {
 		$(this).find('.magic').scrollTop(0);
 	});
 
-/* Модалка по нажатию на логотип банка внутри секции about */
-
-
 /* END OF Модалка по нажатию на логотип банка внутри секции about */
+
+
+/* Модалка по нажатию на новость в разделе "новости" личного кабинета */
+
+	$('#user-news-modal').on('show.bs.modal', function (event) {
+		var newsItem = $(event.relatedTarget.parentElement);
+		var shadow = newsItem.attr('data-shadow');
+
+		var modalContent = newsItem.find('.user-news-item__content').prop('innerHTML');
+
+		var modal = $(this);
+		modal.find('.modal-news').prop('innerHTML', modalContent);
+		modal.find('.modal-news').attr('data-shadow', shadow);
+	});
+
+/* END OF Модалка по нажатию на новость в разделе "новости" личного кабинета */
 
 
 /* Страница регистрации/входа в личный кабинет */
