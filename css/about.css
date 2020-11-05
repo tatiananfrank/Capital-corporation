@@ -110,6 +110,12 @@
 		max-width: 145px;
 	}
 
+	.partners__item-link {
+		display: block;
+	    width: 100%;
+	    height: 100%;
+	}
+
 	.partners__img {
 		width: 100%;
 		height: auto;

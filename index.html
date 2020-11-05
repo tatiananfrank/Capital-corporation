@@ -680,16 +680,25 @@
 
 						<ul class="partners__list">
 							<li class="partners__item">
-								<p class="visually-hidden">Industrial and commercial bank of China</p>
-								<img class="partners__img" src="img/Industrial_and_commercial_bank_of_China_1x_cropped.png" alt="Логотип «Industrial and commercial bank of China»" width="370" height="150">
+								<!-- 
+									Атрибут data-content у ссылок банков отвечает за изменение контента модалки через js, его значение должно совпадать со значением у текста, который будет показан внутри модалки
+								-->
+								<a href="#" class="partners__item-link" aria-label="Нажмите, чтобы просмотреть подробную информацию по банку" data-toggle="modal" data-target="#bank-modal" data-content="1">
+									<p class="visually-hidden">Industrial and commercial bank of China</p>
+									<img class="partners__img" src="img/Industrial_and_commercial_bank_of_China_1x_cropped.png" alt="Логотип «Industrial and commercial bank of China»" width="370" height="150">
+								</a>
 							</li>
 							<li class="partners__item">
-								<p class="visually-hidden">China minsheng bank</p>
-								<img class="partners__img" src="img/China_minsheng_bank_1x_cropped.png" alt="Логотип «China minsheng bank»" width="370" height="150">
+								<a href="#" class="partners__item-link" aria-label="Нажмите, чтобы просмотреть подробную информацию по банку" data-toggle="modal" data-target="#bank-modal" data-content="2">
+									<p class="visually-hidden">China minsheng bank</p>
+									<img class="partners__img" src="img/China_minsheng_bank_1x_cropped.png" alt="Логотип «China minsheng bank»" width="370" height="150">
+								</a>
 							</li>
 							<li class="partners__item">
-								<p class="visually-hidden">China citic bank international</p>
-								<img class="partners__img" src="img/China_citic_bank_international_1x_cropped.png" alt="Логотип «China citic bank international»" width="370" height="150">
+								<a href="#" class="partners__item-link" aria-label="Нажмите, чтобы просмотреть подробную информацию по банку" data-toggle="modal" data-target="#bank-modal" data-content="3">
+									<p class="visually-hidden">China citic bank international</p>
+									<img class="partners__img" src="img/China_citic_bank_international_1x_cropped.png" alt="Логотип «China citic bank international»" width="370" height="150">
+								</a>
 							</li>
 						</ul>
 				</section>
@@ -827,6 +836,33 @@
 
 					<img class="modal__img" src="img/modal-picture_4_cropped.png" alt="Здесь была красивая картинка" width="241" height="223" data-content="4">
 					<p class="modal__text" data-content="4">Участие в IPO представляет собой быстрый и достаточно доходный способ для приумножения капитала. При умеренном уровне риска у инвесторов с небольшим капиталом появляется возможность принять участие в первичном публичном размещении акций, чтобы выгодно вложиться в перспективные компании. Средняя доходность инвестиций в IPO на порядок выше, чем рост курсовой стоимости акций и многократно превышает проценты по банковскому депозиту. В первые дни и недели после проведения IPO отмечается высокая волатильность акций. В это время инвесторы фиксируют солидную прибыль. По статистике, цена акций после IPO растет и порядка 70-80% инвестиций приносят ожидаемую прибыль. Доходность в одной сделке составляет от 30 до 100%, время сделки до одного месяца. Инвестируйте в IPO вместе с нашей компанией и наслаждайтесь высокой прибылью от краткосрочных вложений в акции с высоким потенциалом к росту.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="modal fade" id="bank-modal" tabindex="-1" aria-hidden="true">
+		<section class="bank-modal modal_round modal_squared modal_centered modal-dialog" data-dismiss="modal" aria-label="Вы можете закрыть это окно нажатием на экран или с помощью клавиши escape">
+			<div class="magic-wrapper modal__content">
+				<div class="magic">
+					<h2 class="visually-hidden">Детальная информация по банку</h2>
+
+					<!-- 
+						Атрибут data-content у текста отвечает за изменение контента модалки через js, его значение должно совпадать со значением у текста, который будет показан внутри модалки
+					-->
+					<p class="modal__text" data-content="1">
+						<span class="modal__title" lang="en">Industrial and Commercial Bank of China (ICBC) — </span>основан 1 января 1984 года. С активами свыше $4 200 млрд. возглавляет десятку крупнейших банков мира. Занимает первое место среди китайских банков, контролирует пятую часть банковского сектора Китая. Предоставляет услуги корпоративного, инвестиционного и частного банкинга: кредитование юридических и физических лиц, расчетно-кассовое обслуживание, управление активами, обмен валют, международные расчеты, денежные переводы, торговля ценными бумагами, экспортный кредит, финансирование инвестиционных проектов, страхование, консалтинг. Industrial and Commercial Bank of China осуществляет активную экспансию на развивающихся рынках. Дочерние компании, совместные предприятия и филиалы действуют в 45 странах мира.<br>Штаб-квартира Industrial and Commercial Bank of China (Asia) расположена в башне ICBC Tower в комплексе офисных зданий Three Garden Road. Контрольный пакет акций принадлежит государству. Промышленный и коммерческий банк Китая обладает собственным капиталом $338 млрд. Рыночная капитализация составляет $262 млрд. По итогам 2018 года получил более $43 млрд. чистой прибыли.
+					</p>
+
+					<p class="modal__text" data-content="2">
+						<span class="modal__title" lang="en">China Minsheng Bank (CMB) — </span>основан 12 января 1996 года. Первый коммерческий банк, принадлежащий негосударственным финансовым структурам. Создан корпорацией China Minsheng Banking Corporation (CMBC) для проведения финансовых операций по всему миру. В 2009 году публично зарегистрирован на Гонконгской фондовой бирже. Minsheng Bank предоставляет услуги кредитования для малого и среднего бизнеса. Основные направления деятельности: корпоративный банкинг, расчетно-кассовый бизнес, финансирование внутренней торговли, международный бизнес и факторинг. Банк открыл более 200 отделений в Китае и свыше 700 филиалов и представительств в других странах мира.<br>
+						China Minsheng Bank разработал собственные финансовые облачные платформы, работает с большими данными, внедрил систему обслуживания клиентов на основе искусственного интеллекта. Банк занимает лидирующие позиции в области высоких технологий, участвует в пилотных проектах по реформированию финансовой системы и продвижению прогрессивных финансовых технологий. По состоянию на конец 2018 года общие активы составили $922 млрд, чистая прибыль достигла $7,7 млрд. В рейтинге 1000 крупнейших банков мира занимает 30-е место.
+					</p>
+					
+					<p class="modal__text" data-content="3">
+						<span class="modal__title" lang="en">China CITIC Bank International — </span>основан в 1998 году. Крупнейший лицензированный коммерческий банк Гонконга. По размеру активов входит в десятку ведущих финансовых компаний Китая. Контролируется финансовой группой CITIC International Financial Holdings, которой принадлежит 75% акций. В число приоритетных направлений деятельности банка входит обслуживание экспортных компаний и промышленных предприятий, услуги корпоративного и частного банкинга, проведение международных расчетов, казначейские услуги, страхование юридических и физических лиц. China CITIC Bank International финансирует коммерческие сделки китайских корпораций на глобальных рынках. Банк занимается благотворительной и образовательной деятельностью.<br>
+						Штаб-квартира China CITIC Bank International расположена в здании Hong Kong Chinese Bank Building. Банк открыл более 30 отделений в Гонконге, работают филиалы в Макао, Сингапуре, Лос-Анджелесе и Нью-Йорке. По итогам 2018 года активы составили $46,5 млрд, чистая прибыль достигла $386 млн, собственный капитал вырос до $4,6 млрд. В 2017 году рейтинговое агентство Moody's Investors Service подтвердило долгосрочный международный рейтинг China CITIC Bank International на уровне «Baa1».
+					</p>
 				</div>
 			</div>
 		</section>

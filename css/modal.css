@@ -368,6 +368,28 @@
 
 
 
+.bank-modal .modal__text {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+}
+
+.bank-modal .modal__title {
+    font-size: 1.059rem; /*18px;*/
+    line-height: 1.353rem; /*23px;*/
+    font-weight: 900;
+}
+
+.bank-modal {
+    /*background-image: url("../img/bank1.png");
+    background-image: url("../img/bank2.png");
+    background-image: url("../img/bank3.png");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
 
 @media (min-width: 576px) {
     .modal__img {
@@ -438,6 +460,17 @@
     .modal-exit__btn {
         font-size: 1.059rem; /*18px;*/
         line-height: 1.235rem; /*21px;*/
+    }
+
+
+
+    .bank-modal .modal__text {
+        font-size: 0.824rem; /*14px;*/
+        line-height: 1.059rem; /*18px;*/
+    }
+
+    .bank-modal {
+        padding: 115px 40px;
     }
 
 }
@@ -589,6 +622,27 @@
         line-height: 1.647rem; /*28px;*/
     }
 
+
+
+
+    .bank-modal .magic-wrapper {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bank-modal .modal__text {
+        /*margin-top: 50px;*/
+        padding-top: 25%;
+        
+        text-align: center;
+        font-size: 1rem; /*17px;*/
+        line-height: 1.235rem; /*21px;*/
+    }
+
+    .bank-modal .modal__title {
+        font-size: 1.412rem; /*24px;*/
+        line-height: 1.765rem; /*30px;*/
+    }
 
 }
 
