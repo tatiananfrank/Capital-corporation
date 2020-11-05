@@ -1138,3 +1138,43 @@
 
 	/* END OF Blur */
 }
+
+
+
+
+
+@media (min-width: 1190px) {
+	.history__col {
+		position: relative;
+		z-index: 20;
+	}
+
+	.history:nth-of-type(1) .history__img-container-mobile {
+		right: 130px;
+	}
+
+	.history:nth-of-type(2) .history__img-container-mobile {
+		left: 130px;
+	}
+
+	.history:nth-of-type(3) .history__img-container-mobile {
+		right: 130px;
+	}
+
+	.history:nth-of-type(4) .history__img-container-mobile {
+		left: 90px;
+	}
+
+	.history:nth-of-type(5) .history__img-container-mobile {
+		right: 130px;
+	}
+
+	.history {
+		max-width: 1349px;
+	}
+
+	.company-content__history {
+		margin-left: auto;
+    	margin-right: auto;
+	}
+}
