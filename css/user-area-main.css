@@ -303,8 +303,12 @@
 }
 
 .user-nav__dropdown-menu-link:hover {
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 1);
 	text-decoration: none;
+}
+
+.user-nav__dropdown-menu-link:focus {
+	color: rgba(255, 255, 255, 1);
 }
 
 .user-investment {
@@ -656,6 +660,11 @@
 
 	.user-nav__dropdown-menu-item_active .user-nav__dropdown-menu-link {
 		background: #151414;
+	}
+
+	.user-nav__dropdown-menu-item_active .user-nav__dropdown-menu-link:hover {
+		cursor: default;
+		color: rgba(255, 255, 255, 0.7);
 	}
 
 	.no-js .user-nav__dropdown-menu-border {
