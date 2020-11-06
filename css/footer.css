@@ -103,6 +103,11 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+.page-footer__row:last-child .menu__link:hover,
+.page-footer__row:last-child .menu__link:focus {
+	color: rgba(255, 255, 255, 0.8);
+}
+
 @media (min-width: 576px) {
 	.page-footer {
 		padding: 0 20px;
