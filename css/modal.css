@@ -480,6 +480,75 @@
 
 
 
+.pay-wallet-data-modal {
+    padding: 39.5px 35.99px 38.5px;
+    width: 296.67px;
+    background: rgba(30, 27, 27, 0.95);
+    border-radius: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 40px 0 #000000;
+}
+
+.pay-wallet-data-modal_centered {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+}
+
+.pay-wallet-data-modal__title {
+    font-weight: 400;
+    font-size: 0.941rem; /*16px;*/
+    line-height: 1.118rem; /*19px;*/
+    text-align: center;
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 28px;
+}
+
+.pay-wallet-data-modal__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pay-wallet-data-modal__form input {
+    font: inherit;
+    font-size: 0.824rem; /*14px;*/
+    line-height: 0.941rem; /*16px;*/
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.5);
+
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 19px;
+    background: transparent;
+    padding: 8.5px 16px;
+    margin-bottom: 28px;
+}
+
+.pay-wallet-data-modal__form input::placeholder {
+    color: rgba(255, 255, 255, 0.18);
+}
+
+.pay-wallet-data-modal__btn {
+    font: inherit;
+    font-size: 0.941rem; /*16px;*/
+    line-height: 1.118rem; /*19px;*/
+    color: rgba(255, 255, 255, 0.7);
+
+    background: transparent;
+    padding: 7px 27.5px 10px;
+    border: 1.5px solid rgba(188, 0, 0, 0.5);
+    border-radius: 28px;
+}
+
+
+
+
 @media (min-width: 576px) {
     .modal__img {
         width: 220px;
@@ -602,6 +671,42 @@
 
     .modal-news[data-shadow="red"] {
         box-shadow: 0 0 50px 0 rgba(191, 45, 45, 0.7);
+    }
+
+
+
+
+    .pay-wallet-data-modal_centered {
+        margin-top: 18vh;
+        margin-bottom: 18vh;
+    }
+
+    .pay-wallet-data-modal {
+        width: 546.24px;
+        border-radius: 69px;
+        padding: 40.66px 87.12px;
+    }
+
+    .pay-wallet-data-modal__title {
+        font-size: 1.412rem; /*24px;*/
+        line-height: 1.647rem; /*28px;*/
+        margin-bottom: 30px;
+    }
+
+    .pay-wallet-data-modal__form input {
+        font-size: 1.059rem; /*18px;*/
+        line-height: 1.235rem; /*21px;*/
+
+        padding: 14px 16.5px;
+        margin-bottom: 30px;
+    }
+
+    .pay-wallet-data-modal__btn {
+        font-size: 1.412rem; /*24px;*/
+        line-height: 1.647rem; /*28px;*/
+
+        padding: 8px 45px 12px;
+        border: 2px solid rgba(188, 0, 0, 0.5);
     }
 
 }
