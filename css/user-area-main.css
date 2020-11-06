@@ -667,6 +667,11 @@
 		color: rgba(255, 255, 255, 0.7);
 	}
 
+	.user-nav__dropdown-menu-item_active .user-nav__dropdown-menu-link[href]:hover {
+		color: rgba(255, 255, 255, 1);
+		cursor: pointer;
+	}
+
 	.no-js .user-nav__dropdown-menu-border {
 		padding: 0;
 	    background: transparent;
