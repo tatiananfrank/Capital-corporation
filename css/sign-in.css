@@ -65,6 +65,10 @@
 	border-radius: 28px;
 }
 
+.welcome__active-form:hover {
+	cursor: default;
+}
+
 .sign-in-form__list-link:hover,
 .sign-up-form__list-link:hover {
 	color: rgba(255, 255, 255, 0.5);
@@ -155,7 +159,13 @@
 .sign-in-form__restore-password-link:hover,
 .restore-pass-form__link:hover {
 	color: rgba(255, 255, 255, 0.5);
-	text-decoration: none;
+	/*text-decoration: none;*/
+	text-decoration: underline;
+}
+
+.sign-in-form__restore-password-link:focus,
+.restore-pass-form__link:focus {
+	text-decoration: underline;
 }
 
 .sign-in-form__btn,
@@ -212,7 +222,12 @@
 
 .sign-up-form__prev-step:hover {
 	color: rgba(255, 255, 255, 0.3);
-	text-decoration: none;
+	/*text-decoration: none;*/
+	text-decoration: underline;
+}
+
+.sign-up-form__prev-step:focus {
+	text-decoration: underline;
 }
 
 .sign-up-form__step-one,
