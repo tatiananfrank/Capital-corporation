@@ -52,6 +52,10 @@
 	text-decoration: none;
 }
 
+.breadcrumbs__link_active {
+	cursor: default;
+}
+
 
 
 
