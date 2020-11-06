@@ -71,9 +71,22 @@
 .menu .menu__item {}
 
 .menu .menu__link {
+	position: relative;
+	z-index: 25;
 	text-transform: uppercase;
     text-decoration: none;
     color: inherit;
+}
+
+.menu .menu__link:hover,
+.menu .menu__link:focus {
+	color: #ffffff;
+}
+
+.menu .menu__link.menu__link_active:hover,
+.menu .menu__link.menu__link_active:focus {
+	color: inherit;
+	cursor: default;
 }
 
 .main-menu {}
@@ -177,6 +190,7 @@
 	background-color: #951111;
     -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15), inset 0px 4px 6px -2px rgba(255, 255, 255, 0.2), 0px 0px 11px 8px rgba(188, 0, 0, 0.7);
     box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15), inset 0px 4px 6px -2px rgba(255, 255, 255, 0.2), 0px 0px 11px 8px rgba(188, 0, 0, 0.7);
+    color: #fff;
 }
 
 .js .language-picker__flag,
@@ -284,6 +298,10 @@
     line-height: 1.235rem;
 }
 
+.js .lang-list__link:hover {
+	color: #fff;
+}
+
 .no-js .language-picker {
 	display: none;
 }
@@ -353,6 +371,7 @@
 	background-color: #951111;
     -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15), inset 0px 4px 6px -2px rgba(255, 255, 255, 0.2), 0px 0px 11px 8px rgba(188, 0, 0, 0.7);
     box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15), inset 0px 4px 6px -2px rgba(255, 255, 255, 0.2), 0px 0px 11px 8px rgba(188, 0, 0, 0.7);
+    color: #fff;
 }
 
 .no-js .language-picker-form__select option {
@@ -610,6 +629,10 @@
 
 	.no-js .page-header .language-picker-form {
 	    top: 50px;
+	}
+
+	.no-js .user-menu .menu__link {
+		padding: 12.5px 18px;
 	}
 }
 
