@@ -116,17 +116,7 @@ $(document).ready(function() {
 		var modal = $(this);
 
 		// Отображает ту картинку и текст, значение атрибута data-content которых совпадает со значением этого атрибута у кнопки, нажатой для открытия модалки
-		var screenWidth = document.documentElement.clientWidth + scrollWidth;
-
-		if(screenWidth < 768) {
-			var img_url = 'url("../img/bank' + value + '.png")';
-			modal.find('.bank-modal.modal-dialog').css('background-image', img_url);
-		}
-
-		if(screenWidth >= 768) {
-			var img_url = 'url("../img/bank' + value + '_round.png")';
-			modal.find('.magic-wrapper.modal__content').css('background-image', img_url);
-		}
+		modal.find('.bank-modal.modal-dialog').attr('data-content', value);
 
 		modal.find('.modal__text').each(function() {
 			ShowModalContent($(this), value);

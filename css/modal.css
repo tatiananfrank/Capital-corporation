@@ -387,6 +387,18 @@
     background-repeat: no-repeat;
 }
 
+.bank-modal[data-content="1"] {
+    background-image: url("../img/bank1.png");
+}
+
+.bank-modal[data-content="2"] {
+    background-image: url("../img/bank2.png");
+}
+
+.bank-modal[data-content="3"] {
+    background-image: url("../img/bank3.png");
+}
+
 
 
 
@@ -747,6 +759,26 @@
     .bank-modal .magic-wrapper {
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .bank-modal[data-content="1"] .magic-wrapper {
+        background-image: url("../img/bank1_round.png");
+    }
+
+    .bank-modal[data-content="2"] .magic-wrapper {
+        background-image: url("../img/bank2_round.png");
+    }
+
+    .bank-modal[data-content="3"] .magic-wrapper {
+        background-image: url("../img/bank3_round.png");
+    }
+
+    .bank-modal[data-content="1"],
+    .bank-modal[data-content="2"],
+    .bank-modal[data-content="3"] {
+        background-image: none;
+        background: #4f0c12;
+        background: linear-gradient(0deg, #1e0f39 24%, #4e0c13 90%);
     }
 
     .bank-modal .modal__text {
