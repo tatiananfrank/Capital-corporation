@@ -59,13 +59,13 @@ $(document).ready(function() {
 					html = $(this).prop('innerHTML');
 				}
 			});
+
+			// Обновляет карусель
+			$(".owl-carousel").trigger('replace.owl.carousel', html, carouselParams).trigger('refresh.owl.carousel');
+
+			// Подсвечивает активную ссылку
+			link.addClass(activeClass);
 		}
-
-		// Обновляет карусель
-		$(".owl-carousel").trigger('replace.owl.carousel', html, carouselParams).trigger('refresh.owl.carousel');
-
-		// Подсвечивает активную ссылку
-		link.addClass(activeClass);
 	});
 
 /* END OF Карусель */
