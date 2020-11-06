@@ -584,6 +584,14 @@
         max-width: 440px;
     }
 
+    .modal-news[data-shadow="purple"] {
+        box-shadow: 0 0 50px 0 rgba(128, 0, 188, 0.6);
+    }
+
+    .modal-news[data-shadow="red"] {
+        box-shadow: 0 0 50px 0 rgba(191, 45, 45, 0.7);
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -757,13 +765,7 @@
 
 
 
-    .modal-news[data-shadow="purple"] {
-        box-shadow: 0 0 50px 0 rgba(128, 0, 188, 0.6);
-    }
-
-    .modal-news[data-shadow="red"] {
-        box-shadow: 0 0 50px 0 rgba(191, 45, 45, 0.7);
-    }
+    
 
 }
 
