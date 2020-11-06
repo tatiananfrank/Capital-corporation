@@ -1,0 +1,134 @@
+.user-area-ads-content {
+	position: relative;
+    overflow: hidden;
+    padding-top: 200px;
+    margin-top: -200px;
+}
+
+.user-ads-item {
+	position: relative;
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+	width: 246.06px;
+	background: rgba(21, 20, 20, 0.95);
+	border-radius: 83px;
+
+	padding: 36.77px 41.03px 54.65px;
+}
+
+.user-ads-item::before {
+	position: absolute;
+	z-index: -20;
+	width: 128%;
+    height: 128%;
+    top: -14%;
+    left: -14%;
+    background-image: url(../img/ads_item_back_mobile.png);
+    /*background-image: url(../img/ads_item_back.png);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+    background-size: 100% 100%;
+	
+	content: "";
+}
+
+.user-ads-item__title {
+	font-weight: 400;
+	font-size: 1.059rem; /*18px;*/
+	line-height: 1.235rem; /*21px;*/
+	color: rgba(255, 255, 255, 0.7);
+
+	margin-bottom: 6px;
+}
+
+.user-ads-item__download-link {
+	font-size: 0.824rem; /*14px;*/
+	line-height: 0.941rem; /*16px;*/
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+
+	margin-bottom: 18px;
+}
+
+.user-ads-item__download-link:hover {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: underline;
+}
+
+.user-ads-item__img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 222px;
+}
+
+.user-ads-item__img img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+@media (min-width: 576px) {
+	.user-ads-item {
+		width: 393.83px;
+		padding: 59px 58.42px 88.01px;
+
+		flex-direction: row;
+	    align-items: baseline;
+	    justify-content: space-around;
+	    flex-wrap: wrap;
+	}
+
+	.user-ads-item::before {
+		background-image: url(../img/ads_item_back.png);
+		width: 128%;
+	    height: 122%;
+	    top: -11%;
+	    left: -14%;
+	}
+
+	.user-ads-item__title {
+		font-size: 1.412rem; /*24px;*/
+		line-height: 1.647rem; /*28px;*/
+	}
+
+	.user-ads-item__download-link {
+		font-size: 1.059rem; /*18px;*/
+		line-height: 1.235rem; /*21px;*/
+	}
+
+	.user-ads-item__title,
+	.user-ads-item__download-link {
+		margin-bottom: 51px;
+	}
+
+	.user-ads-item__img {
+		height: 374px;
+	}
+
+
+}
+
+
+
+
+
+
+@media (min-width: 768px) {}
+
+
+
+
+
+
+@media (min-width: 992px) {}
