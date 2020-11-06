@@ -86,7 +86,8 @@
 
 	.cases-switcher__link {
 		margin-right: 20px;
-		padding: 3px 20px 0;
+		/*padding: 3px 20px 0;*/
+		padding: 6px 26px 4px;
 
 		font-family: "Bebas Neue", "Arial Narrow", "Century Gothic", Helvetica, Tahoma, sans-serif;
 		font-weight: 700;
@@ -102,28 +103,38 @@
 	}
 
 	.cases-switcher__link:hover {
-		color: inherit;
+		/*color: inherit;*/
+		color: rgba(255, 255, 255, 0.9);
 		text-decoration: none;
 	}
 
-	.cases-switcher__link:focus {}
+	.cases-switcher__link:focus {
+		color: rgba(255, 255, 255, 0.9);
+	}
 
 	.cases-switcher__link:active {}
 
 	.cases-switcher__link_active {
-		/*border: 3px solid #BC0000;*/
 		border-radius: 28px;
 
-		/*box-shadow: 0px 0px 10px 1px rgba(188, 0, 0, 0.7), 
-					inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);*/
-		-webkit-box-shadow: 0 0 0 3px #BC0000, 
+		/*-webkit-box-shadow: 0 0 0 3px #BC0000, 
 					0px 0px 10px 6px rgba(188, 0, 0, 0.7), 
 					inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);
 		        box-shadow: 0 0 0 3px #BC0000, 
 					0px 0px 10px 6px rgba(188, 0, 0, 0.7), 
-					inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);
+					inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);*/
+
+		padding: 3px 20px 1px;
+	    border: 3px solid #BC0000;
+	    border-radius: 28px;
+	    box-shadow: 0px 0px 10px 3px rgba(188, 0, 0, 0.7), inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);
 
 		cursor: default;
+	}
+
+	.cases-switcher__link_active:hover,
+	.cases-switcher__link_active:focus {
+		color: inherit;
 	}
 
 	.cases {}
@@ -314,6 +325,11 @@
 	.cases-switcher__link {
 		font-size: 2.118rem; /*36px*/
 		line-height: 2.647rem; /*45px*/
+		padding: 7px 34px 4px;
+	}
+
+	.cases-switcher__link_active {
+		padding: 4px 28px 1px;
 	}
 
 	.case__logo {
