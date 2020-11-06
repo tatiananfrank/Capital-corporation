@@ -322,6 +322,18 @@ $(document).ready(function() {
 		document.execCommand("copy");
 	});
 
+	// Модалка "заполните адрес вашего кошелька"
+	$('#user-pay-sys-modal').on('show.bs.modal', function (event) {
+		var payVar = $(event.relatedTarget.parentElement);
+		var wallet_adress = payVar.attr('data-number');
+
+		var modal = $(this);
+
+		modal.find('#pay_wallet_number').prop('value', wallet_adress);
+	});
+
+
+
 
 
 

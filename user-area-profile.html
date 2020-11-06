@@ -379,14 +379,13 @@
 	</div>
 
 	<!-- Модалка "Заполните адрес вашего кошелька" -->
-	<!-- JS ТОЖЕ НЕ СДЕЛАН -->
-	<div class="modal fade" id="user-pay-sys-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
-		<section class="pay-wallet-data-modal pay-wallet-data-modal_centered modal-dialog">
+	<div class="modal fade" id="user-pay-sys-modal" tabindex="-1" aria-hidden="true">
+		<section class="pay-wallet-data-modal pay-wallet-data-modal_centered modal-dialog" aria-label="Вы можете закрыть это окно нажатием на экран или с помощью клавиши escape">
 			<h2 class="pay-wallet-data-modal__title">Заполните адрес вашего кошелька</h2>
 			<form class="pay-wallet-data-modal__form" method="" action="">
 				<label for="pay_wallet_number" class="visually-hidden">Введите адрес вашего кошелька</label>
-				<input type="text" name="" id="pay_wallet_number" placeholder="Заполните адрес...">
-				<button class="pay-wallet-data-modal__btn" type="submit" data-dismiss="modal">Сохранить</button>
+				<input type="text" name="pay_wallet_number" id="pay_wallet_number" placeholder="Заполните адрес...">
+				<button class="pay-wallet-data-modal__btn" type="submit">Сохранить</button>
 			</form>
 		</section>
 	</div>
