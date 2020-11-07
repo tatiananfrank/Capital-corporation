@@ -98,6 +98,11 @@
     overflow: hidden;
     padding-top: 200px;
     margin-top: -200px;
+
+	background-image: url(../img/user-area-news-blur_mobile.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: repeat-y;
 }
 
 .user-news {
@@ -195,6 +200,15 @@
 
 
 @media (min-width: 576px) {
+	.user-area-news-content {
+		background-image: url(../img/user-area-news-blur.png);
+		background-position: top 500px center;
+	    background-repeat: repeat-y;
+	    background-size: 160% auto;
+	    padding-top: 300px;
+	    margin-top: -300px;
+	}
+
 	.user-news-item {
 		width: 345.21px;
 		padding: 45.29px 7.6px 33.29px;
@@ -326,6 +340,13 @@
 
 
 @media (min-width: 768px) {
+	.user-area-news-content {
+		background-repeat: no-repeat;
+	    background-size: contain;
+	    padding-top: 200px;
+	    margin-top: -200px;
+	}
+
 	.user-area-news-content .user-nav {
 		order: 1;
 		width: unset;
@@ -393,6 +414,11 @@
 
 
 @media (min-width: 992px) {
+	.user-area-news-content {
+		background-position: top 100px left -100px;
+    	background-repeat: repeat-y;
+	}
+
 	.user-area-news-content .user-nav {
 		width: 98%;
 	}
