@@ -2,9 +2,9 @@ $(document).ready(function() {
 	
 /* Animate On Scroll */
 
-	AOS.init({
+	/*AOS.init({
 		once: true,
-	});
+	});*/
 
 /* END OF Animate On Scroll */
 
