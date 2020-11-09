@@ -547,6 +547,16 @@
 
 
 
+
+.user-area-partners-content .user-area-career-content__partners {
+	margin-top: 50px;
+}
+
+
+
+
+
+
 @media (min-width: 576px) {
 	.user-careeer-levels,
 	.user-careeer-stats {
@@ -768,6 +778,18 @@
 	.user-area-career-content .anim-circle-7 {
 		display: none;
 	}
+
+
+
+
+	.user-area-partners-content .anim-circle-1 {
+		z-index: -20;
+	}
+
+	.user-area-partners-content .anim-circle-2 {
+		left: 20px;
+	}
+
 }
 
 
@@ -979,6 +1001,26 @@
 		height: 245px;
 		border: 2px solid #BC0000;
 		box-shadow: 0 0 15px 0 #BC0000, inset 0 0 15px 0 #BC0000;
+	}
+
+
+
+
+
+
+	.user-area-partners-content .user-area-career-content__partners {
+		margin-top: 90px;
+	}
+
+	.user-area-partners-content .anim-circle-4 {
+		top: auto;
+	    left: 740px;
+	    bottom: 0;
+	}
+
+	.user-area-partners-content .anim-circle-3 {
+		top: 1150px;
+    	left: 760px;
 	}
 }
 
@@ -1236,6 +1278,26 @@
     	left: 1040px;
     	animation-duration: 2.2s;
 		animation-delay: 0.9s;
+	}
+
+
+	.user-area-partners-content .anim-circle-3 {
+		top: 680px;
+	    left: 1030px;
+	    width: 245px;
+	    height: 245px;
+	    animation-duration: 1.8s;
+	    animation-delay: 0s;
+	}
+
+	.user-area-partners-content .anim-circle-2 {
+		border: 2px solid #401059;
+		box-shadow: 0 0 15px 0 #401059, inset 0 0 15px 0 #401059;
+	}
+
+	.user-area-partners-content .anim-circle-4 {
+		top: 1030px;
+    	left: 360px;
 	}
 }
 

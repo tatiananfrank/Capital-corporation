@@ -50,10 +50,6 @@
 	<link rel="stylesheet" type="text/css" href="css/user-area-news.css">
 	<link rel="stylesheet" type="text/css" href="css/user-area-ads.css">
 	<!-- END OF ПОТОМ УДАЛИТЬ -->
-
-
-	<!-- <script src="js/chart.min.js"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body>
 	<header class="page-header user-area-header">
@@ -143,9 +139,9 @@
 		</div>
 	</header>
 
-	<main class="user-area-content user-area-career-content">
+	<main class="user-area-content user-area-career-content user-area-partners-content">
 		
-		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Карьера»</h1>
+		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Партнеры»</h1>
 
 		<div class="breadcrumbs contacts-content__breadcrumbs">
 			<div class="inner-container_large">
@@ -153,7 +149,7 @@
 				<ul class="breadcrumbs__list">
 					<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link" aria-label="Вернуться на главную">Главная</a></li>
 					<li class="breadcrumbs__item"><a href="user-area-main.html" class="breadcrumbs__link">Личный кабинет</a></li>
-					<li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_active" aria-label="Вы находитесь здесь">Карьера</a></li>
+					<li class="breadcrumbs__item"><a href="user-area-career.html" class="breadcrumbs__link" aria-label="Вы находитесь здесь">Карьера</a></li>
 				</ul>
 			</div>
 		</div>
@@ -199,7 +195,7 @@
 				<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
 					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static">
 						<span class="user-nav__dropdown-btn">
-							Карьера
+							Партнеры
 							<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
 						</span>
 					</button>
@@ -209,8 +205,8 @@
 							<li class="user-nav__dropdown-menu-item">
 								<a href="user-area-main.html" class="user-nav__dropdown-menu-link" role="option">Кабинет</a>
 							</li>
-							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
-								<a class="user-nav__dropdown-menu-link" role="option">Карьера</a>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-career.html" class="user-nav__dropdown-menu-link" role="option">Карьера</a>
 							</li>
 							<li class="user-nav__dropdown-menu-item">
 								<a href="user-area-history.html" class="user-nav__dropdown-menu-link" role="option">История</a>
@@ -224,231 +220,6 @@
 						</ul>
 					</div>
 				</div>
-			</section>
-
-			<section class="user-careeer-levels user-area-career-content__levels">
-				<h2 class="visually-hidden">Карьерный и бонусный уровни пользователя</h2>
-
-				<div class="user-careeer-levels__wrap-block"></div>
-
-				<div class="user-careeer-block user-careeer-levels__user-careeer-block">
-					<table class="user-careeer-block__table">
-						<tr>
-							<th class="user-careeer-block__header" colspan="2">
-								<a class="user-careeer-block__badge">Карьерный уровень</a>
-								<p class="user-careeer-block__number">1</p>
-							</th>
-						</tr>
-						<tr class="user-careeer-block__row">
-							<td class="user-careeer-block__info">
-								учитываемый оборот
-								<p class="user-careeer-block__info-perc">100%</p>
-							</td>
-							<td class="user-careeer-block__info">
-								комиссионный доход
-								<p class="user-careeer-block__info-perc">5%</p>
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-block__info2" colspan="2">
-								<p class="user-careeer-block__money">$20 250/$40 000</p>
-								<span class="user-careeer-block__progress-line" aria-hidden="true">
-									<span class="user-careeer-block__progress-value" data-perc="52%"></span>
-								</span>
-							</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="user-careeer-levels__wrap-block"></div>
-
-				<div class="user-careeer-block user-careeer-levels__user-careeer-block">
-					<table class="user-careeer-block__table">
-						<tr>
-							<th class="user-careeer-block__header" colspan="2">
-								<a class="user-careeer-block__badge">Бонусный уровень</a>
-								<p class="user-careeer-block__number">0</p>
-							</th>
-						</tr>
-						<tr class="user-careeer-block__row">
-							<td class="user-careeer-block__info">
-								личные инвестиции
-								<p class="user-careeer-block__info-perc">$300/$1 000</p>
-							</td>
-							<td class="user-careeer-block__info">
-								бонус за новый уровень
-								<p class="user-careeer-block__info-perc">$250</p>
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-block__info2" colspan="2">
-								<p class="user-careeer-block__money">$7 500/$15 000</p>
-								<span class="user-careeer-block__progress-line" aria-hidden="true">
-									<span class="user-careeer-block__progress-value" data-perc="63%"></span>
-								</span>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</section>
-
-			<section class="user-careeer-stats user-area-career-content__stats">
-				<h2 class="user-careeer-stats__title">Cтатистика</h2>
-
-				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
-					<table class="user-careeer-stats-block__table">
-						<tr>
-							<th class="user-careeer-stats-block__header" colspan="2">
-								<a class="user-careeer-stats-block__badge">Общая</a>
-							</th>
-						</tr>
-						<tr class="user-careeer-stats-block__row">
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">3</p>
-								зарегистр. партнеров
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">1</p>
-								активных партнеров
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$20 250</p>
-								объем продаж
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$608</p>
-								прибыль парнеров
-							</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="user-careeer-stats-block user-careeer-stats__user-careeer-stats-block user-careeer-stats-block_big-padding">
-					<table class="user-careeer-stats-block__table">
-						<tr>
-							<th class="user-careeer-stats-block__header" colspan="2">
-								<a class="user-careeer-stats-block__badge">Офисный счёт</a>
-							</th>
-						</tr>
-						<tr class="user-careeer-stats-block__row">
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								прибыль
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0/$0</p>
-								начислено
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">0%</p>
-								начисления
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">2020.10.13</p>
-								дата расчета
-							</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
-					<table class="user-careeer-stats-block__table">
-						<tr>
-							<th class="user-careeer-stats-block__header" colspan="2">
-								<a class="user-careeer-stats-block__badge">за текущую неделю</a>
-							</th>
-						</tr>
-						<tr class="user-careeer-stats-block__row">
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">0</p>
-								зарегистр. партнеров
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">0</p>
-								активных партнеров
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								объем продаж
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								прибыль парнеров
-							</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
-					<table class="user-careeer-stats-block__table">
-						<tr>
-							<th class="user-careeer-stats-block__header" colspan="2">
-								<a class="user-careeer-stats-block__badge">за прошлую неделю</a>
-							</th>
-						</tr>
-						<tr class="user-careeer-stats-block__row">
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">2</p>
-								зарегистр. партнеров
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">0</p>
-								активных партнеров
-							</td>
-						</tr>
-						<tr>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								объем продаж
-							</td>
-							<td class="user-careeer-stats-block__info">
-								<p class="user-careeer-stats-block__info-number">$0</p>
-								прибыль парнеров
-							</td>
-						</tr>
-					</table>
-				</div>
-			</section>
-
-			<section class="user-careeer-charts user-area-career-content__charts">
-				<h2 class="visually-hidden">Cтатистика в графиках</h2>
-
-				<section class="user-careeer-charts__chart" id="graph0">
-					<h3 class="user-careeer-charts__title"><span>Прибыль партнера</span> <span>За неделю</span></h3>
-					<div class="chart-container">
-						<div class="chartjs-size-monitor">
-							<div class="chartjs-size-monitor-expand">
-								<div class=""></div>
-							</div>
-							<div class="chartjs-size-monitor-shrink">
-								<div class=""></div>
-							</div>
-						</div>
-						<canvas id="canvas0" class="chartjs-render-monitor"></canvas>
-					</div>
-				</section>
-
-				<section class="user-careeer-charts__chart" id="graph1">
-					<h3 class="user-careeer-charts__title"><span>Объем продаж</span> <span>За неделю</span></h3>
-					<div class="chart-container">
-						<div class="chartjs-size-monitor">
-							<div class="chartjs-size-monitor-expand">
-								<div class=""></div>
-							</div>
-							<div class="chartjs-size-monitor-shrink">
-								<div class=""></div>
-							</div>
-						</div>
-						<canvas id="canvas1" class="chartjs-render-monitor"></canvas>
-					</div>
-				</section>
-				
 			</section>
 
 			<section class="user-careeer-partners user-area-career-content__partners">
@@ -474,7 +245,7 @@
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Уровень</span><span class="user-careeer-partners__content-info">?</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Логин</span><span class="user-careeer-partners__content-info">Москва</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Фамилия</span><span class="user-careeer-partners__content-info">?</span></span>
-							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Парнеры</span><span class="user-careeer-partners__content-info"><a href="user-area-partners.html">98</a></span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Парнеры</span><span class="user-careeer-partners__content-info">98</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Инвестиции</span><span class="user-careeer-partners__content-info">$38 300</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Структура</span><span class="user-careeer-partners__content-info">$492 950</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Регистрация</span><span class="user-careeer-partners__content-info">23.05.2020</span></span>
@@ -485,7 +256,7 @@
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Уровень</span><span class="user-careeer-partners__content-info">?</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Логин</span><span class="user-careeer-partners__content-info">Москва</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Фамилия</span><span class="user-careeer-partners__content-info">?</span></span>
-							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Парнеры</span><span class="user-careeer-partners__content-info"><a href="user-area-partners.html">98</a></span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Парнеры</span><span class="user-careeer-partners__content-info">98</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Инвестиции</span><span class="user-careeer-partners__content-info">$38 300</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Структура</span><span class="user-careeer-partners__content-info">$492 950</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Регистрация</span><span class="user-careeer-partners__content-info">23.05.2020</span></span>
@@ -496,95 +267,19 @@
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Уровень</span><span class="user-careeer-partners__content-info">?</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Логин</span><span class="user-careeer-partners__content-info">Москва</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Фамилия</span><span class="user-careeer-partners__content-info">?</span></span>
-							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Парнеры</span><span class="user-careeer-partners__content-info"><a href="user-area-partners.html">98</a></span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Парнеры</span><span class="user-careeer-partners__content-info">98</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Инвестиции</span><span class="user-careeer-partners__content-info">$38 300</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Структура</span><span class="user-careeer-partners__content-info">$492 950</span></span>
 							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Регистрация</span><span class="user-careeer-partners__content-info">23.05.2020</span></span>
 						</div>
 					</div>
 				</div>
-
-				<!-- <div class="user-careeer-partners__content">
-					<div class="user-careeer-partners__content-titles">
-						<span>Линия</span>
-						<span>Уровень</span>
-						<span>Логин</span>
-						<span>Фамилия</span>
-						<span>Парнеры</span>
-						<span>Инвестиции</span>
-						<span>Структура</span>
-						<span>Регистрация</span>
-					</div>
-					<div class="user-careeer-partners__content-info">
-						<span>1</span>
-						<span>?</span>
-						<span>Москва</span>
-						<span>?</span>
-						<span>98</span>
-						<span>$38 300</span>
-						<span>$492 950</span>
-						<span>23.05.2020</span>
-					</div>
-
-					<div class="user-careeer-partners__break-block"></div>
-
-					<div class="user-careeer-partners__content-titles">
-						<span>Линия</span>
-						<span>Уровень</span>
-						<span>Логин</span>
-						<span>Фамилия</span>
-						<span>Парнеры</span>
-						<span>Инвестиции</span>
-						<span>Структура</span>
-						<span>Регистрация</span>
-					</div>
-					<div class="user-careeer-partners__content-info">
-						<span>1</span>
-						<span>?</span>
-						<span>Москва</span>
-						<span>?</span>
-						<span>98</span>
-						<span>$38 300</span>
-						<span>$492 950</span>
-						<span>23.05.2020</span>
-					</div>
-
-					<div class="user-careeer-partners__break-block"></div>
-
-					<div class="user-careeer-partners__content-titles user-careeer-partners__content-titles_last">
-						<span>Линия</span>
-						<span>Уровень</span>
-						<span>Логин</span>
-						<span>Фамилия</span>
-						<span>Парнеры</span>
-						<span>Инвестиции</span>
-						<span>Структура</span>
-						<span>Регистрация</span>
-					</div>
-					<div class="user-careeer-partners__content-info user-careeer-partners__content-info_last">
-						<span>1</span>
-						<span>?</span>
-						<span>Москва</span>
-						<span>?</span>
-						<span>98</span>
-						<span>$38 300</span>
-						<span>$492 950</span>
-						<span>23.05.2020</span>
-					</div>
-				</div> -->
 			</section>
-
 
 			<div class="anim-circle anim-circle-1" aria-hidden="true"></div>
 			<div class="anim-circle anim-circle-2" aria-hidden="true"></div>
 			<div class="anim-circle anim-circle-3" aria-hidden="true"></div>
 			<div class="anim-circle anim-circle-4" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-5" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-6" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-7" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-8" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-9" aria-hidden="true"></div>
-			<div class="anim-circle anim-circle-10" aria-hidden="true"></div>
 		</div>
 	</main>
 
@@ -692,195 +387,5 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="js/script.js"></script>
-
-
-	<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
-
-	<script type="text/javascript">
-		/*var graph_height = 262;
-
-		function calcGraphHeight() {
-			var height = 0;
-
-			var site_width = $(document).width() + ScroolbarWidth();
-
-			if(site_width < 576) {
-				height = 262;
-			} else if(site_width >= 576 && site_width < 768) {
-				height = 262;
-			} else if(site_width >= 768 && site_width < 992) {
-				height = 262;
-			} else if(site_width >= 992) {
-				height = 262;
-			}
-
-			return height;
-		}
-
-		$(window).resize(function() {
-			graph_height = calcGraphHeight();
-		});
-
-		graph_height = calcGraphHeight();*/
-		
-		// Данные графиков
-		var ctx0 = document.getElementById('canvas0').getContext('2d');
-		var xAxis0 = ['07.09', '14.09', '21.09', '28.09', '05.10', '12.10', '19.10', '26.10', '02.11', '09.11', '16.11', '23.11'];
-		var yAxis0 = ['250', '0', '440', '670', '270', '0', '0', '0', '0', '0', '0', '0'];
-
-		var ctx1 = document.getElementById('canvas1').getContext('2d');
-		var xAxis1 = ['07.09', '14.09', '21.09', '28.09', '05.10', '12.10', '19.10', '26.10', '02.11', '09.11', '16.11', '23.11'];
-		var yAxis1 = ['0', '0', '0', '0', '0', '0', '260', '470', '320', '0', '0', '0'];
-
-		// Массив с графиками
-		var chartMass = [
-			{
-				graph: ctx0,
-				x: xAxis0,
-				y: yAxis0,
-			},
-			{
-				graph: ctx1,
-				x: xAxis1,
-				y: yAxis1,
-			},
-		];
-
-		// Размеры для графиков
-		var fontSize = 12;
-		var graphHeight = 218;
-		var site_width = $(document).width() + ScroolbarWidth();
-		if(site_width < 576) {
-			fontSize = 10;
-			graphHeight = 218;
-		} else if(site_width >= 576 && site_width < 768) {
-			fontSize = 18;
-			graphHeight = 339;
-		} else if(site_width >= 768 && site_width < 992) {
-			fontSize = 24;
-			graphHeight = 373;
-		} else if(site_width >= 992) {
-			fontSize = 24;
-			graphHeight = 465;
-		}
-
-		// Создание градиента для графиков
-		$.each(chartMass, function(index, value) {
-			var gradient = value.graph.createLinearGradient(0, graphHeight, 0, 0);
-			gradient.addColorStop(0, '#5525BA');
-			gradient.addColorStop(0.15, 'rgba(85, 37, 186, 0.35)');
-			gradient.addColorStop(0.75, 'rgba(188, 0, 0, 0.7)');
-			gradient.addColorStop(1, '#BC0000');
-			value.gradient = gradient;
-		});
-		
-		/*
-		// Одинаковый градиент для столбцов разной высоты
-
-		var gradients = [];
-
-		yAxis.each( function() {
-			var el_perc = $(this) * graph_height / max;
-			var gradient_n = ctx0.createLinearGradient(0, graph_height, 0, el_perc);
-			gradient_n.addColorStop(0, '#5525BA');
-			gradient_n.addColorStop(0.15, 'rgba(85, 37, 186, 0.35)');
-			gradient_n.addColorStop(0.75, 'rgba(188, 0, 0, 0.7)');
-			gradient_n.addColorStop(1, '#BC0000');
-
-			gradients.add(gradient_n);
-		});*/
-		
-		// Создание графиков
-		$.each(chartMass, function(index, value) {
-			Chart.defaults.global.defaultFontSize = fontSize;
-			new Chart(value.graph, {
-				type: 'bar',
-			    data: {
-			        labels: value.x,
-			        datasets: [{
-			            backgroundColor: value.gradient,
-			            /*backgroundColor: [
-			            	gradient,
-			            	gradient2
-			            ],*/
-			            borderColor: 'rgba(0, 0, 0, 0)',
-	                    borderWidth: 0,
-			            data: value.y,
-			        }]
-			    },
-			    options: {
-			    	responsive: true,
-	                maintainAspectRatio: false,
-	                legend: {
-	                    display: false
-	                },
-	                title: {
-	                    display: false
-	                },
-	                scales: {
-	                    xAxes: [{
-	                    	ticks: {
-	                        	fontColor: 'rgba(255, 255, 255, 0.7)',
-	                        	/*fontSize: 14,*/
-	                        	fontFamily: "'Bebas Neue', 'Arial Narrow', 'Century Gothic', Helvetica, Tahoma, sans-serif",
-	                        },
-	                        gridLines: {
-	                            display: true,
-	                            color: 'rgba(255, 255, 255, 0)',
-	                            drawBorder: false,
-	                            drawOnChartArea: false,
-	                            zeroLineColor: 'rgba(255, 255, 255, 0.3)',
-	                        }
-	                    }],
-	                    yAxes: [{
-	                        type: 'linear',
-	                        ticks: {
-	                        	fontColor: 'rgba(255, 255, 255, 0.7)',
-	                        	/*fontSize: 14,*/
-	                        	fontFamily: "'Bebas Neue', 'Arial Narrow', 'Century Gothic', Helvetica, Tahoma, sans-serif",
-	                            userCallback: function(tick) {
-	                                tick = Math.round(tick);
-	                                return '$' + tick.toLocaleString();
-	                            },
-	                            suggestedMin: 0,
-	                            suggestedMax: 250,
-
-	                        },
-	                        gridLines: {
-	                            display: true,
-	                            color: 'rgba(255, 255, 255, 0.3)',
-	                            drawBorder: false,
-	                            drawOnChartArea: false,
-	                            /*tickMarkLength: 6,*/
-	                            zeroLineColor: 'rgba(255, 255, 255, 0.3)',
-	                        },
-	                    }],
-	                },
-	                tooltips: {
-	                    position: 'nearest',
-	                    mode: 'nearest',
-	                    intersect: true,
-	                    yPadding: 15,
-	                    xPadding: 5,
-	                    caretSize: 8,
-	                    backgroundColor: 'rgb(255,255,255)',
-	                    titleFontColor: '#151414',
-	                    bodyFontColor: '#BC0000',
-	                    borderColor: '#151414',
-	                    borderWidth: 1,
-	                    titleAlign: 'center',
-	                    titleMarginBottom: 10,
-	                    displayColors: false,
-	                    callbacks: {
-	                        label: function(tooltipItem, data) {
-	                            let v = parseInt(tooltipItem.value);
-	                            return  'Сумма $: ' + v.toLocaleString();
-	                        }
-	                    }
-	                },
-			    }
-			});
-		});
-	</script>
 </body>
 </html>
