@@ -1,13 +1,4 @@
 $(document).ready(function() {
-	
-/* Animate On Scroll */
-
-	/*AOS.init({
-		once: true,
-	});*/
-
-/* END OF Animate On Scroll */
-
 
 /* Бургер меню */
 
