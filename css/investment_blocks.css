@@ -68,7 +68,7 @@
 
 .investment-block_start {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 
 	background: #616060;
 	background: linear-gradient(180deg, #616060 0%, #1b1b1b 60%, #151414 100%);
@@ -82,7 +82,7 @@
 
 .investment-block_light {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 
 	background: #702AB6;
 	background: linear-gradient(180deg, #702AB6 0%, #1b0f27 60%, #151414 100%);
@@ -94,7 +94,7 @@
 
 .investment-block_medium {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 
 	background: #BC932B;
 	background: linear-gradient(180deg, #BC932B 0%, #1f1909 60%, #151414 100%);
@@ -106,7 +106,7 @@
 
 .investment-block_red {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 
 	background: #B90101;
 	background: linear-gradient(180deg, #B90101 0%, #210f0f 60%, #151414 100%);
@@ -118,7 +118,7 @@
 
 .investment-block_trade {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 
 	background: #0C8410;
 	background: linear-gradient(180deg, #0C8410 0%, #091d09 60%, #151414 100%);
@@ -130,7 +130,7 @@
 
 .investment-block_black {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 
 	background: #000000;
 	background: linear-gradient(180deg, #000000 0%, #0c0c0c 60%, #151414 100%);
@@ -142,7 +142,7 @@
 
 .investment-block_invest {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 
 	background: #3101BA;
 	background: linear-gradient(180deg, #3101BA 0%, #120e1d 60%, #151414 100%);
@@ -154,7 +154,7 @@
 
 .investment-block_silver {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 
 	background: #D2CEDC;
 	background: linear-gradient(180deg, #D2CEDC 0%, #1f1f21 60%, #151414 100%);
@@ -166,7 +166,7 @@
 
 .investment-block_gold {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 
 	background: #FB9701;
 	background: linear-gradient(180deg, #FB9701 0%, #271801 60%, #151414 100%);
@@ -178,7 +178,7 @@
 
 .investment-block_platinum {
 	position: relative;
-	z-index: 20;
+	z-index: 50;
 	
 	background: #01FCCF;
 	background: linear-gradient(180deg, #01FCCF 0%, #002922 60%, #151414 100%);
