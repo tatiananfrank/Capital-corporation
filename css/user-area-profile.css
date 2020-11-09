@@ -390,7 +390,11 @@
 		margin-bottom: 0;
 	}
 
-	.user-profile-pay-systems__pay-var:nth-of-type(4) {
+	.user-profile-pay-systems__pay-var:nth-of-type(4),
+	.user-profile-pay-systems__pay-var:nth-of-type(5),
+	.user-profile-pay-systems__pay-var:nth-of-type(6),
+	.user-profile-pay-systems__pay-var:nth-of-type(7),
+	.user-profile-pay-systems__pay-var:nth-of-type(8) {
 		margin-top: 40px;
 	}
 
