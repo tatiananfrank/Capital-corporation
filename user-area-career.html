@@ -9,14 +9,10 @@
 
 	<title>Capital Corporation - Личный кабинет</title>
 
-	<!-- Проверка на выолнение js кода -->
 	<script type="text/javascript" src="js/js_test.js"></script>
 
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css"> 
-
-	<link rel="stylesheet" href="owl_carousel/owl.carousel.min.css">
 
 	<!-- ПОТОМ УДАЛИТЬ -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -31,8 +27,6 @@
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/modal.css"> 
 
-	<!--  -->
-	
 	<link rel="stylesheet" type="text/css" href="css/breadcrumbs.css">
 	<link rel="stylesheet" type="text/css" href="css/company.css">
 	<link rel="stylesheet" type="text/css" href="css/career.css">
@@ -50,10 +44,6 @@
 	<link rel="stylesheet" type="text/css" href="css/user-area-news.css">
 	<link rel="stylesheet" type="text/css" href="css/user-area-ads.css">
 	<!-- END OF ПОТОМ УДАЛИТЬ -->
-
-
-	<!-- <script src="js/chart.min.js"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 <body>
 	<header class="page-header user-area-header">
@@ -503,75 +493,6 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- <div class="user-careeer-partners__content">
-					<div class="user-careeer-partners__content-titles">
-						<span>Линия</span>
-						<span>Уровень</span>
-						<span>Логин</span>
-						<span>Фамилия</span>
-						<span>Парнеры</span>
-						<span>Инвестиции</span>
-						<span>Структура</span>
-						<span>Регистрация</span>
-					</div>
-					<div class="user-careeer-partners__content-info">
-						<span>1</span>
-						<span>?</span>
-						<span>Москва</span>
-						<span>?</span>
-						<span>98</span>
-						<span>$38 300</span>
-						<span>$492 950</span>
-						<span>23.05.2020</span>
-					</div>
-
-					<div class="user-careeer-partners__break-block"></div>
-
-					<div class="user-careeer-partners__content-titles">
-						<span>Линия</span>
-						<span>Уровень</span>
-						<span>Логин</span>
-						<span>Фамилия</span>
-						<span>Парнеры</span>
-						<span>Инвестиции</span>
-						<span>Структура</span>
-						<span>Регистрация</span>
-					</div>
-					<div class="user-careeer-partners__content-info">
-						<span>1</span>
-						<span>?</span>
-						<span>Москва</span>
-						<span>?</span>
-						<span>98</span>
-						<span>$38 300</span>
-						<span>$492 950</span>
-						<span>23.05.2020</span>
-					</div>
-
-					<div class="user-careeer-partners__break-block"></div>
-
-					<div class="user-careeer-partners__content-titles user-careeer-partners__content-titles_last">
-						<span>Линия</span>
-						<span>Уровень</span>
-						<span>Логин</span>
-						<span>Фамилия</span>
-						<span>Парнеры</span>
-						<span>Инвестиции</span>
-						<span>Структура</span>
-						<span>Регистрация</span>
-					</div>
-					<div class="user-careeer-partners__content-info user-careeer-partners__content-info_last">
-						<span>1</span>
-						<span>?</span>
-						<span>Москва</span>
-						<span>?</span>
-						<span>98</span>
-						<span>$38 300</span>
-						<span>$492 950</span>
-						<span>23.05.2020</span>
-					</div>
-				</div> -->
 			</section>
 
 
@@ -693,37 +614,11 @@
 
 	<script type="text/javascript" src="js/script.js"></script>
 
-
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 	<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 
 	<script type="text/javascript">
-		/*var graph_height = 262;
-
-		function calcGraphHeight() {
-			var height = 0;
-
-			var site_width = $(document).width() + ScroolbarWidth();
-
-			if(site_width < 576) {
-				height = 262;
-			} else if(site_width >= 576 && site_width < 768) {
-				height = 262;
-			} else if(site_width >= 768 && site_width < 992) {
-				height = 262;
-			} else if(site_width >= 992) {
-				height = 262;
-			}
-
-			return height;
-		}
-
-		$(window).resize(function() {
-			graph_height = calcGraphHeight();
-		});
-
-		graph_height = calcGraphHeight();*/
-		
-		// Данные графиков
+		// Данные графиков (заполняется вручную)
 		var ctx0 = document.getElementById('canvas0').getContext('2d');
 		var xAxis0 = ['07.09', '14.09', '21.09', '28.09', '05.10', '12.10', '19.10', '26.10', '02.11', '09.11', '16.11', '23.11'];
 		var yAxis0 = ['250', '0', '440', '670', '270', '0', '0', '0', '0', '0', '0', '0'];
@@ -732,7 +627,7 @@
 		var xAxis1 = ['07.09', '14.09', '21.09', '28.09', '05.10', '12.10', '19.10', '26.10', '02.11', '09.11', '16.11', '23.11'];
 		var yAxis1 = ['0', '0', '0', '0', '0', '0', '260', '470', '320', '0', '0', '0'];
 
-		// Массив с графиками
+		// Массив с графиками (заполняется вручную)
 		var chartMass = [
 			{
 				graph: ctx0,
@@ -745,6 +640,8 @@
 				y: yAxis1,
 			},
 		];
+
+
 
 		// Размеры для графиков
 		var fontSize = 12;
@@ -774,22 +671,6 @@
 			value.gradient = gradient;
 		});
 		
-		/*
-		// Одинаковый градиент для столбцов разной высоты
-
-		var gradients = [];
-
-		yAxis.each( function() {
-			var el_perc = $(this) * graph_height / max;
-			var gradient_n = ctx0.createLinearGradient(0, graph_height, 0, el_perc);
-			gradient_n.addColorStop(0, '#5525BA');
-			gradient_n.addColorStop(0.15, 'rgba(85, 37, 186, 0.35)');
-			gradient_n.addColorStop(0.75, 'rgba(188, 0, 0, 0.7)');
-			gradient_n.addColorStop(1, '#BC0000');
-
-			gradients.add(gradient_n);
-		});*/
-		
 		// Создание графиков
 		$.each(chartMass, function(index, value) {
 			Chart.defaults.global.defaultFontSize = fontSize;
@@ -799,10 +680,6 @@
 			        labels: value.x,
 			        datasets: [{
 			            backgroundColor: value.gradient,
-			            /*backgroundColor: [
-			            	gradient,
-			            	gradient2
-			            ],*/
 			            borderColor: 'rgba(0, 0, 0, 0)',
 	                    borderWidth: 0,
 			            data: value.y,
@@ -821,7 +698,6 @@
 	                    xAxes: [{
 	                    	ticks: {
 	                        	fontColor: 'rgba(255, 255, 255, 0.7)',
-	                        	/*fontSize: 14,*/
 	                        	fontFamily: "'Bebas Neue', 'Arial Narrow', 'Century Gothic', Helvetica, Tahoma, sans-serif",
 	                        },
 	                        gridLines: {
@@ -836,7 +712,6 @@
 	                        type: 'linear',
 	                        ticks: {
 	                        	fontColor: 'rgba(255, 255, 255, 0.7)',
-	                        	/*fontSize: 14,*/
 	                        	fontFamily: "'Bebas Neue', 'Arial Narrow', 'Century Gothic', Helvetica, Tahoma, sans-serif",
 	                            userCallback: function(tick) {
 	                                tick = Math.round(tick);
@@ -851,7 +726,6 @@
 	                            color: 'rgba(255, 255, 255, 0.3)',
 	                            drawBorder: false,
 	                            drawOnChartArea: false,
-	                            /*tickMarkLength: 6,*/
 	                            zeroLineColor: 'rgba(255, 255, 255, 0.3)',
 	                        },
 	                    }],

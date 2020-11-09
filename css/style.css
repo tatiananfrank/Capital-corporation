@@ -344,7 +344,23 @@ body {
 	overflow: hidden;
 }
 
+/* Фиксит z-index'ы для AOS */
+.aos-fix[data-aos].aos-animate {
+	transform: unset;
+}
 
+/*[data-aos] {
+	pointer-events: none;
+}
+
+[data-aos].aos-animate {
+	pointer-events: auto;
+}*/
+
+/*[data-aos],
+[data-aos].aos-animate {
+	transform-style: preserve-3d;
+}*/
 
 
 
