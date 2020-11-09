@@ -173,7 +173,7 @@
 
 .user-nav__dropdown {
 	position: relative;
-	z-index: 50;
+	z-index: 55;
 	width: 162px;
     display: flex;
     flex-direction: column;
