@@ -174,7 +174,8 @@
 .user-nav__dropdown {
 	position: relative;
 	z-index: 55;
-	width: 162px;
+	/*width: 162px;*/
+	width: 259px;
     display: flex;
     flex-direction: column;
     align-items: center;
