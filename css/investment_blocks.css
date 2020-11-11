@@ -541,6 +541,11 @@
 		line-height: 1.176rem; /*20px;*/
 	}
 
+	.investment-block__upgrade-link_active,
+	.investment-block__upgrade-link_active:hover {
+		color: #8c0f0f;
+	}
+
 	.investment-block__info {
 		/*padding: 7px 47.5px 4px;*/
 		padding: 7px 34.5px 4px;
