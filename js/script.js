@@ -78,6 +78,7 @@ $(document).ready(function() {
 
 			// Обновляет карусель
 			$(".owl-carousel").trigger('replace.owl.carousel', html, carouselParams).trigger('refresh.owl.carousel');
+			$(".owl-carousel").trigger('play.owl.autoplay');
 
 			// Подсвечивает активную ссылку
 			link.addClass(activeClass);
