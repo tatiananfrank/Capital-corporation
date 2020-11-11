@@ -697,12 +697,23 @@
 	    padding: 0;
 	    background: transparent;
 	    border-radius: 0;
+
+
+	    width: auto;
+    	min-height: auto;
+	}
+
+	.dropdown-menu-close {
+		display: none;
 	}
 
 	.user-nav__dropdown-menu {
 		padding: 0;
 	    background: transparent;
 	    border-radius: 0;
+
+
+	    min-height: auto;
 	}
 
 	.user-nav__dropdown-menu-item {
