@@ -87,7 +87,9 @@
 
 
 .user-careeer-stats-block__header {
-	padding: 29px 25px 29px;
+	/*padding: 29px 25px 29px;*/
+
+	padding: 43px 25px 43px;
 }	
 
 .user-careeer-block__badge,
@@ -676,6 +678,11 @@
 	.user-careeer-stats-block_big-padding tr:last-child .user-careeer-stats-block__info {
 		/*padding-bottom: 20px;*/
 		padding-bottom: 30px;
+	}
+
+
+	.user-careeer-stats-block__header {
+		padding: 47.5px 25px 48px;
 	}
 
 
