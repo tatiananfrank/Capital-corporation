@@ -135,6 +135,9 @@
 	/*background-repeat: repeat, repeat;
 	background-size: contain, contain;
 	background-position: top -300px center, top center;*/
+	/*background-repeat: repeat-y;
+	background-size: 100% auto;
+    background-position: top 50px center;*/
 }
 
 .triangle {
@@ -412,5 +415,13 @@
 	.document-anim-circle-2 {
 		right: 100px;
     	bottom: -130px;
+	}
+
+
+
+	.documents-back {
+		/*background-repeat: repeat-y;*/
+		background-size: 100% auto;
+	    background-position: top 0 center;
 	}
 }
