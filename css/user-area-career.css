@@ -1035,7 +1035,8 @@
 
 
 	.user-area-partners-content .user-area-career-content__partners {
-		margin-top: 90px;
+		/*margin-top: 90px;*/
+		margin-top: 15px;
 	}
 
 	.user-area-partners-content .anim-circle-4 {
