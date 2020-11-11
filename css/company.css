@@ -1207,10 +1207,17 @@
 		display: none;
 	}
 
-	.company-content {
+	/*.company-content {
 		background-image: url(../img/company_back_blur_desk.png);
 	    background-size: contain;
 	    background-position: top 500px center;
+	    background-repeat: no-repeat;
+	}*/
+
+	.company-page {
+		background-image: url(../img/company_back_blur_desk.png);
+	    background-size: 100% auto;
+	    background-position: top 400px center;
 	    background-repeat: no-repeat;
 	}
 }
