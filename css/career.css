@@ -1,3 +1,7 @@
+.career-body {
+	background-color: #141212;
+}
+
 .career-header .logo {
 	visibility: hidden;
 }
@@ -18,10 +22,19 @@
 .bonuses {}
 
 .office {
-	background-image: linear-gradient(90.13deg, #151414 38.06%, rgba(21, 17, 17, 0.810345) 58.03%, rgba(22, 12, 12, 0.511797) 84.49%, rgba(23, 4, 4, 0) 95.98%),
-					  url("../img/career_background.png");
-	background-repeat: repeat-y;
-	background-position: top center;
+	/*background-image: linear-gradient(90.13deg, #151414 38.06%, rgba(21, 17, 17, 0.810345) 58.03%, rgba(22, 12, 12, 0.511797) 84.49%, rgba(23, 4, 4, 0) 95.98%),
+					  url("../img/career_background_480.png");*/
+	/*background-repeat: repeat-y;*/
+	/*background-position: top center;*/
+
+	/*background-position: bottom left -1000px;*/
+    /*background-size: cover;*/
+
+    background-image: linear-gradient(90.13deg, #1514146b 38.06%, rgb(21 17 17 / 19%) 58.03%, rgb(22 12 12 / 39%) 84.49%, rgba(23, 4, 4, 0) 95.98%), url(../img/career_background_320.png);
+    background-repeat: repeat, no-repeat;
+    background-position: top -15px center;
+    background-size: 100% auto;
+    /*background-size: cover;*/
 }
 
 .career-content__ladder,
@@ -265,6 +278,17 @@
 }
 
 
+@media(min-width: 480px) {
+	.office {
+		background-image: linear-gradient(90.13deg, #1514146b 38.06%, rgb(21 17 17 / 19%) 58.03%, rgb(22 12 12 / 39%) 84.49%, rgba(23, 4, 4, 0) 95.98%), url(../img/career_background_480.png);
+	    background-repeat: repeat, no-repeat;
+	    /*background-position: top -15px center;*/
+	    background-position: top -90px center;
+	    background-size: 100% auto;
+	    /*background-size: cover;*/
+	}
+}
+
 
 
 @media (min-width: 576px) {
@@ -371,6 +395,18 @@
 		animation-iteration-count: infinite;
 		animation-direction: alternate;
 		display: block;
+	}
+
+
+
+	.office {
+		background-image: linear-gradient(90.13deg, #1514146b 38.06%, rgb(21 17 17 / 19%) 58.03%, rgb(22 12 12 / 39%) 84.49%, rgba(23, 4, 4, 0) 95.98%), url(../img/career_background_640.png);
+	    background-repeat: repeat, no-repeat;
+	    /*background-position: top -15px center;*/
+	   /* background-position: top -90px center;*/
+	   background-position: top center;
+	    background-size: 100% auto;
+	    /*background-size: cover;*/
 	}
 }
 
@@ -541,6 +577,18 @@
 		top: -530px;
 	    right: 0;
 	    width: 400px;
+	}
+
+
+
+	.office {
+		background-image: linear-gradient(90.13deg, #1514146b 38.06%, rgb(21 17 17 / 19%) 58.03%, rgb(22 12 12 / 39%) 84.49%, rgba(23, 4, 4, 0) 95.98%), url(../img/career_background_big.png);
+	    background-repeat: repeat, no-repeat;
+	    /*background-position: top -15px center;*/
+	   /* background-position: top -90px center;*/
+	   background-position: top center;
+	    /*background-size: 100% auto;*/
+	    background-size: cover;
 	}
 }
 
