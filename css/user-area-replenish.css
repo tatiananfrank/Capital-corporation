@@ -41,6 +41,12 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
+span.replenish__text,
+span.withdraw__text {
+	margin-bottom: 0px;
+	margin-top: 7px;
+}
+
 .replenish__text-first,
 .withdraw__text-first {
 	align-self: flex-start;
@@ -229,6 +235,13 @@
 		font-size: 1rem;
     	line-height: 1.176rem;
 	}
+
+	span.replenish__text,
+	span.withdraw__text {
+		margin-bottom: 0px;
+		margin-top: 9px;
+	}
+
 
 	.replenish__input,
 	.withdraw__input {
