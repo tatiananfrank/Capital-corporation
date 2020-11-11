@@ -132,6 +132,16 @@
 	text-decoration: none;
 }
 
+.user-history-trans__pagination-link-next,
+.user-history-trans__pagination-link-prev {
+	outline: none;
+}
+
+.user-history-trans__pagination-link-next:hover .user-history-trans__arrow,
+.user-history-trans__pagination-link-prev:hover .user-history-trans__arrow {
+	filter: drop-shadow(0px 0px 3px #fff);
+}
+
 .user-history-trans__pagination-item {
 	/*padding: 5px;*/
     border-radius: 50%;
