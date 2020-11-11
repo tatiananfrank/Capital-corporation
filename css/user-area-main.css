@@ -269,6 +269,10 @@
     opacity: 0;
 }
 
+.user-area-career-content .user-nav__dropdown-menu-border {
+	top: 0;
+}
+
 .no-js .user-nav__dropdown-menu-border {
 	margin-bottom: 40px;
 }
