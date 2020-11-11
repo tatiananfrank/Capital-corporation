@@ -9,6 +9,19 @@ $(document).ready(function() {
 /* END OF Бургер меню */
 
 
+/* ЛК меню */
+
+	/*$('#user-area-menu').on('click', function (event) {
+		$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
+	});
+
+	$('#user-area-menu-close').on('click', function (event) {
+		$('#user-area-menu').attr('aria-expanded') === 'true' ? $('#user-area-menu').attr('aria-expanded', 'false') : $('#user-area-menu').attr('aria-expanded', 'true');
+	});*/
+
+/* END OF ЛК меню */
+
+
 /* Карусель */
 
 	// Параметры для инициализации карусели
