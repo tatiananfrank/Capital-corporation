@@ -80,6 +80,12 @@
 	border-bottom: 2px solid rgba(98, 97, 97, 0.15);
 }
 
+.user-careeer-block__header {
+	/*padding: 30px 25px 22px;*/
+	padding: 25px 25px 12px;
+}
+
+
 .user-careeer-stats-block__header {
 	padding: 29px 25px 29px;
 }	
@@ -108,7 +114,11 @@
 }
 
 .user-careeer-block__number {
-	margin: 25px 0 0;
+	/*margin: 25px 0 0;*/
+
+	/*margin: 30px 0 0;*/
+	margin: 23px 0 0;
+
 	font-weight: 400;
 	font-size: 1.412rem; /*24px;*/
 	line-height: 1.647rem; /*28px;*/
@@ -596,7 +606,10 @@
 	}
 
 	.user-careeer-block__header {
-		padding: 25px 25px 35px;
+		/*padding: 25px 25px 35px;*/
+
+		/*padding: 45px 25px 35px;*/
+		padding: 30px 25px 20px;
 	}
 
 	.user-careeer-block__badge,
@@ -613,6 +626,9 @@
 	.user-careeer-block__number {
 		font-size: 2.118rem; /*36px;*/
 		line-height: 2.471rem; /*42px;*/
+
+		/*margin: 45px 0 0;*/
+		margin: 30px 0 0;
 	}
 
 	.user-careeer-block__info,
