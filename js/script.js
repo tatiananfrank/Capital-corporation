@@ -275,15 +275,24 @@ $(document).ready(function() {
 	$('.my-investment-block__insurance-btn').on('click', function (event) {
 		event.preventDefault();
 
-		$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');
+		/*$(this).attr('aria-expanded') === 'true' ? $(this).attr('aria-expanded', 'false') : $(this).attr('aria-expanded', 'true');*/
+
+		if($(this).attr('aria-expanded') === 'false') {
+			$(this).attr('aria-expanded', 'true');
+			$('#user-confirm-insurance-modal').attr('data-btn', $(this).attr('id')); // передаем id кнопки в модалку
+			$('#user-confirm-insurance-modal').modal('show');
+		} else {
+			$(this).attr('aria-expanded', 'false');
+		}
 	});
 
 	// Модалка по нажатию на переключатель "страховка" внутри инвестиционного портфеля
 	$('#user-confirm-insurance-modal').on('show.bs.modal', function (event) {
-		var button = $(event.relatedTarget);
-		var target_id = button.attr('id'); // Извлекает значение атрибута id у кнопки, которая была нажата, чтоб открыть модалку
+		//var button = $(event.relatedTarget);
+		//var target_id = button.attr('id'); // Извлекает значение атрибута id у кнопки, которая была нажата, чтоб открыть модалку
 
 		var modal = $(this);
+		var target_id = $(this).attr('data-btn');
 
 		modal.find('#confirm-insurance-no').attr('data-target-id', target_id);
 	});
