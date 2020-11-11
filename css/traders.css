@@ -48,9 +48,9 @@
 	outline: none;
 }
 
-.owl-carousel .owl-nav button.owl-next:hover .cases-controls__arrow, .owl-carousel .owl-nav button.owl-prev:hover .cases-controls__arrow {
+/*.owl-carousel .owl-nav button.owl-next:hover .cases-controls__arrow, .owl-carousel .owl-nav button.owl-prev:hover .cases-controls__arrow {
 	filter: drop-shadow(0px 0px 4px #fff);
-}
+}*/
 
 /* END OF owl-carousel */
 
