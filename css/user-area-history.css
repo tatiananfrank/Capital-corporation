@@ -69,7 +69,8 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 55px;
+	/*margin-bottom: 55px;*/
+	margin-bottom: 27.5px;
 }
 
 .user-history-trans__content-titles,
