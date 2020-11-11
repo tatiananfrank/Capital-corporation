@@ -186,8 +186,10 @@
 			<section class="user-nav user-area-content__user-nav">
 				<h2 class="visually-hidden">Навигация по личному кабинету</h2>
 
+				
 				<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
-					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static">
+					<!-- data-toggle="dropdown" -->
+					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-display="static">
 						<span class="user-nav__dropdown-btn">
 							Кабинет
 							<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
@@ -195,6 +197,10 @@
 					</button>
 
 					<div class="dropdown-menu user-nav__dropdown-menu-border" id="user-nav-dropdown-menu">
+						<button class="dropdown-menu-close">
+							<span></span>
+							<span></span>
+						</button>
 						<ul class="user-nav__dropdown-menu" role="listbox">
 							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
 								<a href="user-area-main.html" class="user-nav__dropdown-menu-link" role="option">Кабинет</a>

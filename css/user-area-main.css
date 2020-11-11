@@ -183,7 +183,7 @@
 
 .js .user-nav__dropdown-btn-border {
 	position: relative;
-    z-index: 10;
+    z-index: 60;
 
     display: flex;
     padding: 2px;
@@ -235,17 +235,38 @@
 	vertical-align: middle;
 }
 
-.js .user-nav__dropdown-menu-border {
+/*.js .user-nav__dropdown-menu-border {
 	position: absolute;
 	top: 53px;
 
-	/*z-index: -100;*/
 	z-index: 20;
 	visibility: hidden;
     opacity: 0;
     transform: translate(0, -80px) scaleY(0.4);
     transition: visibility .15s linear, opacity .15s linear, transform .3s ease-out, -webkit-transform .3s ease-out;
     transition-delay: 0s, 0s, 0s;
+}*/
+
+.user-nav__dropdown {
+	position: static;
+}
+
+.js .user-nav__dropdown-menu-border {
+	position: absolute;
+	min-height: 100vh;
+    width: 100vw;
+    top: 64px;
+    left: 0;
+    border-radius: 0;
+    z-index: 3500;
+    padding: 0;
+    /*transition: visibility .15s linear, opacity .15s linear, transform .3s ease-out, -webkit-transform .3s ease-out;
+    transition-delay: 0s, 0s, 0s;*/
+    transition: visibility 0.35s linear 0s, opacity 0.35s linear 0s, transform 0.45s ease-out 0s;
+    transform: translate(0px, -100vh) scale(1, 0.4);
+
+    visibility: hidden;
+    opacity: 0;
 }
 
 .no-js .user-nav__dropdown-menu-border {
@@ -266,7 +287,7 @@
     transform: none;
 }
 
-.user-nav__dropdown-menu {
+/*.user-nav__dropdown-menu {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -277,6 +298,49 @@
 
 	background: #151414;
 	border-radius: 45px;
+}*/
+
+.user-nav__dropdown-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	list-style: none;
+
+	background: #151414;
+
+	min-height: 100vh;
+    padding: 91px 36px;
+    border-radius: 0;
+    width: 100%;
+}
+
+.dropdown-menu-close {
+	border: none;
+	background: transparent;
+
+	position: absolute;
+    top: 45px;
+    right: 29px;
+    padding: 15px 5px;
+    outline: none;
+}
+
+.dropdown-menu-close span {
+	display: block;
+    width: 30px;
+    height: 2px;
+    border-radius: 81.5px;
+    background-color: rgba(188, 0, 0, 0.7);
+}
+
+.dropdown-menu-close span:first-child {
+	transform: translate(0, 2px) rotate(45deg);
+}
+
+.dropdown-menu-close span:last-child {
+	/*transform: translate(0, -2px) rotate(-45deg);*/
+	transform: translate(0, 0) rotate(-45deg);
 }
 
 @media (max-width: 575px) {
