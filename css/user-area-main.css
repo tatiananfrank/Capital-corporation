@@ -281,7 +281,7 @@
 
 @media (max-width: 575px) {
 	.js .user-nav__dropdown-menu-item_active {
-		display: none;
+		/*display: none;*/
 	}
 }
 
