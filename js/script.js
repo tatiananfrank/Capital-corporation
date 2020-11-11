@@ -15,6 +15,10 @@ $(document).ready(function() {
 	var carouselParams = {
 		loop:true,
   		// center:true,
+  		autoplay:true,
+	    autoplayTimeout:2000,
+	    autoplayHoverPause:true,
+	    autoplaySpeed:500,
   		nav:true,
   		navText: [
   					"<span class='visually-hidden'>Назад</span><svg class='cases-controls__arrow' width='44' viewBox='0 0 50 50'><polygon points='5.414,24 11.707,17.707 10.293,16.293 1.586,25 10.293,33.707 11.707,32.293 5.414,26 49,26 49,24'/></svg>",
