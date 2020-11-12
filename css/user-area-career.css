@@ -16,9 +16,12 @@
 	z-index: 55;
 
 	width: 281.69px;
-	padding: 5px;
+	/*padding: 5px;*/
+	padding: 5px 5px 0;
+
 	border-radius: 64px;
-	background: linear-gradient(180deg, #BA0101 0%, #210d0d 60%, rgba(0, 0, 0, 0) 100%);
+	/*background: linear-gradient(180deg, #BA0101 0%, #210d0d 60%, rgba(0, 0, 0, 0) 100%);*/
+	background: linear-gradient(180deg, #BA0101 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 	/*box-shadow: 0 0 70px 0 rgba(10, 9, 9, 0.7);*/
 
 	/*box-shadow: 0 0 20px 0 #212121;*/
@@ -57,7 +60,8 @@
 }
 
 .user-careeer-stats-block {
-	background: linear-gradient(180deg, #616060 0%, #1b1b1b 60%, rgba(0, 0, 0, 0) 100%);
+	/*background: linear-gradient(180deg, #616060 0%, #1b1b1b 60%, rgba(0, 0, 0, 0) 100%);*/
+	background: linear-gradient(180deg, #616060 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .user-careeer-levels__user-careeer-block,
