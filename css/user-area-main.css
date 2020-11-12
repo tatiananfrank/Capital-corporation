@@ -347,6 +347,10 @@
 	transform: translate(0, 0) rotate(-45deg);
 }
 
+.no-js .dropdown-menu-close {
+	display: none;
+}
+
 @media (max-width: 575px) {
 	.js .user-nav__dropdown-menu-item_active {
 		/*display: none;*/
