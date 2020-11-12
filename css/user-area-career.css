@@ -21,7 +21,7 @@
 	background: linear-gradient(180deg, #BA0101 0%, #210d0d 60%, rgba(0, 0, 0, 0) 100%);
 	/*box-shadow: 0 0 70px 0 rgba(10, 9, 9, 0.7);*/
 
-	box-shadow: 0 0 20px 0 #212121;
+	/*box-shadow: 0 0 20px 0 #212121;*/
 }
 
 .user-careeer-block::before {
