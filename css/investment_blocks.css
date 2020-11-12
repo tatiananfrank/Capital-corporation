@@ -73,9 +73,9 @@
 	z-index: 50;
 
 	background: #616060;
-	background: linear-gradient(180deg, #616060 0%, #1b1b1b 60%, #151414 100%);
-	/*box-shadow: 0px 20px 70px 5px rgba(10, 9, 9, 0.7),
-	0px -20px 50px -25px rgba(97, 96, 96, 0.7);*/
+	/*background: linear-gradient(180deg, #616060 0%, #1b1b1b 60%, #151414 100%);*/
+	
+	background: linear-gradient(180deg, #616060 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_start::before {
@@ -87,7 +87,9 @@
 	z-index: 50;
 
 	background: #702AB6;
-	background: linear-gradient(180deg, #702AB6 0%, #1b0f27 60%, #151414 100%);
+	/*background: linear-gradient(180deg, #702AB6 0%, #1b0f27 60%, #151414 100%);*/
+
+	background: linear-gradient(180deg, #702AB6 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_light::before {
@@ -99,7 +101,9 @@
 	z-index: 50;
 
 	background: #BC932B;
-	background: linear-gradient(180deg, #BC932B 0%, #1f1909 60%, #151414 100%);
+	/*background: linear-gradient(180deg, #BC932B 0%, #1f1909 60%, #151414 100%);*/
+
+	background: linear-gradient(180deg, #BC932B 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_medium::before {
@@ -111,7 +115,9 @@
 	z-index: 50;
 
 	background: #B90101;
-	background: linear-gradient(180deg, #B90101 0%, #210f0f 60%, #151414 100%);
+	/*background: linear-gradient(180deg, #B90101 0%, #210f0f 60%, #151414 100%);*/
+	/*background: linear-gradient(180deg, #B90101 0%, rgb(39 34 34 / 90%) 80%, rgb(35 31 31 / 70%) 100%);*/
+	background: linear-gradient(180deg, #B90101 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_red::before {
@@ -123,7 +129,9 @@
 	z-index: 50;
 
 	background: #0C8410;
-	background: linear-gradient(180deg, #0C8410 0%, #091d09 60%, #151414 100%);
+	/*background: linear-gradient(180deg, #0C8410 0%, #091d09 60%, #151414 100%);*/
+
+	background: linear-gradient(180deg, #0C8410 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_trade::before {
@@ -135,7 +143,8 @@
 	z-index: 50;
 
 	background: #000000;
-	background: linear-gradient(180deg, #000000 0%, #0c0c0c 60%, #151414 100%);
+	/*background: linear-gradient(180deg, #000000 0%, #0c0c0c 60%, #151414 100%);*/
+	background: linear-gradient(180deg, #000000 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_black::before {
@@ -147,7 +156,8 @@
 	z-index: 50;
 
 	background: #3101BA;
-	background: linear-gradient(180deg, #3101BA 0%, #120e1d 60%, #151414 100%);
+	/*background: linear-gradient(180deg, #3101BA 0%, #120e1d 60%, #151414 100%);*/
+	background: linear-gradient(180deg, #3101BA 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_invest::before {
@@ -159,7 +169,8 @@
 	z-index: 50;
 
 	background: #D2CEDC;
-	background: linear-gradient(180deg, #D2CEDC 0%, #1f1f21 60%, #151414 100%);
+	/*background: linear-gradient(180deg, #D2CEDC 0%, #1f1f21 60%, #151414 100%);*/
+	background: linear-gradient(180deg, #D2CEDC 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_silver::before {
@@ -171,7 +182,8 @@
 	z-index: 50;
 
 	background: #FB9701;
-	background: linear-gradient(180deg, #FB9701 0%, #271801 60%, #151414 100%);
+	/*background: linear-gradient(180deg, #FB9701 0%, #271801 60%, #151414 100%);*/
+	background: linear-gradient(180deg, #FB9701 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_gold::before {
@@ -183,7 +195,8 @@
 	z-index: 50;
 	
 	background: #01FCCF;
-	background: linear-gradient(180deg, #01FCCF 0%, #002922 60%, #151414 100%);
+	/*background: linear-gradient(180deg, #01FCCF 0%, #002922 60%, #151414 100%);*/
+	background: linear-gradient(180deg, #01FCCF 0%, rgba(39, 34, 34, 0.9) 80%, rgba(29, 29, 29, 1) 100%);
 }
 
 .investment-block_platinum::before {
