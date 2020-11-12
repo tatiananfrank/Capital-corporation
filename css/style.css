@@ -332,7 +332,8 @@ body {
 /* Убирает все фокусы */
 a,
 button,
-input {
+input,
+select {
 	outline: none!important;
 }
 
