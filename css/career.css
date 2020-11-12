@@ -30,11 +30,15 @@
 	/*background-position: bottom left -1000px;*/
     /*background-size: cover;*/
 
-    background-image: linear-gradient(90.13deg, #1514146b 38.06%, rgb(21 17 17 / 19%) 58.03%, rgb(22 12 12 / 39%) 84.49%, rgba(23, 4, 4, 0) 95.98%), url(../img/career_background_320.png);
+
+
+    /*background-image: linear-gradient(90.13deg, #1514146b 38.06%, rgb(21 17 17 / 19%) 58.03%, rgb(22 12 12 / 39%) 84.49%, rgba(23, 4, 4, 0) 95.98%), url(../img/career_background_320.png);*/
     background-repeat: repeat, no-repeat;
     background-position: top -15px center;
-    background-size: 100% auto;
-    /*background-size: cover;*/
+    /*background-size: 100% auto;*/
+
+    background-image: linear-gradient(90.13deg, #1514146b 38.06%, rgb(21 17 17 / 19%) 58.03%, rgb(22 12 12 / 39%) 84.49%, rgba(23, 4, 4, 0) 95.98%), url(../img/career_background_640.png);
+    background-size: 100% 110%;
 }
 
 .career-content__ladder,
