@@ -30,7 +30,7 @@ $(document).ready(function() {
   		// center:true,
   		autoplay:true,
 	    autoplayTimeout:2000,
-	    autoplayHoverPause:true,
+	    // autoplayHoverPause:true,
 	    autoplaySpeed:500,
   		nav:true,
   		navText: [
