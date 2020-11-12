@@ -45,7 +45,9 @@
 
 
 .investment-block {
-	padding: 5px;
+	/*padding: 5px;*/
+	padding: 5px 5px 0;
+
 	width: 271px;
 	border-radius: 64px;
 	/*box-shadow: 0 0 70px 0 rgba(10, 9, 9, 0.7);*/
