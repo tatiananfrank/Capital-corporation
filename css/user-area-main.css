@@ -314,7 +314,10 @@
 	background: #151414;
 
 	min-height: 100vh;
-    padding: 91px 36px;
+
+    /*padding: 91px 36px;*/
+    padding: 140px 36px;
+
     border-radius: 0;
     width: 100%;
 }
