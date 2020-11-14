@@ -380,6 +380,12 @@
 	text-decoration: none;
 }
 
+@media(max-width: 576px) {
+	.user-nav__dropdown-menu-link {
+		font-family: Roboto, Tahoma, Arial, Helvetica, Verdana, sans-serif;
+	}
+}
+
 .user-nav__dropdown-menu-link:hover {
 	color: rgba(255, 255, 255, 1);
 	text-decoration: none;
