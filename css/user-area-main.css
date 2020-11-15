@@ -258,7 +258,7 @@
     top: 64px;
     left: 0;
     border-radius: 0;
-    z-index: 3500;
+    z-index: 100;
     padding: 0;
     /*transition: visibility .15s linear, opacity .15s linear, transform .3s ease-out, -webkit-transform .3s ease-out;
     transition-delay: 0s, 0s, 0s;*/
@@ -267,6 +267,12 @@
 
     visibility: hidden;
     opacity: 0;
+}
+
+@media(max-width: 576px) {
+	.js .user-nav__dropdown-menu-border {
+		z-index: 3500;
+	}
 }
 
 .user-area-career-content .user-nav__dropdown-menu-border {
