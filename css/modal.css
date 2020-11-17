@@ -738,6 +738,8 @@
         height: 60vh;
         max-width: 770px;
         max-height: 770px;
+        min-width: 450px;
+        min-height: 450px;
         /*width: 550px; 
         height: 550px; */
         padding: 20px;
