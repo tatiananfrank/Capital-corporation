@@ -103,6 +103,11 @@
 	    left: -27%;
 	    height: 880px;
 	    width: 150%;
+
+	    width: 104%;
+	    left: -2%;
+	    overflow: hidden;
+
 	    background-image: url(../img/call_for_action_circle_2.png);
 	    background-size: 890px auto;
 	}
