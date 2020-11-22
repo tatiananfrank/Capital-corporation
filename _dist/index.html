@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Capital Corporation</title>
+
+	<script type="text/javascript" src="js/js_test.js"></script>
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body class="index-body">
+	<header class="page-header">
+		<div class="inner-container_large">
+			<div class="logo page-header__logo">
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании" width="181" height="47">
+			</div>
+			
+			<!-- Мобильное меню -->
+			<button class="burger" id="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Нажмите, чтобы открыть или закрыть меню">
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+			</button>
+			<!-- END OF Мобильное меню -->
+
+			<nav class="main-nav" id="main-nav">
+
+				<ul class="menu main-menu">
+					<li class="menu__item"><a class="menu__link menu__link_active">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="sign-in.html" class="menu__link">Личный кабинет</a></li>
+				</ul>
+
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown-2" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown-2" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</nav>
+		</div>
+	</header>
+
+	<main class="main-content">
+		<h1 class="visually-hidden">Компания «Capital corporation»</h1>
+		
+		<section class="logo main-content__logo">
+			<div class="inner-container_large">
+				<h2 class="visually-hidden">Наш логотип</h2>
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании" width="181" height="47">
+			</div>
+		</section>
+		
+		<section class="features main-content__features">
+			<div class="inner-container_large">
+				<h2 class="visually-hidden">Наши преимущества</h2>
+
+				<ul class="features-list">
+					<!-- fade-up data-aos-duration="1500" -->
+					<li class="aos-fix feature features-list__feature" data-aos="zoom-in-up" data-aos-duration="1000">
+						<div class="feature__col">
+							<h3 class="main-heading feature__title">Инвестиции от 17% в месяц на трендовых направлениях</h3>
+							<p class="feature__desc">Сбалансированный портфель на 4 самых доходных сферах</p>
+						</div>
+						<a href="sign-in.html" class="main-link feature__link">Открыть счет</a>
+					</li>
+					<li class="aos-fix feature features-list__feature" data-aos="zoom-in-up" data-aos-duration="1000">
+						<div class="feature__col">
+							<h3 class="main-heading feature__title">Успешный карьерный рост с неограниченными возможностями</h3>
+							<p class="feature__desc">Постройте свою карьеру с международной компанией</p>
+						</div>
+						<a href="sign-in.html" class="main-link feature__link">Открыть счет</a>
+					</li>
+					<li class="aos-fix feature features-list__feature" data-aos="zoom-in-up" data-aos-duration="1000">
+						<div class="feature__col">
+							<h3 class="main-heading feature__title">Воплощайте заветные мечты в мире финансовой свободы</h3>
+							<p class="feature__desc">Бонусная программа для целеустремленных партнеров</p>
+						</div>
+						<a href="sign-in.html" class="main-link feature__link">Открыть счет</a>
+					</li>
+				</ul>
+
+				<div class="anim-circle" aria-hidden="true"></div>
+				<div class="anim-circle" aria-hidden="true"></div>
+				<div class="anim-circle" aria-hidden="true"></div>
+			</div>
+
+			<div class="index-blur-1" aria-hidden="true">
+				<img src="img/blur_red.png" alt="" width="" height="">
+				<img src="img/blur_blue.png" alt="" width="" height="">
+			</div>
+		</section>
+		
+		<section class="profit main-content__profit">
+			<div class="inner-container_small">
+				<!-- fade-up data-aos-duration="1500" -->
+				<h2 class="aos-fix main-heading profit__heading" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-offset="0">На чем мы зарабатываем?</h2>
+
+				<!-- 
+					Атрибут data-content у ссылок "Подробнее" отвечает за изменение контента модалки через js, его значение должно совпадать со значением у картинки и текста, которые будут показаны внутри модалки
+				-->
+				<ul class="profit-list">
+					<!-- fade-up data-aos-duration="1500" -->
+					<li class="aos-fix source profit-list__source" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-offset="0">
+						<h3 class="source__field"><span class="source__perc">35%</span> Блокчейн стартапы (ICO)</h3>
+						<p class="main-heading source__reason">Максимизация прибыли</p>
+						<p class="source__desc">Инвестиции в ведущие и новые ICO. Используется диверсификация, одновременно инвестируется более чем в 17 проверенных ICO</p>
+						<a href="#" class="main-link source__link"
+						   data-toggle="modal" data-target="#profit-modal" data-content="1">Подробнее</a>
+
+						<img class="profit-round-1" src="img/profit_circle_new.png" alt="" width="" height="" aria-hidden="true">
+					</li>
+					<li class="aos-fix source profit-list__source" data-aos="zoom-in-left" data-aos-duration="1200" data-aos-offset="0">
+						<h3 class="source__field"><span class="source__perc">28%</span> IT компании</h3>
+						<p class="main-heading source__reason">Стабильный доход</p>
+						<p class="source__desc">Инвестиции в новые технологии. Обеспечивает стабильный доход и дает попасть в будущее технологического гиганта</p>
+						<a href="#" class="main-link source__link"
+						   data-toggle="modal" data-target="#profit-modal" data-content="2">Подробнее</a>
+
+						<img class="profit-round-2" src="img/profit_circle_new.png" alt="" width="" height="" aria-hidden="true">
+					</li>
+					<li class="aos-fix source profit-list__source" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-offset="0">
+						<h3 class="source__field"><span class="source__perc">20%</span> Инвестиции в IPO</h3>
+						<p class="main-heading source__reason">Максимизация прибыли и стабилизация дохода</p>
+						<p class="source__desc">Покупка акций перспективных компаний позволяет стабильно зарабатывать и совершить скачок в доходности</p>
+						<a href="#" class="main-link source__link"
+						   data-toggle="modal" data-target="#profit-modal" data-content="3">Подробнее</a>
+
+						<img class="profit-round-3" src="img/profit_circle_new.png" alt="" width="" height="" aria-hidden="true">
+					</li>
+					<li class="aos-fix source profit-list__source" data-aos="zoom-in-left" data-aos-duration="1200" data-aos-offset="0">
+						<h3 class="source__field"><span class="source__perc">17%</span> Фьючерсная торговля</h3>
+						<p class="main-heading source__reason">Балансировка и сохранность инвестиций</p>
+						<p class="source__desc">Выкуп обязательств с гарантийной ценой реализации в будущем. Является гарантом сохранения инвестиций</p>
+						<a href="#" class="main-link source__link"
+						   data-toggle="modal" data-target="#profit-modal" data-content="4">Подробнее</a>
+
+						<img class="profit-round-4" src="img/profit_circle_new.png" alt="" width="" height="" aria-hidden="true">
+					</li>
+				</ul>
+
+				<div class="anim-circle" aria-hidden="true"></div>
+				<div class="anim-circle" aria-hidden="true"></div>
+				<div class="anim-circle" aria-hidden="true"></div>
+				<div class="anim-circle" aria-hidden="true"></div>
+				<div class="anim-circle" aria-hidden="true"></div>
+			</div>
+
+			<div class="index-blur-2" aria-hidden="true">
+				<img src="img/blur_red.png" alt="" width="" height="">
+				<img src="img/blur_blue.png" alt="" width="" height="">
+				<img src="img/blur_red.png" alt="" width="" height="">
+				<img src="img/blur_blue.png" alt="" width="" height="">
+
+				<img src="img/blur_red.png" alt="" width="" height=""> 
+				<img src="img/blur_blue.png" alt="" width="" height="">
+			</div>
+		</section>
+		
+		<section class="aos-fix traders main-content__traders" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="-250">
+			<div class="inner-container_medium">
+				<h2 class="main-heading traders__heading">Кейсы наших трейдеров</h2>
+
+				<div class="traders__content">
+
+					<ul class="cases-switcher traders__cases-switcher" aria-controls="cases" aria-label="Выберите модель">
+						<li class="cases-switcher__item">
+							<!-- 
+								Атрибут data-model у ссылок используется для наполнения карусели через js, его значение должно совпадать со значением у списков с кейсами
+							-->
+							<a href="#" class="cases-switcher__link cases-switcher__link_active" data-model="ipo" lang="en" aria-label="Cейчас выбрана">IPO</a>
+						</li>
+						<li class="cases-switcher__item">
+							<a href="#" class="cases-switcher__link" data-model="ico" lang="en">ICO</a>
+						</li>
+					</ul>
+					
+					<div class="cases" id="cases">
+						<!-- Сама карусель -->
+						<ul class="cases-list cases__cases-list owl-carousel" aria-label="Данные по кейсам">
+							<li class="case">
+								<h3 class="visually-hidden">CargoX</h3>
+								<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип «CargoX»" width="132" height="38">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$0,11</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>366%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">ethereum</h3>
+								<img class="case__logo" src="img/ethereum_1x.png" alt="Логотип «ethereum»" width="132" height="37">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$8,06</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$978,42</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>12 139%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">neo</h3>
+								<img class="case__logo" src="img/neo_1x.png" alt="Логотип «neo»" width="111" height="47">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$7,82</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$131,27</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>1 678%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">spectre</h3>
+								<img class="case__logo" src="img/spectre_1x.png" alt="Логотип «spectre»" width="139" height="40">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$3,24</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>10 800%</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+						
+						<!-- 
+							Атрибут data-model используется для наполнения карусели через js, его значение у списков с кейсами должно совпадать со значением у ссылок
+						-->
+						<ul class="cases-list cases__cases-list" data-model="ipo" style="display: none;">
+							<li class="case">
+								<h3 class="visually-hidden">CargoX</h3>
+								<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип «CargoX»" width="132" height="38">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$0,11</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>366%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">ethereum</h3>
+								<img class="case__logo" src="img/ethereum_1x.png" alt="Логотип «ethereum»" width="132" height="37">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$8,06</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$978,42</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>12 139%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">neo</h3>
+								<img class="case__logo" src="img/neo_1x.png" alt="Логотип «neo»" width="111" height="47">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$7,82</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$131,27</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>1 678%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">spectre</h3>
+								<img class="case__logo" src="img/spectre_1x.png" alt="Логотип «spectre»" width="139" height="40">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$3,24</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>10 800%</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+
+						<ul class="cases-list cases__cases-list" data-model="ico" style="display: none;">
+							<li class="case">
+								<h3 class="visually-hidden">CarGurus</h3>
+								<img class="case__logo" src="img/car_gurus_1x.png" alt="Логотип «CarGurus»" width="155" height="29">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>2%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>94%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>87%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">FORESCOUT</h3>
+								<img class="case__logo" src="img/forescout_1x.png" alt="Логотип «FORESCOUT»" width="164" height="27">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>4%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>50%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>47%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">zscaler</h3>
+								<img class="case__logo" src="img/zscaler_1x.png" alt="Логотип «zscaler»" width="162" height="54">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>11%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>155%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>124%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">Roku</h3>
+								<img class="case__logo" src="img/roku_1x.png" alt="Логотип «Roku»" width="113" height="34">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>9%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>281%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>275%</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+
+						<ul class="cases-list cases__cases-list" data-model="all" style="display: none;">
+							<li class="case">
+								<h3 class="visually-hidden">CargoX</h3>
+								<img class="case__logo" src="img/CargoX_1x.png" alt="Логотип «CargoX»" width="132" height="38">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$0,11</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>366%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">ethereum</h3>
+								<img class="case__logo" src="img/ethereum_1x.png" alt="Логотип «ethereum»" width="132" height="37">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$8,06</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$978,42</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>12 139%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">neo</h3>
+								<img class="case__logo" src="img/neo_1x.png" alt="Логотип «neo»" width="111" height="47">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$7,82</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$131,27</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>1 678%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">spectre</h3>
+								<img class="case__logo" src="img/spectre_1x.png" alt="Логотип «spectre»" width="139" height="40">
+								<table class="case__info">
+									<tr>
+										<td>Вход</td>
+										<td>$0,03</td>
+									</tr>
+									<tr>
+										<td>Выход</td>
+										<td>$3,24</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>10 800%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">CarGurus</h3>
+								<img class="case__logo" src="img/car_gurus_1x.png" alt="Логотип «CarGurus»" width="155" height="29">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>2%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>94%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>87%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">FORESCOUT</h3>
+								<img class="case__logo" src="img/forescout_1x.png" alt="Логотип «FORESCOUT»" width="164" height="27">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>4%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>50%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>47%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">zscaler</h3>
+								<img class="case__logo" src="img/zscaler_1x.png" alt="Логотип «zscaler»" width="162" height="54">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>11%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>155%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>124%</td>
+									</tr>
+								</table>
+							</li>
+							<li class="case">
+								<h3 class="visually-hidden">Roku</h3>
+								<img class="case__logo" src="img/roku_1x.png" alt="Логотип «Roku»" width="113" height="34">
+								<table class="case__info">
+									<tr>
+										<td>В 1-й день</td>
+										<td>9%</td>
+									</tr>
+									<tr>
+										<td>За 3 месяца</td>
+										<td>281%</td>
+									</tr>
+									<tr>
+										<td>Прибыль</td>
+										<td>275%</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+					</div>
+
+					<a class="main-link traders__link cases-switcher__link" href="#" data-model="all">Посмотреть все планы</a>
+
+				</div>
+
+				<div class="anim-circle" aria-hidden="true"></div>
+				<div class="anim-circle" aria-hidden="true"></div>
+			</div>
+		</section>
+
+		<section class="aos-fix about main-content__about" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="-700">
+			<div class="inner-container_large">
+				<h2 class="main-heading about__heading">О компании</h2>
+
+				<section class="company-info about__company-info">
+					<h3 class="visually-hidden">Информация</h3>
+
+					<div class="company-info__col">
+						<p class="main-heading company-info__heading">Компания берет свое начало с 2006 года. Зарегистрирована в Китае.</p>
+						<p class="company-info__text">За 13 лет прошла путь от консалтинговой компании до крупнейшего игрока рынка инвестиций со штатом в 150 трейдеров и офисом в одном из крупнейших бизнес центров Гонконга - Three Garden Road. Офис расположен на 49 этаже, где открывается панорамный вид на деловой цент Гонконга.</p>
+						<p class="company-info__text">Получены все лицензии на инвестиционную деятельность, на представление компании в интернете и др. Заключены соглашения с тремя крупнейшими банками Китая.</p>
+					</div>
+
+					<img class="company-info__img" src="img/certificates_1x_cropped.png" alt="Фотографии лицензий" width="402" height="520">
+
+					<div class="company-info__links">
+						<a class="main-link company-info__link" href="company.html">Подробнее</a>
+						<a class="main-link company-info__link" href="documents.html">Документы</a>
+					</div>
+				</section>
+			
+				<section class="partners about__partners">
+						<h3 class="visually-hidden">Партнеры</h3>
+
+						<ul class="partners__list">
+							<li class="partners__item">
+								<!-- 
+									Атрибут data-content у ссылок банков отвечает за изменение контента модалки через js, его значение должно совпадать со значением у текста, который будет показан внутри модалки
+								-->
+								<a href="#" class="partners__item-link" aria-label="Нажмите, чтобы просмотреть подробную информацию по банку" data-toggle="modal" data-target="#bank-modal" data-content="1">
+									<p class="visually-hidden">Industrial and commercial bank of China</p>
+									<img class="partners__img" src="img/Industrial_and_commercial_bank_of_China_1x_cropped.png" alt="Логотип «Industrial and commercial bank of China»" width="370" height="150">
+								</a>
+							</li>
+							<li class="partners__item">
+								<a href="#" class="partners__item-link" aria-label="Нажмите, чтобы просмотреть подробную информацию по банку" data-toggle="modal" data-target="#bank-modal" data-content="2">
+									<p class="visually-hidden">China minsheng bank</p>
+									<img class="partners__img" src="img/China_minsheng_bank_1x_cropped.png" alt="Логотип «China minsheng bank»" width="370" height="150">
+								</a>
+							</li>
+							<li class="partners__item">
+								<a href="#" class="partners__item-link" aria-label="Нажмите, чтобы просмотреть подробную информацию по банку" data-toggle="modal" data-target="#bank-modal" data-content="3">
+									<p class="visually-hidden">China citic bank international</p>
+									<img class="partners__img" src="img/China_citic_bank_international_1x_cropped.png" alt="Логотип «China citic bank international»" width="370" height="150">
+								</a>
+							</li>
+						</ul>
+				</section>
+
+				<img class="index-about-circle" src="img/index_about_circle_blue.png" alt="" width="" height="" aria-hidden="true">
+			</div>
+
+			<div class="index-blur-4" aria-hidden="true">
+				<img src="img/blur_red.png" alt="" width="" height=""> 
+				<img src="img/blur_blue.png" alt="" width="" height="">
+				<img src="img/blur_red.png" alt="" width="" height=""> 
+				<img src="img/blur_blue.png" alt="" width="" height="">
+			</div>
+		</section>
+
+		<section class="aos-fix call-for-action main-content__call-for-action" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="-900">
+			<div class="inner-container_large">
+				<h2 class="main-heading call-for-action__heading">Начните зарабатывать уже сегодня</h2>
+
+				<p class="call-for-action__text">Пройдите простую процедуру регистрации</p>
+
+				<a class="main-link call-for-action__link" href="sign-in.html">Зарегистрироваться</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<div class="inner-container_large">
+			<div class="page-footer__row">
+				<ul class="menu main-menu">
+					<li class="menu__item"><a class="menu__link menu__link_active">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="sign-in.html" class="menu__link">Личный кабинет</a></li>
+				</ul>
+				
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select-2" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select-2" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</div>
+
+			<div class="page-footer__row">
+				<p class="page-footer__copyright">© 2020</p>
+				
+				<ul class="menu">
+					<li class="menu__item"><a href="docs/privacy_policy.html" class="menu__link" target="_blank">Политика конфиденциальности</a></li>
+					<li class="menu__item"><a href="docs/terms_of_use.html" class="menu__link" target="_blank">Пользовательское соглашение</a></li>
+					<li class="menu__item"><a href="docs/customer_agreement.html" class="menu__link" target="_blank">Клиентский договор</a></li>
+					<li class="menu__item"><a href="docs/agency_contract.html" class="menu__link" target="_blank">Агентский договор</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="profit-modal" tabindex="-1" aria-hidden="true">
+		<section class="modal_round modal_squared modal_centered modal-dialog" data-dismiss="modal" aria-label="Вы можете закрыть это окно нажатием на экран или с помощью клавиши escape">
+			<div class="magic-wrapper modal__content">
+				<div class="magic">
+					<h2 class="visually-hidden">Детальная информация</h2>
+					<!-- 
+						Атрибут data-content у картинок и текста отвечает за изменение контента модалки через js, его значение должно совпадать со значением у картинки и текста, которые будут показаны внутри модалки
+					-->
+					<img class="modal__img" src="img/modal-picture_1_cropped.png" alt="Здесь была красивая картинка" width="241" height="223" data-content="1">
+					<p class="modal__text" data-content="1">Инвестиции в перспективные стартапы по разработке платформ для создания приложений на основе блокчейн относятся к самым рискованным видам вложений личного капитала. Однако это реальный шанс для каждого человека, чтобы заработать свой первый миллион за пару лет. Новейшая история знает немало примеров, когда инвесторы покупали токены по минимальной цене размещения в момент проведения ICO и впоследствии получали фантастические прибыли. Например, токен Wings за два года показал доходность 1488% или более 385% годовых. Абсолютный рекордсмен по общей доходности в блокчейн стартапах – это токен NXT. За шесть лет его стоимость выросла на 765 000%. Самые терпеливые ранние инвесторы с железными нервами увеличили свой капитал в 7 600 раз! Мы предлагаем инвестиционные портфели с разумной диверсификацией активов в инновационные блокчейн стартапы (ICO). Наши инвесторы получают прибыль, которая превышает отдачу от консервативных способов вложения капитала.</p>
+
+					<img class="modal__img" src="img/modal-picture_2_cropped.png" alt="Здесь была красивая картинка" width="241" height="223" data-content="2">
+					<p class="modal__text" data-content="2">Современный технологичный сектор превратился в драйвер мировой экономики. Крупнейшие IT-корпорации генерируют глобальные изменения в различных сферах экономики, порождая сильнейшие импульсы для развития отдельных сегментов и отраслей. Они развиваются даже на стагнирующих или падающих рынках. Акции таких компаний обладают огромным потенциалом к долгосрочному росту; инвестиции приносят стабильную прибыль на протяжении многих лет. Например, Facebook, Google и Microsoft на практике реализовали эффект масштаба, когда компания вышла на мировой уровень, а капитализация стали исчисляться десятками миллиардов долларов. Сегодня перед инвесторами открываются захватывающие возможности для вложений в высокие технологии. Наши специалисты включили в инвестиционные портфели акции самых надёжных и быстрорастущих сегментов цифровой экономики. Инвестируйте вместе с нами в успешные IT-компании и делайте долгосрочные вложения в собственное будущее.</p>
+
+					<img class="modal__img" src="img/modal-picture_3_cropped.png" alt="Здесь была красивая картинка" width="241" height="223" data-content="3">
+					<p class="modal__text" data-content="3">Фьючерсная торговля открывает огромные возможности для продвинутых инвесторов. Мгновенное заключение сделок, упрощенная система расчетов, низкие транзакционные издержки привлекают инвесторов с небольшим капиталом. Огромное количество активных участников обеспечивает высокую ликвидность операций с фьючерсными контрактами. Безопасное хеджирование потенциальных рисков защищает позиции от убытков. Прибыль можно получить как при покупке, так и при продаже фьючерсов. Гарантированное исполнение обязательств по контракту делают фьючерсную торговлю одним из самых надежных финансовых инструментов. Наша компания предоставляет возможности для неограниченных заработков при операциях с индексными, товарными, сырьевыми, валютными фьючерсами. Выстраивая собственные торговые стратегии, хеджируя риски по базовым активам, мы извлекаем безрисковую арбитражную прибыль и максимизируем доход от операций с производными инструментами.</p>
+
+					<img class="modal__img" src="img/modal-picture_4_cropped.png" alt="Здесь была красивая картинка" width="241" height="223" data-content="4">
+					<p class="modal__text" data-content="4">Участие в IPO представляет собой быстрый и достаточно доходный способ для приумножения капитала. При умеренном уровне риска у инвесторов с небольшим капиталом появляется возможность принять участие в первичном публичном размещении акций, чтобы выгодно вложиться в перспективные компании. Средняя доходность инвестиций в IPO на порядок выше, чем рост курсовой стоимости акций и многократно превышает проценты по банковскому депозиту. В первые дни и недели после проведения IPO отмечается высокая волатильность акций. В это время инвесторы фиксируют солидную прибыль. По статистике, цена акций после IPO растет и порядка 70-80% инвестиций приносят ожидаемую прибыль. Доходность в одной сделке составляет от 30 до 100%, время сделки до одного месяца. Инвестируйте в IPO вместе с нашей компанией и наслаждайтесь высокой прибылью от краткосрочных вложений в акции с высоким потенциалом к росту.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="modal fade" id="bank-modal" tabindex="-1" aria-hidden="true">
+		<section class="bank-modal modal_round modal_squared modal_centered modal-dialog" data-dismiss="modal" aria-label="Вы можете закрыть это окно нажатием на экран или с помощью клавиши escape">
+			<div class="magic-wrapper modal__content">
+				<div class="magic">
+					<h2 class="visually-hidden">Детальная информация по банку</h2>
+
+					<!-- 
+						Атрибут data-content у текста отвечает за изменение контента модалки через js, его значение должно совпадать со значением у текста, который будет показан внутри модалки
+					-->
+					<p class="modal__text" data-content="1">
+						<span class="modal__title" lang="en">Industrial and Commercial Bank of China (ICBC) — </span>основан 1 января 1984 года. С активами свыше $4 200 млрд. возглавляет десятку крупнейших банков мира. Занимает первое место среди китайских банков, контролирует пятую часть банковского сектора Китая. Предоставляет услуги корпоративного, инвестиционного и частного банкинга: кредитование юридических и физических лиц, расчетно-кассовое обслуживание, управление активами, обмен валют, международные расчеты, денежные переводы, торговля ценными бумагами, экспортный кредит, финансирование инвестиционных проектов, страхование, консалтинг. Industrial and Commercial Bank of China осуществляет активную экспансию на развивающихся рынках. Дочерние компании, совместные предприятия и филиалы действуют в 45 странах мира.<br>Штаб-квартира Industrial and Commercial Bank of China (Asia) расположена в башне ICBC Tower в комплексе офисных зданий Three Garden Road. Контрольный пакет акций принадлежит государству. Промышленный и коммерческий банк Китая обладает собственным капиталом $338 млрд. Рыночная капитализация составляет $262 млрд. По итогам 2018 года получил более $43 млрд. чистой прибыли.
+					</p>
+
+					<p class="modal__text" data-content="2">
+						<span class="modal__title" lang="en">China Minsheng Bank (CMB) — </span>основан 12 января 1996 года. Первый коммерческий банк, принадлежащий негосударственным финансовым структурам. Создан корпорацией China Minsheng Banking Corporation (CMBC) для проведения финансовых операций по всему миру. В 2009 году публично зарегистрирован на Гонконгской фондовой бирже. Minsheng Bank предоставляет услуги кредитования для малого и среднего бизнеса. Основные направления деятельности: корпоративный банкинг, расчетно-кассовый бизнес, финансирование внутренней торговли, международный бизнес и факторинг. Банк открыл более 200 отделений в Китае и свыше 700 филиалов и представительств в других странах мира.<br>
+						China Minsheng Bank разработал собственные финансовые облачные платформы, работает с большими данными, внедрил систему обслуживания клиентов на основе искусственного интеллекта. Банк занимает лидирующие позиции в области высоких технологий, участвует в пилотных проектах по реформированию финансовой системы и продвижению прогрессивных финансовых технологий. По состоянию на конец 2018 года общие активы составили $922 млрд, чистая прибыль достигла $7,7 млрд. В рейтинге 1000 крупнейших банков мира занимает 30-е место.
+					</p>
+					
+					<p class="modal__text" data-content="3">
+						<span class="modal__title" lang="en">China CITIC Bank International — </span>основан в 1998 году. Крупнейший лицензированный коммерческий банк Гонконга. По размеру активов входит в десятку ведущих финансовых компаний Китая. Контролируется финансовой группой CITIC International Financial Holdings, которой принадлежит 75% акций. В число приоритетных направлений деятельности банка входит обслуживание экспортных компаний и промышленных предприятий, услуги корпоративного и частного банкинга, проведение международных расчетов, казначейские услуги, страхование юридических и физических лиц. China CITIC Bank International финансирует коммерческие сделки китайских корпораций на глобальных рынках. Банк занимается благотворительной и образовательной деятельностью.<br>
+						Штаб-квартира China CITIC Bank International расположена в здании Hong Kong Chinese Bank Building. Банк открыл более 30 отделений в Гонконге, работают филиалы в Макао, Сингапуре, Лос-Анджелесе и Нью-Йорке. По итогам 2018 года активы составили $46,5 млрд, чистая прибыль достигла $386 млн, собственный капитал вырос до $4,6 млрд. В 2017 году рейтинговое агентство Moody's Investors Service подтвердило долгосрочный международный рейтинг China CITIC Bank International на уровне «Baa1».
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<script src="js/owl.carousel.min.js"></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script type="text/javascript">
+		/* On scroll animation */
+		AOS.init({
+			once: true,
+		});
+	</script>
+
+	<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>

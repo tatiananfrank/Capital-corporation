@@ -1,0 +1,1009 @@
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.fade {
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+} 
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.modal.fade .modal-dialog {
+    transition: -webkit-transform .3s ease-out;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    -webkit-transform: translate(0,-50px);
+    -ms-transform: translate(0,-50px);
+        transform: translate(0,-50px);
+}
+
+.modal.show .modal-dialog {
+    -webkit-transform: none;
+    -ms-transform: none;
+        transform: none;
+}
+
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(22, 21, 21, 0.9);
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.modal-backdrop.show {
+
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.modal_centered {
+    margin-top: 7.5vh; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7.5vh;
+}
+
+.modal_squared {
+    width: 90vw;
+
+    max-width: 541px;
+
+
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    background: #432324;
+    background: -o-linear-gradient(top, #442424 0%, #2d1f4f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#442424), to(#2d1f4f));
+    background: linear-gradient(180deg, #442424 0%, #2d1f4f 100%);
+}
+
+.modal__content {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.magic-wrapper {}
+
+.magic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.modal__img {
+    width: 171px;
+    height: auto;
+}
+
+.modal__text {
+    margin: 0;
+
+    text-align: center;
+    font-weight: 700;
+
+
+    letter-spacing: 0.03rem;
+}
+
+
+.modal-buy-investment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 52px 13px;
+    width: 286px;
+    background: rgba(30, 27, 27, 0.95);
+    border-radius: 62px;
+    -webkit-box-shadow: 0 0 120px 0 rgba(136, 17, 255, 0.4),
+                0 0 120px 0 rgba(49, 0, 188, 0.4);
+            box-shadow: 0 0 120px 0 rgba(136, 17, 255, 0.4),
+                0 0 120px 0 rgba(49, 0, 188, 0.4);
+}
+
+.modal-buy-investment_centered {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+}
+
+.modal-buy-investment__title {
+    margin: 0;
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 1.412rem; 
+    line-height: 1.647rem; 
+    text-align: center;
+    letter-spacing: 0.07rem;
+}
+
+.modal-buy-investment__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1rem; 
+    line-height: 1.176rem; 
+    text-align: center;
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-buy-investment__text-accent {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+}
+
+.modal-buy-investment__form {
+    width: 100%;
+}
+
+.modal-buy-investment__select::-ms-expand {
+    display: none;
+}
+
+.modal-buy-investment__select {
+    margin-bottom: 26px;
+    padding: 14px 16px;
+    width: 100%;
+
+    background-color: transparent;
+    border: 2px solid rgba(188, 0, 0, 0.5);
+    border-radius: 28px;
+    font: inherit;
+    font-size: 1rem; 
+    line-height: 1.176rem; 
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.7);
+
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../img/select_arrow_cropped.png");
+    background-size: 20px 20px;
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+}
+
+.modal-buy-investment__select option {
+    color: rgba(30, 27, 27, 0.95);
+    background-color: #fff;
+}
+
+.modal-buy-investment__btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+}
+
+.modal-buy-investment__btn {
+    padding: 12.5px 33px;
+    margin-right: 22px;
+    border: 2px solid rgba(188, 0, 0, 0.5);
+    border-radius: 28px;
+    background: transparent;
+
+    font: inherit;
+    font-size: 1rem; 
+    line-height: 1.176rem; 
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-buy-investment__btn:last-child {
+    margin-right: 0;
+}
+
+.user-deposit-success-modal .modal-buy-investment__title {
+    margin-bottom: 20px;
+}
+
+.user-deposit-success-modal .modal-buy-investment__text {
+    margin-bottom: 28px;
+}
+
+
+
+.modal-confirm-insurance,
+.modal-exit {
+    padding: 50px 36px;
+    width: 314px;
+    background: rgba(30, 27, 27, 0.95);
+    border-radius: 69px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0 0 40px 0 #000000;
+            box-shadow: 0 0 40px 0 #000000;
+}
+
+.modal-confirm-insurance_centered,
+.modal-exit_centered {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+}
+
+.modal-confirm-insurance__title,
+.modal-exit__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 1.412rem; 
+    line-height: 1.647rem; 
+    text-align: center;
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-confirm-insurance__text,
+.modal-exit__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1rem; 
+    line-height: 1.176rem; 
+    text-align: center;
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-confirm-insurance__btn-wrapper,
+.modal-exit__btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.modal-confirm-insurance__btn,
+.modal-exit__btn {
+    margin-right: 22px;
+    padding: 10px 30px;
+    border: 2px solid rgba(188, 0, 0, 0.5);
+    border-radius: 28px;
+    background: transparent;
+    font-size: 1rem; 
+    line-height: 1.176rem; 
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-confirm-insurance__btn:last-child,
+.modal-exit__btn:last-child {
+    margin-right: 0;
+}
+
+
+
+
+.bank-modal .modal__text {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+}
+
+.bank-modal .modal__title {
+    font-size: 1.059rem; 
+    line-height: 1.353rem; 
+    font-weight: 900;
+}
+
+.bank-modal {
+
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bank-modal[data-content="1"] {
+    background-image: url("../img/bank1.png");
+}
+
+.bank-modal[data-content="2"] {
+    background-image: url("../img/bank2.png");
+}
+
+.bank-modal[data-content="3"] {
+    background-image: url("../img/bank3.png");
+}
+
+
+
+
+.modal-news {
+    width: 246px;
+    background: rgba(21, 20, 20, 1);
+    border-radius: 83px;
+    padding: 43px 10.5px 46px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.modal-news_centered {
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+
+.modal-news__title {
+    font-weight: 400;
+    font-size: 1.059rem; 
+    line-height: 1.235rem; 
+    text-align: center;
+    letter-spacing: 0.03rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.modal-news__img {
+    width: 100%;
+    height: 84px;
+    border-radius: 17px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.modal-news__img img {
+    width: 100%;
+    height: auto;
+    border-radius: 17px;
+}
+
+.modal-news__title,
+.modal-news__img,
+.modal-news__text {
+    margin-bottom: 24px;
+}
+
+.modal-news__text:last-child {
+    margin-bottom: 0;
+}
+
+.modal-news__text {
+    font-size: 0.824rem;
+    line-height: 0.941rem; 
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    letter-spacing: 0.07rem;
+}
+
+.modal-news__title,
+.modal-news__text {
+    max-width: 199px;
+}
+
+.modal-news[data-shadow="purple"] {
+    -webkit-box-shadow: 0 0 40px 0 rgba(128, 0, 188, 0.6);
+            box-shadow: 0 0 40px 0 rgba(128, 0, 188, 0.6);
+}
+
+.modal-news[data-shadow="red"] {
+    -webkit-box-shadow: 0 0 40px 0 rgba(191, 45, 45, 0.7);
+            box-shadow: 0 0 40px 0 rgba(191, 45, 45, 0.7);
+}
+
+
+
+
+.pay-wallet-data-modal {
+    padding: 39.5px 35.99px 38.5px;
+    width: 296.67px;
+    background: rgba(30, 27, 27, 0.95);
+    border-radius: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0 0 40px 0 #000000;
+            box-shadow: 0 0 40px 0 #000000;
+}
+
+.pay-wallet-data-modal_centered {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+}
+
+.pay-wallet-data-modal__title {
+    font-weight: 400;
+    font-size: 0.941rem; 
+    line-height: 1.118rem; 
+    text-align: center;
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 28px;
+}
+
+.pay-wallet-data-modal__form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.pay-wallet-data-modal__form input {
+    font: inherit;
+    font-size: 0.824rem; 
+    line-height: 0.941rem; 
+    letter-spacing: 0.07rem;
+    color: rgba(255, 255, 255, 0.5);
+
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 19px;
+    background: transparent;
+    padding: 8.5px 16px;
+    margin-bottom: 28px;
+}
+
+.pay-wallet-data-modal__form input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.18);
+}
+
+.pay-wallet-data-modal__form input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.18);
+}
+
+.pay-wallet-data-modal__form input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.18);
+}
+
+.pay-wallet-data-modal__form input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.18);
+}
+
+.pay-wallet-data-modal__form input::placeholder {
+    color: rgba(255, 255, 255, 0.18);
+}
+
+.pay-wallet-data-modal__btn {
+    font: inherit;
+    font-size: 0.941rem; 
+    line-height: 1.118rem; 
+    color: rgba(255, 255, 255, 0.7);
+
+    background: transparent;
+    padding: 7px 27.5px 10px;
+    border: 1.5px solid rgba(188, 0, 0, 0.5);
+    border-radius: 28px;
+}
+
+
+
+
+@media (min-width: 576px) {
+    .modal__img {
+        width: 220px;
+    }
+
+
+
+    .modal-buy-investment {
+        padding: 30px 47px 60px;
+        width: 418px;
+        border-radius: 83px;
+    }
+
+    .modal-buy-investment_centered {
+        margin-top: 18vh;
+        margin-bottom: 18vh;
+    }
+
+    .modal-buy-investment__text {
+        font-size: 1.059rem; 
+        line-height: 1.235rem; 
+    }
+
+    .modal-buy-investment__select {
+        font-size: 1.059rem; 
+        line-height: 1.235rem; 
+    }
+
+    .modal-buy-investment__btn {
+        font-size: 1.059rem; 
+        line-height: 1.235rem; 
+    }
+
+    .user-deposit-success-modal {
+        padding: 64px 47px 57px;
+    }
+
+
+
+    .modal-confirm-insurance,
+    .modal-exit {
+        padding: 54px 50px;
+        width: 431px;
+        border-radius: 83px;
+    }
+
+    .modal-confirm-insurance_centered,
+    .modal-exit_centered {
+        margin-top: 18vh;
+        margin-bottom: 18vh;
+    }
+
+    .modal-confirm-insurance__title,
+    .modal-exit__title {
+        margin-bottom: 21px;
+    }
+
+    .modal-confirm-insurance__text,
+    .modal-exit__text {
+        margin-bottom: 27px;
+        font-size: 1.059rem; 
+        line-height: 1.235rem; 
+    }
+
+    .modal-confirm-insurance__btn,
+    .modal-exit__btn {
+        font-size: 1.059rem; 
+        line-height: 1.235rem; 
+    }
+
+
+
+    .bank-modal .modal__text {
+        font-size: 0.824rem; 
+        line-height: 1.059rem; 
+    }
+
+    .bank-modal {
+        padding: 115px 40px;
+    }
+
+
+
+
+
+    .modal-news_centered {
+        margin-top: 18vh;
+        margin-bottom: 18vh;
+    }
+
+    .modal-news {
+        width: 75%;
+        padding: 45.29px 7.6px 33.29px;
+    }
+
+    .modal-news__title {
+        font-size: 1.412rem;
+        line-height: 1.647rem;
+    }
+
+    .modal-news__text {
+        font-size: 1.059rem;
+        line-height: 1.235rem;
+    }
+
+    .modal-news__title, .modal-news__text {
+        max-width: 75%;
+    }
+
+    .modal-news__img {
+        height: 157px;
+        max-width: 440px;
+    }
+
+    .modal-news[data-shadow="purple"] {
+        -webkit-box-shadow: 0 0 50px 0 rgba(128, 0, 188, 0.6);
+                box-shadow: 0 0 50px 0 rgba(128, 0, 188, 0.6);
+    }
+
+    .modal-news[data-shadow="red"] {
+        -webkit-box-shadow: 0 0 50px 0 rgba(191, 45, 45, 0.7);
+                box-shadow: 0 0 50px 0 rgba(191, 45, 45, 0.7);
+    }
+
+
+
+
+    .pay-wallet-data-modal_centered {
+        margin-top: 18vh;
+        margin-bottom: 18vh;
+    }
+
+    .pay-wallet-data-modal {
+        width: 546.24px;
+        border-radius: 69px;
+        padding: 40.66px 87.12px;
+    }
+
+    .pay-wallet-data-modal__title {
+        font-size: 1.412rem; 
+        line-height: 1.647rem; 
+        margin-bottom: 30px;
+    }
+
+    .pay-wallet-data-modal__form input {
+        font-size: 1.059rem; 
+        line-height: 1.235rem; 
+
+        padding: 14px 16.5px;
+        margin-bottom: 30px;
+    }
+
+    .pay-wallet-data-modal__btn {
+        font-size: 1.412rem; 
+        line-height: 1.647rem; 
+
+        padding: 8px 45px 12px;
+        border: 2px solid rgba(188, 0, 0, 0.5);
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .modal_centered {
+        margin-bottom: auto;
+    }
+
+    .modal_round {
+        width: 60vh;
+        height: 60vh;
+        max-width: 770px;
+        max-height: 770px;
+        min-width: 450px;
+        min-height: 450px;
+
+        padding: 20px;
+        border: none;
+        border-radius: 50%;
+
+        background: #4f0c12;
+        background: -o-linear-gradient(bottom, #1e0f39 24%, #4e0c13 90%);
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(24%, #1e0f39), color-stop(90%, #4e0c13));
+        background: linear-gradient(0deg, #1e0f39 24%, #4e0c13 90%);
+        -webkit-box-shadow: 0 0 80px 15px rgba(255, 255, 255, 0.5);
+                box-shadow: 0 0 80px 15px rgba(255, 255, 255, 0.5);
+    }
+
+    .modal__content {
+        border-radius: 50%;
+
+        background-color: #151414;
+    }
+
+    .magic-wrapper {
+        overflow-x: hidden;
+
+        position: relative;
+    }
+
+    .magic {
+
+        overflow-y: auto;
+
+
+        padding-left: 30px;
+        padding-right: 30px;
+        
+        width: 112%;
+        height: 100%;
+        
+        position: absolute;
+        top: 0;
+        left: -6%;
+
+    }
+
+    .modal__img {
+        margin-top: 50px;
+    }
+
+    .modal__text {
+        padding: 0 10% 25%;
+
+        font-size: 0.882rem; 
+        line-height: 1.118rem; 
+    }
+
+
+    .modal-buy-investment {
+        width: 581px;
+        padding: 47px 86px 71px;
+    }
+
+    .modal-buy-investment__title {
+        font-size: 2.118rem; 
+        line-height: 2.471rem; 
+    }
+
+    .modal-buy-investment__text {
+        font-size: 1.412rem; 
+        line-height: 1.647rem; 
+    }
+
+    .modal-buy-investment__text:nth-of-type(2) {
+        margin-bottom: 73px;
+    }
+
+    .modal-buy-investment__select {
+        font-size: 1.412rem; 
+        line-height: 1.647rem; 
+        margin-bottom: 60px;
+    }
+
+    .modal-buy-investment__btn {
+        padding: 12.5px 47px;
+        font-size: 1.412rem; 
+        line-height: 1.647rem; 
+    }
+
+    .user-deposit-success-modal {
+        padding: 63px 47px 59px;
+    }
+
+    .user-deposit-success-modal .modal-buy-investment__text {
+        margin-bottom: 43px;
+    }
+
+    .user-deposit-success-modal .modal-buy-investment__btn {
+        padding: 12.5px 98px;
+    }
+
+
+    .modal-confirm-insurance,
+    .modal-exit {
+        width: 581.51px;
+        padding: 54px 67.5px 60px;
+    }
+
+    .modal-confirm-insurance__title,
+    .modal-exit__title {
+        margin-bottom: 26px;
+        font-size: 2.118rem; 
+        line-height: 2.471rem; 
+    }
+
+    .modal-confirm-insurance__text,
+    .modal-exit__text {
+        margin-bottom: 40px;
+        font-size: 1.412rem; 
+        line-height: 1.647rem; 
+    }
+
+    .modal-confirm-insurance__btn,
+    .modal-exit__btn {
+        padding: 12px 47.5px;
+        font-size: 1.412rem; 
+        line-height: 1.647rem; 
+    }
+
+
+
+
+    .bank-modal .magic-wrapper {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bank-modal[data-content="1"] .magic-wrapper {
+        background-image: url("../img/bank1_round.png");
+    }
+
+    .bank-modal[data-content="2"] .magic-wrapper {
+        background-image: url("../img/bank2_round.png");
+    }
+
+    .bank-modal[data-content="3"] .magic-wrapper {
+        background-image: url("../img/bank3_round.png");
+    }
+
+    .bank-modal[data-content="1"],
+    .bank-modal[data-content="2"],
+    .bank-modal[data-content="3"] {
+        background-image: none;
+        background: #4f0c12;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(24%, #1e0f39), color-stop(90%, #4e0c13));
+        background: -o-linear-gradient(bottom, #1e0f39 24%, #4e0c13 90%);
+        background: linear-gradient(0deg, #1e0f39 24%, #4e0c13 90%);
+    }
+
+    .bank-modal .modal__text {
+        padding-top: 25%;
+        
+        text-align: center;
+        font-size: 1rem; 
+        line-height: 1.235rem; 
+    }
+
+    .bank-modal .modal__title {
+        font-size: 1.412rem; 
+        line-height: 1.765rem; 
+    }
+
+
+
+    
+
+}
+
+@media (min-width: 992px) {
+    .modal_round {
+        width: 85vh;
+        height: 85vh;
+    }
+
+    .modal__text {
+        font-size: inherit; 
+        line-height: 1.235rem; 
+    }
+
+
+
+
+    .modal-news {
+        width: 885.88px;
+        padding: 58.76px 67.15px 109.76px;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .modal-news__title {
+        font-size: 2.118rem; 
+        line-height: 2.471rem; 
+        text-align: left;
+    }
+
+    .modal-news__title,
+    .modal-news__img {
+        margin-bottom: 33px;
+    }
+
+    .modal-news__text {
+        margin-bottom: 20px;
+    }
+
+    .modal-news__img {
+        width: 569px;
+        height: 214px;
+        max-width: none;
+        border-radius: 41px;
+    }
+
+    .modal-news[data-shadow="purple"] .modal-news__img {
+        -webkit-box-shadow: 0 0 15px 8px rgba(128, 0, 188, 0.2);
+                box-shadow: 0 0 15px 8px rgba(128, 0, 188, 0.2);
+    }
+
+    .modal-news[data-shadow="red"] .modal-news__img {
+        -webkit-box-shadow: 0 0 15px 8px rgba(191, 45, 45, 0.3);
+                box-shadow: 0 0 15px 8px rgba(191, 45, 45, 0.3);
+    }
+
+    .modal-news__img img {
+        border-radius: 41px;
+    }
+
+    .modal-news__title, .modal-news__text {
+        max-width: none;
+    }
+
+    .modal-news__text {
+        text-align: left;
+        font-size: 1rem; 
+        line-height: 1.176rem; 
+    }
+}

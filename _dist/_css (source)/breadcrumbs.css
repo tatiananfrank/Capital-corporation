@@ -1,0 +1,117 @@
+.breadcrumbs {
+}
+
+.career-content__breadcrumbs,
+.documents-content__breadcrumbs,
+.contacts-content__breadcrumbs,
+.company-content__breadcrumbs {
+  margin-top: -75px;
+  margin-bottom: 45px;
+}
+
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  padding-right: 12.5px;
+
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.471rem;
+  line-height: 0.529rem; 
+}
+
+.breadcrumbs__item::after {
+  position: absolute;
+  right: 4px;
+
+  content: ">";
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.breadcrumbs__link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs__link_active {
+  cursor: default;
+}
+
+@media (min-width: 576px) {
+  .breadcrumbs {
+    padding: 0 50px;
+  }
+
+  .career-content__breadcrumbs,
+  .documents-content__breadcrumbs,
+  .contacts-content__breadcrumbs,
+  .company-content__breadcrumbs {
+    margin-top: -157px;
+    margin-bottom: 60px;
+  }
+
+  .breadcrumbs__item {
+    padding-right: 14.5px;
+
+    font-size: 0.706rem;
+    line-height: 0.824rem; 
+  }
+}
+
+@media (min-width: 768px) {
+  .breadcrumbs {
+    padding: 0 60px;
+  }
+
+  .career-content__breadcrumbs,
+  .documents-content__breadcrumbs,
+  .contacts-content__breadcrumbs,
+  .company-content__breadcrumbs {
+    margin-top: -166px;
+    margin-bottom: 65px;
+  }
+
+  .breadcrumbs__item {
+    padding-right: 16.5px;
+
+    font-size: 0.824rem; 
+    line-height: 0.941rem; 
+  }
+}
+
+@media (min-width: 992px) {
+  .breadcrumbs {
+    padding: 0;
+  }
+
+  .breadcrumbs .inner-container_large {
+    width: 80%;
+    max-width: 1050px;
+  }
+
+  .career-content__breadcrumbs,
+  .documents-content__breadcrumbs,
+  .contacts-content__breadcrumbs,
+  .company-content__breadcrumbs {
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+}

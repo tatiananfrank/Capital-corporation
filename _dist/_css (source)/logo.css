@@ -1,0 +1,42 @@
+
+.logo {
+}
+
+.main-content__logo {
+  margin-bottom: 115px; 
+}
+
+.logo__img {
+  display: block;
+
+  width: 95px; 
+  height: 24px; 
+}
+
+.main-content .logo {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .logo__img {
+    width: 128px; 
+    height: 33px; 
+  }
+}
+
+@media (min-width: 768px) {
+  .logo__img {
+    width: 181px; 
+    height: 47px; 
+  }
+}
+
+@media (min-width: 992px) {
+  .page-header .logo {
+    display: none;
+  }
+
+  .main-content .logo {
+    display: block;
+  }
+}

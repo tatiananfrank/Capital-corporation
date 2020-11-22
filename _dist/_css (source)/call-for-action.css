@@ -1,0 +1,118 @@
+.call-for-action {
+  text-align: center;
+}
+
+.main-content__call-for-action {
+  margin-bottom: 30px;
+}
+
+.call-for-action .main-heading {
+}
+
+.call-for-action__heading {
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 127px;
+}
+
+.call-for-action__text {
+  margin: 0;
+  margin-bottom: 100px;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 147px;
+
+  letter-spacing: 0.03rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.call-for-action .main-link {
+}
+
+.call-for-action__link {
+}
+
+.call-for-action .inner-container_large {
+  position: relative;
+}
+
+.call-for-action .inner-container_large::before {
+  position: absolute;
+  top: -135px;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/call_for_action_circle_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 390px auto;
+  content: "";
+  z-index: -20;
+}
+
+.call-for-action__link {
+  position: relative;
+  z-index: 20;
+}
+
+@media (min-width: 576px) {
+  .main-content__call-for-action {
+    margin-bottom: 160px;
+  }
+
+  .call-for-action__heading {
+    margin-bottom: 7px;
+
+    width: 380px;
+  }
+
+  .call-for-action__text {
+    margin-bottom: 195px;
+
+    width: 267px;
+  }
+
+  .call-for-action .inner-container_large::before {
+    top: -276px;
+    height: 760px;
+    width: 700px;
+    left: -59px;
+    background-size: 750px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content__call-for-action {
+    margin-bottom: 275px;
+  }
+
+  .call-for-action__heading {
+    width: 390px;
+  }
+
+  .call-for-action .inner-container_large::before {
+    top: -297px;
+    left: -27%;
+    height: 880px;
+    width: 150%;
+
+    width: 104%;
+    left: -2%;
+    overflow: hidden;
+
+    background-image: url(../img/call_for_action_circle_2.png);
+    background-size: 890px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .call-for-action .inner-container_large::before {
+    top: -312px;
+    left: -25.8%;
+    height: 880px;
+    width: 150%;
+    background-image: url(../img/call_for_action_circle_3.png);
+    background-size: 1470px auto;
+  }
+}

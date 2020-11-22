@@ -1,8 +1,4 @@
-tasks.txt
 
-Capital Corporation.docx
-~$pital Corporation.docx
-~WRL0005.tmp
 
 css/variables.scss
 css/header_old.css
@@ -20,3 +16,6 @@ bootstrap/js/
 
 header_footer.html
 *.psd
+
+
+debug.log

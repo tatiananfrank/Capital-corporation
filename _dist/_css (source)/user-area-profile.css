@@ -1,0 +1,749 @@
+
+.user-area-profile-content {
+  position: relative;
+  overflow: hidden;
+  padding-top: 200px;
+  margin-top: -200px;
+}
+
+.user-profile-personal-data {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.user-profile-change-password {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.user-area-profile-content__personal-data,
+.user-area-profile-content__change-password {
+  margin-bottom: 39px;
+}
+
+.user-profile-pay-systems {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.user-area-profile-content__pay-systems {
+  margin-bottom: 111px;
+}
+
+.user-profile-personal-data,
+.user-profile-change-password,
+.user-profile-pay-systems {
+  position: relative;
+  width: 200%;
+  padding: 36.6px 40px 35.5px;
+  background: rgba(21, 20, 20, 0.95);
+  border-radius: 83px;
+}
+
+.user-profile-personal-data::before,
+.user-profile-change-password::before,
+.user-profile-pay-systems::before {
+  position: absolute;
+  z-index: -20;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  background-image: url(../img/user-careeer-partners-blur.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  content: "";
+}
+
+.user-profile-personal-data::before {
+  height: 135%;
+  top: -15%;
+}
+
+.user-profile-change-password::before {
+  height: 100%;
+  top: 0;
+  -webkit-transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.user-profile-pay-systems::before {
+  height: 155%;
+  top: -30%;
+}
+
+.user-profile-personal-data__form,
+.user-profile-change-password__form,
+.user-profile-pay-systems__form {
+  margin: 0 auto;
+  width: 55%;
+  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user-profile-personal-data__title,
+.user-profile-change-password__title,
+.user-profile-pay-systems__title {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 1.059rem; 
+  line-height: 1.235rem; 
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.user-profile-personal-data__form label,
+.user-profile-change-password__form label,
+.user-profile-pay-systems__form label {
+  margin-bottom: 9px;
+  font-size: 0.824rem; 
+  line-height: 0.941rem; 
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.user-profile-personal-data__form input,
+.user-profile-change-password__form input,
+.user-profile-pay-systems__form input {
+  z-index: 20;
+  position: relative;
+  font: inherit;
+  font-size: 0.824rem; 
+  line-height: 0.941rem; 
+  color: rgba(255, 255, 255, 0.5);
+
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 5.5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  background: transparent;
+}
+
+.user-profile-personal-data__ref-link-block {
+  position: relative;
+}
+
+.user-profile-personal-data__ref-link-block input {
+  padding-right: 80px;
+}
+
+.user-profile-personal-data__copy-ref-link {
+  z-index: 22;
+  position: absolute;
+  top: 9.5px;
+  right: 10px;
+  font-size: 0.588rem; 
+  line-height: 0.647rem; 
+  color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+.user-profile-personal-data__copy-ref-link:hover {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.user-profile-personal-data__form button,
+.user-profile-change-password__form button {
+  z-index: 20;
+  position: relative;
+  font: inherit;
+  font-size: 0.824rem; 
+  line-height: 0.941rem; 
+  letter-spacing: 0.07rem;
+  color: rgba(255, 255, 255, 0.5);
+
+  background: transparent;
+  border: 1.5px solid rgba(188, 0, 0, 0.5);
+  border-radius: 28px;
+
+  padding: 10px 27px 11px;
+  margin-top: 14px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.user-profile-pay-systems__form {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.user-profile-pay-systems__title {
+  width: 100%;
+}
+
+.user-profile-pay-systems__pay-var {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+.user-profile-pay-systems__pay-img {
+  z-index: 20;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(196, 196, 196, 0.3);
+  cursor: pointer;
+}
+
+.user-profile-pay-systems__pay-img span {
+  font-size: 1.765rem; 
+  line-height: 2.059rem; 
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.user-profile-pay-systems__pay-img img {
+  display: none;
+}
+
+.user-profile-pay-systems__pay-title {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 0.824rem; 
+  line-height: 0.941rem; 
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.user-profile-pay-systems__pay-var_active
+  .user-profile-pay-systems__pay-img
+  span {
+  display: none;
+}
+
+.user-profile-pay-systems__pay-var_active
+  .user-profile-pay-systems__pay-img
+  img {
+  display: block;
+}
+
+.user-area-profile-content .anim-circle {
+  position: absolute;
+
+  border-radius: 50%;
+  border: 2px solid rgba(210, 207, 221, 0.3);
+
+  -webkit-animation-name: resize;
+
+          animation-name: resize;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.user-area-profile-content .anim-circle-1 {
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  top: 900px;
+  left: -60px;
+}
+
+.user-area-profile-content .anim-circle-2 {
+  width: 27px;
+  height: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  top: 930px;
+  left: 340px;
+
+  -webkit-animation-duration: 2.2s;
+
+          animation-duration: 2.2s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.user-area-profile-content .anim-circle-3 {
+  width: 71px;
+  height: 71px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  top: 1000px;
+  left: 280px;
+
+  -webkit-animation-duration: 1.8s;
+
+          animation-duration: 1.8s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.user-area-profile-content .anim-circle-4 {
+  width: 71px;
+  height: 71px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  top: 1380px;
+  left: 280px;
+}
+
+.user-area-profile-content .anim-circle-5 {
+  width: 27px;
+  height: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  bottom: 117px;
+  left: 100px;
+
+  -webkit-animation-duration: 2.2s;
+
+          animation-duration: 2.2s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.user-area-profile-content .anim-circle-6 {
+  width: 71px;
+  height: 71px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  bottom: 10px;
+  left: 10px;
+}
+
+@media (min-width: 576px) {
+  .user-area-profile-content .user-nav {
+    margin-top: 0;
+  }
+
+  .user-area-profile-content__personal-data {
+    margin-top: 40px;
+  }
+
+  .user-area-profile-content__personal-data,
+  .user-area-profile-content__change-password {
+    margin-bottom: 65px;
+  }
+
+  .user-area-profile-content__pay-systems {
+    margin-bottom: 126px;
+  }
+
+  .user-profile-personal-data,
+  .user-profile-change-password,
+  .user-profile-pay-systems {
+    padding: 42px 40px 65px;
+  }
+
+  .user-profile-personal-data__form,
+  .user-profile-change-password__form,
+  .user-profile-pay-systems__form {
+    width: 100%;
+    max-width: none;
+  }
+
+  .user-profile-personal-data__title,
+  .user-profile-change-password__title,
+  .user-profile-pay-systems__title {
+    margin-top: 7px;
+    margin-bottom: 53px;
+    font-size: 1.412rem; 
+    line-height: 1.647rem; 
+    text-align: left;
+  }
+
+  .user-profile-personal-data__form label,
+  .user-profile-change-password__form label,
+  .user-profile-pay-systems__form label {
+    margin-bottom: 19px;
+    font-size: 1.059rem; 
+    line-height: 1.235rem; 
+  }
+
+  .user-profile-personal-data__form input,
+  .user-profile-change-password__form input,
+  .user-profile-pay-systems__form input {
+    margin-bottom: 40px;
+    padding: 9.5px 15px;
+    border-radius: 11px;
+    font-size: 1.059rem;
+    line-height: 1.235rem; 
+  }
+
+  .user-profile-personal-data__copy-ref-link {
+    top: 13.5px;
+    right: 20px;
+
+    font-size: 0.824rem;
+    line-height: 0.941rem; 
+  }
+
+  .user-profile-personal-data__ref-link-block input {
+    padding-right: 125px;
+    margin: 0;
+  }
+
+  .user-profile-personal-data__form button,
+  .user-profile-change-password__form button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 0;
+    border: 2px solid rgba(188, 0, 0, 0.5);
+    padding: 10.5px 33px 11.5px;
+    font-size: 1rem; 
+    line-height: 1.176rem; 
+  }
+
+  .user-profile-pay-systems__pay-title {
+    font-size: 1rem; 
+    line-height: 1.176rem; 
+  }
+
+  .user-profile-pay-systems__pay-var {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .user-profile-pay-systems__pay-var:nth-of-type(4),
+  .user-profile-pay-systems__pay-var:nth-of-type(5),
+  .user-profile-pay-systems__pay-var:nth-of-type(6),
+  .user-profile-pay-systems__pay-var:nth-of-type(7),
+  .user-profile-pay-systems__pay-var:nth-of-type(8) {
+    margin-top: 40px;
+  }
+
+  .user-profile-change-password__form,
+  .user-profile-personal-data__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .user-profile-change-password__col,
+  .user-profile-personal-data__col {
+    width: 47%;
+  }
+
+  .user-profile-change-password__col:nth-of-type(1),
+  .user-profile-personal-data__col:nth-of-type(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .user-profile-change-password__col:nth-of-type(2),
+  .user-profile-personal-data__col:nth-of-type(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .user-profile-personal-data__ref-link-label {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .user-profile-personal-data__ref-link-block {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    width: 100%;
+  }
+
+  .user-profile-change-password__col input {
+    margin: 0;
+  }
+
+  .user-profile-personal-data::before {
+    height: 120%;
+    top: -10%;
+  }
+
+  .user-profile-change-password::before {
+    height: 130%;
+    top: -15%;
+  }
+
+  .user-profile-pay-systems::before {
+    height: 128%;
+    top: -14%;
+  }
+
+  .user-area-profile-content .anim-circle-1 {
+    width: 357px;
+    height: 357px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    top: 180px;
+    left: -200px;
+  }
+
+  .user-area-profile-content .anim-circle-2 {
+    z-index: -20;
+    width: 112px;
+    height: 112px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    top: 520px;
+    left: 80px;
+  }
+
+  .user-area-profile-content .anim-circle-3 {
+    z-index: -20;
+    width: 118px;
+    height: 118px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    top: 150px;
+    left: 510px;
+  }
+
+  .user-area-profile-content .anim-circle-4 {
+    z-index: -20;
+    width: 233px;
+    height: 233px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    top: 1010px;
+    left: 400px;
+  }
+
+  .user-area-profile-content .anim-circle-5,
+  .user-area-profile-content .anim-circle-6 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .user-area-profile-content .user-nav {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: unset;
+  }
+
+  .user-area-profile-content__personal-data {
+    margin-top: 95px;
+  }
+
+  .user-area-profile-content__pay-systems {
+    margin-bottom: 149px;
+  }
+
+  .user-profile-personal-data,
+  .user-profile-change-password,
+  .user-profile-pay-systems {
+    padding: 42px 80px 73px;
+  }
+
+  .user-profile-change-password__col,
+  .user-profile-personal-data__col {
+    width: 45%;
+  }
+
+  .user-profile-pay-systems__pay-var:nth-of-type(4) {
+    margin-top: 0;
+  }
+
+  .user-profile-change-password__title {
+    width: 65%;
+  }
+
+  .user-profile-personal-data::before {
+    height: 122%;
+    top: -11%;
+  }
+
+  .user-profile-change-password::before {
+    height: 132%;
+    top: -16%;
+  }
+
+  .user-profile-pay-systems::before {
+    height: 138%;
+    top: -19%;
+  }
+
+  .user-area-profile-content .anim-circle-1 {
+    top: 170px;
+    left: -50px;
+  }
+
+  .user-area-profile-content .anim-circle-2 {
+    width: 158px;
+    height: 158px;
+    top: 460px;
+    left: 180px;
+  }
+
+  .user-area-profile-content .anim-circle-3 {
+    top: 190px;
+    left: 690px;
+  }
+
+  .user-area-profile-content .anim-circle-4 {
+    top: 1090px;
+    left: 580px;
+  }
+}
+
+@media (min-width: 850px) {
+  .user-profile-personal-data,
+  .user-profile-change-password,
+  .user-profile-pay-systems {
+    padding: 42px 110px 73px;
+  }
+}
+
+@media (min-width: 930px) {
+  .user-profile-personal-data,
+  .user-profile-change-password,
+  .user-profile-pay-systems {
+    padding: 42px 145px 73px;
+  }
+}
+
+@media (min-width: 992px) {
+  .user-area-profile-content .user-nav {
+    width: 98%;
+  }
+
+  .user-profile-personal-data,
+  .user-profile-change-password,
+  .user-profile-pay-systems {
+    width: 75%;
+  }
+
+  .user-area-profile-content__personal-data,
+  .user-area-profile-content__change-password,
+  .user-area-profile-content__pay-systems {
+    margin-left: auto;
+  }
+
+  .user-profile-personal-data__title,
+  .user-profile-change-password__title {
+    width: 50%;
+  }
+
+  .user-profile-pay-systems__pay-var:nth-of-type(4) {
+    margin-top: 40px;
+  }
+
+  .user-area-profile-content__personal-data {
+    margin-top: -370px;
+  }
+
+  .user-area-profile-content__personal-data,
+  .user-area-profile-content__change-password {
+    margin-bottom: 72px;
+  }
+
+  .user-area-profile-content__pay-systems {
+    margin-bottom: 188px;
+  }
+
+  .user-profile-personal-data::before {
+    width: 118%;
+    left: -9%;
+  }
+
+  .user-profile-change-password::before {
+    width: 116%;
+    left: -8%;
+  }
+
+  .user-profile-pay-systems::before {
+    width: 116%;
+    left: -8%;
+  }
+
+  .user-area-profile-content .anim-circle-1 {
+    z-index: -20;
+    top: 670px;
+    left: 0px;
+    width: 268px;
+    height: 268px;
+    border: 2px solid rgba(49, 0, 188, 0.6);
+    -webkit-box-shadow: 0 0 15px 0 rgba(49, 0, 188, 0.6),
+      inset 0 0 15px 0 rgba(49, 0, 188, 0.6);
+            box-shadow: 0 0 15px 0 rgba(49, 0, 188, 0.6),
+      inset 0 0 15px 0 rgba(49, 0, 188, 0.6);
+  }
+
+  .user-area-profile-content .anim-circle-2 {
+    width: 210px;
+    height: 210px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    top: 880px;
+    left: -30px;
+  }
+
+  .user-area-profile-content .anim-circle-3 {
+    top: 280px;
+    left: auto;
+    right: 30px;
+  }
+
+  .user-area-profile-content .anim-circle-4 {
+    top: 850px;
+    left: auto;
+    right: 0;
+    width: 278px;
+    height: 278px;
+    border: 2px solid #401059;
+    -webkit-box-shadow: 0 0 15px 0 #401059, inset 0 0 15px 0 #401059;
+            box-shadow: 0 0 15px 0 #401059, inset 0 0 15px 0 #401059;
+  }
+
+  .user-area-profile-content .anim-circle-5 {
+    z-index: -20;
+    display: block;
+    width: 158px;
+    height: 158px;
+    bottom: 357px;
+    left: 300px;
+  }
+}
+
+@media (min-width: 1116px) {
+  .user-profile-personal-data__title,
+  .user-profile-change-password__title {
+    width: auto;
+  }
+
+  .user-profile-pay-systems__pay-var:nth-of-type(4) {
+    margin-top: 0;
+  }
+}

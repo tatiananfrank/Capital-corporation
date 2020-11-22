@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Capital Corporation - Личный кабинет</title>
+
+	<script type="text/javascript" src="js/js_test.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<header class="page-header user-area-header">
+		<div class="inner-container_large">
+			<div class="logo page-header__logo">
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании" width="181" height="47">
+			</div>
+			
+			<!-- Мобильное меню -->
+			<button class="burger" id="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Нажмите, чтобы открыть или закрыть меню">
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+			</button>
+			<!-- END OF Мобильное меню -->
+
+			<nav class="main-nav" id="main-nav">
+
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="user-area-main.html" class="menu__link">Личный кабинет</a></li>
+				</ul>
+
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown-2" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown-2" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</nav>
+		</div>
+	</header>
+
+	<main class="user-area-content user-area-main-content">
+		
+		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя</h1>
+
+		<div class="breadcrumbs contacts-content__breadcrumbs">
+			<div class="inner-container_large">
+				<p class="visually-hidden">Цепочка навигации</p>
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link" aria-label="Вернуться на главную">Главная</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_active">Личный кабинет</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_active" aria-label="Вы находитесь здесь">Кабинет</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="inner-container_large">
+			<section class="user-data user-area-content__user-data">
+				<h2 class="visually-hidden">Данные пользователя</h2>
+
+				<p class="user-data__name">Имя Фамилия</p>
+
+				<!-- Атрибут data-perc="58%" служит для заполнения полосы прогресса на указанный процент -->
+				<p class="user-data__level">
+					Уровень
+					<span class="user-data__level-progress-line" aria-hidden="true">
+						<span class="user-data__level-progress-value" data-perc="58%"></span>
+					</span>
+					$25 000
+				</p>
+
+				<p class="user-data__balance">
+					<span class="user-data__balance-title">Баланс</span>
+					$200
+				</p>
+
+				<a href="user-area-replenish.html" class="user-data__btn">Пополнить</a>
+				<a href="user-area-withdraw.html" class="user-data__btn">Вывести</a>
+			</section>
+
+			<section class="user-stats user-area-content__user-stats">
+				<h2 class="visually-hidden">Статистика пользователя</h2>
+
+				<ul class="user-stats__list">
+					<li class="user-stats__item">Пополнено <span class="user-stats__price">$0</span></li>
+					<li class="user-stats__item">Инвестировано <span class="user-stats__price">$0</span></li>
+					<li class="user-stats__item">Заработано <span class="user-stats__price">$0</span></li>
+					<li class="user-stats__item">Выведено <span class="user-stats__price">$0</span></li>
+				</ul>
+			</section>
+
+			<section class="user-nav user-area-content__user-nav">
+				<h2 class="visually-hidden">Навигация по личному кабинету</h2>
+
+				
+				<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
+					<!-- data-toggle="dropdown" -->
+					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static" id="user-area-menu">
+						<span class="user-nav__dropdown-btn">
+							Кабинет
+							<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
+						</span>
+					</button>
+
+					<div class="dropdown-menu user-nav__dropdown-menu-border" id="user-nav-dropdown-menu">
+						<button class="dropdown-menu-close" id="user-area-menu-close">
+							<span></span>
+							<span></span>
+						</button>
+						<ul class="user-nav__dropdown-menu" role="listbox">
+							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
+								<a href="user-area-main.html" class="user-nav__dropdown-menu-link" role="option">Кабинет</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-career.html" class="user-nav__dropdown-menu-link" role="option">Карьера</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-history.html" class="user-nav__dropdown-menu-link" role="option">История</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-profile.html" class="user-nav__dropdown-menu-link" role="option">Профиль</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="#" data-toggle="modal" data-target="#user-exit-modal" class="user-nav__dropdown-menu-link" role="option">Выход</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="user-investment user-area-content__user-investment">
+				<div class="user-investment__wrap-block"></div>
+
+				<h2 class="user-investment__title">Инвестиционные портфели</h2>
+
+				<div class="user-investment__wrap-block"></div>
+
+				<div class="investment-block investment-block_start" aria-label="Портфель старт">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$50</p>
+									<!-- Атрибут data-investment_block используется для передачи названия портфеля в модалку
+									Атрибут data-investment-price используется для передачи стоимости портфеля в модалку -->
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Start" data-investment-price="50,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">204%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$102</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">17%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="user-investment__wrap-block"></div>
+
+					<div class="investment-block investment-block_light" aria-label="Портфель лайт">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$150</p>
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Light" data-investment-price="150,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">216%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$324</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">18%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="investment-block investment-block_medium" aria-label="Портфель медиум">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$450</p>
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Medium" data-investment-price="450,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">228%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$1 026</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">19%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="investment-block investment-block_red" aria-label="Портфель рэд">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$1 350</p>
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Red" data-investment-price="1 350,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">240%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$3 240</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">20%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="investment-block investment-block_trade" aria-label="Портфель трэйд">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$4 050</p>
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Trade" data-investment-price="4 050,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">252%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$10 206</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">21%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="investment-block investment-block_black" aria-label="Портфель блэк">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$12 150</p>
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Black" data-investment-price="12 150,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">264%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$32 076</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">22%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="investment-block investment-block_invest" aria-label="Портфель инвест">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$36 450</p>
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Invest" data-investment-price="36 450,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">264%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$100 602</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">22%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="investment-block investment-block_silver" aria-label="Портфель сильвер">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$72 900</p>
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Silver" data-investment-price="72 900,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">288%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$209 600</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">24%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="investment-block investment-block_gold" aria-label="Портфель голд">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$145 800</p>
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Gold" data-investment-price="145 800,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">300%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$437 400</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">25%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="investment-block investment-block_platinum" aria-label="Портфель платинум">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$291 600</p>
+									<a class="investment-block__header-buy-link" href="#" data-toggle="modal" data-target="#user-buy-modal" data-investment_block="Platinum" data-investment-price="291 600,00 USD">Купить</a>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">365</p> дней работы
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">312%</p> проценты в год
+								</td>
+							</tr>
+							<tr>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">$909 792</p> чистой прибыли
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">26%</p> проценты в месяц
+								</td>
+							</tr>
+						</table>
+					</div>
+			</section>
+
+			<section class="user-my-investment user-area-content__user-my-investment">
+				<h2 class="user-my-investment__title">Мои портфели</h2>
+
+				<div class="my-investment-block investment-block investment-block_trade" aria-label="Портфель трэйд">
+						<table class="investment-block__table">
+							<tr>
+								<th class="investment-block__header" colspan="2">
+									<p class="investment-block__header-number">$4 050</p>
+								</th>
+							</tr>
+							<tr class="investment-block__row">
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">11.10.2020</p> дата создания
+								</td>
+								<td class="investment-block__info">
+									<p class="investment-block__info-number">11.10.2021</p> дата закрытия
+								</td>
+							</tr>
+							<tr>
+								<td class="my-investment-block__info" colspan="2">
+									<p class="my-investment-block__profit">
+										чистая прибыль
+										<span class="my-investment-block__profit-number">$2 / $102</span>
+										<!-- Атрибут data-perc="58%" служит для заполнения полосы прогресса на указанный процент -->
+										<span class="my-investment-block__profit-progress-line" aria-hidden="true">
+											<span class="my-investment-block__profit-progress-value" data-perc="16.7%"></span>
+										</span>
+									</p>
+
+									<div class="my-investment-block__controls">
+										<a class="investment-block__header-buy-link investment-block__upgrade-link" href="user-area-upgrade.html">Апгрейд</a>
+
+										<div class="my-investment-block__insurance">
+											<!-- data-toggle="modal" data-target="#user-confirm-insurance-modal" -->
+											<button class="my-investment-block__insurance-btn" type="button" aria-label="Включить или отключить страховку" aria-expanded="false" id="insurance-btn-5">
+												<span class="my-investment-block__insurance-btn-switch" aria-hidden="true"></span>
+											</button>
+											<span class="" aria-hidden="true">Страховка</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+				<div class="my-investment-block investment-block investment-block_red" aria-label="Портфель рэд">
+					<table class="investment-block__table">
+						<tr>
+							<th class="investment-block__header" colspan="2">
+								<p class="investment-block__header-number">$1 350</p>
+							</th>
+						</tr>
+						<tr class="investment-block__row">
+							<td class="investment-block__info">
+								<p class="investment-block__info-number">11.10.2020</p> дата создания
+							</td>
+							<td class="investment-block__info">
+								<p class="investment-block__info-number">11.10.2021</p> дата закрытия
+							</td>
+						</tr>
+						<tr>
+							<td class="my-investment-block__info" colspan="2">
+								<p class="my-investment-block__profit">
+									чистая прибыль
+									<span class="my-investment-block__profit-number">$2 / $102</span>
+
+									<span class="my-investment-block__profit-progress-line" aria-hidden="true">
+										<span class="my-investment-block__profit-progress-value" data-perc="16.7%"></span>
+									</span>
+								</p>
+
+								<div class="my-investment-block__controls">
+									<a class="investment-block__header-buy-link investment-block__upgrade-link investment-block__upgrade-link_active" href="user-area-upgrade.html">Апгрейд</a>
+
+									<div class="my-investment-block__insurance">
+										<!-- data-toggle="modal" data-target="#user-confirm-insurance-modal" -->
+										<button class="my-investment-block__insurance-btn" type="button" aria-label="Включить или отключить страховку" aria-expanded="true" id="insurance-btn-4">
+											<span class="my-investment-block__insurance-btn-switch" aria-hidden="true"></span>
+										</button> 
+										<span class="" aria-hidden="true">Страховка</span>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="user-investment__wrap-block"></div>
+			</section>
+
+			<div class="anim-circle anim-circle-1" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-2" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-3" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-4" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-5" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-6" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-7" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-8" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-9" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-10" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-11" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-12" aria-hidden="true"></div>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="inner-container_large">
+			<div class="page-footer__row">
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+					<li class="menu__item"><a href="user-area-news.html" class="menu__link">Новости</a></li>
+					<li class="menu__item"><a href="user-area-ads.html" class="menu__link">Реклама</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="user-area-main.html" class="menu__link">Личный кабинет</a></li>
+				</ul>
+				
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select-2" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select-2" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</div>
+
+			<div class="page-footer__row">
+				<p class="page-footer__copyright">© 2020</p>
+				
+				<ul class="menu">
+					<li class="menu__item"><a href="docs/privacy_policy.html" class="menu__link" target="_blank">Политика конфиденциальности</a></li>
+					<li class="menu__item"><a href="docs/terms_of_use.html" class="menu__link" target="_blank">Пользовательское соглашение</a></li>
+					<li class="menu__item"><a href="docs/customer_agreement.html" class="menu__link" target="_blank">Клиентский договор</a></li>
+					<li class="menu__item"><a href="docs/agency_contract.html" class="menu__link" target="_blank">Агентский договор</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модалка "купить инвестиционный портфель" -->
+	<div class="modal fade" id="user-buy-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-buy-investment modal-buy-investment_centered modal-dialog">
+			<h2 class="modal-buy-investment__title">Покупка</h2>
+			<p class="modal-buy-investment__text">Портфель <span class="modal-buy-investment__text-accent" id="investment-block-title">Start</span><br>Выберите кошелек для покупки</p>
+
+			<form class="modal-buy-investment__form" action="" method="">
+				<label class="visually-hidden" for="modal-buy-investment-select">Выбрать кошелек</label>
+				<select class="modal-buy-investment__select" name="" id="modal-buy-investment-select">
+					<option value="dollar" selected="true">Payeer</option>
+					<option value="perfect">Perfect</option>
+					<option value="bitcoin">Bitcoin</option>
+					<option value="ethereum">Ethereum</option>
+				</select>
+
+				<p class="modal-buy-investment__text">К оплате <span class="modal-buy-investment__text-accent" id="investment-block-price">50,00 USD</span><br>Пожалуйста подтвердите</p>
+
+				<div class="modal-buy-investment__btn-wrapper">
+					<button class="modal-buy-investment__btn" type="submit">Да</button>
+					<button class="modal-buy-investment__btn" type="button" data-dismiss="modal">Нет</button>
+				</div>
+			</form>
+		</section>
+	</div>
+
+	<!-- Модалка-уведомление "депозит создан успешно" -->
+	<div class="modal fade" id="user-deposit-success-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-buy-investment user-deposit-success-modal modal-buy-investment_centered modal-dialog">
+			<h2 class="modal-buy-investment__title">Уведомление</h2>
+			<p class="modal-buy-investment__text">Депозит создан успешно</p>
+			<button class="modal-buy-investment__btn" type="button" data-dismiss="modal">ОК</button>
+		</section>
+	</div>
+
+	<!-- Модалка "подтвердите активацию услуги страхование" -->
+	<div class="modal fade" id="user-confirm-insurance-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-confirm-insurance modal-confirm-insurance_centered modal-dialog">
+			<h2 class="modal-confirm-insurance__title">Предупреждение</h2>
+			<p class="modal-confirm-insurance__text">Подтвердите активацию услуги «страхование»</p>
+			<form action="" method="">
+			<div class="modal-confirm-insurance__btn-wrapper">
+				<button class="modal-confirm-insurance__btn" type="submit">Да</button>
+				<button class="modal-confirm-insurance__btn" id="confirm-insurance-no" type="button" data-target-id="" data-dismiss="modal">Нет</button>
+			</div>
+			</form>
+		</section>
+	</div>
+
+	<!-- Модалка "выход" -->
+	<div class="modal fade" id="user-exit-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-exit modal-exit_centered modal-dialog">
+			<h2 class="modal-exit__title">Выход</h2>
+			<p class="modal-exit__text">Вы действительно собираетесь выйти?</p>
+			<form class="modal-exit__btn-wrapper" action="" method="">
+				<button class="modal-exit__btn" type="submit">Да</button>
+				<button class="modal-exit__btn" type="button" data-dismiss="modal">Нет</button>
+			</form>
+		</section>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>

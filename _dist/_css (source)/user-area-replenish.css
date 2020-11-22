@@ -1,0 +1,539 @@
+
+.replenish,
+.withdraw {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  margin-bottom: 100px;
+  padding: 50px 42px 53px;
+  width: 286px;
+  background: #151414;
+  border-radius: 61px;
+  -webkit-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.8), 0 0 100px 0 rgba(82, 35, 215, 0.7),
+    0 0 100px 0 rgba(204, 26, 26, 0.5);
+          box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.8), 0 0 100px 0 rgba(82, 35, 215, 0.7),
+    0 0 100px 0 rgba(204, 26, 26, 0.5);
+}
+
+.replenish__form,
+.withdraw__form {
+  width: 100%;
+}
+
+.replenish__title,
+.withdraw__title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 1.059rem;
+  line-height: 1.235rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.replenish__main-group,
+.withdraw__main-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.replenish__text,
+.withdraw__text {
+  display: block;
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 0.824rem;
+  line-height: 0.941rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+span.replenish__text,
+span.withdraw__text {
+  margin-bottom: 0px;
+  margin-top: 7px;
+}
+
+.replenish__text-first,
+.withdraw__text-first {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.replenish__input,
+.withdraw__input {
+  padding: 7.5px 19px 9px;
+  margin-bottom: 28px;
+  width: 100%;
+
+  font: inherit;
+  font-size: 0.824rem;
+  line-height: 0.941rem;
+  color: rgba(255, 255, 255, 0.5);
+
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 28px;
+}
+
+.replenish__input::-webkit-input-placeholder, .withdraw__input::-webkit-input-placeholder {
+  font-size: 0.824rem;
+  line-height: 0.941rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.replenish__input::-moz-placeholder, .withdraw__input::-moz-placeholder {
+  font-size: 0.824rem;
+  line-height: 0.941rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.replenish__input:-ms-input-placeholder, .withdraw__input:-ms-input-placeholder {
+  font-size: 0.824rem;
+  line-height: 0.941rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.replenish__input::-ms-input-placeholder, .withdraw__input::-ms-input-placeholder {
+  font-size: 0.824rem;
+  line-height: 0.941rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.replenish__input::placeholder,
+.withdraw__input::placeholder {
+  font-size: 0.824rem;
+  line-height: 0.941rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.replenish__group,
+.withdraw__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.replenish__pay-var,
+.withdraw__pay-var {
+  width: 50%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.replenish__pay-img,
+.withdraw__pay-img {
+  cursor: pointer;
+}
+
+.replenish__pay-var input[type="radio"]:checked + .replenish__pay-img,
+.withdraw__pay-var input[type="radio"]:checked + .withdraw__pay-img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 25px 5px rgba(188, 0, 0, 0.83);
+          box-shadow: 0 0 25px 5px rgba(188, 0, 0, 0.83);
+}
+
+.replenish__pay-var input[type="radio"]:focus + .replenish__pay-img,
+.withdraw__pay-var input[type="radio"]:focus + .withdraw__pay-img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 25px 5px rgba(188, 0, 0, 0.83);
+          box-shadow: 0 0 25px 5px rgba(188, 0, 0, 0.83);
+}
+
+.replenish__btn,
+.withdraw__btn {
+  margin: 0;
+  margin-top: 8px;
+  padding: 7.5px 19px 9px;
+  border: 1.5px solid rgba(188, 0, 0, 0.5);
+  border-radius: 28px;
+  background: transparent;
+  font-weight: 400;
+  font-size: 0.824rem;
+  line-height: 0.941rem;
+  letter-spacing: 0.07rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.user-area-replenish-content,
+.user-area-withdraw-content {
+  position: relative;
+  overflow: hidden;
+  padding-top: 200px;
+  margin-top: -200px;
+}
+
+.user-area-replenish-content .anim-circle,
+.user-area-withdraw-content .anim-circle {
+  position: absolute;
+
+  border-radius: 50%;
+  border: 2px solid rgba(210, 207, 221, 0.3);
+
+  -webkit-animation-name: resize;
+
+          animation-name: resize;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+
+
+.user-area-replenish-content .anim-circle-1,
+.user-area-withdraw-content .anim-circle-1 {
+  z-index: -20;
+  width: 105px;
+  height: 105px;
+  border: 2px solid rgba(250, 150, 1, 0.5);
+  top: 430px;
+  left: 40px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(250, 150, 1, 0.5),
+    inset 0 0 15px 0 rgba(250, 150, 1, 0.5);
+          box-shadow: 0 0 15px 0 rgba(250, 150, 1, 0.5),
+    inset 0 0 15px 0 rgba(250, 150, 1, 0.5);
+}
+
+.user-area-replenish-content .anim-circle-2,
+.user-area-withdraw-content .anim-circle-2 {
+  z-index: -20;
+  width: 145px;
+  height: 145px;
+  border: 2px solid #732BBB;
+  top: 690px;
+  left: 260px;
+  -webkit-box-shadow: 0 0 15px 0 #732BBB, inset 0 0 15px 0 #732BBB;
+          box-shadow: 0 0 15px 0 #732BBB, inset 0 0 15px 0 #732BBB;
+}
+
+.user-area-replenish-content .anim-circle-3,
+.user-area-withdraw-content .anim-circle-3 {
+  z-index: -20;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(210, 207, 221, 0.3);
+  top: 1090px;
+  left: 230px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(210, 207, 221, 0.3),
+    inset 0 0 15px 0 rgba(210, 207, 221, 0.3);
+          box-shadow: 0 0 15px 0 rgba(210, 207, 221, 0.3),
+    inset 0 0 15px 0 rgba(210, 207, 221, 0.3);
+}
+
+.user-area-replenish-content .anim-circle-4,
+.user-area-withdraw-content .anim-circle-4 {
+  z-index: -20;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.07);
+  top: 1090px;
+  left: 160px;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.user-area-replenish-content .anim-circle-5,
+.user-area-withdraw-content .anim-circle-5,
+.user-area-replenish-content .anim-circle-6,
+.user-area-withdraw-content .anim-circle-6 {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .replenish,
+  .withdraw {
+    margin-bottom: 150px;
+    width: 366px;
+    padding: 53.5px 46px 59.5px;
+    border-radius: 88px;
+  }
+
+  .replenish__title,
+  .withdraw__title {
+    margin-bottom: 41px;
+    font-size: 1.412rem; 
+    line-height: 1.647rem; 
+  }
+
+  .replenish__text,
+  .withdraw__text {
+    margin-bottom: 9px;
+    font-size: 1rem;
+    line-height: 1.176rem;
+  }
+
+  span.replenish__text,
+  span.withdraw__text {
+    margin-bottom: 0px;
+    margin-top: 9px;
+  }
+
+  .replenish__input,
+  .withdraw__input {
+    margin-bottom: 41px;
+    padding: 12px 23px 13px;
+    border-width: 2px;
+    font-size: 1rem;
+    line-height: 1.176rem;
+  }
+
+  .replenish__input::-webkit-input-placeholder, .withdraw__input::-webkit-input-placeholder {
+    font-size: 1rem;
+    line-height: 1.176rem;
+  }
+
+  .replenish__input::-moz-placeholder, .withdraw__input::-moz-placeholder {
+    font-size: 1rem;
+    line-height: 1.176rem;
+  }
+
+  .replenish__input:-ms-input-placeholder, .withdraw__input:-ms-input-placeholder {
+    font-size: 1rem;
+    line-height: 1.176rem;
+  }
+
+  .replenish__input::-ms-input-placeholder, .withdraw__input::-ms-input-placeholder {
+    font-size: 1rem;
+    line-height: 1.176rem;
+  }
+
+  .replenish__input::placeholder,
+  .withdraw__input::placeholder {
+    font-size: 1rem;
+    line-height: 1.176rem;
+  }
+
+  .replenish__btn,
+  .withdraw__btn {
+    margin-top: 21px;
+    padding: 12px 43px 13px;
+    border-width: 2px;
+    font-size: 1rem;
+    line-height: 1.176rem;
+  }
+
+  .user-area-replenish-content .anim-circle-1,
+  .user-area-withdraw-content .anim-circle-1 {
+    display: none;
+  }
+
+  .user-area-replenish-content .anim-circle-2,
+  .user-area-withdraw-content .anim-circle-2 {
+    top: 630px;
+    left: 410px;
+  }
+
+  .user-area-replenish-content .anim-circle-3,
+  .user-area-withdraw-content .anim-circle-3 {
+    top: 1030px;
+    left: 50px;
+  }
+
+  .user-area-replenish-content .anim-circle-4,
+  .user-area-withdraw-content .anim-circle-4 {
+    width: 300px;
+    height: 300px;
+    top: 1030px;
+    left: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  .replenish,
+  .withdraw {
+    margin-left: auto;
+    margin-top: -390px;
+    margin-right: 80px;
+  }
+
+  .user-area-replenish-content .anim-circle-1,
+  .user-area-withdraw-content .anim-circle-1 {
+    display: block;
+    top: 1630px;
+    left: 540px;
+  }
+
+  .user-area-replenish-content .anim-circle-2,
+  .user-area-withdraw-content .anim-circle-2 {
+    left: 610px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 835px) {
+  .replenish,
+  .withdraw {
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .user-area-replenish-content,
+  .user-area-withdraw-content {
+    background-image: url("../img/user-area-main-blur.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .replenish,
+  .withdraw {
+    margin-top: -720px;
+    margin-bottom: 300px;
+  }
+
+  .user-area-replenish-content .anim-circle-1,
+  .user-area-withdraw-content .anim-circle-1 {
+    width: 145px;
+    height: 145px;
+    top: 670px;
+    left: 40px;
+  }
+
+  .user-area-replenish-content .anim-circle-2,
+  .user-area-withdraw-content .anim-circle-2 {
+    width: 235px;
+    height: 235px;
+    top: 770px;
+    left: 1120px;
+  }
+
+  .user-area-replenish-content .anim-circle-3,
+  .user-area-withdraw-content .anim-circle-3 {
+    width: 235px;
+    height: 235px;
+    top: 1030px;
+    left: 430px;
+  }
+
+  .user-area-replenish-content .anim-circle-4,
+  .user-area-withdraw-content .anim-circle-4 {
+    -webkit-animation-duration: 2.2s;
+            animation-duration: 2.2s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+    width: 145px;
+    height: 145px;
+    top: 910px;
+    left: 1270px;
+  }
+
+  .user-area-replenish-content .anim-circle-5,
+  .user-area-withdraw-content .anim-circle-5 {
+    display: block;
+    width: 470px;
+    height: 470px;
+    z-index: -20;
+    top: 900px;
+    left: 900px;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+
+  .user-area-replenish-content .anim-circle-6,
+  .user-area-withdraw-content .anim-circle-6 {
+    -webkit-animation-duration: 2.2s;
+            animation-duration: 2.2s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+    display: block;
+    width: 145px;
+    height: 145px;
+    top: 1100px;
+    left: 600px;
+  }
+}
+
+@media (min-width: 1225px) {
+  .replenish,
+  .withdraw {
+    margin-left: auto;
+    margin-top: -900px;
+    margin-right: 0;
+    margin-bottom: 600px;
+  }
+
+  .replenish,
+  .withdraw {
+    width: 726.95px;
+    padding: 70.5px 67.17px 49px;
+  }
+
+  .replenish__main-group,
+  .withdraw__main-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .replenish__text-first,
+  .withdraw__text-first {
+    width: 100%;
+  }
+
+  .replenish__input,
+  .replenish__group,
+  .withdraw__input,
+  .withdraw__group {
+    width: 63%;
+  }
+
+  .replenish__group,
+  .withdraw__group {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .replenish__pay-var,
+  .withdraw__pay-var {
+    width: auto;
+    min-width: 80px;
+  }
+
+  .replenish__btn,
+  .withdraw__btn {
+    margin: 0;
+    margin-left: auto;
+  }
+}

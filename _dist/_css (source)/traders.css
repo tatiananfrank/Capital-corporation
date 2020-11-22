@@ -1,0 +1,502 @@
+
+.cases-list.owl-carousel {
+  display: none;
+}
+
+.cases-list.owl-carousel:first-child {
+  display: block;
+}
+
+.owl-carousel .owl-item img {
+  width: auto; 
+}
+
+.owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  margin-top: -65px;
+}
+
+@media (min-width: 576px) {
+  .owl-nav {
+    margin-top: -70px;
+  }
+}
+
+.owl-prev,
+.owl-next {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.owl-next .cases-controls__arrow {
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  outline: none;
+}
+
+
+
+.traders {
+}
+
+.main-content__traders {
+  margin-bottom: 200px;
+}
+
+.traders .main-heading {
+}
+
+.traders__heading {
+  margin-bottom: 30px;
+}
+
+.traders__content {
+}
+
+.cases-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.traders__cases-switcher {
+  margin-bottom: 85px;
+}
+
+.cases-switcher__item {
+}
+
+.cases-switcher__link {
+  margin-right: 20px;
+  padding: 6px 26px 4px;
+
+  font-family: "Bebas Neue", "Arial Narrow", "Century Gothic", Helvetica, Tahoma,
+    sans-serif;
+  font-weight: 700;
+  font-size: 1.412rem; 
+  line-height: 1.765rem; 
+  letter-spacing: 0.03rem; 
+  text-decoration: none;
+  color: inherit;
+}
+
+.cases-switcher__item:last-child .cases-switcher__link {
+  margin-right: 0;
+}
+
+.cases-switcher__link:hover {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.cases-switcher__link:focus {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cases-switcher__link:active {
+}
+
+.cases-switcher__link_active {
+  border-radius: 28px;
+
+
+  padding: 3px 20px 1px;
+  border: 3px solid #BC0000;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(188, 0, 0, 0.7),
+    inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);
+          box-shadow: 0px 0px 10px 3px rgba(188, 0, 0, 0.7),
+    inset 0px 0px 5px 0px rgba(188, 0, 0, 0.7);
+
+  cursor: default;
+}
+
+.cases-switcher__link_active:hover,
+.cases-switcher__link_active:focus {
+  color: inherit;
+}
+
+.cases {
+}
+
+.cases-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+
+  list-style: none;
+}
+
+.cases__cases-list {
+}
+
+.case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.case__logo {
+  margin-bottom: 2px;
+
+  max-height: 30px;
+  width: auto;
+
+  vertical-align: middle; 
+}
+
+.case__info {
+  border-collapse: collapse; 
+
+  font-size: 0.824rem; 
+  line-height: 0.941rem; 
+}
+
+.case__info td {
+  padding: 5px 6px;
+}
+
+.case__info td:first-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cases-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.cases__cases-controls {
+  margin-top: -65px;
+}
+
+.cases-controls__prev,
+.cases-controls__next {
+  padding: 0;
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.cases-controls__arrow {
+  width: 35px;
+
+  fill: #3100BC;
+  -webkit-filter: drop-shadow(0px 0px 5px #3100BC);
+  filter: drop-shadow(0px 0px 5px #3100BC);
+
+}
+
+.cases-controls__next .cases-controls__arrow {
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.traders .main-link {
+}
+
+.traders__link {
+  display: none;
+}
+
+.traders {
+  overflow: hidden;
+  padding-bottom: 185px;
+  margin-bottom: 15px;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel::after {
+  position: absolute;
+
+  top: -143px;
+
+  left: -35%;
+  width: 171%;
+  height: 400px;
+  background-image: url(../img/index_circle_traders_new.png);
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  background-position: center;
+  content: "";
+  z-index: -50;
+}
+
+.cases-switcher__link {
+  position: relative;
+  z-index: 30;
+}
+
+.traders .inner-container_medium {
+  position: relative;
+}
+
+.traders .anim-circle:nth-of-type(2) {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  -webkit-animation-name: resize;
+
+          animation-name: resize;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.traders .anim-circle:nth-of-type(3) {
+  display: none;
+}
+
+.traders {
+  position: relative;
+}
+
+
+
+@media (min-width: 576px) {
+  .main-content__traders {
+    margin-bottom: 285px;
+  }
+
+  .traders__heading {
+    margin-bottom: 60px;
+  }
+
+  .traders__cases-switcher {
+    margin-bottom: 145px;
+  }
+
+  .cases-switcher__link {
+    font-size: 2.118rem; 
+    line-height: 2.647rem;
+    padding: 7px 34px 4px;
+  }
+
+  .cases-switcher__link_active {
+    padding: 4px 28px 1px;
+  }
+
+  .case__logo {
+    margin-bottom: 5px;
+    max-height: 38px;
+
+  }
+
+  .case__info {
+    font-size: 1rem; 
+    line-height: 1.176rem; 
+  }
+
+  .cases__cases-controls {
+    margin-top: -70px;
+  }
+
+  .cases-controls__arrow {
+    width: 43.5px;
+  }
+
+  .owl-carousel::after {
+
+    top: -204px;
+    left: -19%;
+    height: 550px;
+    width: 138%;
+    background-size: 700px 700px;
+  }
+
+  .traders .anim-circle {
+    display: none;
+  }
+
+  .traders {
+    padding-bottom: 255px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content__traders {
+    padding-bottom: 285px;
+    margin-bottom: 125px;
+  }
+
+  .traders__heading {
+    margin-bottom: 95px;
+  }
+
+  .traders__content {
+    position: relative;
+  }
+
+  .cases-switcher {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .traders__cases-switcher {
+    margin-bottom: 190px;
+  }
+
+  .traders__link {
+    position: absolute;
+    top: -12px;
+    right: 0;
+
+    display: inline-block;
+  }
+
+  .owl-carousel::after {
+    top: -209px;
+    left: -20%;
+    height: 568px;
+    width: 91%;
+
+    background-size: 680px 680px;
+  }
+
+  .owl-carousel::before {
+    position: absolute;
+    top: -209px;
+    right: -20%;
+    height: 568px;
+    width: 91%;
+
+    background-image: url(../img/index_circle_traders_new.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    z-index: -50;
+
+    background-size: 680px 680px;
+  }
+
+  .traders__link {
+    font: inherit;
+    display: inline-block;
+    border: 3px solid #BC0000;
+    border-radius: 28px;
+    color: inherit;
+    padding: 17px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+  }
+
+  .traders .anim-circle:nth-of-type(2) {
+    display: block;
+    top: 650px;
+    right: 0px;
+  }
+
+  .traders .anim-circle:nth-of-type(3) {
+    display: block;
+    position: absolute;
+    top: 230px;
+    left: -60px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    -webkit-animation-name: resize;
+            animation-name: resize;
+    -webkit-animation-duration: 1.8s;
+            animation-duration: 1.8s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+  }
+}
+
+@media (min-width: 992px) {
+  .traders__heading {
+    margin-bottom: 105px;
+  }
+
+  .owl-carousel::after,
+  .owl-carousel::before {
+    top: -247px;
+    height: 650px;
+    background-size: 780px 780px;
+  }
+
+  .owl-carousel::after {
+    left: -19.5%;
+  }
+
+  .owl-carousel::before {
+    right: -19.5%;
+  }
+
+  .traders .anim-circle:nth-of-type(2) {
+    top: 290px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .traders .anim-circle:nth-of-type(3) {
+    top: 260px;
+    left: -110px;
+    width: 125px;
+    height: 125px;
+  }
+
+}

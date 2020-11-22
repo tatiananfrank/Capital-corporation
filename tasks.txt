@@ -1,0 +1,368 @@
+Неспецифичные сетки????
+Живые графики
+
+
+
+Требуется разработать многостраничный адаптивный сайт. Скриншоты прилагаю в виде ссылки на гугл диск, так как их много (каждая страница - по 4 фрейма - мобильный, планшет 2 размера, десктоп).
+Помимо верстки требуется также "оживление" сайта с помощью js/jquery: переключение активных состояний кнопок, красивые анимации раскрытия менюшек, на главной - живая карусель с кейсами, графики на странице "ЛК - карьера" тоже должны быть живыми, а не картинками. Помимо этого добавить какие-нибудь интересные и динамичные эффекты появления блоков на главной странице.
+
+С Вас обязательно требуется семантическая(!) верстка, предусмотренность переполнения контентом, а также добавления новых блоков/секций, так как сайт будем натягивать на CMS.
+
+Проект большой и есть несколько вариантов реализации, поэтому укажите, пожалуйста, предполагаемые сроки и стоимость Вашей работы, в 3-х категориях:
+1) Верстка + предусмотрены обязательные требования + фоллбэки в css (чтоб не было такого, что картинка в модалке, например, не прогрузилась, и поэтому текст не читается, так как фоновый цвет не задан) + оживление обязательных элементов (менюшки, кнопки) + все документы (политика конфиденциальности, пользовательские соглашение и т.д.) переведены в html формат.
+2) Все требования из первого пункта + дополнительные "визуальные" (читай точеные и муторные) анимации - все вот эти вот кружочки красивые на всех страницах сайта, и свечения на картинках на странице "компания" - которые увеличиваются/пульсируют).
+3) Все требования из первых двух пунктов + доступность (с клавиатуры, для скрин ридеров).
+
+На бюджет в описании не смотрите, стоимость договорная. Сроки не горят, подгонять не будем, будем ориентироваться на указанные Вами. Спасибо за уделенное внимание.
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Анимационные круги дают переполнение на страницах
+-карьера
+-ЛК карьера
+-партнеры
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+главная + FINISHED
+https://www.figma.com/file/scwrV6yBIT5BLxt6Qy93JN/Untitled?node-id=0%3A1
+
+карьера + FINISHED
+https://www.figma.com/file/QXXOuNIWTEO9AhUlYdKq8W/Untitled?node-id=1%3A2
+
+документы + FINISHED
+https://www.figma.com/file/9Bp9ZumUtJeJe5f5gqBvpu/Untitled?node-id=0%3A1
+
+контакты + FINISHED
+https://www.figma.com/file/RgVIgRRwewrW4GA1y02hvM/Untitled?node-id=1%3A2
+
+компания + FINISHED
+///// Мб убрать блок history__img-container на small tablet
+https://www.figma.com/file/f3HOFCa1TB3Epdu4ADOhiq/Untitled?node-id=0%3A1
+
+личный кабинет - все фреймы + FINISHED
+https://www.figma.com/file/mX60OWG8ww97hnNBxcqlnl/Untitled?node-id=0%3A1
+
+
+
+
+личный кабинет - upgrade, replenish, withdraw - возможно есть модалки? но никак не посмотреть
+
+личный кабинет - news - разнести по разным страницам вместо модалки?
+
+личный кабинет - ads - возможно доки тоже в html?
+
+
+
+https://capcom.in/
+
+1589145951
+4fHoivfyxZrPYBx2hjFbM6Q7nWqwxuJQWLMcbGm
+
+////////////////
+
+js
+
+Транспилировать через Babel
+
+если отваливается, сделать проверку с классом no-js
+
+все ссылки, кнопки, обрабатываемые с помощью js должны в случае чего вести на спец страницы (логин ? модалка : страница логина)
+
+////////////////
+
+css
+
+CSS LINT
+
+Normalize.css - Встроен в бутстрап, не надо
+
+Autoprefixer !!!!!!
+
+Сжать через cssnano
+
+Поменять ссылки на стайлшит
+
++ если отваливается - фоновый цвет в качестве фолбэка для градиетов и изображений
+
+эл-ты форм всегда очень плохо наследуют текстовые параметры - исп-ть font: inherit
+
+:link — :visited — :hover - :focus — :active.
+
++ Предусмотреть переполнение
+
+////////////////
+
+html
+
++ Validator
+
+////////////////
+
+img
+
+оптимизация изображений
+для ретины (2x) и нет (1x)
+для разных устройств (picture + source) - прописать фикс размеры в html
+
++ Адаптивные картинки: указать размер в хтмл, в цсс - ширина в %, высота "авто"
+
++ Фикс размеры свг прямо внутри свг
+
+////////////////
+
+fonts
+
++ указание альтернативных вариантов, save web fonts
+
+////////////////
+
+Локализация
+
++ Как управлять мультирегиональными и многоязычными сайтами - https://support.google.com/webmasters/answer/182192?hl=ru
+
+шрифты должны поддерживать все языки;
+тестируем псевдолокализацией;
+
++ Итоги и выводы - https://habr.com/ru/post/268915/
+
+////////////////
+
+Тестирование
+
+portrait
+landscape
+
+////////////////
+
+pixel perfect settings
+
+Главная страница(увел. шрифт).jpg
+x -125
+y 0
+1.0
+
+////////////////
+
+Accessability
+
+- Атрибут aria-expanded у тега button указывает на то, показывается (развернуто) ли сейчас меню
+- Атрибут aria-label у тега button говорит скрин-ридерам о том, что это меню
+- Атрибут aria-hidden="true" у тегов span с сокращениями языков указывает на то, что элемент не несет никакой информации, поэтому не должен бьть прочитан скрин-ридерами
+- Атрибут aria-controls="id" указывает на id элемента, поведением которого управляет
+
+- Атрибут lang="en" указывает, на каком языке нужно произносить текст, содержащийся внутри тега
+
+- Атрибут hreflang="код_языка" указывает поисковым системам на наличие ссылки на версию сайта на другом языке
+
+
+////////////////
+
+
+///// Переключение темы сайта в зависимости от времени суток
+<script>
+    var date = new Date();
+    var h = date.getHours();
+    if (h > 20 || h < 8) {
+        window.onload = function() {
+            document.body.classList.replace("day", "night");
+        }
+    }
+</script>
+
+https://stackoverflow.com/questions/8811594/implementing-user-choice-of-theme
+
+https://medium.com/nuances-of-programming/%D0%BA%D0%B0%D0%BA-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C-%D1%82%D0%B5%D0%BC%D0%BD%D1%83%D1%8E-%D1%82%D0%B5%D0%BC%D1%83-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-css-647fabbe68a4
+https://computy.ru/blog/realizacija-temnogo-rezhima-dlja-sajta/
+
+
+////////////////
+
+
+.company-content {
+	background-image: url(../img/company_back_blur_mobile.png);
+    background-size: cover;
+    background-position: top 200px center;
+    background-repeat: no-repeat;
+}
+
+
+@media (min-width: 992px)
+.user-area-main-content {
+    background-image: url(../img/user-area-main-blur.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+
+////////////////
+
+
+.user-area-upgrade-content .anim-circle {
+	position: absolute;
+
+	border-radius: 50%;
+	border: 2px solid rgba(210, 207, 221, 0.3);
+		
+	animation-name: resize;
+	animation-duration: 1.8s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/*.user-area-upgrade-content .anim-circle-1 {
+	width: 55px;
+    height: 55px;
+	border: 2px solid rgba(255, 255, 255, 0.29);
+	bottom: 80px;
+    left: 40px;
+}
+
+.user-area-upgrade-content .anim-circle-1 {
+	width: 30px;
+	height: 30px;
+	border: 2px solid rgba(184, 144, 43, 0.5);
+	top: 540px;
+    right: 60px;
+	box-shadow: 0 0 15px 0 rgba(184, 144, 43, 0.5),
+				inset 0 0 15px 0 rgba(184, 144, 43, 0.5);
+}
+
+.user-area-main-content .anim-circle-11 {
+	animation-duration: 2.2s;
+	animation-delay: 0.9s;
+}
+*/
+
+
+////////////////
+
+
+выделение активного пункта меню в футере (новости) - десктоп
+
+.menu .menu__link 
+	position: relative;
+
+a.menu__link::before
+	position: absolute;
+    left: -50%;
+    top: -15px;
+    width: 231%;
+    height: 270%;
+    background: linear-gradient(90deg, #BC0000 2.99%, rgba(188, 0, 0, 0) 73.1%);
+    content: "";
+    border-radius: 28px;
+    z-index: -10;
+
+a.menu__link::after
+	position: absolute;
+    left: -46.5%;
+    top: -13px;
+    width: 195%;
+    height: 248%;
+    background: #070606;
+    border-radius: 28px;
+    content: "";
+    z-index: -5;
+
+
+////////////////
+
+
+блокирование активных пунктов меню
+
+
+<li class="menu__item"><a class="menu__link menu__link_active">Главная</a></li>
+
+header
+footer
+
+
+<li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_active" aria-label="Вы находитесь здесь">Компания</a></li>
+
+breadcrumbs
+
+
+////////////////
+
+
+
+/*var graph_height = 262;
+
+		function calcGraphHeight() {
+			var height = 0;
+
+			var site_width = $(document).width() + ScroolbarWidth();
+
+			if(site_width < 576) {
+				height = 262;
+			} else if(site_width >= 576 && site_width < 768) {
+				height = 262;
+			} else if(site_width >= 768 && site_width < 992) {
+				height = 262;
+			} else if(site_width >= 992) {
+				height = 262;
+			}
+
+			return height;
+		}
+
+		$(window).resize(function() {
+			graph_height = calcGraphHeight();
+		});
+
+		graph_height = calcGraphHeight();*/
+
+
+
+
+/*
+		// Одинаковый градиент для столбцов разной высоты
+
+		var gradients = [];
+
+		yAxis.each( function() {
+			var el_perc = $(this) * graph_height / max;
+			var gradient_n = ctx0.createLinearGradient(0, graph_height, 0, el_perc);
+			gradient_n.addColorStop(0, '#5525BA');
+			gradient_n.addColorStop(0.15, 'rgba(85, 37, 186, 0.35)');
+			gradient_n.addColorStop(0.75, 'rgba(188, 0, 0, 0.7)');
+			gradient_n.addColorStop(1, '#BC0000');
+
+			gradients.add(gradient_n);
+		});*/
+
+
+
+/*backgroundColor: [
+			            	gradient,
+			            	gradient2
+			            ],*/
+			            
+
+
+
+////////////////	
+
+
+Useful links
+
+
+PDF to HTML
+https://convertio.co/ru/pdf-html/
+!!!  https://cloudconvert.com/pdf-to-html
+
+
+Animation in CSS
+https://developer.mozilla.org/ru/docs/Web/CSS/animation
+
+
+https://www.chartjs.org/docs/latest/getting-started/

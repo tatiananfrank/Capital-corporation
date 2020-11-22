@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Capital Corporation - Личный кабинет</title>
+
+	<script type="text/javascript" src="js/js_test.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<header class="page-header user-area-header">
+		<div class="inner-container_large">
+			<div class="logo page-header__logo">
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании" width="181" height="47">
+			</div>
+			
+			<!-- Мобильное меню -->
+			<button class="burger" id="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Нажмите, чтобы открыть или закрыть меню">
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+			</button>
+			<!-- END OF Мобильное меню -->
+
+			<nav class="main-nav" id="main-nav">
+
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="user-area-main.html" class="menu__link">Личный кабинет</a></li>
+				</ul>
+
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown-2" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown-2" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</nav>
+		</div>
+	</header>
+
+	<main class="user-area-content user-area-ads-content">
+		
+		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Реклама»</h1>
+
+		<div class="breadcrumbs contacts-content__breadcrumbs">
+			<div class="inner-container_large">
+				<p class="visually-hidden">Цепочка навигации</p>
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link" aria-label="Вернуться на главную">Главная</a></li>
+					<li class="breadcrumbs__item"><a href="user-area-main.html" class="breadcrumbs__link">Личный кабинет</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_active" aria-label="Вы находитесь здесь">Реклама</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="inner-container_large">
+			<section class="user-nav user-area-content__user-nav">
+				<h2 class="visually-hidden">Навигация по личному кабинету</h2>
+
+				<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
+					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static">
+						<span class="user-nav__dropdown-btn">
+							Реклама
+							<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
+						</span>
+					</button>
+
+					<div class="dropdown-menu user-nav__dropdown-menu-border" id="user-nav-dropdown-menu">
+						<button class="dropdown-menu-close" id="user-area-menu-close">
+							<span></span>
+							<span></span>
+						</button>
+						<ul class="user-nav__dropdown-menu" role="listbox">
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-main.html" class="user-nav__dropdown-menu-link" role="option">Кабинет</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-career.html" class="user-nav__dropdown-menu-link" role="option">Карьера</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-history.html" class="user-nav__dropdown-menu-link" role="option">История</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-profile.html" class="user-nav__dropdown-menu-link" role="option">Профиль</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="#" data-toggle="modal" data-target="#user-exit-modal" class="user-nav__dropdown-menu-link" role="option">Выход</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="user-ads-section user-area-ads-content__user-ads-section">
+				<h2 class="visually-hidden">Реклама</h2>
+
+				<section class="user-ads-item user-ads-section__ads-item">
+					<h2 class="user-ads-item__title">Буклет</h2>
+					<a href="docs/booklet.pdf" target="_blank" class="user-ads-item__download-link">Скачать</a>
+					
+					<div class="user-ads-item__img">
+						<img src="img/ads_img1.png" alt="" width="" height="">
+					</div>
+				</section>
+
+				<section class="user-ads-item user-ads-section__ads-item">
+					<h2 class="user-ads-item__title">Презентация</h2>
+					<a href="docs/presentation.pdf" target="_blank" class="user-ads-item__download-link">Скачать</a>
+					
+					<div class="user-ads-item__img">
+						<img src="img/ads_img2.jpg" alt="" width="" height="">
+					</div>
+				</section>
+			</section>
+
+			<div class="anim-circle anim-circle-1" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-2" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-3" aria-hidden="true"></div>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="inner-container_large">
+			<div class="page-footer__row">
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+					<li class="menu__item"><a href="user-area-news.html" class="menu__link">Новости</a></li>
+					<li class="menu__item"><a class="menu__link menu__link_active">Реклама</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="user-area-main.html" class="menu__link">Личный кабинет</a></li>
+				</ul>
+				
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select-2" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select-2" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</div>
+
+			<div class="page-footer__row">
+				<p class="page-footer__copyright">© 2020</p>
+				
+				<ul class="menu">
+					<li class="menu__item"><a href="docs/privacy_policy.html" class="menu__link" target="_blank">Политика конфиденциальности</a></li>
+					<li class="menu__item"><a href="docs/terms_of_use.html" class="menu__link" target="_blank">Пользовательское соглашение</a></li>
+					<li class="menu__item"><a href="docs/customer_agreement.html" class="menu__link" target="_blank">Клиентский договор</a></li>
+					<li class="menu__item"><a href="docs/agency_contract.html" class="menu__link" target="_blank">Агентский договор</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модалка "выход" -->
+	<div class="modal fade" id="user-exit-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-exit modal-exit_centered modal-dialog">
+			<h2 class="modal-exit__title">Выход</h2>
+			<p class="modal-exit__text">Вы действительно собираетесь выйти?</p>
+			<form class="modal-exit__btn-wrapper" action="" method="">
+				<button class="modal-exit__btn" type="submit">Да</button>
+				<button class="modal-exit__btn" type="button" data-dismiss="modal">Нет</button>
+			</form>
+		</section>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>

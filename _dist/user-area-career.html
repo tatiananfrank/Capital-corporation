@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<title>Capital Corporation - Личный кабинет</title>
+
+	<script type="text/javascript" src="js/js_test.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<header class="page-header user-area-header">
+		<div class="inner-container_large">
+			<div class="logo page-header__logo">
+				<img class="logo__img" src="img/logo_1x.png" alt="Логотип компании" width="181" height="47">
+			</div>
+			
+			<!-- Мобильное меню -->
+			<button class="burger" id="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Нажмите, чтобы открыть или закрыть меню">
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+				<span class="burger__icon"></span>
+			</button>
+			<!-- END OF Мобильное меню -->
+
+			<nav class="main-nav" id="main-nav">
+
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="user-area-main.html" class="menu__link">Личный кабинет</a></li>
+				</ul>
+
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown-2" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown-2" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</nav>
+		</div>
+	</header>
+
+	<main class="user-area-content user-area-career-content">
+		
+		<h1 class="visually-hidden">Компания «Capital corporation» - Личный кабинет пользователя - раздел «Карьера»</h1>
+
+		<div class="breadcrumbs contacts-content__breadcrumbs">
+			<div class="inner-container_large">
+				<p class="visually-hidden">Цепочка навигации</p>
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link" aria-label="Вернуться на главную">Главная</a></li>
+					<li class="breadcrumbs__item"><a href="user-area-main.html" class="breadcrumbs__link">Личный кабинет</a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link_active" aria-label="Вы находитесь здесь">Карьера</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="inner-container_large">
+			<section class="user-data user-area-content__user-data">
+				<h2 class="visually-hidden">Данные пользователя</h2>
+
+				<p class="user-data__name">Имя Фамилия</p>
+
+				<!-- Атрибут data-perc="58%" служит для заполнения полосы прогресса на указанный процент -->
+				<p class="user-data__level">
+					Уровень
+					<span class="user-data__level-progress-line" aria-hidden="true">
+						<span class="user-data__level-progress-value" data-perc="58%"></span>
+					</span>
+					$25 000
+				</p>
+
+				<p class="user-data__balance">
+					<span class="user-data__balance-title">Баланс</span>
+					$200
+				</p>
+
+				<a href="user-area-replenish.html" class="user-data__btn">Пополнить</a>
+				<a href="user-area-withdraw.html" class="user-data__btn">Вывести</a>
+			</section>
+
+			<section class="user-stats user-area-content__user-stats">
+				<h2 class="visually-hidden">Статистика пользователя</h2>
+
+				<ul class="user-stats__list">
+					<li class="user-stats__item">Пополнено <span class="user-stats__price">$0</span></li>
+					<li class="user-stats__item">Инвестировано <span class="user-stats__price">$0</span></li>
+					<li class="user-stats__item">Заработано <span class="user-stats__price">$0</span></li>
+					<li class="user-stats__item">Выведено <span class="user-stats__price">$0</span></li>
+				</ul>
+			</section>
+
+			<section class="user-nav user-area-content__user-nav">
+				<h2 class="visually-hidden">Навигация по личному кабинету</h2>
+
+				<div class="dropdown user-nav__dropdown" id="user_nav_dropdown">
+					<button class="dropdown-toggle user-nav__dropdown-btn-border" aria-expanded="false" aria-controls="user-nav-dropdown-menu" aria-label="Вы находитесь в разделе кабинет. Выберите, куда Вы хотите перейти" data-toggle="dropdown" data-display="static">
+						<span class="user-nav__dropdown-btn">
+							Карьера
+							<span class="user-nav__dropdown-btn-arrow" aria-hidden="true"><</span>
+						</span>
+					</button>
+
+					<div class="dropdown-menu user-nav__dropdown-menu-border" id="user-nav-dropdown-menu">
+						<button class="dropdown-menu-close" id="user-area-menu-close">
+							<span></span>
+							<span></span>
+						</button>
+						<ul class="user-nav__dropdown-menu" role="listbox">
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-main.html" class="user-nav__dropdown-menu-link" role="option">Кабинет</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item user-nav__dropdown-menu-item_active">
+								<a href="user-area-career.html" class="user-nav__dropdown-menu-link" role="option">Карьера</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-history.html" class="user-nav__dropdown-menu-link" role="option">История</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="user-area-profile.html" class="user-nav__dropdown-menu-link" role="option">Профиль</a>
+							</li>
+							<li class="user-nav__dropdown-menu-item">
+								<a href="#" data-toggle="modal" data-target="#user-exit-modal" class="user-nav__dropdown-menu-link" role="option">Выход</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="user-careeer-levels user-area-career-content__levels">
+				<h2 class="visually-hidden">Карьерный и бонусный уровни пользователя</h2>
+
+				<div class="user-careeer-levels__wrap-block"></div>
+
+				<div class="user-careeer-block user-careeer-levels__user-careeer-block">
+					<table class="user-careeer-block__table">
+						<tr>
+							<th class="user-careeer-block__header" colspan="2">
+								<a class="user-careeer-block__badge">Карьерный уровень</a>
+								<p class="user-careeer-block__number">1</p>
+							</th>
+						</tr>
+						<tr class="user-careeer-block__row">
+							<td class="user-careeer-block__info">
+								учитываемый оборот
+								<p class="user-careeer-block__info-perc">100%</p>
+							</td>
+							<td class="user-careeer-block__info">
+								комиссионный доход
+								<p class="user-careeer-block__info-perc">5%</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-block__info2" colspan="2">
+								<p class="user-careeer-block__money">$20 250 / $40 000</p>
+								<span class="user-careeer-block__progress-line" aria-hidden="true">
+									<span class="user-careeer-block__progress-value" data-perc="52%"></span>
+								</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="user-careeer-levels__wrap-block"></div>
+
+				<div class="user-careeer-block user-careeer-levels__user-careeer-block">
+					<table class="user-careeer-block__table">
+						<tr>
+							<th class="user-careeer-block__header" colspan="2">
+								<a class="user-careeer-block__badge">Бонусный уровень</a>
+								<p class="user-careeer-block__number">0</p>
+							</th>
+						</tr>
+						<tr class="user-careeer-block__row">
+							<td class="user-careeer-block__info">
+								личные инвестиции
+								<p class="user-careeer-block__info-perc">$300 / $1 000</p>
+							</td>
+							<td class="user-careeer-block__info">
+								бонус за новый уровень
+								<p class="user-careeer-block__info-perc">$250</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-block__info2" colspan="2">
+								<p class="user-careeer-block__money">$7 500 / $15 000</p>
+								<span class="user-careeer-block__progress-line" aria-hidden="true">
+									<span class="user-careeer-block__progress-value" data-perc="63%"></span>
+								</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+			<section class="user-careeer-stats user-area-career-content__stats">
+				<h2 class="user-careeer-stats__title">Cтатистика</h2>
+
+				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
+					<table class="user-careeer-stats-block__table">
+						<tr>
+							<th class="user-careeer-stats-block__header" colspan="2">
+								<a class="user-careeer-stats-block__badge">Общая</a>
+							</th>
+						</tr>
+						<tr class="user-careeer-stats-block__row">
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">3</p>
+								зарегистр. партнеров
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">1</p>
+								активных партнеров
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$20 250</p>
+								объем продаж
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$608</p>
+								прибыль парнеров
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="user-careeer-stats-block user-careeer-stats__user-careeer-stats-block user-careeer-stats-block_big-padding">
+					<table class="user-careeer-stats-block__table">
+						<tr>
+							<th class="user-careeer-stats-block__header" colspan="2">
+								<a class="user-careeer-stats-block__badge">Офисный счёт</a>
+							</th>
+						</tr>
+						<tr class="user-careeer-stats-block__row">
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								прибыль
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0 / $0</p>
+								начислено
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">0%</p>
+								начисления
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">2020.10.13</p>
+								дата расчета
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
+					<table class="user-careeer-stats-block__table">
+						<tr>
+							<th class="user-careeer-stats-block__header" colspan="2">
+								<a class="user-careeer-stats-block__badge">за текущую неделю</a>
+							</th>
+						</tr>
+						<tr class="user-careeer-stats-block__row">
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">0</p>
+								зарегистр. партнеров
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">0</p>
+								активных партнеров
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								объем продаж
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								прибыль парнеров
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="user-careeer-stats-block user-careeer-stats-block_active user-careeer-stats__user-careeer-stats-block">
+					<table class="user-careeer-stats-block__table">
+						<tr>
+							<th class="user-careeer-stats-block__header" colspan="2">
+								<a class="user-careeer-stats-block__badge">за прошлую неделю</a>
+							</th>
+						</tr>
+						<tr class="user-careeer-stats-block__row">
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">2</p>
+								зарегистр. партнеров
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">0</p>
+								активных партнеров
+							</td>
+						</tr>
+						<tr>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								объем продаж
+							</td>
+							<td class="user-careeer-stats-block__info">
+								<p class="user-careeer-stats-block__info-number">$0</p>
+								прибыль парнеров
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+			<section class="user-careeer-charts user-area-career-content__charts">
+				<h2 class="visually-hidden">Cтатистика в графиках</h2>
+
+				<section class="user-careeer-charts__chart" id="graph0">
+					<h3 class="user-careeer-charts__title"><span>Прибыль партнера</span> <span>За неделю</span></h3>
+					<div class="chart-container">
+						<div class="chartjs-size-monitor">
+							<div class="chartjs-size-monitor-expand">
+								<div class=""></div>
+							</div>
+							<div class="chartjs-size-monitor-shrink">
+								<div class=""></div>
+							</div>
+						</div>
+						<canvas id="canvas0" class="chartjs-render-monitor"></canvas>
+					</div>
+				</section>
+
+				<section class="user-careeer-charts__chart" id="graph1">
+					<h3 class="user-careeer-charts__title"><span>Объем продаж</span> <span>За неделю</span></h3>
+					<div class="chart-container">
+						<div class="chartjs-size-monitor">
+							<div class="chartjs-size-monitor-expand">
+								<div class=""></div>
+							</div>
+							<div class="chartjs-size-monitor-shrink">
+								<div class=""></div>
+							</div>
+						</div>
+						<canvas id="canvas1" class="chartjs-render-monitor"></canvas>
+					</div>
+				</section>
+				
+			</section>
+
+			<section class="user-careeer-partners user-area-career-content__partners">
+				<h2 class="user-careeer-partners__title">Партнеры</h2>
+
+				<div class="user-careeer-partners__wrapper">
+					<div class="user-careeer-partners__content" aria-label="Информация по партнерам">
+						<div class="user-careeer-partners__content-titles-block">
+							<span class="user-careeer-partners__content-titles-row">
+								<span class="user-careeer-partners__content-titles">Линия</span>
+								<span class="user-careeer-partners__content-titles">Уровень</span>
+								<span class="user-careeer-partners__content-titles">Логин</span>
+								<span class="user-careeer-partners__content-titles">Фамилия</span>
+								<span class="user-careeer-partners__content-titles">Парнеры</span>
+								<span class="user-careeer-partners__content-titles">Инвестиции</span>
+								<span class="user-careeer-partners__content-titles">Структура</span>
+								<span class="user-careeer-partners__content-titles">Регистрация</span>
+							</span>
+						</div>
+
+						<div class="user-careeer-partners__content-block">
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Линия</span><span class="user-careeer-partners__content-info">1</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Уровень</span><span class="user-careeer-partners__content-info">?</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Логин</span><span class="user-careeer-partners__content-info">Москва</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Фамилия</span><span class="user-careeer-partners__content-info">?</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Парнеры</span><span class="user-careeer-partners__content-info"><a href="user-area-partners.html" target="_blank">98</a></span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Инвестиции</span><span class="user-careeer-partners__content-info">$38 300</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Структура</span><span class="user-careeer-partners__content-info">$492 950</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Регистрация</span><span class="user-careeer-partners__content-info">23.05.2020</span></span>
+						</div>
+
+						<div class="user-careeer-partners__content-block">
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Линия</span><span class="user-careeer-partners__content-info">1</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Уровень</span><span class="user-careeer-partners__content-info">?</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Логин</span><span class="user-careeer-partners__content-info">Москва</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Фамилия</span><span class="user-careeer-partners__content-info">?</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Парнеры</span><span class="user-careeer-partners__content-info"><a href="user-area-partners.html" target="_blank">98</a></span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Инвестиции</span><span class="user-careeer-partners__content-info">$38 300</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Структура</span><span class="user-careeer-partners__content-info">$492 950</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Регистрация</span><span class="user-careeer-partners__content-info">23.05.2020</span></span>
+						</div>
+
+						<div class="user-careeer-partners__content-block">
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Линия</span><span class="user-careeer-partners__content-info">1</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Уровень</span><span class="user-careeer-partners__content-info">?</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Логин</span><span class="user-careeer-partners__content-info">Москва</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Фамилия</span><span class="user-careeer-partners__content-info">?</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Парнеры</span><span class="user-careeer-partners__content-info"><a href="user-area-partners.html" target="_blank">98</a></span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Инвестиции</span><span class="user-careeer-partners__content-info">$38 300</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Структура</span><span class="user-careeer-partners__content-info">$492 950</span></span>
+							<span class="user-careeer-partners__content-row"><span class="user-careeer-partners__content-titles">Регистрация</span><span class="user-careeer-partners__content-info">23.05.2020</span></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<div class="anim-circle anim-circle-1" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-2" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-3" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-4" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-5" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-6" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-7" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-8" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-9" aria-hidden="true"></div>
+			<div class="anim-circle anim-circle-10" aria-hidden="true"></div>
+		</div>
+	</main>
+
+	<footer class="page-footer">
+		<div class="inner-container_large">
+			<div class="page-footer__row">
+				<ul class="menu main-menu">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="company.html" class="menu__link">Компания</a></li>
+					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
+					<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+					<li class="menu__item"><a href="user-area-news.html" class="menu__link">Новости</a></li>
+					<li class="menu__item"><a href="user-area-ads.html" class="menu__link">Реклама</a></li>
+				</ul>
+
+				<ul class="menu user-menu">
+					<li class="menu__item"><a href="user-area-main.html" class="menu__link">Личный кабинет</a></li>
+				</ul>
+				
+				<!-- Custom language picker -->
+				<div class="language-picker dropdown">
+					<p class="visually-hidden">Выберите язык</p>
+
+					<button class="language-picker__button dropdown-toggle" 
+							aria-expanded="false" aria-controls="language-picker-dropdown" aria-label="Текущий язык сайта - русский" 
+							data-toggle="dropdown" data-display="static">
+						<img class="language-picker__flag" src="img/ru.svg" alt="" width="25" height="16">
+						<span class="language-picker__lang-code" aria-hidden="true">ru</span>
+					</button>
+
+					<ul class="lang-list language-picker__lang-list dropdown-menu" id="language-picker-dropdown" role="listbox">
+						<li class="lang-list__lang">
+							<a hreflang="zh" href="#" class="lang-list__link" role="option" aria-label="Перейти на китайскую версию сайта">
+								<img class="lang-list__flag" src="img/cn.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">ch</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="en" href="#" class="lang-list__link" role="option" aria-label="Перейти на английскую версию сайта">
+								<img class="lang-list__flag" src="img/gb.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">en</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="de" href="#" class="lang-list__link" role="option" aria-label="Перейти на немецкую версию сайта">
+								<img class="lang-list__flag" src="img/de.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">de</span>
+							</a>
+						</li>
+						<li class="lang-list__lang">
+							<a hreflang="pt" href="#" class="lang-list__link" role="option" aria-label="Перейти на португальскую версию сайта">
+								<img class="lang-list__flag" src="img/pt.svg" alt="" width="25" height="16">
+								<span class="lang-list__lang-code" aria-hidden="true">pt</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END OF Custom language picker -->
+
+				<!-- No-js language picker -->
+				<!-- 
+					Атрибут data-lang у селекта отвечает за смену флага через css, возможные значения: ru, en, de, pt, ch
+				-->
+				<form action="" method="" class="language-picker-form">
+					<label for="language-picker-select-2" class="visually-hidden">Выберите язык, Текущий язык сайта - русский</label>
+					<select name="language-picker-select" id="language-picker-select-2" class="language-picker-form__select" data-lang="ru">
+						<option value="english" aria-hidden="true" aria-label="Перейти на английскую версию сайта">en</option>
+						<option value="russian" aria-hidden="true" aria-label="Текущий язык сайта - русский" selected>ru</option>
+						<option value="german" aria-hidden="true" aria-label="Перейти на немецкую версию сайта">de</option>
+						<option value="portuguese" aria-hidden="true" aria-label="Перейти на португальскую версию сайта">pt</option>
+						<option value="chinese" aria-hidden="true" aria-label="Перейти на китайскую версию сайта">ch</option>
+					</select>
+				</form>
+				<!-- END OF No-js language picker -->
+			</div>
+
+			<div class="page-footer__row">
+				<p class="page-footer__copyright">© 2020</p>
+				
+				<ul class="menu">
+					<li class="menu__item"><a href="docs/privacy_policy.html" class="menu__link" target="_blank">Политика конфиденциальности</a></li>
+					<li class="menu__item"><a href="docs/terms_of_use.html" class="menu__link" target="_blank">Пользовательское соглашение</a></li>
+					<li class="menu__item"><a href="docs/customer_agreement.html" class="menu__link" target="_blank">Клиентский договор</a></li>
+					<li class="menu__item"><a href="docs/agency_contract.html" class="menu__link" target="_blank">Агентский договор</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модалка-уведомление о достижении карьерного уровня -->
+	<div class="modal fade" id="user-career-level-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-buy-investment user-deposit-success-modal modal-buy-investment_centered modal-dialog">
+			<h2 class="modal-buy-investment__title">Поздравляем!</h2>
+			<p class="modal-buy-investment__text">Вы перешли на карьерный уровень</p>
+			<button class="modal-buy-investment__btn" type="button" data-dismiss="modal">ОК</button>
+		</section>
+	</div>
+
+	<!-- Модалка-уведомление о достижении бонусного уровня -->
+	<div class="modal fade" id="user-bonus-level-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-buy-investment user-deposit-success-modal modal-buy-investment_centered modal-dialog">
+			<h2 class="modal-buy-investment__title">Поздравляем!</h2>
+			<p class="modal-buy-investment__text">Вы перешли на бонусный уровень</p>
+			<button class="modal-buy-investment__btn" type="button" data-dismiss="modal">ОК</button>
+		</section>
+	</div>
+
+	<!-- Модалка "выход" -->
+	<div class="modal fade" id="user-exit-modal" tabindex="-1" aria-hidden="true" data-backdrop="static">
+		<section class="modal-exit modal-exit_centered modal-dialog">
+			<h2 class="modal-exit__title">Выход</h2>
+			<p class="modal-exit__text">Вы действительно собираетесь выйти?</p>
+			<form class="modal-exit__btn-wrapper" action="" method="">
+				<button class="modal-exit__btn" type="submit">Да</button>
+				<button class="modal-exit__btn" type="button" data-dismiss="modal">Нет</button>
+			</form>
+		</section>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/script.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+	<script type="text/javascript">
+		var ctx0 = document.getElementById('canvas0').getContext('2d');
+		var xAxis0 = ['07.09', '14.09', '21.09', '28.09', '05.10', '12.10', '19.10', '26.10', '02.11', '09.11', '16.11', '23.11'];
+		var yAxis0 = ['250', '0', '440', '670', '270', '0', '0', '0', '0', '0', '0', '0'];
+
+		var ctx1 = document.getElementById('canvas1').getContext('2d');
+		var xAxis1 = ['07.09', '14.09', '21.09', '28.09', '05.10', '12.10', '19.10', '26.10', '02.11', '09.11', '16.11', '23.11'];
+		var yAxis1 = ['0', '0', '0', '0', '0', '0', '260', '470', '320', '0', '0', '0'];
+
+		var chartMass = [
+			{
+				graph: ctx0,
+				x: xAxis0,
+				y: yAxis0,
+			},
+			{
+				graph: ctx1,
+				x: xAxis1,
+				y: yAxis1,
+			},
+		];
+
+
+
+		var fontSize = 12;
+		var graphHeight = 218;
+		var site_width = $(document).width() + ScroolbarWidth();
+		if(site_width < 576) {
+			fontSize = 10;
+			graphHeight = 218;
+		} else if(site_width >= 576 && site_width < 768) {
+			fontSize = 18;
+			graphHeight = 339;
+		} else if(site_width >= 768 && site_width < 992) {
+			fontSize = 24;
+			graphHeight = 373;
+		} else if(site_width >= 992) {
+			fontSize = 24;
+			graphHeight = 465;
+		}
+
+		$.each(chartMass, function(index, value) {
+			var gradient = value.graph.createLinearGradient(0, graphHeight, 0, 0);
+			gradient.addColorStop(0, '#5525BA');
+			gradient.addColorStop(0.15, 'rgba(85, 37, 186, 0.35)');
+			gradient.addColorStop(0.75, 'rgba(188, 0, 0, 0.7)');
+			gradient.addColorStop(1, '#BC0000');
+			value.gradient = gradient;
+		});
+		
+		$.each(chartMass, function(index, value) {
+			Chart.defaults.global.defaultFontSize = fontSize;
+			new Chart(value.graph, {
+				type: 'bar',
+			    data: {
+			        labels: value.x,
+			        datasets: [{
+			            backgroundColor: value.gradient,
+			            borderColor: 'rgba(0, 0, 0, 0)',
+	                    borderWidth: 0,
+			            data: value.y,
+			        }]
+			    },
+			    options: {
+			    	responsive: true,
+	                maintainAspectRatio: false,
+	                legend: {
+	                    display: false
+	                },
+	                title: {
+	                    display: false
+	                },
+	                scales: {
+	                    xAxes: [{
+	                    	ticks: {
+	                        	fontColor: 'rgba(255, 255, 255, 0.7)',
+	                        	fontFamily: "'Bebas Neue', 'Arial Narrow', 'Century Gothic', Helvetica, Tahoma, sans-serif",
+	                        },
+	                        gridLines: {
+	                            display: true,
+	                            color: 'rgba(255, 255, 255, 0)',
+	                            drawBorder: false,
+	                            drawOnChartArea: false,
+	                            zeroLineColor: 'rgba(255, 255, 255, 0.3)',
+	                        }
+	                    }],
+	                    yAxes: [{
+	                        type: 'linear',
+	                        ticks: {
+	                        	fontColor: 'rgba(255, 255, 255, 0.7)',
+	                        	fontFamily: "'Bebas Neue', 'Arial Narrow', 'Century Gothic', Helvetica, Tahoma, sans-serif",
+	                            userCallback: function(tick) {
+	                                tick = Math.round(tick);
+	                                return '$' + tick.toLocaleString();
+	                            },
+	                            suggestedMin: 0,
+	                            suggestedMax: 250,
+
+	                        },
+	                        gridLines: {
+	                            display: true,
+	                            color: 'rgba(255, 255, 255, 0.3)',
+	                            drawBorder: false,
+	                            drawOnChartArea: false,
+	                            zeroLineColor: 'rgba(255, 255, 255, 0.3)',
+	                        },
+	                    }],
+	                },
+	                tooltips: {
+	                    position: 'nearest',
+	                    mode: 'nearest',
+	                    intersect: true,
+	                    yPadding: 15,
+	                    xPadding: 5,
+	                    caretSize: 8,
+	                    backgroundColor: 'rgb(255,255,255)',
+	                    titleFontColor: '#151414',
+	                    bodyFontColor: '#BC0000',
+	                    borderColor: '#151414',
+	                    borderWidth: 1,
+	                    titleAlign: 'center',
+	                    titleMarginBottom: 10,
+	                    displayColors: false,
+	                    callbacks: {
+	                        label: function(tooltipItem, data) {
+	                            let v = parseInt(tooltipItem.value);
+	                            return  'Сумма $: ' + v.toLocaleString();
+	                        }
+	                    }
+	                },
+			    }
+			});
+		});
+	</script>
+</body>
+</html>

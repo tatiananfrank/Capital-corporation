@@ -1,0 +1,220 @@
+
+.page-footer {
+  background: rgba(0, 0, 0, 0.68);
+}
+
+.page-footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  padding-top: 35px;
+}
+
+.page-footer__row:first-child {
+  position: relative;
+}
+
+.page-footer__row:first-child::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 1px;
+  width: 108%;
+  background-color: rgba(255, 255, 255, 0.25);
+  content: "";
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.page-footer__row:first-child .main-menu {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  width: 65%;
+}
+
+.page-footer__row:first-child .main-menu .menu__item {
+  margin-left: 40px;
+  margin-bottom: 15px;
+}
+
+.page-footer__row:first-child .main-menu .menu__item:last-child {
+  margin-bottom: 65px;
+}
+
+.page-footer .language-picker,
+.page-footer .language-picker-form {
+  position: absolute;
+  top: 65px;
+  right: 0;
+}
+
+.page-footer__row:last-child {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-footer__row:last-child .menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.page-footer__row:last-child .menu__item {
+  margin-bottom: 15px;
+}
+
+.page-footer__row:last-child .menu__item:last-child {
+  margin-bottom: 35px;
+}
+
+.page-footer__row:last-child .menu__link {
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-footer__row:last-child .menu__link:hover,
+.page-footer__row:last-child .menu__link:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 576px) {
+  .page-footer {
+    padding: 0 20px;
+  }
+
+  .page-footer__row:first-child .main-menu {
+    margin-left: -45px;
+  }
+
+  .page-footer__row:first-child .main-menu .menu__item {
+    margin-left: 45px;
+    margin-bottom: 30px;
+  }
+
+  .page-footer .language-picker,
+  .page-footer .language-picker-form {
+    top: 85px;
+  }
+
+  .page-footer__copyright {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-bottom: 35px;
+  }
+
+  .page-footer__row:last-child .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .page-footer__row:last-child .menu__item {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
+  .page-footer__row:last-child .menu__item:nth-child(2n) {
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    padding: 0 60px;
+  }
+
+  .page-footer__row:first-child .main-menu {
+    margin-left: -50px;
+  }
+
+  .page-footer__row:first-child .main-menu .menu__item {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-footer {
+    padding: 0;
+  }
+
+  .page-footer__row:first-child .main-menu {
+    margin-left: -65px;
+    width: 66%;
+  }
+
+  .page-footer__row:first-child .main-menu .menu__item {
+    margin-left: 65px;
+  }
+
+  .page-footer .language-picker,
+  .page-footer .language-picker-form {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
+
+  .page-footer__row:last-child {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+
+  .page-footer__copyright {
+  }
+
+  .page-footer__row:last-child .menu {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+    margin-left: -40px;
+    width: 85%;
+  }
+
+  .page-footer__row:last-child .menu__item {
+    width: auto;
+    margin-left: 40px;
+  }
+
+  .page-footer__row:last-child .menu__item:last-child {
+    margin-bottom: 60px;
+  }
+}
+
